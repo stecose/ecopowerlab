@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Power Lab - News</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; padding: 20px; }
+h1 { text-align: center; color: #007ACC; margin-bottom: 30px; }
+#eco-news { display: flex; flex-direction: column; gap: 50px; margin-top: 20px; }
+
+.eco-category h2 { margin: 0 0 15px; color: #007ACC; font-size: 1.8em; border-bottom: 2px solid #007ACC; display: inline-block; padding-bottom: 5px; }
+
+.eco-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+.eco-card { background: #fff; border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s; }
+.eco-card:hover { transform: translateY(-3px); }
+
+.eco-card .thumb { position: relative; width: 100%; height: 160px; background: #ccc; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px; overflow: hidden; }
+.eco-card .thumb::before { content: ""; position: absolute; top: 0; left: -200px; width: 200px; height: 100%; background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%); animation: shimmer 1.5s infinite; }
+@keyframes shimmer { 100% { left: 200px; } }
+
+.eco-card .thumb img { width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0; opacity: 0; transition: opacity 0.5s ease; }
+
+.eco-card-content { padding: 12px 15px; display: flex; flex-direction: column; gap: 6px; }
+.eco-card-content a { font-weight: bold; color: #007ACC; text-decoration: none; font-size: 1em; }
+.eco-card-content small { color: #666; font-size: 12px; }
+.eco-card-content .source { color: #999; font-size: 11px; }
+
+.pagination { text-align: center; margin-top: 15px; }
+.pagination button { padding: 6px 12px; margin: 5px; cursor: pointer; border: 1px solid #007ACC; background: white; color: #007ACC; border-radius: 4px; transition: background 0.2s; }
+.pagination button:hover { background: #007ACC; color: white; }
+</style>
+</head>
+<body>
+
+<h1>📰 News Energia & Innovazione – Eco Power Lab</h1>
+<div id="eco-news"></div>
+
+<script>
+const baseURL = "https://script.google.com/macros/s/AKfycbx7mKDbJGALhakwc0sw5BTTqEFz-IQSQTyLB1NJRjhHWasG2LF3cWZkCSGSR0kelJK0QQ/exec";
+
+const categories = [
+  { name: "⚡ Energia e Rinnovabili", cat: "Energia", color:"#28a745" },
+  { name: "🏡 Smart Home e Innovazione", cat: "SmartHome", color:"#007bff" },
+  { name: "🚗 Mobilità Elettrica", cat: "Mobilità", color:"#fd7e14" },
+  { name: "🌍 Clima e Ambiente", cat: "Clima", color:"#20c997" }
+];
+
+function getFirstTwoWords(title) {
+  return title.split(" ").slice(0, 2).join(" ");
+}
+
+async function loadCategory(category, page = 1) {
+  const section = document.createElement("section");
+  section.className = "eco-category";
+  section.innerHTML = `<h2>${category.name}</h2><div class="eco-grid"></div>`;
+  document.getElementById("eco-news").appendChild(section);
+
+  const grid = section.querySelector(".eco-grid");
+  const response = await fetch(`${baseURL}?cat=${encodeURIComponent(category.cat)}&page=${page}&limit=9`);
+  const data = await response.json();
+
+  data.items.forEach((item) => {
+    const imgUrl = item.image || ""; // usa immagine dallo script
+    const placeholderText = getFirstTwoWords(item.title);
+
+    const card = document.createElement("div");
+    card.className = "eco-card";
+    card.innerHTML = `
+      <div class="thumb" style="background:${category.color};">${placeholderText}
+        <img data-src="${imgUrl}" alt="Anteprima">
+      </div>
+      <div class="eco-card-content">
+        <a href="${item.link}" target="_blank">${item.title}</a>
+        <small>${new Date(item.pubDate).toLocaleDateString()}</small>
+        <span class="source">Fonte: ${item.source} 
+          <a href="https://${item.source}" target="_blank" style="font-size:10px;">Vedi tutte</a>
+        </span>
+        ${item.description.replace(/<[^>]*>?/gm, '').substring(0, 80)}...
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  // Lazy load con fade-in
+  const imgs = section.querySelectorAll("img[data-src]");
+  imgs.forEach(img => {
+    const src = img.getAttribute("data-src");
+    if (src) {
+      img.src = src;
+      img.onload = () => img.style.opacity = 1;
+    }
+  });
+}
+
+categories.forEach(cat => loadCategory(cat, 1));
+</script>
+
+</body>
+</html>
