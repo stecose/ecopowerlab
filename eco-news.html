@@ -26,10 +26,6 @@ h1 { text-align: center; color: #007ACC; margin-bottom: 30px; }
 .eco-card-content a { font-weight: bold; color: #007ACC; text-decoration: none; font-size: 1em; }
 .eco-card-content small { color: #666; font-size: 12px; }
 .eco-card-content .source { color: #999; font-size: 11px; }
-
-.pagination { text-align: center; margin-top: 15px; }
-.pagination button { padding: 6px 12px; margin: 5px; cursor: pointer; border: 1px solid #007ACC; background: white; color: #007ACC; border-radius: 4px; transition: background 0.2s; }
-.pagination button:hover { background: #007ACC; color: white; }
 </style>
 </head>
 <body>
@@ -51,18 +47,23 @@ function getFirstTwoWords(title) {
   return title.split(" ").slice(0, 2).join(" ");
 }
 
-async function loadCategory(category, page = 1) {
+async function loadCategory(category) {
   const section = document.createElement("section");
   section.className = "eco-category";
   section.innerHTML = `<h2>${category.name}</h2><div class="eco-grid"></div>`;
   document.getElementById("eco-news").appendChild(section);
 
   const grid = section.querySelector(".eco-grid");
-  const response = await fetch(`${baseURL}?cat=${encodeURIComponent(category.cat)}&page=${page}&limit=9`);
-  const data = await response.json();
+
+  // 🔹 Usa proxy AllOrigins per bypassare CORS
+  const url = `https://api.allorigins.win/get?url=${encodeURIComponent(baseURL + "?cat=" + category.cat + "&limit=4")}`;
+  
+  const response = await fetch(url);
+  const wrapper = await response.json();
+  const data = JSON.parse(wrapper.contents);
 
   data.items.forEach((item) => {
-    const imgUrl = item.image || ""; // usa immagine dallo script
+    const imgUrl = item.image || "";
     const placeholderText = getFirstTwoWords(item.title);
 
     const card = document.createElement("div");
@@ -94,7 +95,7 @@ async function loadCategory(category, page = 1) {
   });
 }
 
-categories.forEach(cat => loadCategory(cat, 1));
+categories.forEach(cat => loadCategory(cat));
 </script>
 
 </body>
