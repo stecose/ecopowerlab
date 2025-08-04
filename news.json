@@ -238,7 +238,7 @@
           "description": "Siete incuriositi dal mondo delle handheld ma ancora indecisi sull'acquisto. Oggi vi mostriamo come vanno 5 titoli intramontabili su Legion Go S!",
           "pubDate": "Mon, 04 Aug 2025 20:05:00 +0200",
           "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277081?w=1920"
+          "image": "https://css.hd-cdn.it/new_files/templates/theme_darklight/img/hdblog_logo.svg"
         },
         {
           "title": "Offerte Amazon 4 agosto su Apple, Samsung, Honor, Ninja, Greenworks, Bosch, Sony – aggiornato",
@@ -414,30 +414,6 @@
       "category": "Mobilita",
       "items": [
         {
-          "title": "Gli autobus senza conducente sono già legali in Germania, cosa li ferma nel resto d’Europa?",
-          "link": "https://www.electricmotornews.com/veicoli-ecologici/autobus-senza-conducente-germania/",
-          "description": "L'ecosistema europeo dei veicoli autonomi sta accelerando, aprendo la strada alla chiarezza normativa e alla preparazione delle infrastrutture. [...]\n",
-          "pubDate": "Mon, 04 Aug 2025 22:12:57 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/driverless_bus_germany_imagry_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "Il BMW Group avvia la produzione in serie di motori elettrici per la Neue Klasse",
-          "link": "https://www.electricmotornews.com/eventi/bmw-motori-neue-klasse/",
-          "description": "Lo stabilimento BMW di Steyr ha avviato il 1° agosto la produzione in serie del motore elettrico per la Neue Klasse. [...]\nL'articolo Il BMW Group avv",
-          "pubDate": "Mon, 04 Aug 2025 22:11:32 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/bmw_steyr_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "NXT Gen Cup al Nürburgring e la lotta per il titolo si fa sempre più serrata",
-          "link": "https://www.electricmotornews.com/motorsports/nxt-gen-cup-lotta-titolo/",
-          "description": "La NXT Gen Cup torna in azione questo fine settimana, con il campionato che raggiunge il suo terzo round stagionale con il DTM sul leggendario Nürburg",
-          "pubDate": "Mon, 04 Aug 2025 22:10:01 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/nxt_gen_cup_electric_motor_news_01.jpg"
-        },
-        {
           "title": "Strategia della pensione e le altre storie del GP Ungheria: I Doppiati podcast, riascolta la puntata 21",
           "link": "https://www.formulapassion.it/podcast/i-doppiati-f1-podcast-21-25-analisi-gp-ungheria-ferrari-leclerc-hamilton-strategia-pensione",
           "description": "Sventolate le bandiere blu, I Doppiati tornano su YouTube, Spotify e Apple Podcast per analizzare il GP d'Ungheria a Budapest",
@@ -612,12 +588,44 @@
           "pubDate": "Mon, 04 Aug 2025 10:50:58 +0000",
           "source": "autoblog.it",
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
+        },
+        {
+          "title": "Dacia Bigster e MG HS si sfidano per la corona delle suv &quot;low cost&quot;",
+          "link": "//www.alvolante.it/news/sfida-dacia-bigster-mg-hs-2025-406341",
+          "description": "La Bigster punta su spazio record, prezzo imbattibile e, se servono, ottime capacità in fuoristrada; la HS rilancia con un look più curato, un ambient",
+          "pubDate": "3:00 pm",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Dacia%20Bigster"
+        },
+        {
+          "title": "Ercole Spada: le auto che hanno lasciato il segno",
+          "link": "//www.alvolante.it/news/ercole-spada-auto-che-hanno-lasciato-il-segno-406347",
+          "description": "È scomparso a 88 anni uno dei più grandi designer automobilistici italiani: gli rendiamo omaggio ricordando i suoi capolavori, da quelli più esclusivi",
+          "pubDate": "2:09 pm",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Ercole%20Spada%3A"
+        },
+        {
+          "title": "Auto più vendute in Italia: -5,1% le immatricolazioni a luglio 2025",
+          "link": "//www.alvolante.it/news/auto-piu-vendute-italia-5-1-immatricolazioni-luglio-2025-406333",
+          "description": "Ancora in calo il mercato delle auto nuove: il mese scorso chiude con 118.493 consegne. Nei primi sette mesi del 2025 il calo complessivo è del -3,8%.",
+          "pubDate": "10:40 am",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Auto%20pi%C3%B9"
         }
       ]
     },
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "Climate impacts of the El Niño–Southern Oscillation in Africa",
+          "link": "https://www.nature.com/articles/s43017-025-00705-7",
+          "description": "",
+          "pubDate": "Tue, 5 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43017-025-00705-7/MediaObjects/43017_2025_705_Fig1_HTML.png"
+        },
         {
           "title": "Un bonus da 10mila euro per smaltire 50 cause “a cottimo”: ora Nordio offre soldi ai magistrati per non fallire il Pnrr",
           "link": "https://www.ilfattoquotidiano.it/2025/08/04/bonus-magistrati-nordio-pnrr-giustizia-civile-notizie/8084624/",
@@ -745,14 +753,6 @@
           "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
           "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44260-025-00048-w/MediaObjects/44260_2025_48_Fig1_HTML.png"
-        },
-        {
-          "title": "Environmental politics is doomed to fail — unless we tell better stories",
-          "link": "https://www.nature.com/articles/d41586-025-02459-0",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.nature.com/lw1200/magazine-assets/d41586-025-02459-0/d41586-025-02459-0_51301766.jpg"
         },
         {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
