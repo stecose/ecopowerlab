@@ -209,12 +209,84 @@
       "category": "SmartHome",
       "items": [
         {
-          "title": "Pelle artificiale intelligente ottenuta, sente quasi come quella umana",
-          "link": "https://www.hdblog.it/tecnologia/articoli/n627363/pelle-artificiale-intelligente-creazione-pisa/",
-          "description": "Una creazione avveniristica.",
-          "pubDate": "Mon, 04 Aug 2025 15:50:00 +0200",
+          "title": "Neuralink in Europa: via ai test su pazienti paralizzati nel Regno Unito",
+          "link": "https://www.hdblog.it/tecnologia/articoli/n627366/neuralink-europa-test-chip-cerebrale-regno-unito/",
+          "description": "Neuralink arriva in Europa. Al via nel Regno Unito i test del chip cerebrale su pazienti paralizzati.",
+          "pubDate": "Mon, 04 Aug 2025 16:20:00 +0200",
           "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277855?w=1920"
+          "image": "https://hd2.tudocdn.net/1098867?w=1920"
+        },
+        {
+          "title": "Elgato Game Capture 4K S è la scheda esterna più completa e accessibile del 2025",
+          "link": "https://www.smartworld.it/recensioni/elgato-game-capture-4k-s",
+          "description": "Elgato 4K S registra in 4K60 HDR, supporta 1080p240 e funziona su PC, console e iPad. Compatta, veloce, davvero plug & play. Ecco la recensione.L'arti",
+          "pubDate": "Mon, 04 Aug 2025 16:17:00 +0200",
+          "source": "smartworld.it",
+          "image": "https://www.smartworld.it/images/2025/08/04/recensione-elgato-game-capture-4k-s-cover-2_1200x675.jpg"
+        },
+        {
+          "title": "I risultati Spotify deludono, i prezzi dell’abbonamento salgono",
+          "link": "https://www.macitynet.it/i-risultati-spotify-deludono-i-prezzi-dellabbonamento-salgono/",
+          "description": "Nell’ultimo trimestre gli abbonati aumentano ma i risultati deludono:: Spotify annuncia l’aumento di prezzo del piano Premium, Italia inclusa\n- su mac",
+          "pubDate": "Mon, 04 Aug 2025 14:14:27 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/spotify-logo-ico-ufficiale.jpg"
+        },
+        {
+          "title": "Piracy Shield esteso a film, serie tv e musica, le regole Agcom non bastano",
+          "link": "https://www.wired.it/article/pirateria-online-misure-agcom-piracy-shield/",
+          "description": "Il nuovo provvedimento dell'Autorità ha ampliato il perimetro d'azione delle norme antipirateria. Ma non è sufficiente ad arginrare un fenomeno che ma",
+          "pubDate": "Mon, 04 Aug 2025 14:12:13 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/67b59ff42bcbaf1f8a770922/master/pass/173240121"
+        },
+        {
+          "title": "Eenie Meanie: il nuovo thriller con Samare Weaving su Disney+ | Trailer",
+          "link": "https://www.hdblog.it/spettacolo/articoli/n627326/samara-weaving-thriller-azione-trailer/",
+          "description": "Samara Weaving è una ex pilota criminale costretta a tornare in azione per salvare il suo ex.",
+          "pubDate": "Mon, 04 Aug 2025 16:10:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1277847?w=1920"
+        },
+        {
+          "title": "15 macchine elettriche per bambini che piaceranno anche ai grandi",
+          "link": "https://www.wired.it/gallery/macchine-elettriche-bambini/",
+          "description": "Un viaggio dedicato ai piccoli piloti tra auto classiche, fuoristrada, trattori e quad, da guidare al parco o nel cortile di casa",
+          "pubDate": "Mon, 04 Aug 2025 14:02:10 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6890bd0ef9ea1f8514dbb949/master/pass/macchine%20elettriche%20per%20bambini.jpg"
+        },
+        {
+          "title": "Hai sempre desiderato una cantinetta per il vino? Allora non puoi perdere i migliori modelli Candy in sconto ora su Amazon",
+          "link": "https://www.dday.it/redazione/53942/hai-sempre-desiderato-una-cantinetta-per-il-vino-allora-non-puoi-perdere-i-migliori-modelli-candy-in-sconto-ora-su-amazon",
+          "description": "",
+          "pubDate": "2025-08-04T16:02:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53942/social_c2109f_ape1.jpg"
+        },
+        {
+          "title": "La nuova Nissan Juke sarà elettrica ma potrebbe restare anche quella a benzina",
+          "link": "https://www.hdmotori.it/nissan-juke-ev-benzina-novita-2026/",
+          "description": "Nissan investe quasi 4 miliardi di dollari a Sunderland: in arrivo LEAF, Qashqai e Juke elettriche, ma la Juke a benzina potrebbe restare in vendita",
+          "pubDate": "Mon, 04 Aug 2025 16:00:37 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/08/Nissan-Juke-HEV.jpg"
+        },
+        {
+          "title": "Recensione POCO F7: ce l'avete chiesto in tanti (davvero)",
+          "link": "https://www.smartworld.it/recensioni/poco-f7",
+          "description": "Nella confezione di POCO F7, oltre alla nuova etichetta energetica, c'&egrave; un cavetto USB-A/USB-C e una apprezzata cover grigia in...L'articolo Re",
+          "pubDate": "Mon, 04 Aug 2025 16:00:00 +0200",
+          "source": "smartworld.it",
+          "image": "https://www.smartworld.it/images/2025/07/31/poco-f7-recensione_1200x675.png"
+        },
+        {
+          "title": "The Yogurt Shop Murders, il true crime che narra fatti tanto brutali da aver mandato in terapia la troupe",
+          "link": "https://www.wired.it/article/the-yogurt-shop-murders-docuserie-hbo-storia-ragazze-texas/",
+          "description": "Le immagini della violenza contro quattro teenager texane narrata nella produzione Hbo si sono rivelate tanto sconvolgenti che la casa di produzione A",
+          "pubDate": "Mon, 04 Aug 2025 14:00:00 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6890843e6c13171192005678/master/pass/yogurt-shop-murders-(1).jpg"
         },
         {
           "title": "Incentivi auto elettriche per chi abita nelle “zone urbane residenziali”. Cosa sono e quali sono",
@@ -225,14 +297,6 @@
           "image": "https://cdn.dmove.it/images/47493/elettriche_cover.jpg"
         },
         {
-          "title": "Galaxy Buds 3 FE: la batteria è quasi raddoppiata negli ultimi rumor",
-          "link": "https://www.hdblog.it/indossabili/articoli/n627374/galaxy-buds-3-fe-batteria-migliorata-autonomia/",
-          "description": "Il case arriva a ben 900 mAh",
-          "pubDate": "Mon, 04 Aug 2025 15:45:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1275070?w=1920"
-        },
-        {
           "title": "Bagaglio smarrito, con Airtag e queste compagnie aree è più facile trovarlo",
           "link": "https://www.macitynet.it/bagaglio-smarrito-con-airtag-compagnie-aree/",
           "description": "Sempre più compagnie aeree accettano il tracciamento dei bagagli con AirTag e dispositivi compatibili. Una svolta utile per chi viaggia: basta un picc",
@@ -241,36 +305,12 @@
           "image": "https://www.macitynet.it/wp-content/uploads/2022/05/AirTag-valigia-.jpg"
         },
         {
-          "title": "La Cina ha realizzato un super acciaio per la sua centrale a fusione",
-          "link": "https://www.hdblog.it/green/articoli/n627360/acciaio-fusione-nucleare-cina/",
-          "description": "La Cina ha creato un super acciaio, il CHSN01, per i suoi reattori a fusione nucleare.",
-          "pubDate": "Mon, 04 Aug 2025 15:40:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277857?w=1920"
-        },
-        {
-          "title": "Multa a Shein, l'Antitrust obbliga il colosso del fast fashion pagare 1 milione di euro per pubblicità green ingannevole",
-          "link": "https://www.wired.it/article/multa-shein-antitrust-1-milione-euro/",
-          "description": "Il colosso cinese del fast fashion è stato accusato di aver ingannato i consumatori sulle sue politiche ambientali",
-          "pubDate": "Mon, 04 Aug 2025 13:37:29 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/678a79117d43038e6d72ac49/master/pass/1243608336"
-        },
-        {
-          "title": "Anthropic, perché ha bloccato l'accesso di OpenAI al suo chatbot",
-          "link": "https://www.wired.it/article/anthropic-blocco-api-claude-openai-intelligenza-artificiale/",
-          "description": "La società di intelligenza artificiale guidata da Sam Altman è accusata di aver violato i termini di servizio della rivale: ecco cosa è successo",
-          "pubDate": "Mon, 04 Aug 2025 13:32:09 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/689089e8ed60c04e0702afa1/master/pass/anthropic-openai-biz-2216956964.jpg"
-        },
-        {
-          "title": "Barriera misteriosa nell'oceano, alcune meduse non la oltrepassano e i ricercatori cercano di capire come si è formata",
-          "link": "https://www.wired.it/article/barriera-misteriosa-nell-oceano-che-alcune-meduse-non-oltrepassano-come-si-è-formata/",
-          "description": "Negli abissi dell'artico a una latitudine di 47 gradi nord, c'è una barriera biogeografica che determina la distribuzione di queste creature",
-          "pubDate": "Mon, 04 Aug 2025 13:12:51 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/6890934a23e603d8421abf6a/master/pass/588206848"
+          "title": "Migliori condizionatori portatili senza tubo (agosto 2025)",
+          "link": "https://www.tomshw.it/altro/migliori-condizionatori-portatili-senza-tubo",
+          "description": "Vi trovate in quel periodo dell&rsquo;anno in cui si suda anche senza fare nulla? Benvenuti nella stagione estiva, quando l&rsquo;afa si insinua ovunq",
+          "pubDate": "2025-08-04T15:30:36+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/06/59950/Migliori-condizionatori-portatili-senza-tubo.jpg"
         },
         {
           "title": "Spotify aumenta il prezzo del canone mensile per l'abbonamento Premium",
@@ -289,28 +329,12 @@
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/144628509-a1f9b05f-44b2-470e-8068-0899db0802d0.jpg"
         },
         {
-          "title": "Hai sempre desiderato una cantinetta per il vino? Allora non puoi perdere i migliori modelli Candy in sconto ora su Amazon",
-          "link": "https://www.dday.it/redazione/53942/hai-sempre-desiderato-una-cantinetta-per-il-vino-allora-non-puoi-perdere-i-migliori-modelli-candy-in-sconto-ora-su-amazon",
-          "description": "",
-          "pubDate": "2025-08-04T14:47:00+02:00",
-          "source": "dday.it",
-          "image": "https://cdn.dday.it/system/uploads/news/main_image/53942/social_c2109f_ape1.jpg"
-        },
-        {
           "title": "Offerte Amazon 4 agosto su Apple, Samsung, Honor, Ninja, Greenworks, Bosch, Sony",
           "link": "https://www.macitynet.it/offerte-amazon-4-agosto-2025/",
           "description": "In sconto smartphone, sistemi audio con soundbar, accessori per stampanti 3D, videocitofoni Smart e altri dispositivi per la casa, supporti da terra p",
           "pubDate": "Mon, 04 Aug 2025 12:44:01 +0000",
           "source": "macitynet.it",
           "image": "https://www.macitynet.it/wp-content/uploads/2018/04/amazonlista1.jpg"
-        },
-        {
-          "title": "Dreame H15 Mix è la centrale di pulizia 7 in 1 per ogni tipo di sporco e superficie",
-          "link": "https://www.macitynet.it/dreame-h15-mix-e-la-centrale-di-pulizia-7-in-1-per-ogni-tipo-di-sporco-e-superficie/",
-          "description": "Grazie alle varie modalità d’uso e agli accessori inclusi l’aspirapolvere e lavapavimenti Dreame H15 Mix è una centrale completa per pulizie approfond",
-          "pubDate": "Mon, 04 Aug 2025 11:59:50 +0000",
-          "source": "macitynet.it",
-          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/Dreame-H15-Mix-5.jpg"
         },
         {
           "title": "PlayStation 6 arriverà nel 2027 con prestazioni triplicate rispetto a PS5",
@@ -337,12 +361,12 @@
           "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219496.jpg"
         },
         {
-          "title": "TP‑Link BE3600 in OFFERTA: la svolta Wi‑Fi 7 a MENO DI 95€!",
-          "link": "https://www.tomshw.it/hardware/tp-link-be3600-in-offerta-la-scolta-wi-fi-7-a-meno-di-95-eur-nXx",
-          "description": "Se state cercando un router gaming di ultima generazione per rivoluzionare la vostra connessione di rete, questa &egrave; un'occasione da non lasciars",
-          "pubDate": "2025-08-04T12:21:20+02:00",
+          "title": "Street Fighter 6: un trailer anticipa l'arrivo di un nuovo personaggio",
+          "link": "https://www.tomshw.it/videogioco/c-viper-arriva-in-street-fighter-6-con-un-teaser-2025-08-04",
+          "description": "L'universo di Street Fighter 6 si prepara ad accogliere il ritorno di una delle combattenti pi&ugrave; tecnologicamente avanzate della serie, mentre i",
+          "pubDate": "2025-08-04T12:30:40+02:00",
           "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65526/TP-Link-BE3600-offerta-04082025-copertina.png"
+          "image": "https://www.tomshw.it/storage/media/2025/02/49582/street-fighter.webp"
         },
         {
           "title": "Mikron Switzerland AG ottimizza la produzione con AI e modelli matematici personalizzati",
@@ -377,42 +401,34 @@
           "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/04113056/Round-table-Var-Group.jpg"
         },
         {
-          "title": "Questo power bank da 20000mAh oggi lo paghi la META' e ti dimentichi delle prese di corrente!",
-          "link": "https://www.tomshw.it/smartphone/questo-power-bank-da-20000mah-oggi-lo-paghi-la-meta-e-ti-dimentichi-delle-prese-di-corrente-VfB",
-          "description": "Se siete alla ricerca di un power bank potente, veloce e affidabile, non lasciatevi sfuggire questa straordinaria offerta su Amazon. Il power bank INI",
-          "pubDate": "2025-08-04T11:32:02+02:00",
+          "title": "Denti da star, prezzo da record: 3 spazzolini Oral-B al minimo storico!",
+          "link": "https://www.tomshw.it/offerte/denti-da-star-prezzo-da-record-spazzolini-oral-b-al-minimo-storico",
+          "description": "Se hai sempre voluto migliorare la tua igiene orale con uno spazzolino elettrico di alta qualit&agrave;, ma hai rimandato l&rsquo;acquisto per via del",
+          "pubDate": "2025-08-04T11:13:01+02:00",
           "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65521/Power-Bank-INIU-20000mAh-offerta-04082025-copertina.png"
-        },
-        {
-          "title": "Data center e crisi energetica: l’anello debole dell’innovazione AI",
-          "link": "https://www.zerounoweb.it/techtarget/searchdatacenter/data-center-e-crisi-energetica-lanello-debole-dellinnovazione-ai/",
-          "description": "La corsa all’intelligenza artificiale rischia di scontrarsi con un ostacolo spesso sottovalutato: la disponibilità e la distribuzione di energia. Un p",
-          "pubDate": "Mon, 04 Aug 2025 08:54:47 +0000",
-          "source": "internet4things.it",
-          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/01161012/wordpress3.jpg"
-        },
-        {
-          "title": "Fresco e silenzioso: ventilatore a torre LEVOIT in offerta su Amazon",
-          "link": "https://www.webnews.it/fresco-e-silenzioso-ventilatore-a-torre-levoit-in-offerta-su-amazon/",
-          "description": "In offerta su Amazon un ventilatore a torre eccezionale: solo 20 dB, 12 velocità, risparmio energetico e design compatto.",
-          "pubDate": "Mon, 04 Aug 2025 08:45:50 +0000",
-          "source": "webnews.it",
-          "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219488.jpg"
-        },
-        {
-          "title": "La sanità bersaglio dei cyberattacchi",
-          "link": "https://www.sicurezzamagazine.it/clusit-la-sanita-bersaglio-dei-cyberattacchi/",
-          "description": "I dati presentati nel corso di Healthcare Security Summit, il convegno organizzato da Clusit hanno mostrato come la sanità sia il bersaglio dei cyberc",
-          "pubDate": "Mon, 04 Aug 2025 06:15:57 +0000",
-          "source": "sicurezzamagazine.it",
-          "image": "https://static.tecnichenuove.it/sicurezzamagazine/2025/07/2149611211-e1753782621857.jpg"
+          "image": "https://www.tomshw.it/storage/media/2025/08/65518/oral-b.png"
         }
       ]
     },
     {
       "category": "Mobilita",
       "items": [
+        {
+          "title": "Tesla dice addio (in silenzio) a Model S e Model X in Europa: stop alla vendita delle due elettriche",
+          "link": "https://www.automoto.it/elettrico/tesla-dice-addio-in-silenzio-a-model-s-e-model-x-in-europa-stop-alla-vendita-delle-due-elettriche.html",
+          "description": "Le due elettriche restano disponibili solo da stock",
+          "pubDate": "2025-08-04T16:13:42.2870000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45833316/1200x/tesla-model-s-70d-4-1.jpeg"
+        },
+        {
+          "title": "È morto Ercole Spada, genio del design italiano tra Zagato, BMW, Fiat e Alfa Romeo",
+          "link": "https://www.automoto.it/news/e-morto-ercole-spada-genio-del-design-italiano-tra-zagato-bmw-fiat-e-alfa-romeo.html",
+          "description": "Addio a uno dei più influenti stilisti dell’automobile del Novecento. A lui si devono icone come l’Aston Martin DB4 GT Zagato, la BMW Serie 5 E28 e la",
+          "pubDate": "2025-08-04T15:59:40.1470000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45833217/1200x/ettore-spada.jpeg"
+        },
         {
           "title": "Troy Bayliss ancora vittima di un grave incidente: sette costole rotte e un polmone KO",
           "link": "https://www.moto.it/news/troy-bayliss-ancora-vittima-di-un-grave-incidente-sette-costole-rotte-e-un-polmone-ko.html",
@@ -438,6 +454,38 @@
           "image": "https://img.stcrm.it/images/45832494/1200x/2228343398.jpeg"
         },
         {
+          "title": "Auto km 0 a Milano: apre iltuokmzero.com, nuovo showroom firmato Mocauto",
+          "link": "https://www.motorionline.com/auto-km-0-a-milano-apre-iltuokmzero-com-nuovo-showroom-firmato-mocauto/",
+          "description": "Mocauto, importante dealer automobilistico, lancia iltuokmzero.com, il primo showroom chiavi in mano di Milano dedicato alla vetture km 0 di",
+          "pubDate": "Mon, 04 Aug 2025 14:05:00 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/iltuokm0.jpg"
+        },
+        {
+          "title": "Estasi Bortoleto: “Correre con davanti Alonso e dietro Verstappen è stato incredibile”",
+          "link": "https://www.formulapassion.it/f1/f1-news/estasi-bortoleto-sauber-gp-ungheria-alonso-verstappen-sauber-sesto-posto-incredibile",
+          "description": "Il debuttante va in vacanza con un gran sorriso",
+          "pubDate": "Mon, 04 Aug 2025 14:00:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Bortoleto-Sauber-F1.jpg"
+        },
+        {
+          "title": "Addio a Ercole Spada, iconico designer dell’auto",
+          "link": "https://www.formulapassion.it/auto/auto-epoca/addio-ercole-spada-morte-iconico-designer-auto",
+          "description": "Il mondo dell'auto piange la scomparsa di Ercole Spada celebre designer è morto all'età di 88 anni",
+          "pubDate": "Mon, 04 Aug 2025 13:56:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Alfa-Romeo-Giulia-TZ.jpg"
+        },
+        {
+          "title": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-riaperto-il-tratto-compreso-tra-valdarno-e-arezzo-in-direzione-roma/735914/",
+          "description": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA RESTA TEMPORANEMANETE CHIUSO IL TRATTO IN DIREZIONE BOLOGNA &#16",
+          "pubDate": "Mon, 04 Aug 2025 13:52:02 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
           "title": "Autotrasporto, anche per autisti dipendenti 100 euro ora per attesa carico scarico",
           "link": "https://www.trasporti-italia.com/camion/autotrasporto-anche-per-autisti-dipendenti-100-euro-ora-per-attesa-carico-scarico/735891/",
           "description": "I sindacati chiedono indennizzi anche per gli autisti dipendenti",
@@ -454,12 +502,12 @@
           "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/Interporto-padova-2.jpg"
         },
         {
-          "title": "A26 GENOVA VOLTRI-GRAVELLONA TOCE: REGOLARMENTE APERTA LA STAZIONE DI CASALE MONFERRATO SUD",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a26-genova-voltri-gravellona-toce-regolarmente-aperta-la-stazione-di-casale-monferrato-sud-2/735850/",
-          "description": "A26 GENOVA VOLTRI-GRAVELLONA TOCE: REGOLARMENTE APERTA LA STAZIONE DI CASALE MONFERRATO SUD Roma, 4 agosto 2025 &#8211; Sulla A26 Genova Voltri-Gravel",
-          "pubDate": "Mon, 04 Aug 2025 13:26:02 +0000",
-          "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+          "title": "BMW iX3: sostenibilità vera o marketing?",
+          "link": "https://insideevs.it/news/767904/bmw-ix3-materiali-riciclati/",
+          "description": "Con materiali riciclati, produzione a zero combustibili fossili e batteria più efficiente, la nuova iX3 segna una svolta",
+          "pubDate": "Mon, 04 Aug 2025 13:30:00 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/6Z4M3N/s3/quanto-e-sostenibile-la-bmw-ix3.jpg"
         },
         {
           "title": "Rinnovabili, nuovi impianti in calo del 35%: le scelte negative del governo",
@@ -502,38 +550,6 @@
           "image": "https://www.motorionline.com/wp-content/uploads/2025/08/incidente-A1-4-agosto-2025.jpg"
         },
         {
-          "title": "Hamilton affranto, Wolff: “È sempre stato trasparente nel mettersi in discussione, ma deve ricordarsi che è il GOAT”",
-          "link": "https://www.formulapassion.it/f1/f1-news/hamilton-crisi-ferrari-carezza-wolff-deve-ricordarsi-che-e-il-goat-piu-grande-tutti-i-tempi",
-          "description": "Il numero uno della Mercedes ha commentato così le parole molte dure espresse dal sette volte iridato nei confronti di se stesso",
-          "pubDate": "Mon, 04 Aug 2025 12:00:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Hamilton-Ferrari-F1.jpg"
-        },
-        {
-          "title": "Alfa Romeo Tonale, in arrivo il restyling: primo prototipo avvistato su strada [Foto Spia]",
-          "link": "https://www.automoto.it/news/alfa-romeo-tonale-in-arrivo-il-restyling-primo-prototipo-avvistato-su-strada-foto-spia.html",
-          "description": "Avvistato il restyling dell'Alfa Romeo Tonale, ecco tutti gli aggiornamenti",
-          "pubDate": "2025-08-04T11:58:39.0200000",
-          "source": "automoto.it",
-          "image": "https://img.stcrm.it/images/45831714/1200x/nuova-alfa-romeo-tonale.jpeg"
-        },
-        {
-          "title": "Mazda, due nuove sportive in fase di sviluppo",
-          "link": "https://www.formulapassion.it/auto/auto-news/mazda-due-nuove-sportive-sviluppo-mx5-sp3",
-          "description": "Attesa per la versione di serie della Iconic SP Concept 2023 e per la nuova generazione della MX-5",
-          "pubDate": "Mon, 04 Aug 2025 11:45:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2023/10/mazda-iconic-sp-2.jpg"
-        },
-        {
-          "title": "Tesla giudicata colpevole per un incidente mortale con Autopilot: dovrà risarcire 243 milioni di dollari",
-          "link": "https://www.automoto.it/elettrico/tesla-giudicata-colpevole-per-un-incidente-mortale-con-autopilot-dovra-risarcire-243-milioni-di-dollari.html",
-          "description": "Per la prima volta un tribunale statunitense ha condannato Tesla ritenendola parzialmente responsabile di un incidente mortale con Autopilot attivo",
-          "pubDate": "2025-08-04T11:33:38.0730000",
-          "source": "automoto.it",
-          "image": "https://img.stcrm.it/images/45831582/1200x/tesla-logo.jpeg"
-        },
-        {
           "title": "Mate Rimac porta la sua Bugatti Chiron da 4 milioni al supermercato",
           "link": "https://www.autoblog.it/post/mate-rimac-bugatti-chiron-super-sport-4-milioni-supermercato",
           "description": "Il CEO di Bugatti Rimac, Mate Rimac, usa la sua Bugatti Chiron Super Sport da 4 milioni di dollari per una semplice spesa al supermercato\nIl post Mate",
@@ -566,28 +582,12 @@
           "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Pebble-Beach-Pininfarina-Trophy.jpg"
         },
         {
-          "title": "Kia EV4 ha dimostrato la sua resistenza in un test da 10.000 km al Nürburgring",
-          "link": "https://www.motorionline.com/kia-ev4-ha-dimostrato-la-sua-resistenza-in-un-test-da-10-000-km-al-nurburgring/",
-          "description": "Il nuovo Kia EV4, compatto e completamente elettrico, stabilisce nuovi standard in termini di durata e affidabilità per veicoli ad",
-          "pubDate": "Mon, 04 Aug 2025 10:35:39 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Kia-EV4.jpg"
-        },
-        {
           "title": "Così i supercondensatori possono essere usati sulle auto elettriche",
           "link": "https://insideevs.it/news/767876/supercondensatori-grafene-prestazioni-auto-elettrica/",
           "description": "Con il grafene al posto del carbonio aumentano prestazioni e densità energetica. Così possono servire nella frenata rigenerativa",
           "pubDate": "Mon, 04 Aug 2025 09:16:09 +0000",
           "source": "insideevs.it",
           "image": "https://cdn.motor1.com/images/mgl/g4k699/s3/ricercatori-dell-empa-con-il-grafene-usato-per-i-supercondensatori.jpg"
-        },
-        {
-          "title": "Quanta autonomia perde l'auto elettrica in autostrada?",
-          "link": "https://insideevs.it/news/767697/auto-elettrica-autonomia-autostrada/",
-          "description": "Un test sulle Kia EV9 e Lucid Air mostra come cambia l’efficienza a seconda della velocità: i dati parlano chiaro",
-          "pubDate": "Mon, 04 Aug 2025 07:00:00 +0000",
-          "source": "insideevs.it",
-          "image": "https://cdn.motor1.com/images/mgl/E63jnM/s3/2025-lucid-air-grand-touring.jpg"
         },
         {
           "title": "Auto più vendute in Italia: -5,1% le immatricolazioni a luglio 2025",
@@ -619,36 +619,44 @@
       "category": "Clima",
       "items": [
         {
+          "title": "“A Prato ci sono troppi cinesi!”: panico e gelo in studio a “Camper”. Peppone chiude il collegamento – VIDEO",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/a-prato-ci-sono-troppi-cinesi-panico-e-gelo-in-studio-a-camper-peppone-chiude-il-collegamento-video/8084453/",
+          "description": "Attimi di panico in diretta tv nella puntata di &#8220;Camper&#8221; su Rai Uno, andata in onda oggi lunedì 4 agosto. L&#8217;inviato Marco Di Buono s",
+          "pubDate": "Mon, 04 Aug 2025 14:25:30 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Screenshot-2025-08-04-alle-16.13.26-1200x630.png"
+        },
+        {
+          "title": "Caso Lookman, la versione di Percassi: “La promessa di cederlo si basava su due presupposti che lui stesso ci ha chiesto”",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/caso-lookman-percassi-atalanta-inter-calciomercato-promessa-parole/8084378/",
+          "description": "E ora è guerra aperta tra Atalanta e Ademola Lookman. Dopo l&#8217;offerta dell&#8217;Inter rifiutata da Bergamo, è arrivato lo strappo definitivo del",
+          "pubDate": "Mon, 04 Aug 2025 14:17:19 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/luca-percassi-atalanta.jpg"
+        },
+        {
+          "title": "Gaza, le immagini dei corpi pelle e ossa accatastati in un’ambulanza: “Uccisi mentre aspettavano un sacco di farina”",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/gaza-corpi-ambulanza-video/8084374/",
+          "description": "Il giornalista palestinese di Gaza Khames Alrefi ha pubblicato sul suo profilo Instagram un video che mostra diversi corpi senza vita, ridotti a pelle",
+          "pubDate": "Mon, 04 Aug 2025 14:16:11 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Sequenza-57.00_14_59_19.Immagine015-scaled.jpg"
+        },
+        {
+          "title": "Se hai la Partita Iva, da oggi niente sarà più come prima: la decisione del Parlamento",
+          "link": "https://www.greenstyle.it/se-hai-la-partita-iva-da-oggi-niente-sara-piu-come-prima-la-decisione-del-parlamento-424717.html",
+          "description": "Il Senato della Repubblica ha dato il via libera definitivo al Decreto fiscale, introducendo una nuova sanatoria fiscale.\nL'articolo Se hai la Partita",
+          "pubDate": "Mon, 04 Aug 2025 14:00:03 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/Calcolatrice-euro-banconote-20250723-Greenstyle.it-.jpg"
+        },
+        {
           "title": "Polemiche per la visita controversa di Ben Gvir alla Spianata delle Moschee a Gerusalemme",
           "link": "https://euractiv.it/section/mondo/news/polemiche-per-la-visita-controversa-di-ben-gvir-alla-spianata-delle-moschee-a-gerusalemme/",
           "description": "Nel giorno di Tisha B’Av, dedicato alla memoria della distruzione dei due Templi ebraici, il ministro per la Sicurezza Nazionale Itamar Ben Gvir ha co",
           "pubDate": "Mon, 04 Aug 2025 13:52:06 +0000",
           "source": "euractiv.it",
           "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/GxbBhseXEAEJhgc-1024x747.jpg"
-        },
-        {
-          "title": "Cosa significa davvero ‘modello Milano’ e perché non ha più senso parlarne",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/modello-milano-significati-brand-politica-oggi/8083840/",
-          "description": "Il drammatico momento di difficoltà che sta caratterizzando la vita politica meneghina spinge molti commentatori e colleghi giornalisti a parlare del ",
-          "pubDate": "Mon, 04 Aug 2025 13:51:58 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/07/21/med-1200x630-26-1200x630.jpg"
-        },
-        {
-          "title": "“È agosto, sei in Puglia, hai un presente brillante e un passato che parla ancora di te, dicendo bugie”: dissing social tra gli ex Veronica Ruggeri e Nicolò De Devitiis",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/e-agosto-sei-in-puglia-hai-un-presente-brillante-e-un-passato-che-parla-ancora-di-te-dicendo-bugie-dissing-social-tra-gli-ex-veronica-ruggeri-e-nicolo-de-devitiis/8084313/",
-          "description": "Dissing tra ex: succede anche questo in tempi di social. I protagonisti sono ancora Nicolò De Devitiis e Veronica Ruggeri. L&#8217;inviato de Le Iene,",
-          "pubDate": "Mon, 04 Aug 2025 13:40:03 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Veronica-Ruggeri-e-Nicolo-De-Devitiis-1200x630.jpg"
-        },
-        {
-          "title": "Gaza, Croce Rossa-Oms: “Rilasciare ora tutti gli ostaggi”. Israele chiede riunione del Consiglio di sicurezza Onu sul tema",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/ostaggi-gaza-rilascio-onu-notizie/8084329/",
-          "description": "I due video diffusi da Hamas nelle ultime ore hanno spostato il fuoco del racconto della tragedia che si consuma a Gaza sulla questione degli ostaggi ",
-          "pubDate": "Mon, 04 Aug 2025 13:39:03 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Ostaggi.jpg"
         },
         {
           "title": "Il settore farmaceutico rimane in una situazione di incertezza, mentre l’indagine sulla Sezione 232 si protrae",
@@ -723,14 +731,6 @@
           "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
         },
         {
-          "title": "E’ il borgo più piccolo d’Italia, ma dalla storia incredibile: un gioiello che regala una grande emozione",
-          "link": "https://www.greenstyle.it/e-il-borgo-piu-piccolo-ditalia-ma-dalla-storia-incredibile-un-gioiello-che-regala-una-grande-emozione-424524.html",
-          "description": "Assolutamente da visitare, il borgo più piccolo che c&#8217;è in Italia: tra arte e storia è un viaggio\nL'articolo E&#8217; il borgo più piccolo d&#82",
-          "pubDate": "Mon, 04 Aug 2025 07:00:43 +0000",
-          "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/borgo-greenstyle.it-20250726.jpg"
-        },
-        {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
           "link": "https://www.nature.com/articles/s44260-025-00048-w",
           "description": "",
@@ -757,7 +757,7 @@
         {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
           "link": "https://www.legambiente.it/comunicati-stampa/sos-adamello-anteprima-di-carovana-dei-ghiacciai-2025/",
-          "description": "Flash mob sull’Adamello che ospita il ghiacciaio più grande delle Alpi italiane. Il gigante bianco nel 2024 ha registrato un arretramento della fronte",
+          "description": "Flash mob sull’Adamello che ospita il ghiacciaio più grande delle Alpi italiane. Il gigante bianco nel 2024 ha registrato un arretramento della fronte",
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
           "image": "https://www.legambiente.it/wp-content/uploads/2025/08/DJI_0298-scaled.jpg"
