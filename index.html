@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <title>Eco Power Lab – News</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Aggregatore di notizie su energia, smart home, mobilità elettrica e clima. Fonti multiple, infinite scroll."/>
+  <style>
+    :root {
+      --brand:#007ACC;
+      --radius:8px;
+      --bg:#f5f8fC;
+      --card:#fff;
+      --text:#1f2f44;
+      --muted:#666;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+    .container{max-width:1000px;margin:0 auto;padding:12px;}
+    h1{margin:16px 0;font-size:1.9em;color:var(--brand);}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+    .filter{padding:6px 14px;border:1px solid #d9e2ec;border-radius:6px;cursor:pointer;font-size:0.85em;background:#fff;display:inline-flex;align-items:center;gap:4px;transition:all .15s;}
+    .filter.active{background:var(--brand);color:#fff;border-color:var(--brand);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:4px;}
+    .card{background:var(--card);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 32px rgba(0,0,0,0.06);transition:transform .18s;}
+    .card:hover{transform:translateY(-2px);}
+    .thumb{width:100%;height:140px;object-fit:cover;background:#e8e8e8;}
+    .content{padding:12px;display:flex;flex-direction:column;gap:6px;flex:1;}
+    .title{margin:0;font-size:1em;font-weight:600;color:#0f3061;text-decoration:none;line-height:1.2;}
+    .meta{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+    .snippet{font-size:0.9em;flex:1;color:#333;}
+    .source-badge{background:#f1f5fa;border-radius:999px;padding:4px 10px;font-size:10px;display:inline-block;margin-top:6px;}
+    .loader{display:flex;align-items:center;gap:10px;font-weight:600;margin:30px 0;color:var(--brand);}
+    .dots span{display:inline-block;width:10px;height:10px;background:var(--brand);border-radius:50%;margin-right:4px;animation:jump .6s infinite alternate;}
+    .dots span:nth-child(2){animation-delay:.12s;}
+    .dots span:nth-child(3){animation-delay:.24s;}
+    @keyframes jump{from{transform:translateY(0);}to{transform:translateY(-6px);}}
+    .page-info{margin:18px 0;font-size:0.9em;font-weight:600;text-align:center;}
+    .no-more{margin:16px 0;text-align:center;color:var(--muted);}
+    .error{background:#ffe8e0;border:1px solid #ffb3a0;border-radius:6px;padding:12px;margin:16px 0;color:#a33;}
+    .category-title{margin:24px 0 8px;font-size:1.4em;color:var(--brand);border-bottom:2px solid var(--brand);display:inline-block;padding-bottom:4px;}
+  </style>
+</head>
+<body>
+  <div class="container" id="app">
+    <h1>News Energia & Innovazione</h1>
+    <div class="filters" aria-label="Filtri categorie">
+      <div class="filter active" data-cat="all">Tutte</div>
+      <div class="filter active" data-cat="Energia">⚡ Energia</div>
+      <div class="filter active" data-cat="SmartHome">🏠 Smart Home</div>
+      <div class="filter active" data-cat="Mobilita">🚗 Mobilità</div>
+      <div class="filter active" data-cat="Clima">🌍 Clima</div>
+    </div>
+    <div id="loader" class="loader" aria-live="polite">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div style="margin-left:6px;">Caricamento notizie...</div>
+    </div>
+    <div id="feed"></div>
+    <div id="page-info" class="page-info"></div>
+    <div id="end" class="no-more" style="display:none;">Hai visto tutte le notizie disponibili.</div>
+  </div>
+
+  <script>
+    const JSON_URL = "./news.json"; // presuppone che index.html e news.json siano nello stesso GitHub Pages root
+    const perPage = 5;
+    let state = [];
+    let currentPage = 1;
+    let totalPages = 1;
+    let filtered = new Set(["Energia","SmartHome","Mobilita","Clima"]);
+    const loadedPages = new Set();
+    const container = document.getElementById("feed");
+
+    function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+    function formatDate(d){ try{ const dt=new Date(d); if(isNaN(dt)) return ""; return dt.toLocaleDateString(undefined,{ day:"2-digit", month:"short", year:"numeric" }); }catch{return "";} }
+
+    function renderSections(){
+      container.innerHTML = "";
+      filtered.forEach(catName => {
+        const cat = state.find(c => c.category === catName);
+        if (!cat || cat.items.length === 0) return;
+        const section = document.createElement("section");
+        section.dataset.cat = catName;
+        section.innerHTML = `<div class="category-title">${catName === "SmartHome" ? "Smart Home e Innovazione" : catName === "Mobilita" ? "Mobilità Elettrica" : (catName === "Clima" ? "Clima e Ambiente" : "Energia e Rinnovabili")}</div><div class="grid" aria-label="${catName}"></div>`;
+        container.appendChild(section);
+      });
+    }
+
+    function appendPage(page){
+      if (loadedPages.has(page)) return;
+      loadedPages.add(page);
+      currentPage = page;
+      filtered.forEach(catName => {
+        const cat = state.find(c => c.category === catName);
+        if (!cat) return;
+        const section = container.querySelector(`section[data-cat="${catName}"]`);
+        if (!section) return;
+        const grid = section.querySelector(".grid");
+        const start = (page -1)*perPage;
+        const items = cat.items.slice(start, start+perPage);
+        items.forEach(item => {
+          const shortTitle = item.title.split(" ").slice(0,2).join(" ");
+          const img = item.image || `https://via.placeholder.com/300x140/007ACC/ffffff?text=${encodeURIComponent(shortTitle)}`;
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <a href="${item.link}" target="_blank" rel="noopener">
+              <img class="thumb" src="${img}" alt="${item.title}">
+            </a>
+            <div class="content">
+              <a class="title" href="${item.link}" target="_blank" rel="noopener">${item.title}</a>
+              <div class="meta">
+                <div>${formatDate(item.pubDate)}</div>
+                <div class="source">${item.source}</div>
+              </div>
+              <div class="snippet">${item.description}...</div>
+              <div><span class="source-badge">${item.source}</span></div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      });
+      updatePageInfo();
+    }
+
+    function updatePageInfo(){
+      const maxItems = Math.max(...state.map(c=>c.items.length));
+      totalPages = Math.max(1, Math.ceil(maxItems / perPage));
+      document.getElementById("page-info").innerText = `Pagina ${currentPage} di ${totalPages}`;
+      if (currentPage >= totalPages){
+        document.getElementById("end").style.display = "block";
+      }
+    }
+
+    function applyFilters(){
+      currentPage = 1;
+      loadedPages.clear();
+      renderSections();
+      appendPage(1);
+    }
+
+    document.querySelectorAll(".filter").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const cat = btn.dataset.cat;
+        if (cat === "all") {
+          const active = btn.classList.contains("active");
+          if (!active) {
+            document.querySelectorAll(".filter").forEach(f=>f.classList.add("active"));
+            filtered = new Set(["Energia","SmartHome","Mobilita","Clima"]);
+          } else {
+            document.querySelectorAll(".filter").forEach(f=>f.classList.remove("active"));
+            filtered = new Set();
+          }
+          btn.classList.toggle("active");
+        } else {
+          btn.classList.toggle("active");
+          if (btn.classList.contains("active")) filtered.add(cat);
+          else filtered.delete(cat);
+          // sync "all"
+          const allBtn = document.querySelector('.filter[data-cat="all"]');
+          const nonAll = Array.from(document.querySelectorAll('.filter')).filter(f=>f.dataset.cat!=="all");
+          if (nonAll.every(f=>f.classList.contains("active"))) {
+            allBtn.classList.add("active");
+          } else {
+            allBtn.classList.remove("active");
+          }
+        }
+        applyFilters();
+      });
+    });
+
+    // infinite scroll
+    let ticking=false;
+    window.addEventListener("scroll",()=>{
+      if(ticking) return;
+      ticking=true;
+      requestAnimationFrame(()=>{
+        if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 300){
+          if(currentPage < totalPages){
+            appendPage(currentPage+1);
+          }
+        }
+        ticking=false;
+      });
+    });
+
+    // load JSON
+    fetch(JSON_URL + "?t="+Date.now(), {cache:"no-store"})
+      .then(r=>{
+        if(!r.ok) throw new Error("Impossibile scaricare news.json");
+        return r.json();
+      })
+      .then(d=>{
+        state = d.categories.map(c=>({ category:c.category, items:shuffle(c.items) }));
+        document.getElementById("loader").style.display="none";
+        renderSections();
+        appendPage(1);
+      })
+      .catch(e=>{
+        document.getElementById("loader").style.display="none";
+        container.innerHTML = `<div class="error">Errore caricamento feed: ${e.message}</div>`;
+        console.error(e);
+      });
+  </script>
+</body>
+</html>
+  
