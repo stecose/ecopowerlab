@@ -1,7 +1,15 @@
+// aggregator.js
 import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 
+/* CONFIGURAZIONE */
+const entriesPerFeed = 4;                  // articoli presi per ogni feed
+const maxItemsPerCategory = 25;            // pool finale per categoria
+const fallbackOgImageLimitPerCategory = 10; // quanti fallback og:image per categoria
+const concurrentFallbackFetches = 4;        // quanti fetch paralleli per page-scraping immagini
+
+/* FEED PER CATEGORIA */
 const feedsByCat = {
   Energia: [
     "https://www.rinnovabili.it/feed/",
@@ -92,57 +100,114 @@ const feedsByCat = {
   ]
 };
 
-async function fetchOgImage(url) {
-  try {
-    const res = await fetch(url, { redirect: "follow" });
-    const html = await res.text();
-    const match = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i);
-    if (match) return match[1];
-  } catch (e) {
-    // ignore
+/* HELPERS */
+
+// prova a estrarre og:image / twitter:image / prima immagine significativa
+function extractImageFromHtml(html, pageUrl) {
+  // 1. og:image o twitter:image
+  const metaRegex = /<meta[^>]*(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/i;
+  const mMeta = html.match(metaRegex);
+  if (mMeta && mMeta[1]) {
+    try {
+      return new URL(mMeta[1], pageUrl).href;
+    } catch {}
+  }
+
+  // 2. prima <img> sensata (escludi svg, icone, data:, logo)
+  const imgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+  let match;
+  while ((match = imgRegex.exec(html)) !== null) {
+    let src = match[1];
+    if (!src) continue;
+    src = src.trim();
+    // ignora data URI, SVG, icone banali
+    if (src.startsWith("data:")) continue;
+    if (src.toLowerCase().includes("logo")) continue;
+    if (src.toLowerCase().includes("icon")) continue;
+    if (src.toLowerCase().endsWith(".svg")) continue;
+    // normalizza
+    try {
+      return new URL(src, pageUrl).href;
+    } catch {}
   }
   return "";
 }
 
+// dedup per link tenendo il più recente
 function dedupeKeepLatest(list) {
   const seen = new Map();
   list.forEach(item => {
     if (!item.link) return;
     const existing = seen.get(item.link);
     if (!existing) seen.set(item.link, item);
-    else if (new Date(item.pubDate) > new Date(existing.pubDate)) seen.set(item.link, item);
+    else {
+      if (new Date(item.pubDate) > new Date(existing.pubDate)) {
+        seen.set(item.link, item);
+      }
+    }
   });
-  return Array.from(seen.values()).sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate));
+  return Array.from(seen.values()).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
+
+// fallback per arricchire immagini con limitata concorrenza
+async function enrichMissingImages(items, limit) {
+  let missing = 0;
+  // processa in batch di concurrentFallbackFetches
+  for (let i = 0; i < items.length && missing < limit; ) {
+    const batch = [];
+    for (let j = 0; j < concurrentFallbackFetches && i < items.length && missing < limit; i++) {
+      const item = items[i];
+      if (!item.image && item.link) {
+        batch.push(item);
+        missing++;
+      }
+      j++;
+    }
+    if (batch.length === 0) continue;
+    // esegui batch in parallelo
+    await Promise.all(batch.map(async item => {
+      try {
+        const res = await fetch(item.link, { redirect: "follow", timeout: 10000 });
+        const html = await res.text();
+        const found = extractImageFromHtml(html, item.link);
+        if (found) item.image = found;
+      } catch (e) {
+        // silenzioso
+      }
+    }));
+  }
+}
+
+/* AGGREGAZIONE PRINCIPALE */
 
 async function aggregate() {
   const result = { categories: [] };
 
-  for (const [cat, feedUrls] of Object.entries(feedsByCat)) {
+  for (const [categoryName, feedUrls] of Object.entries(feedsByCat)) {
     let collected = [];
 
-    const fetches = feedUrls.map(url =>
+    // fetch paralleli dei feed
+    const fetchPromises = feedUrls.map(url =>
       fetch(url, { redirect: "follow" })
-        .then(res => res.text()
-          .then(txt => ({ url, xml: txt }))
-        ).catch(() => null)
+        .then(res => res.text().then(txt => ({ url, xml: txt })))
+        .catch(() => null)
     );
-    const responses = await Promise.all(fetches);
+    const feedResponses = await Promise.all(fetchPromises);
 
-    for (const resp of responses) {
+    for (const resp of feedResponses) {
       if (!resp || !resp.xml) continue;
       try {
         const parsed = await parseStringPromise(resp.xml, { explicitArray: false, mergeAttrs: true });
-        let items = [];
+        let entries = [];
         if (parsed.rss && parsed.rss.channel) {
           const raw = parsed.rss.channel.item;
-          items = Array.isArray(raw) ? raw : raw ? [raw] : [];
+          entries = Array.isArray(raw) ? raw : raw ? [raw] : [];
         } else if (parsed.feed && parsed.feed.entry) {
           const raw = parsed.feed.entry;
-          items = Array.isArray(raw) ? raw : raw ? [raw] : [];
+          entries = Array.isArray(raw) ? raw : raw ? [raw] : [];
         }
 
-        items.slice(0,3).forEach(entry => {
+        entries.slice(0, entriesPerFeed).forEach(entry => {
           const title = (entry.title && (typeof entry.title === "object" ? entry.title._ : entry.title)) || "";
           let link = "";
           if (entry.link) {
@@ -159,6 +224,7 @@ async function aggregate() {
           const pubDate = entry.pubDate || entry.updated || entry["dc:date"] || "";
           const source = new URL(resp.url).hostname.replace(/^www\./, "");
 
+          // immagine dal feed
           let image = "";
           if (entry.enclosure && entry.enclosure.url) image = entry.enclosure.url;
           if (!image && entry["media:content"] && entry["media:content"].url) image = entry["media:content"].url;
@@ -174,28 +240,26 @@ async function aggregate() {
           });
         });
       } catch (e) {
-        // ignore parse errors
+        // parsing fallito, continua
       }
     }
 
-    let finalItems = dedupeKeepLatest(collected).slice(0,25);
-    // fallback og:image per primi 5 senza immagine
-    let missing = 0;
-    for (let item of finalItems) {
-      if (missing >= 5) break;
-      if (!item.image && item.link) {
-        const og = await fetchOgImage(item.link);
-        if (og) {
-          item.image = og;
-          missing++;
-        }
-      }
-    }
-    result.categories.push({ category: cat, items: finalItems });
+    // dedup, ordina e riduci
+    let finalItems = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
+
+    // fallback immagini mancanti
+    await enrichMissingImages(finalItems, fallbackOgImageLimitPerCategory);
+
+    result.categories.push({ category: categoryName, items: finalItems });
   }
 
-  await fs.writeFile("news.json", JSON.stringify(result, null, 2));
-  console.log("news.json scritto");
+  // scrivi news.json
+  await fs.writeFile("news.json", JSON.stringify(result, null, 2), "utf-8");
+  console.log("news.json generato con successo");
 }
 
-aggregate().catch(console.error);
+/* ENTRY POINT */
+aggregate().catch(err => {
+  console.error("Errore durante l'aggregazione:", err);
+  process.exit(1);
+});
