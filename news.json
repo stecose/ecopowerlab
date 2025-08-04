@@ -97,7 +97,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:25:49 +0000",
           "source": "greenplanner.it",
-          "image": ""
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/07/Depositphotos_credito-carbonio-sintetico.jpg"
         },
         {
           "title": "WhatsApp, arriva la funzione “SGAMA SPIONI” | Da oggi puoi scoprire chi si fa gli affari tuoi: con 1 click li becchi in flagrante",
@@ -105,7 +105,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:00:38 +0000",
           "source": "energycue.it",
-          "image": ""
+          "image": "https://www.energycue.it/wp-content/uploads/2025/07/Addio-agli-spioni-su-WhatsApp-Depositphotos-foto-www.energycue.it_.jpg"
         },
         {
           "title": "Guerra energetica su tre fronti: Kiev colpisce raffinerie russe ma compra gas di Mosca, accordo Ue-Usa su energia è bluff?",
@@ -124,36 +124,12 @@
           "image": "https://energiaoltre.it/wp-content/uploads/2021/08/Corte-conti.jpg"
         },
         {
-          "title": "Toscana: presentata l’informativa sul Piano Zone di Accelerazione FER",
-          "link": "https://www.rinnovabili.it/energia/fotovoltaico/zone-di-accelerazione-toscana-piano-regionale/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 07:30:58 +0000",
-          "source": "rinnovabili.it",
-          "image": ""
-        },
-        {
           "title": "Floating offshore the next frontier for data centres",
           "link": "https://www.powerengineeringint.com/digitalization/floating-offshore-the-next-frontier-for-data-centres/",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 07:27:25 +0000",
           "source": "powerengineeringint.com",
-          "image": ""
-        },
-        {
-          "title": "Energia e ambiente, i lavori della Camera e del Senato: 4-8 agosto 2025",
-          "link": "https://energiaoltre.it/energia-e-ambiente-i-lavori-della-camera-e-del-senato-4-8-agosto-2025/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 07:07:16 +0000",
-          "source": "energiaoltre.it",
-          "image": "https://energiaoltre.it/wp-content/uploads/2017/12/Montecitorio-Camera-dei-Deputati.jpg"
-        },
-        {
-          "title": "Addio acqua corrente in casa | Ultim’ora, italiani in preda al panico: rubinetti chiusi ogni giorno a partire da quest’ora",
-          "link": "https://www.energycue.it/2025/08/04/addio-acqua-corrente-in-casa-ultimora-italiani-in-preda-al-panico-rubinetti-chiusi-ogni-giorno-a-partire-da-questora/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 05:00:38 +0000",
-          "source": "energycue.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Floating%20offshore"
         },
         {
           "title": "Ecoscambio arriva a Cortona",
@@ -161,15 +137,7 @@
           "description": "",
           "pubDate": "Fri, 01 Aug 2025 12:30:21 +0000",
           "source": "canaleenergia.com",
-          "image": ""
-        },
-        {
-          "title": "Piano Mattei aumenta l’impegno dell’Italia",
-          "link": "https://www.canaleenergia.com/rubriche/energia-in-parlamento/piano-mattei-aumenta-impegno-italia/",
-          "description": "",
-          "pubDate": "Fri, 01 Aug 2025 12:06:42 +0000",
-          "source": "canaleenergia.com",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Ecoscambio%20arriva"
         },
         {
           "title": "Intelligenza artificiale generativa: uno specchio, non un terapeuta",
@@ -177,7 +145,7 @@
           "description": "",
           "pubDate": "Fri, 01 Aug 2025 10:25:23 +0000",
           "source": "greenplanner.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Intelligenza%20artificiale"
         },
         {
           "title": "Battery project at former nuclear facility to stabilise German grid",
@@ -185,15 +153,7 @@
           "description": "",
           "pubDate": "Fri, 01 Aug 2025 09:53:28 +0000",
           "source": "powerengineeringint.com",
-          "image": ""
-        },
-        {
-          "title": "Caffè coltivato all’aperto e agrumi antichi, le sperimentazioni dell’orto botanico di Palermo",
-          "link": "https://www.greenplanner.it/2025/08/01/caffe-agrumi-antichi-orto-botanico-palermo/",
-          "description": "",
-          "pubDate": "Fri, 01 Aug 2025 09:25:59 +0000",
-          "source": "greenplanner.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Battery%20project"
         },
         {
           "title": "Why scarcity is a myth and opportunity abounds for nuclear’s workforce strategy",
@@ -201,13 +161,69 @@
           "description": "",
           "pubDate": "Fri, 01 Aug 2025 02:42:00 +0000",
           "source": "powerengineeringint.com",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Why%20scarcity"
+        },
+        {
+          "title": "MASE, firmato il decreto Energy Release 2.0",
+          "link": "https://hydrogen-news.it/mase-firmato-il-decreto-energy-release-2-0/",
+          "description": "",
+          "pubDate": "Thu, 31 Jul 2025 13:25:30 +0000",
+          "source": "hydrogen-news.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=MASE%2C%20firmato"
+        },
+        {
+          "title": "Energy Release 2.0 : firmato il decreto dopo il via libera della Commissione UE",
+          "link": "https://www.solareb2b.it/energy-release-2-0-firmato-il-decreto-dopo-il-via-libera-ue/",
+          "description": "",
+          "pubDate": "Wed, 30 Jul 2025 12:29:28 +0000",
+          "source": "solareb2b.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Energy%20Release"
+        },
+        {
+          "title": "B-Cer (Gruppo Regalgrid) acquisisce il 70% di CERLab",
+          "link": "https://www.solareb2b.it/b-cer-gruppo-regalgrid-acquisisce-il-70-di-cerlab/",
+          "description": "",
+          "pubDate": "Wed, 30 Jul 2025 09:42:30 +0000",
+          "source": "solareb2b.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=B-Cer%20(Gruppo"
+        },
+        {
+          "title": "SL Rack presenta lo strumento per la progettazione per tetti piani SL Fast Flat",
+          "link": "https://www.solareb2b.it/sl-rack-presenta-lo-strumento-per-la-progettazione-sl-fast-flat/",
+          "description": "",
+          "pubDate": "Wed, 30 Jul 2025 09:28:39 +0000",
+          "source": "solareb2b.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=SL%20Rack"
+        },
+        {
+          "title": "SUPER-HEERO ACCENDE LA SOSTENIBILITÀ A BELGIOIOSO: PARTE LA CAMPAGNA PER L’EFFICIENZA ENERGETICA DAL BASSO",
+          "link": "https://www.energiamagazine.it/super-heero-accende-la-sostenibilita-a-belgioioso-parte-la-campagna-per-lefficienza-energetica-dal-basso/",
+          "description": "",
+          "pubDate": "Wed, 09 Jul 2025 17:14:19 +0000",
+          "source": "energiamagazine.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=SUPER-HEERO%20ACCENDE"
         }
       ]
     },
     {
       "category": "SmartHome",
       "items": [
+        {
+          "title": "Dalla Cina le Super Extended Range di IM Motors: 450 km in elettrico e 1.500 km di autonomia combinata",
+          "link": "https://www.hdmotori.it/auto-super-extended-range-im-motors-autonomia-come-funziona/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 13:30:54 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/08/im.jpg"
+        },
+        {
+          "title": "Anthropic vieta l'uso di Claude a OpenAI",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/anthropic_vieta_l_uso_di_claude_a_openai-424771165/?rss",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 13:27:30 +0200",
+          "source": "repubblica.it",
+          "image": "http://www.repstatic.it/cless/main/nazionale/2013-v1/img/common/favicon/favicon-1500.png"
+        },
         {
           "title": "Una vela solare ci darà più tempo contro le tempeste del Sole",
           "link": "https://www.hdblog.it/tecnologia/articoli/n627308/vela-solare-tempesta-spaziale-swift/",
@@ -239,22 +255,6 @@
           "pubDate": "Mon, 04 Aug 2025 10:43:42 +0000",
           "source": "wired.it",
           "image": "https://media-assets.wired.it/photos/6890739f8059f75dbc6aaa3a/master/pass/1538000381"
-        },
-        {
-          "title": "Buchi neri primordiali: creatori o distruttori delle prime stelle?",
-          "link": "https://www.hdblog.it/curiosita/articoli/n627313/materia-oscura-alba-cosmica-big-bang/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 12:40:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/686410?w=1920"
-        },
-        {
-          "title": "Fastweb+Vodafone tra le prime aziende in Europa a firmare il Codice UE per l'AI",
-          "link": "https://www.hdblog.it/business/articoli/n627331/fastweb-vodafone-prime-aziende-europa-codice-ue-ai/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 12:35:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277768?w=1920"
         },
         {
           "title": "Dal 9 ottobre bonifici più sicuri: scatta il controllo automatico in tempo reale dei dati prima dell’invio",
@@ -318,15 +318,7 @@
           "description": "",
           "pubDate": "2025-08-04T11:33:00+02:00",
           "source": "dday.it",
-          "image": ""
-        },
-        {
-          "title": "Deebot N20 Plus di Ecovacs non è mai costato così poco su Amazon",
-          "link": "https://www.dday.it/redazione/53931/deebot-n20-plus-di-ecovacs-non-e-mai-costato-cosi-poco-su-amazon",
-          "description": "",
-          "pubDate": "2025-08-04T11:04:00+02:00",
-          "source": "dday.it",
-          "image": ""
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53937/social_e11939_PS6_1.jpg"
         },
         {
           "title": "Ps6 triplicherà la potenza Ps5 senza aumentare il prezzo",
@@ -337,20 +329,12 @@
           "image": "https://media-assets.wired.it/photos/68906c02a3331e9a92f160ed/master/pass/1234777103"
         },
         {
-          "title": "Buffy L'ammazzavampiri, le prime immagini e le informazioni sulla trama della serie revival",
-          "link": "https://www.wired.it/article/buffy-l-ammazzavampiri-serie-revival-le-prime-immagini-e-le-informazioni-sulla-trama/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 08:59:44 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/68906b20cf6e809d68c2b678/master/pass/97219383"
-        },
-        {
           "title": "Data center e crisi energetica: l’anello debole dell’innovazione AI",
           "link": "https://www.zerounoweb.it/techtarget/searchdatacenter/data-center-e-crisi-energetica-lanello-debole-dellinnovazione-ai/",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:54:47 +0000",
           "source": "internet4things.it",
-          "image": ""
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/01161012/wordpress3.jpg"
         },
         {
           "title": "Fresco e silenzioso: ventilatore a torre LEVOIT in offerta su Amazon",
@@ -358,7 +342,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:45:50 +0000",
           "source": "webnews.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Fresco%20e"
         },
         {
           "title": "Viaggiare in aereo, quattro cose da fare prima di salire a bordo",
@@ -366,7 +350,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:29:48 +0000",
           "source": "macitynet.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Viaggiare%20in"
         },
         {
           "title": "Al via le nuove regole Ue sui grandi modelli di intelligenza artificiale",
@@ -377,20 +361,12 @@
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/101604970-a417577a-1a64-45d9-bfa9-c849f5f63a01.jpg"
         },
         {
-          "title": "Galaxy Tab S10+ scende a 749€: tecnologia top a un prezzo tutto da scoprire",
-          "link": "https://www.webnews.it/galaxy-tab-s10-scende-a-749e-tecnologia-top-a-un-prezzo-tutto-da-scoprire/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 07:10:51 +0000",
-          "source": "webnews.it",
-          "image": ""
-        },
-        {
           "title": "Come pulire lo schermo di TV, monitor e notebook",
           "link": "https://www.macitynet.it/come-pulire-schermo-tv-pulire-schermo-computer/",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 05:23:48 +0000",
           "source": "macitynet.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Come%20pulire"
         },
         {
           "title": "La nuova Anker Nano Power Bank Magsafe è spessa meno di un cm già in sconto a 44,99",
@@ -398,21 +374,69 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 05:23:23 +0000",
           "source": "macitynet.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=La%20nuova"
         },
         {
-          "title": "Il vero Magsafe in auto ora vi costa meno di 27€",
-          "link": "https://www.macitynet.it/il-vero-magsafe-in-auto-ora-vi-costa-meno-di-30e/",
+          "title": "Come recuperare foto cancellate da Instagram",
+          "link": "https://www.aranzulla.it/come-recuperare-foto-cancellate-da-instagram-1270594.html",
           "description": "",
-          "pubDate": "Mon, 04 Aug 2025 04:44:40 +0000",
-          "source": "macitynet.it",
-          "image": ""
+          "pubDate": "Sun, 03 Aug 2025 22:01:52 +0000",
+          "source": "aranzulla.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Come%20recuperare"
+        },
+        {
+          "title": "Come modificare profilo Instagram",
+          "link": "https://www.aranzulla.it/come-modificare-profilo-instagram-1119880.html",
+          "description": "",
+          "pubDate": "Sun, 03 Aug 2025 22:01:40 +0000",
+          "source": "aranzulla.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Come%20modificare"
+        },
+        {
+          "title": "Come ingrandire caratteri iPhone",
+          "link": "https://www.aranzulla.it/come-ingrandire-caratteri-iphone-1278441.html",
+          "description": "",
+          "pubDate": "Sun, 03 Aug 2025 22:01:30 +0000",
+          "source": "aranzulla.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Come%20ingrandire"
+        },
+        {
+          "title": "Recensione Elgato Facecam 4K: la webcam per veri creativi",
+          "link": "https://www.smartworld.it/recensioni/elgato-facecam-4k",
+          "description": "",
+          "pubDate": "Fri, 01 Aug 2025 16:16:00 +0200",
+          "source": "smartworld.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Recensione%20Elgato"
         }
       ]
     },
     {
-      "category": "Mobilita",
+      "category": "Mobilità",
       "items": [
+        {
+          "title": "Incidente moto. Due ragazzi travolti da un'auto contromano: motociclista in coma",
+          "link": "https://www.moto.it/news/incidente-moto-due-ragazzi-travolti-da-un-auto-contromano-motociclista-in-coma.html",
+          "description": "",
+          "pubDate": "2025-08-04T12:45:39.8700000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45832003/CINEMA/1200x/incidente-moto-brescia.jpeg"
+        },
+        {
+          "title": "Mercato Elettrico -15,17%: luglio conferma le difficoltà, ma fa meglio di giugno",
+          "link": "https://www.moto.it/news/mercato-elettrico-15-17-luglio-conferma-le-difficolta-ma-fa-meglio-di-giugno.html",
+          "description": "",
+          "pubDate": "2025-08-04T12:18:29.0070000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45831657/CINEMA/1200x/scooter-elettrico-senza-patente.jpeg"
+        },
+        {
+          "title": "Enduro nei boschi: tra passione e rispetto, non servono sanzioni a tappeto. Un solo denunciato su 322 controlli",
+          "link": "https://www.moto.it/news/enduro-nei-boschi-tra-passione-e-rispetto-non-servono-sanzioni-a-tappeto-un-solo-denunciato-su-322-controlli.html",
+          "description": "",
+          "pubDate": "2025-08-04T12:04:14.0730000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45831728/CINEMA/1200x/beta-enduro-rr-dinamiche-2730.jpeg"
+        },
         {
           "title": "Alfa Romeo Tonale, in arrivo il restyling: primo prototipo avvistato su strada [Foto Spia]",
           "link": "https://www.automoto.it/news/alfa-romeo-tonale-in-arrivo-il-restyling-primo-prototipo-avvistato-su-strada-foto-spia.html",
@@ -428,6 +452,14 @@
           "pubDate": "2025-08-04T11:33:38.0730000",
           "source": "automoto.it",
           "image": "https://img.stcrm.it/images/45831582/1200x/tesla-logo.jpeg"
+        },
+        {
+          "title": "Esodo estivo 2025: oltre 20 milioni di transiti nel primo weekend di agosto",
+          "link": "https://www.trasporti-italia.com/mobilita/esodo-estivo-2025-transiti/735413/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:23:25 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/esodo-estivo_traffico-intenso-scaled.jpg"
         },
         {
           "title": "Hyundai i30: in arrivo un terzo restyling per allungare la vita alla compatta termica [Foto Spia]",
@@ -470,12 +502,36 @@
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
         },
         {
-          "title": "Lancia HF, la storia dietro al mitico Elefantino: gli aneddoti",
-          "link": "https://www.autoblog.it/post/lancia-hf-storia",
+          "title": "Pininfarina festeggia 95 anni al Pebble Beach Concours 2025 con il debutto del Pininfarina Trophy",
+          "link": "https://www.motorionline.com/pininfarina-festeggia-95-anni-al-pebble-beach-concours-2025-con-il-debutto-del-pininfarina-trophy/",
           "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:39:53 +0000",
-          "source": "autoblog.it",
-          "image": "https://www.autoblog.it/app/uploads/2025/08/WhatsApp-Image-2025-08-04-at-12.38.41-1-scaled.jpeg"
+          "pubDate": "Mon, 04 Aug 2025 10:40:03 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Pebble-Beach-Pininfarina-Trophy.jpg"
+        },
+        {
+          "title": "Kia EV4 ha dimostrato la sua resistenza in un test da 10.000 km al Nürburgring",
+          "link": "https://www.motorionline.com/kia-ev4-ha-dimostrato-la-sua-resistenza-in-un-test-da-10-000-km-al-nurburgring/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:35:39 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Kia-EV4.jpg"
+        },
+        {
+          "title": "SEAT: primo semestre 2025 impegnativo per la casa spagnola",
+          "link": "https://www.motorionline.com/seat-primo-semestre-2025-impegnativo-per-la-casa-spagnola/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:06:31 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/SEAT.jpg"
+        },
+        {
+          "title": "A1 MILANO-NAPOLI: TEMPORANEAMENTE CHIUSO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN ENTRAMBE LE DIREZIONI",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-temporaneamente-chiuso-il-tratto-compreso-tra-valdarno-e-arezzo-in-entrambe-le-direzioni/735412/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:02:02 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
         },
         {
           "title": "L’analisi del lunedì | Ferrari: con i dubbi di Hamilton va subito opzionato Verstappen",
@@ -483,15 +539,15 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 10:00:00 +0000",
           "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/05/GettyImages-2216849784-1.jpg"
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=L%E2%80%99analisi%20del"
         },
         {
-          "title": "Battaglia sulle batterie in Cina: CATL e BYD ancora al comando, ma il mercato si apre a nuovi giocatori.",
-          "link": "https://www.automoto.it/news/battaglia-sulle-batterie-in-cina-catl-e-byd-ancora-al-comando-ma-il-mercato-si-apre-a-nuovi-giocatori.html",
+          "title": "A23 UDINE-TARVISIO: CHIUSURE NOTTURNE DEL TRATTO PONTEBBA-CONFINE DI STATO VERSO L’AUSTRIA",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a23-udine-tarvisio-chiusure-notturne-del-tratto-pontebba-confine-di-stato-verso-laustria/735379/",
           "description": "",
-          "pubDate": "2025-08-04T09:46:50.7730000",
-          "source": "automoto.it",
-          "image": "https://img.stcrm.it/images/45775602/1200x/batteria-cina.jpeg"
+          "pubDate": "Mon, 04 Aug 2025 09:56:03 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=A23%20UDINE-TARVISIO%3A"
         },
         {
           "title": "Mercedes, una nuova griglia per lo stile del futuro",
@@ -499,7 +555,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 09:45:00 +0000",
           "source": "formulapassion.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Mercedes%2C%20una"
         },
         {
           "title": "Kraken aggrega 325 mila EV: 2 GW al servizio della rete",
@@ -507,7 +563,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 09:44:30 +0000",
           "source": "vaielettrico.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Kraken%20aggrega"
         },
         {
           "title": "Così i supercondensatori possono essere usati sulle auto elettriche",
@@ -526,6 +582,14 @@
           "image": "https://cdn.motor1.com/images/mgl/E63jnM/s3/2025-lucid-air-grand-touring.jpg"
         },
         {
+          "title": "Peugeot e-Remote Control e l’enigma del codice item 37693",
+          "link": "https://www.vaielettrico.it/peugeot-e-remote-control-e-lenigma-del-codice-item-37693/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 06:55:22 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Peugeot%20e-Remote"
+        },
+        {
           "title": "Ricaricare e pagare contactless costa di più? Il caso Germania",
           "link": "https://insideevs.it/news/767438/ricarica-pagamento-contactless-costi-germania/",
           "description": "",
@@ -534,90 +598,34 @@
           "image": "https://cdn.motor1.com/images/mgl/W8qPBN/s3/adac---ad-hoc-laden-viel-zu-teuer.jpg"
         },
         {
-          "title": "Scoperto come allungare di 10 volte la vita delle batterie",
-          "link": "https://insideevs.it/news/767548/allungare-durata-batterie-solfato-zinco-acqua/",
+          "title": "Flessione del mercato auto a luglio, elettriche solo al 4,9%",
+          "link": "https://www.electricmotornews.com/eventi/mercato-auto-luglio-elettriche-49/",
           "description": "",
-          "pubDate": "Sun, 03 Aug 2025 05:00:00 +0000",
-          "source": "insideevs.it",
-          "image": "https://cdn.motor1.com/images/mgl/OoopLL/s3/la-batteria-m3p-di-catl.jpg"
+          "pubDate": "Sun, 03 Aug 2025 22:10:55 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Flessione%20del"
         },
         {
-          "title": "Auto più vendute in Italia: -5,1% le immatricolazioni a luglio 2025",
-          "link": "//www.alvolante.it/news/auto-piu-vendute-italia-5-1-immatricolazioni-luglio-2025-406333",
+          "title": "Nautica flash: porto elettrico sul Po, Aqua con Taiga, Millikan solare",
+          "link": "https://www.vaielettrico.it/nautica-flash-porto-sul-po-aqua-con-taiga-millikan-solare/",
           "description": "",
-          "pubDate": "10:40 am",
-          "source": "alvolante.it",
-          "image": ""
-        },
-        {
-          "title": "La Porsche conferma la Macan termica entro il 2028",
-          "link": "//www.alvolante.it/news/porsche-conferma-macan-termica-entro-il-2028-406337",
-          "description": "",
-          "pubDate": "9:55 am",
-          "source": "alvolante.it",
-          "image": ""
-        },
-        {
-          "title": "Formula 1: risultato Gp d’Ungheria 2025",
-          "link": "//www.alvolante.it/formula1/news/formula-1-risultato-gp-d-ungheria-2025-406335",
-          "description": "",
-          "pubDate": "3:20 pm",
-          "source": "alvolante.it",
-          "image": ""
-        },
-        {
-          "title": "Si può superare a destra? Sì, ecco perché",
-          "link": "//www.alvolante.it/da_sapere/legge-e-burocrazia/si-puo-sorpassare-a-destra-si-ecco-perche-397099",
-          "description": "",
-          "pubDate": "12:04 pm",
-          "source": "alvolante.it",
-          "image": ""
-        },
-        {
-          "title": "Incidente moto. Due ragazzi travolti da un'auto contromano: motociclista in coma",
-          "link": "https://www.moto.it/news/incidente-moto-due-ragazzi-travolti-da-un-auto-contromano-motociclista-in-coma.html",
-          "description": "",
-          "pubDate": "2025-08-04T12:45:39.8700000",
-          "source": "moto.it",
-          "image": ""
-        },
-        {
-          "title": "Mercato Elettrico -15,17%: luglio conferma le difficoltà, ma fa meglio di giugno",
-          "link": "https://www.moto.it/news/mercato-elettrico-15-17-luglio-conferma-le-difficolta-ma-fa-meglio-di-giugno.html",
-          "description": "",
-          "pubDate": "2025-08-04T12:18:29.0070000",
-          "source": "moto.it",
-          "image": ""
-        },
-        {
-          "title": "Enduro nei boschi: tra passione e rispetto, non servono sanzioni a tappeto. Un solo denunciato su 322 controlli",
-          "link": "https://www.moto.it/news/enduro-nei-boschi-tra-passione-e-rispetto-non-servono-sanzioni-a-tappeto-un-solo-denunciato-su-322-controlli.html",
-          "description": "",
-          "pubDate": "2025-08-04T12:04:14.0730000",
-          "source": "moto.it",
-          "image": ""
-        },
-        {
-          "title": "Ci lascia il piccolo Luca, figlio dell'ex pilota Sylvain Guintoli: aveva solo 6 anni",
-          "link": "https://www.moto.it/news/ci-lascia-il-piccolo-luca-figlio-dell-ex-pilota-sylvain-guintoli-aveva-solo-6-anni.html",
-          "description": "",
-          "pubDate": "2025-08-04T11:33:32.0700000",
-          "source": "moto.it",
-          "image": ""
-        },
-        {
-          "title": "Pininfarina festeggia 95 anni al Pebble Beach Concours 2025 con il debutto del Pininfarina Trophy",
-          "link": "https://www.motorionline.com/pininfarina-festeggia-95-anni-al-pebble-beach-concours-2025-con-il-debutto-del-pininfarina-trophy/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:40:03 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Pebble-Beach-Pininfarina-Trophy.jpg"
+          "pubDate": "Sun, 03 Aug 2025 17:32:35 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Nautica%20flash%3A"
         }
       ]
     },
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "INPS, arrivano 1000 euro ad agosto: chi riceverà il contributo",
+          "link": "https://www.greenstyle.it/inps-arrivano-1000-euro-ad-agosto-chi-ricevera-il-contributo-424543.html",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:30:54 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/Donna-euro-www.greenstyle.it-2025-07-04.jpg"
+        },
         {
           "title": "Camion salta la carreggiata e finisce su un’ambulanza e delle auto: le prime immagini del maxi incidente sull’A1 – Video",
           "link": "https://www.ilfattoquotidiano.it/2025/08/04/incidente-a1-camion-arezzo-valdarno-video-notizie/8084163/",
@@ -651,14 +659,6 @@
           "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/30856232495_4244064a3b_k-1024x683.jpg"
         },
         {
-          "title": "Tir salta corsia e finisce contro un’ambulanza sull’A1: tre morti tra Arezzo e Valdarno",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/incidente-a1-camion-ambulanza-arezzo-valdarno-news/8084138/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:49:19 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/incidente-a1.jpg"
-        },
-        {
           "title": "I videogiocatori invadono la consultazione UE per chiedere regole che garantiscano che il divertimento non finisca mai",
           "link": "https://euractiv.it/section/futuro-delleuropa/news/i-videogiocatori-invadono-la-consultazione-ue-per-chiedere-regole-che-garantiscano-che-il-divertimento-non-finisca-mai/",
           "description": "",
@@ -673,14 +673,6 @@
           "pubDate": "Mon, 04 Aug 2025 10:20:49 +0000",
           "source": "euractiv.it",
           "image": "https://euractiv.it/wp-content/uploads/sites/11/2024/12/Le-Capitali-Top-image-1-2-1024x576.png"
-        },
-        {
-          "title": "La Russia intensifica gli attacchi in Ucraina malgrado l’ultimatum di Trump",
-          "link": "https://euractiv.it/section/mondo/news/la-russia-intensifica-gli-attacchi-in-ucraina-malgrado-lultimatum-di-trump/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:17:18 +0000",
-          "source": "euractiv.it",
-          "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/1024px-UA_81st_bde_Stryker_08.webp_.png"
         },
         {
           "title": "Ponte sullo Stretto di Messina: nuovo reclamo all’UE delle associazioni",
@@ -731,28 +723,12 @@
           "image": "https://www.copernicus.eu/sites/default/files/inline-images/Sentinel-5A_0.png"
         },
         {
-          "title": "Vegetation in the Patagonian Desert, Argentina",
-          "link": "https://www.copernicus.eu/en/media/image-day-gallery/vegetation-patagonian-desert-argentina",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 07:13:55 +0000",
-          "source": "copernicus.eu",
-          "image": ""
-        },
-        {
           "title": "E’ il borgo più piccolo d’Italia, ma dalla storia incredibile: un gioiello che regala una grande emozione",
           "link": "https://www.greenstyle.it/e-il-borgo-piu-piccolo-ditalia-ma-dalla-storia-incredibile-un-gioiello-che-regala-una-grande-emozione-424524.html",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 07:00:43 +0000",
           "source": "greenstyle.it",
-          "image": ""
-        },
-        {
-          "title": "Cancellata la riforma Fornero, ecco cos’è la flessibilità sulle pensioni",
-          "link": "https://www.greenstyle.it/cancellata-la-riforma-fornero-ecco-cose-la-flessibilita-sulle-pensioni-424688.html",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 04:57:39 +0000",
-          "source": "greenstyle.it",
-          "image": ""
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/borgo-greenstyle.it-20250726.jpg"
         },
         {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
@@ -760,7 +736,7 @@
           "description": "",
           "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
-          "image": ""
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44260-025-00048-w/MediaObjects/44260_2025_48_Fig1_HTML.png"
         },
         {
           "title": "Environmental politics is doomed to fail — unless we tell better stories",
@@ -768,7 +744,7 @@
           "description": "",
           "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Environmental%20politics"
         },
         {
           "title": "To save lives in heatwaves, focus on how human bodies work",
@@ -776,15 +752,7 @@
           "description": "",
           "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
-          "image": ""
-        },
-        {
-          "title": "Li hai sempre visti nei film, ora li puoi mangiare anche tu: da Eurospin li trovi a meno di 2 euro",
-          "link": "https://www.greenstyle.it/li-hai-sempre-visti-nei-film-ora-li-puoi-mangiare-anche-tu-da-eurospin-li-trovi-a-meno-di-2-euro-424791.html",
-          "description": "",
-          "pubDate": "Sun, 03 Aug 2025 17:00:29 +0000",
-          "source": "greenstyle.it",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=To%20save"
         },
         {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
@@ -792,15 +760,7 @@
           "description": "",
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
-          "image": ""
-        },
-        {
-          "title": "Global quantification of the dispersion effect with POLDER satellite data",
-          "link": "https://www.nature.com/articles/s41467-025-62238-3",
-          "description": "",
-          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": ""
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=SOS%20Adamello."
         },
         {
           "title": "Nella più grande monocoltura di eucalipto al mondo",
@@ -817,6 +777,46 @@
           "pubDate": "Fri, 01 Aug 2025 13:43:44 +0000",
           "source": "lifegate.it",
           "image": "https://cdn.lifegate.it/s7FPyPrJKOX4VbBxcPqpMtdRbP8=/1920x1080/smart/https://www.lifegate.it/app/uploads/2025/07/rarearth-prodotto.jpg"
+        },
+        {
+          "title": "(AI) LCA: è uno strumento efficace contro il greenwashing? La parola all’AI",
+          "link": "https://www.reteclima.it/lca-strumento-anti-greenwashing-efficace-la-parola-allai/",
+          "description": "",
+          "pubDate": "Fri, 01 Aug 2025 10:32:10 +0000",
+          "source": "reteclima.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=(AI)%20LCA%3A"
+        },
+        {
+          "title": "Corte Internazionale di Giustizia fa storia: gli Stati responsabili per il cambiamento climatico!",
+          "link": "https://www.reteclima.it/parere-storico-della-corte-internazionale-di-giustizia-gli-stati-responsabili-per-il-cambiamento-climatico/",
+          "description": "",
+          "pubDate": "Thu, 31 Jul 2025 23:20:40 +0000",
+          "source": "reteclima.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Corte%20Internazionale"
+        },
+        {
+          "title": "Da settembre i nuovi incentivi all’acquisto di auto elettriche: cosa sapere (e come prepararsi in anticipo)",
+          "link": "https://www.lifegate.it/da-settembre-i-nuovi-incentivi-allacquisto-di-auto-elettriche-cosa-sapere",
+          "description": "",
+          "pubDate": "Thu, 31 Jul 2025 15:08:55 +0000",
+          "source": "lifegate.it",
+          "image": "https://cdn.lifegate.it/dT9uqa9xAeeWZ35Z1f24CVLpLfY=/8192x5464/smart/https://www.lifegate.it/app/uploads/2021/09/gettyimages-1322515825.jpg"
+        },
+        {
+          "title": "Green Claims: direttiva ko, la parola all’European Securities and Markets Authority (ESMA)",
+          "link": "https://www.reteclima.it/green-claims-perche-le-dichiarazioni-di-sostenibilita-sono-fondamentali-per-investitori-e-mercato/",
+          "description": "",
+          "pubDate": "Tue, 29 Jul 2025 15:14:20 +0000",
+          "source": "reteclima.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Green%20Claims%3A"
+        },
+        {
+          "title": "Pubblicato il bando del decreto Pratiche Ecologiche",
+          "link": "https://www.consorziobiogas.it/pubblicato-il-bando-del-decreto-pratiche-ecologiche/",
+          "description": "",
+          "pubDate": "Wed, 23 Jul 2025 13:39:07 +0000",
+          "source": "consorziobiogas.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Pubblicato%20il"
         }
       ]
     }
