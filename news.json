@@ -4,6 +4,22 @@
       "category": "Energia",
       "items": [
         {
+          "title": "In Italia il mercato delle rinnovabili rallenta mettendo a rischio il target 2025",
+          "link": "https://www.rinnovabili.it/energia/infrastrutture/mercato-delle-rinnovabili-italia/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:45:40 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/windfarm-4892250_1280.jpg"
+        },
+        {
+          "title": "Packaging: italiani scelgono la sostenibilità e bocciano la plastica",
+          "link": "https://www.canaleenergia.com/rubriche/consumer/packaging-italiani-scelgono-la-sostenibilita-e-bocciano-la-plastica/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:41:02 +0000",
+          "source": "canaleenergia.com",
+          "image": "https://www.canaleenergia.com/wp-content/uploads/2025/08/giorgio-trovato-bYhDEWgqYLM-unsplash.jpg"
+        },
+        {
           "title": "Sovrapproduzione del polisilicio cinese: Pechino pronta a tagliare un terzo della capacità",
           "link": "https://www.rinnovabili.it/energia/fotovoltaico/sovrapproduzione-polisilicio-cinese-taglio-capacita/",
           "description": "",
@@ -68,14 +84,6 @@
           "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/Costo-del-capitale-nel-settore-energetico-ancora-troppe-barriere-per-i-paesi-emergenti.jpg"
         },
         {
-          "title": "Hydrogen Valley, come cambiano le scadenze dei progetti",
-          "link": "https://www.rinnovabili.it/energia/idrogeno/hydrogen-valley-scadenze-dei-progetti/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 08:55:53 +0000",
-          "source": "rinnovabili.it",
-          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/hydrogen-valley-pagamenti.jpg"
-        },
-        {
           "title": "Banca europea dell’idrogeno: la terza asta da 1,1 miliardi include idrogeno non RFNBO",
           "link": "https://hydrogen-news.it/banca-europea-dellidrogeno-la-terza-asta-da-11-miliardi-include-idrogeno-non-rfnbo/",
           "description": "",
@@ -105,7 +113,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:00:38 +0000",
           "source": "energycue.it",
-          "image": "https://www.energycue.it/wp-content/uploads/2025/07/Addio-agli-spioni-su-WhatsApp-Depositphotos-foto-www.energycue.it_.jpg"
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=WhatsApp%2C%20arriva"
         },
         {
           "title": "Guerra energetica su tre fronti: Kiev colpisce raffinerie russe ma compra gas di Mosca, accordo Ue-Usa su energia è bluff?",
@@ -130,14 +138,6 @@
           "pubDate": "Mon, 04 Aug 2025 07:27:25 +0000",
           "source": "powerengineeringint.com",
           "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Floating%20offshore"
-        },
-        {
-          "title": "Ecoscambio arriva a Cortona",
-          "link": "https://www.canaleenergia.com/rubriche/economia-circolare/ecoscambio-arriva-a-cortona/",
-          "description": "",
-          "pubDate": "Fri, 01 Aug 2025 12:30:21 +0000",
-          "source": "canaleenergia.com",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Ecoscambio%20arriva"
         },
         {
           "title": "Intelligenza artificiale generativa: uno specchio, non un terapeuta",
@@ -209,6 +209,30 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "La sonda JUICE usa il cratere di \"Earthrise\" per cercare vita",
+          "link": "https://www.hdblog.it/tecnologia/articoli/n627316/sonda-juice-cratere-lunare-earthrise/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 13:40:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=La%20sonda"
+        },
+        {
+          "title": "Telemarketing aggressivo: cosa cambia dal 19 agosto con il nuovo filtro",
+          "link": "https://www.hdblog.it/sicurezza/articoli/n627346/telemarketing-aggressivo-19-agosto-nuovo-filtro/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 13:35:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Telemarketing%20aggressivo%3A"
+        },
+        {
+          "title": "Anthropic vieta l'uso di Claude a OpenAI: avrebbe “spiato” il suo LLM",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/anthropic_vieta_l_uso_di_claude_a_openai-424771165/?rss",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 13:34:53 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/133450567-c2282e3e-a496-4d2c-98cd-634d350945d4.jpg"
+        },
+        {
           "title": "Dalla Cina le Super Extended Range di IM Motors: 450 km in elettrico e 1.500 km di autonomia combinata",
           "link": "https://www.hdmotori.it/auto-super-extended-range-im-motors-autonomia-come-funziona/",
           "description": "",
@@ -217,36 +241,12 @@
           "image": "https://www.hdmotori.it/app/uploads/2025/08/im.jpg"
         },
         {
-          "title": "Anthropic vieta l'uso di Claude a OpenAI",
-          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/anthropic_vieta_l_uso_di_claude_a_openai-424771165/?rss",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 13:27:30 +0200",
-          "source": "repubblica.it",
-          "image": "http://www.repstatic.it/cless/main/nazionale/2013-v1/img/common/favicon/favicon-1500.png"
-        },
-        {
-          "title": "Una vela solare ci darà più tempo contro le tempeste del Sole",
-          "link": "https://www.hdblog.it/tecnologia/articoli/n627308/vela-solare-tempesta-spaziale-swift/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 13:10:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1158953?w=1920"
-        },
-        {
           "title": "Combo tastiera e mouse wireless: praticità e design a meno di 18 euro",
           "link": "https://www.webnews.it/combo-tastiera-e-mouse-wireless-praticita-e-design-a-meno-di-18-euro/",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 11:02:56 +0000",
           "source": "webnews.it",
           "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219496.jpg"
-        },
-        {
-          "title": "Fantastici 4 Gli inizi crolla al botteghino nonostante le buone recensioni",
-          "link": "https://www.hdblog.it/mercato/articoli/n627344/fantastici-4-gli-inizi-crolla-al-botteghino-nonostante-le-buone-recensioni/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 12:50:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277803?w=1920"
         },
         {
           "title": "Torna il caldo africano in Italia, le temperature saliranno fino a 40 gradi nelle regioni del Centro e del Sud",
@@ -342,7 +342,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 08:45:50 +0000",
           "source": "webnews.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Fresco%20e"
+          "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219488.jpg"
         },
         {
           "title": "Viaggiare in aereo, quattro cose da fare prima di salire a bordo",
@@ -446,6 +446,14 @@
           "image": "https://img.stcrm.it/images/45831714/1200x/nuova-alfa-romeo-tonale.jpeg"
         },
         {
+          "title": "Mazda, due nuove sportive in fase di sviluppo",
+          "link": "https://www.formulapassion.it/auto/auto-news/mazda-due-nuove-sportive-sviluppo-mx5-sp3",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:45:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2023/10/mazda-iconic-sp-2.jpg"
+        },
+        {
           "title": "Tesla giudicata colpevole per un incidente mortale con Autopilot: dovrà risarcire 243 milioni di dollari",
           "link": "https://www.automoto.it/elettrico/tesla-giudicata-colpevole-per-un-incidente-mortale-con-autopilot-dovra-risarcire-243-milioni-di-dollari.html",
           "description": "",
@@ -531,7 +539,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 10:02:02 +0000",
           "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=A1%20MILANO-NAPOLI%3A"
         },
         {
           "title": "L’analisi del lunedì | Ferrari: con i dubbi di Hamilton va subito opzionato Verstappen",
@@ -548,14 +556,6 @@
           "pubDate": "Mon, 04 Aug 2025 09:56:03 +0000",
           "source": "trasporti-italia.com",
           "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=A23%20UDINE-TARVISIO%3A"
-        },
-        {
-          "title": "Mercedes, una nuova griglia per lo stile del futuro",
-          "link": "https://www.formulapassion.it/auto/auto-news/mercedes-nuova-griglia-stile-futuro-design",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 09:45:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Mercedes%2C%20una"
         },
         {
           "title": "Kraken aggrega 325 mila EV: 2 GW al servizio della rete",
@@ -619,6 +619,14 @@
       "category": "Clima",
       "items": [
         {
+          "title": "2 agosto, ministro Bernini: “A Bologna un comiziaccio politico. Non stavano onorando le vittime”",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/strage-bologna-bernini-comizio-politico-notizie/8084201/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 11:40:15 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Anna-Maria-Bernini-scaled.jpg"
+        },
+        {
           "title": "INPS, arrivano 1000 euro ad agosto: chi riceverà il contributo",
           "link": "https://www.greenstyle.it/inps-arrivano-1000-euro-ad-agosto-chi-ricevera-il-contributo-424543.html",
           "description": "",
@@ -641,14 +649,6 @@
           "pubDate": "Mon, 04 Aug 2025 11:18:40 +0000",
           "source": "ilfattoquotidiano.it",
           "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2023/09/12/salari_1200.jpg"
-        },
-        {
-          "title": "Inchiesta urbanistica Milano, pm valutano ricorso su Pirellino e induzione indebita al sindaco Sala",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/inchiesta-urbanistica-milano-pirellino-sala-notizie/8084175/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 11:15:34 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/07/26/med-1200x630-30-1200x630.jpg"
         },
         {
           "title": "Le multinazionali del cibo stanno perdendo il dominio del mercato, e ritornano i marchi più locali",
@@ -739,28 +739,28 @@
           "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44260-025-00048-w/MediaObjects/44260_2025_48_Fig1_HTML.png"
         },
         {
-          "title": "Environmental politics is doomed to fail — unless we tell better stories",
-          "link": "https://www.nature.com/articles/d41586-025-02459-0",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Environmental%20politics"
-        },
-        {
-          "title": "To save lives in heatwaves, focus on how human bodies work",
-          "link": "https://www.nature.com/articles/d41586-025-02461-6",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=To%20save"
-        },
-        {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
           "link": "https://www.legambiente.it/comunicati-stampa/sos-adamello-anteprima-di-carovana-dei-ghiacciai-2025/",
           "description": "",
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
           "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=SOS%20Adamello."
+        },
+        {
+          "title": "Global quantification of the dispersion effect with POLDER satellite data",
+          "link": "https://www.nature.com/articles/s41467-025-62238-3",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Global%20quantification"
+        },
+        {
+          "title": "Climate action and energy access in Sub-Saharan Africa: insights from Covenant of Mayors signatories",
+          "link": "https://www.nature.com/articles/s42949-025-00250-8",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Climate%20action"
         },
         {
           "title": "Nella più grande monocoltura di eucalipto al mondo",
