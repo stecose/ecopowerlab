@@ -4,10 +4,10 @@ import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 
 /* CONFIGURAZIONE */
-const entriesPerFeed = 4;                  // articoli presi per ogni feed
-const maxItemsPerCategory = 25;            // pool finale per categoria
-const fallbackOgImageLimitPerCategory = 10; // quanti fallback og:image per categoria
-const concurrentFallbackFetches = 4;        // quanti fetch paralleli per page-scraping immagini
+const entriesPerFeed = 3;
+const maxItemsPerCategory = 25;
+const fallbackOgImageLimitPerCategory = 10;
+const concurrentFallbackFetches = 4;
 
 /* FEED PER CATEGORIA */
 const feedsByCat = {
@@ -100,82 +100,122 @@ const feedsByCat = {
   ]
 };
 
-/* HELPERS */
+/* ESTRAZIONE IMMAGINI */
 
-// prova a estrarre og:image / twitter:image / prima immagine significativa
-function extractImageFromHtml(html, pageUrl) {
-  // 1. og:image o twitter:image
-  const metaRegex = /<meta[^>]*(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/i;
-  const mMeta = html.match(metaRegex);
-  if (mMeta && mMeta[1]) {
-    try {
-      return new URL(mMeta[1], pageUrl).href;
-    } catch {}
-  }
-
-  // 2. prima <img> sensata (escludi svg, icone, data:, logo)
-  const imgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+// JSON-LD (NewsArticle ecc.)
+function extractFromJsonLd(html) {
+  const ldRegex = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
   let match;
-  while ((match = imgRegex.exec(html)) !== null) {
-    let src = match[1];
-    if (!src) continue;
-    src = src.trim();
-    // ignora data URI, SVG, icone banali
-    if (src.startsWith("data:")) continue;
-    if (src.toLowerCase().includes("logo")) continue;
-    if (src.toLowerCase().includes("icon")) continue;
-    if (src.toLowerCase().endsWith(".svg")) continue;
-    // normalizza
+  while ((match = ldRegex.exec(html)) !== null) {
     try {
-      return new URL(src, pageUrl).href;
-    } catch {}
+      const obj = JSON.parse(match[1]);
+      const candidates = Array.isArray(obj) ? obj : [obj];
+      for (const item of candidates) {
+        if (item.image) {
+          if (typeof item.image === "string") return item.image;
+          if (Array.isArray(item.image)) return item.image[0];
+          if (item.image.url) return item.image.url;
+        }
+        if (item.mainEntityOfPage && item.mainEntityOfPage.image) {
+          const img = item.mainEntityOfPage.image;
+          if (typeof img === "string") return img;
+          if (Array.isArray(img)) return img[0];
+          if (img.url) return img.url;
+        }
+      }
+    } catch (e) {
+      // skip invalid JSON-LD
+    }
   }
   return "";
 }
 
-// dedup per link tenendo il più recente
+// Estrae immagine da HTML: og:image / twitter:image, JSON-LD, poi prima <img> valida
+function extractImageFromHtml(html, pageUrl) {
+  // 1. og:image / twitter:image
+  const metaRegex = /<meta[^>]*(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/gi;
+  let m;
+  while ((m = metaRegex.exec(html)) !== null) {
+    try { return new URL(m[1], pageUrl).href; } catch {}
+  }
+
+  // 2. JSON-LD
+  const jsonLdImg = extractFromJsonLd(html);
+  if (jsonLdImg) {
+    try { return new URL(jsonLdImg, pageUrl).href; } catch {}
+  }
+
+  // 3. Prima <img> sensata con heuristica
+  const imgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+  let best = "";
+  let bestScore = -1;
+  while ((m = imgRegex.exec(html)) !== null) {
+    let src = m[1];
+    if (!src) continue;
+    src = src.trim();
+    if (src.startsWith("data:")) continue;
+    const lower = src.toLowerCase();
+    if (lower.includes("logo") || lower.includes("icon") || lower.endsWith(".svg")) continue;
+    let score = 1;
+    const context = m[0];
+    const widthMatch = context.match(/width=["']?(\d+)["']?/i);
+    const heightMatch = context.match(/height=["']?(\d+)["']?/i);
+    if (widthMatch) score += parseInt(widthMatch[1], 10) / 100;
+    if (heightMatch) score += parseInt(heightMatch[1], 10) / 100;
+    if (score > bestScore) {
+      bestScore = score;
+      try {
+        best = new URL(src, pageUrl).href;
+      } catch {
+        best = src;
+      }
+    }
+  }
+  if (best) return best;
+  return "";
+}
+
+// Dedup e mantieni il più recente per link
 function dedupeKeepLatest(list) {
   const seen = new Map();
   list.forEach(item => {
     if (!item.link) return;
     const existing = seen.get(item.link);
     if (!existing) seen.set(item.link, item);
-    else {
-      if (new Date(item.pubDate) > new Date(existing.pubDate)) {
-        seen.set(item.link, item);
-      }
+    else if (new Date(item.pubDate) > new Date(existing.pubDate)) {
+      seen.set(item.link, item);
     }
   });
   return Array.from(seen.values()).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
-// fallback per arricchire immagini con limitata concorrenza
+// Arricchisce i mancanti con scraping parallelo (fino al limite)
 async function enrichMissingImages(items, limit) {
-  let missing = 0;
-  // processa in batch di concurrentFallbackFetches
-  for (let i = 0; i < items.length && missing < limit; ) {
-    const batch = [];
-    for (let j = 0; j < concurrentFallbackFetches && i < items.length && missing < limit; i++) {
-      const item = items[i];
-      if (!item.image && item.link) {
-        batch.push(item);
-        missing++;
-      }
-      j++;
-    }
-    if (batch.length === 0) continue;
-    // esegui batch in parallelo
+  const toProcess = items.filter(i => !i.image && i.link);
+  let processed = 0;
+  for (let i = 0; i < toProcess.length && processed < limit; i += concurrentFallbackFetches) {
+    const batch = toProcess.slice(i, i + concurrentFallbackFetches);
     await Promise.all(batch.map(async item => {
       try {
         const res = await fetch(item.link, { redirect: "follow", timeout: 10000 });
         const html = await res.text();
-        const found = extractImageFromHtml(html, item.link);
-        if (found) item.image = found;
+        const img = extractImageFromHtml(html, item.link);
+        if (img) {
+          item.image = img;
+          processed++;
+        }
       } catch (e) {
-        // silenzioso
+        // silenzia errori individuali
       }
     }));
   }
+}
+
+// placeholder garantito
+function makePlaceholder(title) {
+  const words = (title || "EcoPower").split(" ").slice(0, 2).join(" ");
+  const text = encodeURIComponent(words || "EcoPower");
+  return `https://via.placeholder.com/320x180/007ACC/ffffff?text=${text}`;
 }
 
 /* AGGREGAZIONE PRINCIPALE */
@@ -187,12 +227,12 @@ async function aggregate() {
     let collected = [];
 
     // fetch paralleli dei feed
-    const fetchPromises = feedUrls.map(url =>
+    const feedFetches = feedUrls.map(url =>
       fetch(url, { redirect: "follow" })
         .then(res => res.text().then(txt => ({ url, xml: txt })))
         .catch(() => null)
     );
-    const feedResponses = await Promise.all(fetchPromises);
+    const feedResponses = await Promise.all(feedFetches);
 
     for (const resp of feedResponses) {
       if (!resp || !resp.xml) continue;
@@ -224,7 +264,7 @@ async function aggregate() {
           const pubDate = entry.pubDate || entry.updated || entry["dc:date"] || "";
           const source = new URL(resp.url).hostname.replace(/^www\./, "");
 
-          // immagine dal feed
+          // immagine iniziale
           let image = "";
           if (entry.enclosure && entry.enclosure.url) image = entry.enclosure.url;
           if (!image && entry["media:content"] && entry["media:content"].url) image = entry["media:content"].url;
@@ -240,15 +280,22 @@ async function aggregate() {
           });
         });
       } catch (e) {
-        // parsing fallito, continua
+        // parsing fallito
       }
     }
 
-    // dedup, ordina e riduci
+    // dedup e limit
     let finalItems = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
 
-    // fallback immagini mancanti
+    // fallback scraping immagini per i mancanti
     await enrichMissingImages(finalItems, fallbackOgImageLimitPerCategory);
+
+    // ultimo fallback placeholder garantito
+    finalItems.forEach(item => {
+      if (!item.image || item.image.trim() === "") {
+        item.image = makePlaceholder(item.title || item.source || "EcoPower");
+      }
+    });
 
     result.categories.push({ category: categoryName, items: finalItems });
   }
@@ -258,8 +305,8 @@ async function aggregate() {
   console.log("news.json generato con successo");
 }
 
-/* ENTRY POINT */
+/* EXEC */
 aggregate().catch(err => {
-  console.error("Errore durante l'aggregazione:", err);
+  console.error("Errore aggregazione:", err);
   process.exit(1);
 });
