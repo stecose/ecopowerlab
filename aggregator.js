@@ -55,7 +55,7 @@ const feedsByCat = {
     "https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml",
     "https://www.sicurezzamagazine.it/feed"
   ],
-  Mobilita: [
+  Mobilità: [
     "https://www.electricmotornews.com/feed/",
     "https://insideevs.it/feed",
     "https://www.quattroruote.it/news/rss.xml",
