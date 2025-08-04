@@ -414,6 +414,30 @@
       "category": "Mobilita",
       "items": [
         {
+          "title": "Gli autobus senza conducente sono già legali in Germania, cosa li ferma nel resto d’Europa?",
+          "link": "https://www.electricmotornews.com/veicoli-ecologici/autobus-senza-conducente-germania/",
+          "description": "L'ecosistema europeo dei veicoli autonomi sta accelerando, aprendo la strada alla chiarezza normativa e alla preparazione delle infrastrutture. [...]\n",
+          "pubDate": "Mon, 04 Aug 2025 22:12:57 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/driverless_bus_germany_imagry_electric_motor_news_01.jpg"
+        },
+        {
+          "title": "Il BMW Group avvia la produzione in serie di motori elettrici per la Neue Klasse",
+          "link": "https://www.electricmotornews.com/eventi/bmw-motori-neue-klasse/",
+          "description": "Lo stabilimento BMW di Steyr ha avviato il 1° agosto la produzione in serie del motore elettrico per la Neue Klasse. [...]\nL'articolo Il BMW Group avv",
+          "pubDate": "Mon, 04 Aug 2025 22:11:32 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/bmw_steyr_electric_motor_news_01.jpg"
+        },
+        {
+          "title": "NXT Gen Cup al Nürburgring e la lotta per il titolo si fa sempre più serrata",
+          "link": "https://www.electricmotornews.com/motorsports/nxt-gen-cup-lotta-titolo/",
+          "description": "La NXT Gen Cup torna in azione questo fine settimana, con il campionato che raggiunge il suo terzo round stagionale con il DTM sul leggendario Nürburg",
+          "pubDate": "Mon, 04 Aug 2025 22:10:01 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/nxt_gen_cup_electric_motor_news_01.jpg"
+        },
+        {
           "title": "Strategia della pensione e le altre storie del GP Ungheria: I Doppiati podcast, riascolta la puntata 21",
           "link": "https://www.formulapassion.it/podcast/i-doppiati-f1-podcast-21-25-analisi-gp-ungheria-ferrari-leclerc-hamilton-strategia-pensione",
           "description": "Sventolate le bandiere blu, I Doppiati tornano su YouTube, Spotify e Apple Podcast per analizzare il GP d'Ungheria a Budapest",
@@ -550,14 +574,6 @@
           "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/Schermata-2025-08-04-alle-17.03.40.png"
         },
         {
-          "title": "Xpeng prima nello Studio sulla Soddisfazione Clienti EV 2025",
-          "link": "https://www.electricmotornews.com/eventi/xpeng-soddisfazione-clienti/",
-          "description": "Xpeng è prima nello Studio sulla Soddisfazione Clienti EV 2025 condotto da USCALE GmbH e fissa un nuovo standard per la mobilità elettrica in Europa. ",
-          "pubDate": "Mon, 04 Aug 2025 15:00:23 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/xpeng_electric_motor_news_01_XPENG_G9.jpg"
-        },
-        {
           "title": "Tesla lancia il Robotaxi a New York: è sfida con Waymo",
           "link": "https://insideevs.it/news/767912/tesla-robotaxi-new-york/",
           "description": "Dopo il debutto in California, il servizio arriva a Brooklyn. Tesla accelera sull’autonomia, ma serve ancora il conducente a bordo",
@@ -596,22 +612,6 @@
           "pubDate": "Mon, 04 Aug 2025 10:50:58 +0000",
           "source": "autoblog.it",
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
-        },
-        {
-          "title": "Hyundai Motor Group avvia sperimenta la mobilità a idrogeno a NEOM",
-          "link": "https://www.electricmotornews.com/energie-alternative/hyundai-idrogeno-neom/",
-          "description": "Hyundai Motor Group, in collaborazione con Enowa, la sussidiaria di NEOM per l'energia e l'acqua, ha annunciato il completamento con successo di una s",
-          "pubDate": "Sun, 03 Aug 2025 22:12:30 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/hyundai_universe_fcev_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "Il marchio cinese Superpanther costruirà camion elettrici a Steyr (Austria)",
-          "link": "https://www.electricmotornews.com/veicoli-ecologici/superpanther-camion-steyr/",
-          "description": "Il marchio cinese SuperPanther ha recentemente firmato un accordo con il produttore austriaco di veicoli commerciali Steyr Automotive per la produzion",
-          "pubDate": "Sun, 03 Aug 2025 22:11:53 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/superpanther_steyr_camion_electric_motor_news_01.jpg"
         }
       ]
     },
