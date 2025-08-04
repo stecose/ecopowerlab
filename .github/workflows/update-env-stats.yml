@@ -1,0 +1,26 @@
+name: Aggiorna Stats CO2-Temp-Solare
+
+on:
+  schedule:
+    - cron: '0 08 * * *'  # ogni giorno alle 08:00 UTC (puoi adattare)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: Genera stats_env_co2_solar.json
+        run: |
+          node stats_env_co2_solar.js
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add stats_env_co2_solar.json
+          git diff --quiet || git commit -m "Aggiorna stats_env_co2_solar.json"
+          git push
