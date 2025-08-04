@@ -2,19 +2,823 @@
   "categories": [
     {
       "category": "Energia",
-      "items": []
+      "items": [
+        {
+          "title": "Cox acquires Iberdrola’s assets in Mexico for $4.2bn",
+          "link": "https://www.powerengineeringint.com/renewables/cox-acquires-iberdrolas-assets-in-mexico-for-4-2bn/",
+          "description": "Iberdrola is selling assets in Mexico to Spanish multinational water and energy company Grupo Cox to the tune of $4.2 billion.\nThe post Cox acquires I",
+          "pubDate": "Mon, 04 Aug 2025 12:21:36 +0000",
+          "source": "powerengineeringint.com",
+          "image": "https://www.powerengineeringint.com/wp-content/uploads/2025/08/articulo-ignacio-galan-726x484-1.jpg"
+        },
+        {
+          "title": "Rinnovabili, freno a doppia cifra: Italia a rischio obiettivi",
+          "link": "https://www.canaleenergia.com/rubriche/digirinnovabili/rinnovabili-freno-a-doppia-cifra-italia-a-rischio-obiettivi/",
+          "description": "Nel secondo trimestre 2025 il mercato segna un calo complessivo del 29%: dati Anie\nL'articolo Rinnovabili, freno a doppia cifra: Italia a rischio obie",
+          "pubDate": "Mon, 04 Aug 2025 12:06:40 +0000",
+          "source": "canaleenergia.com",
+          "image": "https://www.canaleenergia.com/wp-content/uploads/2025/08/1-1.jpg"
+        },
+        {
+          "title": "Ammorbidente, gira al largo da questo marchio | Rovina i panni e fa male alla salute: chi lo compra firma una condanna",
+          "link": "https://www.energycue.it/2025/08/04/ammorbidente-gira-al-largo-da-questo-marchio-rovina-i-panni-e-fa-male-alla-salute-chi-lo-compra-firma-una-condanna/",
+          "description": "Attenzione agli ingredienti nascosti nei prodotti per il bucato: non usare questo ammorbidente, gravi danni...\nL'articolo Ammorbidente, gira al largo ",
+          "pubDate": "Mon, 04 Aug 2025 12:00:35 +0000",
+          "source": "energycue.it",
+          "image": "https://www.energycue.it/wp-content/uploads/2025/07/Ammorbidente-attenzione-non-usarlo-energycue-Canva.jpg"
+        },
+        {
+          "title": "In Italia il mercato delle rinnovabili rallenta mettendo a rischio il target 2025",
+          "link": "https://www.rinnovabili.it/energia/infrastrutture/mercato-delle-rinnovabili-italia/",
+          "description": "Da aprile a giugno 2025 il mercato italiano delle rinnovabili ha registrato un netto rallentamento, con un calo complessivo del 29% rispetto allo stes",
+          "pubDate": "Mon, 04 Aug 2025 11:45:40 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/windfarm-4892250_1280.jpg"
+        },
+        {
+          "title": "Packaging: italiani scelgono la sostenibilità e bocciano la plastica",
+          "link": "https://www.canaleenergia.com/rubriche/consumer/packaging-italiani-scelgono-la-sostenibilita-e-bocciano-la-plastica/",
+          "description": "La ricerca di Pro Carton\t\nL'articolo Packaging: italiani scelgono la sostenibilità e bocciano la plastica proviene da Canale Energia.",
+          "pubDate": "Mon, 04 Aug 2025 11:41:02 +0000",
+          "source": "canaleenergia.com",
+          "image": "https://www.canaleenergia.com/wp-content/uploads/2025/08/giorgio-trovato-bYhDEWgqYLM-unsplash.jpg"
+        },
+        {
+          "title": "Sovrapproduzione del polisilicio cinese: Pechino pronta a tagliare un terzo della capacità",
+          "link": "https://www.rinnovabili.it/energia/fotovoltaico/sovrapproduzione-polisilicio-cinese-taglio-capacita/",
+          "description": "La Cina vuole frenare la sovrapproduzione del polisilicio con un fondo da 7 miliardi di dollari: al centro, la chiusura di un milione di tonnellate di",
+          "pubDate": "Mon, 04 Aug 2025 11:12:03 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/Sovrapproduzione-del-polisilicio-cinese-Pechino-pronta-a-tagliare-un-terzo-della-capacita.jpg"
+        },
+        {
+          "title": "Alpi sempre più fragili: l’uomo ha accelerato l’erosione del suolo fino a 10 volte",
+          "link": "https://www.energycue.it/2025/08/04/alpi-sempre-piu-fragili-luomo-ha-accelerato-lerosione-del-suolo-fino-a-10-volte/",
+          "description": "Molte montagne vengono erose continuamente, eppure la mano dell&#8217;uomo ha accelerato questo processo. E lo...\nL'articolo Alpi sempre più fragili: ",
+          "pubDate": "Mon, 04 Aug 2025 11:00:01 +0000",
+          "source": "energycue.it",
+          "image": "https://www.energycue.it/wp-content/uploads/2025/08/Illustrazione-di-una-montagna-in-erosione-Canva-FOTO-energycue.it_.jpg"
+        },
+        {
+          "title": "L’India punta alle ecar per abbattere l’inquinamento in città",
+          "link": "https://www.canaleenergia.com/rubriche/smart-city/lindia-punta-alle-ecar-per-abbattere-linquinamento-in-citta/",
+          "description": "Lo studio  \"Electric Vehicle Market, India, 2024-2031\" realizzato da  ResearchAndMarkets.com's\nL'articolo L&#8217;India punta alle ecar per abbattere ",
+          "pubDate": "Mon, 04 Aug 2025 10:48:45 +0000",
+          "source": "canaleenergia.com",
+          "image": "https://www.canaleenergia.com/wp-content/uploads/2022/09/auto-elettrica-1.jpg"
+        },
+        {
+          "title": "Una nuova professione: il sommelier delle tisane",
+          "link": "https://www.greenplanner.it/2025/08/04/nuova-professione-sommelier-tisane/",
+          "description": "In realtà non esiste ancora ufficialmente ma potrebbe essere una bella idea. Ne parliamo con Domenico Cassinelli, Sous chef a Livigno al Lac Salin Spa",
+          "pubDate": "Mon, 04 Aug 2025 10:25:42 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/08/sommelier-tisane.jpg"
+        },
+        {
+          "title": "Yanbu Green Hydrogen Hub, prende forma il secondo mega progetto dell’Arabia Saudita per idrogeno e ammoniaca verde",
+          "link": "https://hydrogen-news.it/yanbu-green-hydrogen-hub-prende-forma-il-secondo-mega-progetto-dellarabia-saudita-per-idrogeno-e-ammoniaca-verde/",
+          "description": "ACWA Power ha siglato un accordo con la tedesca EnBW per lo sviluppo del Yanbu Green Hydrogen Hub, il secondo polo su larga scala per la produzione di",
+          "pubDate": "Mon, 04 Aug 2025 10:21:44 +0000",
+          "source": "hydrogen-news.it",
+          "image": "https://hydrogen-news.it/wp-content/uploads/2025/08/1920_duringtheevent.webp"
+        },
+        {
+          "title": "Svolta in Italia, approvato il “BONUS SUDORE” | Buste paga spaziali a luglio e agosto: più fa caldo più si guadagna",
+          "link": "https://www.energycue.it/2025/08/04/svolta-in-italia-approvato-il-bonus-sudore-buste-paga-spaziali-a-luglio-e-agosto-piu-fa-caldo-piu-si-guadagna/",
+          "description": "Un’idea lega il guadagno all’aumento delle temperature estive, promettendo incentivi economici, ma non tutti concordano....\nL'articolo Svolta in Itali",
+          "pubDate": "Mon, 04 Aug 2025 10:00:39 +0000",
+          "source": "energycue.it",
+          "image": "https://www.energycue.it/wp-content/uploads/2025/07/Uomo-con-soldi-Depositphotos-foto-www.energycue.it_-1.jpg"
+        },
+        {
+          "title": "Costo del capitale nel settore energetico: ancora troppe barriere per i paesi emergenti",
+          "link": "https://www.rinnovabili.it/mercato/report/costo-del-capitale-nel-settore-energetico-nei-paesi-emergenti/",
+          "description": "L’aggiornamento 2025 dell’Osservatorio IEA mostra come il costo del capitale nel settore energetico sia fino a tre volte più alto nei Paesi in via di ",
+          "pubDate": "Mon, 04 Aug 2025 09:56:37 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/Costo-del-capitale-nel-settore-energetico-ancora-troppe-barriere-per-i-paesi-emergenti.jpg"
+        },
+        {
+          "title": "Banca europea dell’idrogeno: la terza asta da 1,1 miliardi include idrogeno non RFNBO",
+          "link": "https://hydrogen-news.it/banca-europea-dellidrogeno-la-terza-asta-da-11-miliardi-include-idrogeno-non-rfnbo/",
+          "description": "La Commissione europea ha pubblicato la bozza dei termini per la terza asta della Banca europea dell’idrogeno, prevista entro la fine del 2025, introd",
+          "pubDate": "Mon, 04 Aug 2025 08:38:30 +0000",
+          "source": "hydrogen-news.it",
+          "image": "https://hydrogen-news.it/wp-content/uploads/2023/10/Bandiera-Unione-Europea.jpg"
+        },
+        {
+          "title": "Il mercato italiano delle rinnovabili rallenta sotto il peso dell’instabilità normativa",
+          "link": "https://energiaoltre.it/il-mercato-italiano-delle-rinnovabili-rallenta-sotto-il-peso-dellinstabilita-normativa/",
+          "description": "Secondo i dati dell’Osservatorio FER realizzato da ANIE Rinnovabili sulla base dei dati Terna, è a rischio la bancabilità dei progetti ad accesso dire",
+          "pubDate": "Mon, 04 Aug 2025 08:34:47 +0000",
+          "source": "energiaoltre.it",
+          "image": "https://energiaoltre.it/wp-content/uploads/2025/07/Italia-rinnovabili.png"
+        },
+        {
+          "title": "Crediti di carbonio sintetici, metodologia Esg-ready per la compensazione aziendale",
+          "link": "https://www.greenplanner.it/2025/08/04/crediti-carbonio-sintetici-metodologia-esg-ready/",
+          "description": "In un contesto normativo e reputazionale in rapido mutamento, i crediti di carbonio sintetici emergono come leva strategica per le imprese che intendo",
+          "pubDate": "Mon, 04 Aug 2025 08:25:49 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/07/Depositphotos_credito-carbonio-sintetico.jpg"
+        },
+        {
+          "title": "Guerra energetica su tre fronti: Kiev colpisce raffinerie russe ma compra gas di Mosca, accordo Ue-Usa su energia è bluff?",
+          "link": "https://energiaoltre.it/guerra-energetica-su-tre-fronti-kiev-colpisce-raffinerie-russe-ma-compra-gas-di-mosca-accordo-ue-usa-su-energia-e-bluff/",
+          "description": "Il Corriere della Sera, Il Fatto Quotidiano, La Stampa e Affari &#38; Finanza di Repubblica, dipingono un quadro di paradossi strategici ed economici ",
+          "pubDate": "Mon, 04 Aug 2025 07:53:38 +0000",
+          "source": "energiaoltre.it",
+          "image": "https://energiaoltre.it/wp-content/uploads/2025/06/Imagoeconomica_2477493.jpg"
+        },
+        {
+          "title": "Pnrr, la Corte dei Conti promuove il I semestre 2025 “ma criticità su progetti complessi”",
+          "link": "https://energiaoltre.it/pnrr-la-corte-dei-conti-promuove-il-i-semestre-2025-ma-criticita-su-progetti-complessi/",
+          "description": "La recente analisi della Corte dei Conti sull&#8217;attuazione del PNRR e PNC al primo semestre 2025 evidenzia un quadro a due facce. Se da un lato l&",
+          "pubDate": "Mon, 04 Aug 2025 07:32:31 +0000",
+          "source": "energiaoltre.it",
+          "image": "https://energiaoltre.it/wp-content/uploads/2021/08/Corte-conti.jpg"
+        },
+        {
+          "title": "Floating offshore the next frontier for data centres",
+          "link": "https://www.powerengineeringint.com/digitalization/floating-offshore-the-next-frontier-for-data-centres/",
+          "description": "Proposals to develop floating data centres open the way for data centres in coastal locations with limited space and power availability.\nThe post Floa",
+          "pubDate": "Mon, 04 Aug 2025 07:27:25 +0000",
+          "source": "powerengineeringint.com",
+          "image": "https://www.powerengineeringint.com/wp-content/uploads/2025/08/Floating-data-demo-2.jpg"
+        },
+        {
+          "title": "Intelligenza artificiale generativa: uno specchio, non un terapeuta",
+          "link": "https://www.greenplanner.it/2025/08/01/intelligenza-artificiale-generativa-non-terapeuta/",
+          "description": "Secondo l&#8217;Ordine degli Psicologi della Toscana sta crescendo l&#8217;utilizzo dell&#8217;intelligenza artificiale come strumento di analisi psic",
+          "pubDate": "Fri, 01 Aug 2025 10:25:23 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/07/chatbot-psicologo.jpg"
+        },
+        {
+          "title": "Battery project at former nuclear facility to stabilise German grid",
+          "link": "https://www.powerengineeringint.com/energy-storage/battery-project-at-former-nuclear-facility-to-stabilise-german-grid/",
+          "description": "EnBW wants to build a battery project at what used to be a German nuclear power plant site, feeding renewables into the grid when needed.\nThe post Bat",
+          "pubDate": "Fri, 01 Aug 2025 09:53:28 +0000",
+          "source": "powerengineeringint.com",
+          "image": "https://www.powerengineeringint.com/wp-content/uploads/2025/07/EnBW-battery-nuclear-1.jpg"
+        },
+        {
+          "title": "MASE, firmato il decreto Energy Release 2.0",
+          "link": "https://hydrogen-news.it/mase-firmato-il-decreto-energy-release-2-0/",
+          "description": "Il Ministro dell’Ambiente e della Sicurezza Energetica, Gilberto Pichetto, ha firmato oggi il decreto che modifica il meccanismo dell’Energy Release. ",
+          "pubDate": "Thu, 31 Jul 2025 13:25:30 +0000",
+          "source": "hydrogen-news.it",
+          "image": "https://hydrogen-news.it/wp-content/uploads/2025/07/Pichetto.webp"
+        },
+        {
+          "title": "Energy Release 2.0 : firmato il decreto dopo il via libera della Commissione UE",
+          "link": "https://www.solareb2b.it/energy-release-2-0-firmato-il-decreto-dopo-il-via-libera-ue/",
+          "description": "Il ministro dell’Ambiente e della Sicurezza Energetica, Gilberto Pichetto, ha firmato ieri (29 luglio 2025) il decreto che modifica il meccanismo dell",
+          "pubDate": "Wed, 30 Jul 2025 12:29:28 +0000",
+          "source": "solareb2b.it",
+          "image": "https://www.solareb2b.it/wp-content/uploads/2025/07/Energy-release-ministro-1024x668.png"
+        },
+        {
+          "title": "B-Cer (Gruppo Regalgrid) acquisisce il 70% di CERLab",
+          "link": "https://www.solareb2b.it/b-cer-gruppo-regalgrid-acquisisce-il-70-di-cerlab/",
+          "description": "B-Cer S.r.l., società benefit del Gruppo Regalgrid, ha annunciato l’acquisizione del 70% del capitale sociale di CERLab S.r.l., società milanese attiv",
+          "pubDate": "Wed, 30 Jul 2025 09:42:30 +0000",
+          "source": "solareb2b.it",
+          "image": "https://www.solareb2b.it/wp-content/uploads/2025/07/Bcer-acquisisce-Cerlab.png"
+        },
+        {
+          "title": "SL Rack presenta lo strumento per la progettazione per tetti piani SL Fast Flat",
+          "link": "https://www.solareb2b.it/sl-rack-presenta-lo-strumento-per-la-progettazione-sl-fast-flat/",
+          "description": "L’azienda tedesca SL Rack, specializzata nella produzione di sistemi di montaggio per impianti fotovoltaici, si prepara a lanciare una novità in tema ",
+          "pubDate": "Wed, 30 Jul 2025 09:28:39 +0000",
+          "source": "solareb2b.it",
+          "image": "https://www.solareb2b.it/wp-content/uploads/2025/07/SLRack-SL-Fast-Flat-scaled.jpg"
+        },
+        {
+          "title": "SUPER-HEERO ACCENDE LA SOSTENIBILITÀ A BELGIOIOSO: PARTE LA CAMPAGNA PER L’EFFICIENZA ENERGETICA DAL BASSO",
+          "link": "https://www.energiamagazine.it/super-heero-accende-la-sostenibilita-a-belgioioso-parte-la-campagna-per-lefficienza-energetica-dal-basso/",
+          "description": "Ener2Crowd&#160;lancia la nuova piattaforma del progetto Scaling Super-Heero e avvia la prima campagna a Belgioioso,&#8230;",
+          "pubDate": "Wed, 09 Jul 2025 17:14:19 +0000",
+          "source": "energiamagazine.it",
+          "image": "https://www.energiamagazine.it/wp-content/uploads/2024/05/energiamagazine.png"
+        }
+      ]
     },
     {
       "category": "SmartHome",
-      "items": []
+      "items": [
+        {
+          "title": "Addio visori ingombranti: ecco gli occhiali VR del futuro",
+          "link": "https://www.hdblog.it/indossabili/articoli/n627303/occhiali-vr-sottili-ologrammi/",
+          "description": "Ricercatori di Stanford e Meta hanno sviluppato occhiali VR spessi solo 3 mm con ologrammi 3D e AI.",
+          "pubDate": "Mon, 04 Aug 2025 14:20:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1208014?w=1920"
+        },
+        {
+          "title": "Rubati oltre 5.000 Galaxy Z Flip 7 e Fold 7 a Londra: un colpo da film",
+          "link": "https://www.hdblog.it/smartphone/articoli/n627353/rubati-galaxy-z-flip-fold-7-londra-furto/",
+          "description": "Non sono ancora stati ritrovati.",
+          "pubDate": "Mon, 04 Aug 2025 14:05:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1277815?w=1920"
+        },
+        {
+          "title": "Tesla scommette su Elon Musk: approvato bonus azionario da 29 miliardi",
+          "link": "https://www.hdmotori.it/tesla-bonus-29-miliardi-azioni-elon-musk/",
+          "description": "L&#039;azienda scommette ancora una volta nel suo CEO, aumentando progressivamente il suo potere di voto",
+          "pubDate": "Mon, 04 Aug 2025 14:00:22 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/07/995845.jpg"
+        },
+        {
+          "title": "Dreame H15 Mix è la centrale di pulizia 7 in 1 per ogni tipo di sporco e superficie",
+          "link": "https://www.macitynet.it/dreame-h15-mix-e-la-centrale-di-pulizia-7-in-1-per-ogni-tipo-di-sporco-e-superficie/",
+          "description": "Grazie alle varie modalità d’uso e agli accessori inclusi l’aspirapolvere e lavapavimenti Dreame H15 Mix è una centrale completa per pulizie approfond",
+          "pubDate": "Mon, 04 Aug 2025 11:59:50 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/Dreame-H15-Mix-5.jpg"
+        },
+        {
+          "title": "Usare ChatGPT come consulente legale può ritorcersi contro di voi in tribunale",
+          "link": "https://www.macitynet.it/usare-chatgpt-come-legale/",
+          "description": "Se usate ChatGPT come vostro avvocato sappiate che non garantisce il privilegio legale.\n- su macitynet.it  Usare ChatGPT come consulente legale può ri",
+          "pubDate": "Mon, 04 Aug 2025 11:59:32 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/Designer.jpeg"
+        },
+        {
+          "title": "PlayStation 6 arriverà nel 2027 con prestazioni triplicate rispetto a PS5",
+          "link": "https://www.smartworld.it/news/ps6-uscita-2027.html",
+          "description": "PlayStation 6 arriverà nel 2027 con specifiche mostruose e una console portatile tutta nuova. E le esclusive? Ecco cosa sappiamo.L'articolo PlayStatio",
+          "pubDate": "Mon, 04 Aug 2025 13:57:00 +0200",
+          "source": "smartworld.it",
+          "image": "https://www.smartworld.it/images/2025/08/04/ps6_1200x675.jpg"
+        },
+        {
+          "title": "Anthropic vieta l'uso di Claude a OpenAI: avrebbe “spiato” il suo LLM",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/anthropic_vieta_l_uso_di_claude_a_openai-424771165/?rss",
+          "description": "L’azienda dei fratelli Amodei ha rimosso i privilegi di accesso al LLM da parte degli ingegneri della concorrenza, spiegando che avrebbero violato i t",
+          "pubDate": "Mon, 04 Aug 2025 13:34:53 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/133450567-c2282e3e-a496-4d2c-98cd-634d350945d4.jpg"
+        },
+        {
+          "title": "Combo tastiera e mouse wireless: praticità e design a meno di 18 euro",
+          "link": "https://www.webnews.it/combo-tastiera-e-mouse-wireless-praticita-e-design-a-meno-di-18-euro/",
+          "description": "Scopri Trust Ody II, set tastiera e mouse wireless silenziosi, resistente agli sversamenti, compatibile con Windows e Mac, oggi in offerta su Amazon.",
+          "pubDate": "Mon, 04 Aug 2025 11:02:56 +0000",
+          "source": "webnews.it",
+          "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219496.jpg"
+        },
+        {
+          "title": "Torna il caldo africano in Italia, le temperature saliranno fino a 40 gradi nelle regioni del Centro e del Sud",
+          "link": "https://www.wired.it/article/caldo-africano-torna-in-italia-temperature-fino-a-40-gradi-centro-sud-regioni/",
+          "description": "Da martedì bel tempo stabile fino a Ferragosto, dopo settimane di temporali e maltempo. Temperature sopra la media di 8°C in tutto il paese",
+          "pubDate": "Mon, 04 Aug 2025 10:43:42 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6890739f8059f75dbc6aaa3a/master/pass/1538000381"
+        },
+        {
+          "title": "Dal 9 ottobre bonifici più sicuri: scatta il controllo automatico in tempo reale dei dati prima dell’invio",
+          "link": "https://www.dday.it/redazione/53939/dal-9-ottobre-bonifici-piu-sicuri-scatta-il-controllo-automatico-in-tempo-reale-dei-dati-prima-dellinvio",
+          "description": "",
+          "pubDate": "2025-08-04T12:15:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53939/social_372a8b_coev_rDepositphotos_387105926_XL_copia.jpg"
+        },
+        {
+          "title": "Mikron Switzerland AG ottimizza la produzione con AI e modelli matematici personalizzati",
+          "link": "https://www.zerounoweb.it/analytics/mikron-switzerland-ag-ottimizza-la-produzione-con-ai-e-modelli-matematici-personalizzati/",
+          "description": "La soluzione di Altea UP ha permesso a Mikron di superare le limitazioni degli strumenti ERP tradizionali, introducendo schedulazione intelligente e a",
+          "pubDate": "Mon, 04 Aug 2025 10:00:00 +0000",
+          "source": "internet4things.it",
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/07/31112653/shutterstock_2455036289.jpg"
+        },
+        {
+          "title": "Belkin multipresa con USB: praticità e sicurezza in offerta a 22,99 euro su Amazon",
+          "link": "https://www.webnews.it/belkin-multipresa-con-usb-praticita-e-sicurezza-in-offerta-a-2299-euro-su-amazon/",
+          "description": "Belkin Ciabatta multipresa con USB e 6 prese, protezione sovratensioni, cavo da 2 m: ora in offerta su Amazon a 22,99 euro invece di 34,99 euro.",
+          "pubDate": "Mon, 04 Aug 2025 09:47:36 +0000",
+          "source": "webnews.it",
+          "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219492.jpg"
+        },
+        {
+          "title": "Un assistente virtuale deve avere un genere? La sfida dell’inclusività nell’innovazione pubblica",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/un_assistente_virtuale_deve_avere_un_genere_la_sfida_dell_inclusivita_nell_innovazione_pubblica-424770949/?rss",
+          "description": "Il punto non è scegliere tra un assistente maschile o femminile (con lo strascico di stereotipi che questa scelta si porta dietro), ma riflettere sull",
+          "pubDate": "Mon, 04 Aug 2025 11:44:16 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/114413902-b29cfc56-8b8c-4e2f-8e64-03e47310ae13.jpg"
+        },
+        {
+          "title": "I migliori forni a microonde combinati per tutte le tue ricette",
+          "link": "https://www.wired.it/gallery/migliori-forni-microonde-combinati/",
+          "description": "Cottura ventilata, grill croccante e programmi automatici: la nostra selezione di microonde multifunzione per gestire qualsiasi tipo di ricetta con pr",
+          "pubDate": "Mon, 04 Aug 2025 09:42:50 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/68907507d1ad06ded8664eb3/master/pass/forni%20a%20microonde%20combinati.jpg"
+        },
+        {
+          "title": "Apple avrebbe un team segreto “Answers” per liberarsi della ricerca di Google e sfidare ChatGPT",
+          "link": "https://www.dday.it/redazione/53938/apple-avrebbe-un-team-segreto-answers-per-liberarsi-della-ricerca-di-google-e-sfidare-chatgpt-",
+          "description": "",
+          "pubDate": "2025-08-04T11:35:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53938/social_c098b4_co_rDepositphotos_365833670_XL_copia.jpg"
+        },
+        {
+          "title": "Open Platform Organization: un nuovo modo di pensare l’impresa",
+          "link": "https://www.zerounoweb.it/cio-innovation/organizzazione/open-platform-organization-un-nuovo-modo-di-pensare-limpresa/",
+          "description": "Da un modello piramidale di funzioni separate a team autonomi e interconnessi. L’Open Platform Organization rivede il concetto di leadership: ogni per",
+          "pubDate": "Mon, 04 Aug 2025 09:34:58 +0000",
+          "source": "internet4things.it",
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/04113056/Round-table-Var-Group.jpg"
+        },
+        {
+          "title": "PlayStation 6 potrebbe arrivare nel 2027 con queste caratteristiche tecniche",
+          "link": "https://www.dday.it/redazione/53937/playstation-6-potrebbe-arrivare-nel-2027-con-queste-caratteristiche-tecniche",
+          "description": "",
+          "pubDate": "2025-08-04T11:33:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53937/social_e11939_PS6_1.jpg"
+        },
+        {
+          "title": "Ps6 triplicherà la potenza Ps5 senza aumentare il prezzo",
+          "link": "https://www.wired.it/article/ps6-anticipazioni-uscita/",
+          "description": "Promesse altisonanti per la prossima console di Sony, secondo gli ultimi rumors",
+          "pubDate": "Mon, 04 Aug 2025 09:01:20 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/68906c02a3331e9a92f160ed/master/pass/1234777103"
+        },
+        {
+          "title": "Battlefield 6, ecco dove preordinarlo al miglior prezzo",
+          "link": "https://www.tomshw.it/videogioco/battlefield-6-dove-acquistarlo-miglior-prezzo",
+          "description": "Electronic Arts e DICE hanno finalmente svelato data di uscita e dettagli chiave di Battlefield 6, una delle uscite pi&ugrave; attese del 2025 nel pan",
+          "pubDate": "2025-08-04T10:59:47+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/08/65514/Battlefield-6-preorder-copertina.png"
+        },
+        {
+          "title": "Data center e crisi energetica: l’anello debole dell’innovazione AI",
+          "link": "https://www.zerounoweb.it/techtarget/searchdatacenter/data-center-e-crisi-energetica-lanello-debole-dellinnovazione-ai/",
+          "description": "La corsa all’intelligenza artificiale rischia di scontrarsi con un ostacolo spesso sottovalutato: la disponibilità e la distribuzione di energia. Un p",
+          "pubDate": "Mon, 04 Aug 2025 08:54:47 +0000",
+          "source": "internet4things.it",
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/01161012/wordpress3.jpg"
+        },
+        {
+          "title": "Fresco e silenzioso: ventilatore a torre LEVOIT in offerta su Amazon",
+          "link": "https://www.webnews.it/fresco-e-silenzioso-ventilatore-a-torre-levoit-in-offerta-su-amazon/",
+          "description": "In offerta su Amazon un ventilatore a torre eccezionale: solo 20 dB, 12 velocità, risparmio energetico e design compatto.",
+          "pubDate": "Mon, 04 Aug 2025 08:45:50 +0000",
+          "source": "webnews.it",
+          "image": "https://www.webnews.it/app/uploads/2025/08/wp_drafter_1219488.jpg"
+        },
+        {
+          "title": "Viaggiare in aereo, quattro cose da fare prima di salire a bordo",
+          "link": "https://www.macitynet.it/guida-viaggi-in-aereo/",
+          "description": "Una serie di utili consigli per viaggiare sereni e godersi l'esperienza senza distrazioni\n- su macitynet.it  Viaggiare in aereo, quattro cose da fare ",
+          "pubDate": "Mon, 04 Aug 2025 08:29:48 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/05/guida-viaggi-aereo-foto-developer.apple_.comnewsid970ncww4-Flighty-puts-key-information-front-and-center-at-all-times-%E2%80%94-especially-through-its-best-in-class-Live-Activities.jpg"
+        },
+        {
+          "title": "Piccolissima ma versatile: Insta360 GO 3S oggi a 298€!",
+          "link": "https://www.tomshw.it/offerte/piccolissima-ma-versatile-insta360-go-3s-oggi-a-298eur",
+          "description": "Se stai cercando una videocamera compatta, potente e facile da usare per catturare ogni momento in alta qualit&agrave;, l&rsquo;Insta360 GO 3S potrebb",
+          "pubDate": "2025-08-04T10:20:10+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/08/65490/insta360copertina.png"
+        },
+        {
+          "title": "Al via le nuove regole Ue sui grandi modelli di intelligenza artificiale",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/02/news/al_via_le_nuove_regole_ue_sui_grandi_modelli_di_ia-424768360/?rss",
+          "description": "Dal 2 agosto l’AI Act impone ai fornitori di Gpai nuovi obblighi su trasparenza, tutela del diritto d’autore e gestione del rischio sistemico",
+          "pubDate": "Mon, 04 Aug 2025 10:16:06 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/101604970-a417577a-1a64-45d9-bfa9-c849f5f63a01.jpg"
+        },
+        {
+          "title": "Come recuperare foto cancellate da Instagram",
+          "link": "https://www.aranzulla.it/come-recuperare-foto-cancellate-da-instagram-1270594.html",
+          "description": "Di recente ti sei iscritto a Instagram e non hai ancora preso confidenza con tutti gli strumenti messi a disposizione da questo famoso social network ",
+          "pubDate": "Sun, 03 Aug 2025 22:01:52 +0000",
+          "source": "aranzulla.it",
+          "image": "https://www.aranzulla.it/wp-content/contenuti/2021/03/32bdda9f-1200x628.jpg"
+        }
+      ]
     },
     {
       "category": "Mobilita",
-      "items": []
+      "items": [
+        {
+          "title": "Incidente moto. Due ragazzi travolti da un'auto contromano: motociclista in coma",
+          "link": "https://www.moto.it/news/incidente-moto-due-ragazzi-travolti-da-un-auto-contromano-motociclista-in-coma.html",
+          "description": "Gravissimo incidente nel Bresciano durante il weekend: un'auto in contromano travolge due giovani motociclisti sul Garda. L'episodio si inserisce in u",
+          "pubDate": "2025-08-04T12:45:39.8700000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45832003/CINEMA/1200x/incidente-moto-brescia.jpeg"
+        },
+        {
+          "title": "Arezzo, tragico incidente in A1: tir invade la corsia opposta e colpisce un’ambulanza, morte le tre persone a bordo",
+          "link": "https://www.motorionline.com/arezzo-tragico-incidente-in-a1-tir-invade-la-corsia-opposta-e-colpisce-unambulanza-morte-le-tre-persone-a-bordo/",
+          "description": "Gravissimo incidente nella tarda mattinata di oggi, lunedì 4 agosto, sull&#8217;autostrada A1, nel tratto toscano tra i caselli di Arezzo",
+          "pubDate": "Mon, 04 Aug 2025 12:23:23 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/incidente-A1-4-agosto-2025.jpg"
+        },
+        {
+          "title": "Mercato Elettrico -15,17%: luglio conferma le difficoltà, ma fa meglio di giugno",
+          "link": "https://www.moto.it/news/mercato-elettrico-15-17-luglio-conferma-le-difficolta-ma-fa-meglio-di-giugno.html",
+          "description": "Il segmento chiude il mese numero sette in flessione. Eppure mostra segnali di tenuta rispetto ai mesi precedenti. Incentivi, investimenti e infrastru",
+          "pubDate": "2025-08-04T12:18:29.0070000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45831657/CINEMA/1200x/scooter-elettrico-senza-patente.jpeg"
+        },
+        {
+          "title": "Enduro nei boschi: tra passione e rispetto, non servono sanzioni a tappeto. Un solo denunciato su 322 controlli",
+          "link": "https://www.moto.it/news/enduro-nei-boschi-tra-passione-e-rispetto-non-servono-sanzioni-a-tappeto-un-solo-denunciato-su-322-controlli.html",
+          "description": "322 controlli, una sola denuncia: eppure si continua a trattare gli enduristi come fuorilegge. Serve buon senso, non repressione indiscriminata",
+          "pubDate": "2025-08-04T12:04:14.0730000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45831728/CINEMA/1200x/beta-enduro-rr-dinamiche-2730.jpeg"
+        },
+        {
+          "title": "Hamilton affranto, Wolff: “È sempre stato trasparente nel mettersi in discussione, ma deve ricordarsi che è il GOAT”",
+          "link": "https://www.formulapassion.it/f1/f1-news/hamilton-crisi-ferrari-carezza-wolff-deve-ricordarsi-che-e-il-goat-piu-grande-tutti-i-tempi",
+          "description": "Il numero uno della Mercedes ha commentato così le parole molte dure espresse dal sette volte iridato nei confronti di se stesso",
+          "pubDate": "Mon, 04 Aug 2025 12:00:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Hamilton-Ferrari-F1.jpg"
+        },
+        {
+          "title": "Alfa Romeo Tonale, in arrivo il restyling: primo prototipo avvistato su strada [Foto Spia]",
+          "link": "https://www.automoto.it/news/alfa-romeo-tonale-in-arrivo-il-restyling-primo-prototipo-avvistato-su-strada-foto-spia.html",
+          "description": "Avvistato il restyling dell'Alfa Romeo Tonale, ecco tutti gli aggiornamenti",
+          "pubDate": "2025-08-04T11:58:39.0200000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45831714/1200x/nuova-alfa-romeo-tonale.jpeg"
+        },
+        {
+          "title": "Mazda, due nuove sportive in fase di sviluppo",
+          "link": "https://www.formulapassion.it/auto/auto-news/mazda-due-nuove-sportive-sviluppo-mx5-sp3",
+          "description": "Attesa per la versione di serie della Iconic SP Concept 2023 e per la nuova generazione della MX-5",
+          "pubDate": "Mon, 04 Aug 2025 11:45:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2023/10/mazda-iconic-sp-2.jpg"
+        },
+        {
+          "title": "Tesla giudicata colpevole per un incidente mortale con Autopilot: dovrà risarcire 243 milioni di dollari",
+          "link": "https://www.automoto.it/elettrico/tesla-giudicata-colpevole-per-un-incidente-mortale-con-autopilot-dovra-risarcire-243-milioni-di-dollari.html",
+          "description": "Per la prima volta un tribunale statunitense ha condannato Tesla ritenendola parzialmente responsabile di un incidente mortale con Autopilot attivo",
+          "pubDate": "2025-08-04T11:33:38.0730000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45831582/1200x/tesla-logo.jpeg"
+        },
+        {
+          "title": "Esodo estivo 2025: oltre 20 milioni di transiti nel primo weekend di agosto",
+          "link": "https://www.trasporti-italia.com/mobilita/esodo-estivo-2025-transiti/735413/",
+          "description": "Nessuna criticità nonostante l'alto volume di traffico, con 6 milioni di transiti nella mattinata di domenica 3 agosto",
+          "pubDate": "Mon, 04 Aug 2025 11:23:25 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/esodo-estivo_traffico-intenso-scaled.jpg"
+        },
+        {
+          "title": "Hyundai i30: in arrivo un terzo restyling per allungare la vita alla compatta termica [Foto Spia]",
+          "link": "https://www.automoto.it/news/hyundai-i30-in-arrivo-un-terzo-restyling-per-allungare-la-vita-alla-compatta-termica-foto-spia.html",
+          "description": "In arrivo il restyling della Hyundai i30, sarà l'ultimo aggiornamento",
+          "pubDate": "2025-08-04T11:06:00.8870000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45831292/1200x/hyundai-i30-cw-facelift-003.jpeg"
+        },
+        {
+          "title": "Mate Rimac porta la sua Bugatti Chiron da 4 milioni al supermercato",
+          "link": "https://www.autoblog.it/post/mate-rimac-bugatti-chiron-super-sport-4-milioni-supermercato",
+          "description": "Il CEO di Bugatti Rimac, Mate Rimac, usa la sua Bugatti Chiron Super Sport da 4 milioni di dollari per una semplice spesa al supermercato\nIl post Mate",
+          "pubDate": "Mon, 04 Aug 2025 11:02:41 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/mate-rimac-bugatti-chiron-1170x826-1.jpg"
+        },
+        {
+          "title": "Tracollo Red Bull in Ungheria, Mekies: “Abbiamo provato di tutto. Non avevamo prestazione”",
+          "link": "https://www.formulapassion.it/f1/f1-news/tracollo-red-bull-ungheria-mekies-abbiamo-provato-di-tutto-non-avevamo-prestazione",
+          "description": "Il team di Milton Keynes ha raccolto appena due punti dalla trasferta ungherese grazie al nono posto di Max Verstappen",
+          "pubDate": "Mon, 04 Aug 2025 11:00:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/08/GettyImages-2227438717-1.jpg"
+        },
+        {
+          "title": "McLaren F1 batte ogni record d’asta: valore cresce del 2.574%",
+          "link": "https://www.autoblog.it/post/mclaren-f1-valore",
+          "description": "La McLaren F1 si conferma la regina delle aste: storia, dettagli e motivi del suo valore da record. Un investimento che ridefinisce il mercato auto\nIl",
+          "pubDate": "Mon, 04 Aug 2025 10:56:56 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/mclaren_f1-1-1024x640-1.jpg"
+        },
+        {
+          "title": "Un concessionario Alfa Romeo che è un viaggio nel tempo: 33, 155 e 156 in vetrina",
+          "link": "https://www.autoblog.it/post/alfa-romeo-abbandonate-concessionaria",
+          "description": "Scopri il mistero del concessionario Alfa Romeo abbandonato nei Paesi Bassi: modelli iconici, storie di passione e una testimonianza toccante\nIl post ",
+          "pubDate": "Mon, 04 Aug 2025 10:50:58 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
+        },
+        {
+          "title": "Pininfarina festeggia 95 anni al Pebble Beach Concours 2025 con il debutto del Pininfarina Trophy",
+          "link": "https://www.motorionline.com/pininfarina-festeggia-95-anni-al-pebble-beach-concours-2025-con-il-debutto-del-pininfarina-trophy/",
+          "description": "Pininfarina celebrerà il suo 95° anniversario all&#8217;edizione 2025 del prestigioso Concorso d&#8217;Eleganza di Pebble Beach, in California, dove i",
+          "pubDate": "Mon, 04 Aug 2025 10:40:03 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Pebble-Beach-Pininfarina-Trophy.jpg"
+        },
+        {
+          "title": "Kia EV4 ha dimostrato la sua resistenza in un test da 10.000 km al Nürburgring",
+          "link": "https://www.motorionline.com/kia-ev4-ha-dimostrato-la-sua-resistenza-in-un-test-da-10-000-km-al-nurburgring/",
+          "description": "Il nuovo Kia EV4, compatto e completamente elettrico, stabilisce nuovi standard in termini di durata e affidabilità per veicoli ad",
+          "pubDate": "Mon, 04 Aug 2025 10:35:39 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Kia-EV4.jpg"
+        },
+        {
+          "title": "A1 MILANO-NAPOLI: TEMPORANEAMENTE CHIUSO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN ENTRAMBE LE DIREZIONI",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-temporaneamente-chiuso-il-tratto-compreso-tra-valdarno-e-arezzo-in-entrambe-le-direzioni/735412/",
+          "description": "A1 MILANO-NAPOLI: TEMPORANEAMENTE CHIUSO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN ENTRAMBE LE DIREZIONI Roma 4 Agosto 2025 &#8211; Alle 11:30 circa",
+          "pubDate": "Mon, 04 Aug 2025 10:02:02 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "A23 UDINE-TARVISIO: CHIUSURE NOTTURNE DEL TRATTO PONTEBBA-CONFINE DI STATO VERSO L’AUSTRIA",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a23-udine-tarvisio-chiusure-notturne-del-tratto-pontebba-confine-di-stato-verso-laustria/735379/",
+          "description": "A23 UDINE-TARVISIO: CHIUSURE NOTTURNE DEL TRATTO PONTEBBA-CONFINE DI STATO VERSO L&#8217;AUSTRIA Roma, 4 agosto 2025 &#8211; Sulla A23 Udine-Tarvisio,",
+          "pubDate": "Mon, 04 Aug 2025 09:56:03 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "Kraken aggrega 325 mila EV: 2 GW al servizio della rete",
+          "link": "https://www.vaielettrico.it/kraken-aggrega-325-mila-ev-2-gw-al-servizio-della-rete/",
+          "description": "Kraken Technologies  cresce e con il Mercury Consortium sta sviluppando un quadro tecnico-normativo per l&#8217;integrazione nella rete dispositivi&#8",
+          "pubDate": "Mon, 04 Aug 2025 09:44:30 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/Kraken-VPP-2GW-2.jpg"
+        },
+        {
+          "title": "Così i supercondensatori possono essere usati sulle auto elettriche",
+          "link": "https://insideevs.it/news/767876/supercondensatori-grafene-prestazioni-auto-elettrica/",
+          "description": "Con il grafene al posto del carbonio aumentano prestazioni e densità energetica. Così possono servire nella frenata rigenerativa",
+          "pubDate": "Mon, 04 Aug 2025 09:16:09 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/g4k699/s3/ricercatori-dell-empa-con-il-grafene-usato-per-i-supercondensatori.jpg"
+        },
+        {
+          "title": "Quanta autonomia perde l'auto elettrica in autostrada?",
+          "link": "https://insideevs.it/news/767697/auto-elettrica-autonomia-autostrada/",
+          "description": "Un test sulle Kia EV9 e Lucid Air mostra come cambia l’efficienza a seconda della velocità: i dati parlano chiaro",
+          "pubDate": "Mon, 04 Aug 2025 07:00:00 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/E63jnM/s3/2025-lucid-air-grand-touring.jpg"
+        },
+        {
+          "title": "Ricaricare e pagare contactless costa di più? Il caso Germania",
+          "link": "https://insideevs.it/news/767438/ricarica-pagamento-contactless-costi-germania/",
+          "description": "Secondo l'ADAC, la differenza tra i prezzi in abbonamento e quelli pay-per-use con pagamento contactless andrebbe controllata",
+          "pubDate": "Mon, 04 Aug 2025 05:00:00 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/W8qPBN/s3/adac---ad-hoc-laden-viel-zu-teuer.jpg"
+        },
+        {
+          "title": "Auto più vendute in Italia: -5,1% le immatricolazioni a luglio 2025",
+          "link": "//www.alvolante.it/news/auto-piu-vendute-italia-5-1-immatricolazioni-luglio-2025-406333",
+          "description": "Ancora in calo il mercato delle auto nuove: il mese scorso chiude con 118.493 consegne. Nei primi sette mesi del 2025 il calo complessivo è del -3,8%.",
+          "pubDate": "10:40 am",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Auto%20pi%C3%B9"
+        },
+        {
+          "title": "La Porsche conferma la Macan termica entro il 2028",
+          "link": "//www.alvolante.it/news/porsche-conferma-macan-termica-entro-il-2028-406337",
+          "description": "Ci vorranno ancora tre anni prima di vedere la nuova suv sportiva con motori a benzina elettrificati che si affiancherà a quella elettrica.",
+          "pubDate": "9:55 am",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=La%20Porsche"
+        },
+        {
+          "title": "Formula 1: risultato Gp d’Ungheria 2025",
+          "link": "//www.alvolante.it/formula1/news/formula-1-risultato-gp-d-ungheria-2025-406335",
+          "description": "Doppietta McLaren con Norris e Piastri. Male le due Ferrari, con Leclerc partito in pole e solo quarto e Hamilton dodicesimo.",
+          "pubDate": "3:20 pm",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Formula%201%3A"
+        }
+      ]
     },
     {
       "category": "Clima",
-      "items": []
+      "items": [
+        {
+          "title": "Una 21enne è stata sequestrata e violentata in un bar in disuso a Perugia: fermato un 45enne",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/violenza-sequestro-perugia-bar-dismesso-notizie/8084213/",
+          "description": "Un uomo di 45 anni è stato fermato dalla polizia a Perugia per violenza sessuale aggravata, sequestro di persona e lesioni personali pluriaggravate. L",
+          "pubDate": "Mon, 04 Aug 2025 12:27:09 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2019/07/19/violenza--1200x630.jpg"
+        },
+        {
+          "title": "“Dovresti usare il tuo potere per denunciare il genocidio in Palestina”: chi è Miguel Adrover, lo stilista che si rifiuta di vestire Rosalía",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/dovresti-usare-il-tuo-potere-per-denunciare-il-genocidio-in-palestina-chi-e-miguel-adrover-lo-stilista-che-si-rifiuta-di-vestire-rosalia/8084271/",
+          "description": "Se ti chiami Rosalía, sei una delle artiste più ascoltate al mondo (la canzone Despechá ha superato il miliardo di stream su Spotify) e sei corteggiat",
+          "pubDate": "Mon, 04 Aug 2025 12:24:14 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/ipiccy_image-10-1200x630.jpg"
+        },
+        {
+          "title": "Incidente sull’A1: chi erano i due soccorritori della Misericordia morti nello scontro col tir",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/incidente-a1-soccorritori-misericordia-valdarno-notizie/8084252/",
+          "description": "Gianni Trappolini e Giulia Santoni. Sono i nomi dei due soccorritori della Misericordia del Valdarno morti nel terribile incidente avvenuto questa mat",
+          "pubDate": "Mon, 04 Aug 2025 12:19:19 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/incidente-a1.jpg"
+        },
+        {
+          "title": "INPS, arrivano 1000 euro ad agosto: chi riceverà il contributo",
+          "link": "https://www.greenstyle.it/inps-arrivano-1000-euro-ad-agosto-chi-ricevera-il-contributo-424543.html",
+          "description": "Con l’entrata in vigore della Legge di Bilancio 2025, è stato introdotto un nuovo incentivo destinato a sostenere\nL'articolo INPS, arrivano 1000 euro ",
+          "pubDate": "Mon, 04 Aug 2025 11:30:54 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/Donna-euro-www.greenstyle.it-2025-07-04.jpg"
+        },
+        {
+          "title": "Le multinazionali del cibo stanno perdendo il dominio del mercato, e ritornano i marchi più locali",
+          "link": "https://euractiv.it/section/concorrenza/news/le-multinazionali-del-cibo-stanno-perdendo-il-dominio-del-mercato-e-ritornano-i-marchi-piu-locali/",
+          "description": "Da Unilever a Nestlé e Kellogg, alcune delle più grandi multinazionali del settore alimentare stanno dismettendo marchi e intere linee di produzione, ",
+          "pubDate": "Mon, 04 Aug 2025 10:59:48 +0000",
+          "source": "euractiv.it",
+          "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/30856232495_4244064a3b_k-1024x683.jpg"
+        },
+        {
+          "title": "I videogiocatori invadono la consultazione UE per chiedere regole che garantiscano che il divertimento non finisca mai",
+          "link": "https://euractiv.it/section/futuro-delleuropa/news/i-videogiocatori-invadono-la-consultazione-ue-per-chiedere-regole-che-garantiscano-che-il-divertimento-non-finisca-mai/",
+          "description": "Arrabbiati per la chiusura del gioco di corse online, The Crew, i videogiocatori (gamers) di tutto il mondo si stanno unendo per spingere l’UE a regol",
+          "pubDate": "Mon, 04 Aug 2025 10:40:10 +0000",
+          "source": "euractiv.it",
+          "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/joystick-1216816_1280-1024x682.jpg"
+        },
+        {
+          "title": "L’accordo di Trump sui missili Patriot per l’Ucraina alimenta le preoccupazioni europee sulle lacune nella difesa aerea",
+          "link": "https://euractiv.it/section/mondo/news/laccordo-di-trump-sui-missili-patriot-per-lucraina-alimenta-le-preoccupazioni-europee-sulle-lacune-nella-difesa-aerea/",
+          "description": "Un accordo tra Donald Trump e gli Stati membri europei della NATO per fornire all’Ucraina i tanto necessari sistemi di difesa aerea Patriot dipende in",
+          "pubDate": "Mon, 04 Aug 2025 10:20:49 +0000",
+          "source": "euractiv.it",
+          "image": "https://euractiv.it/wp-content/uploads/sites/11/2024/12/Le-Capitali-Top-image-1-2-1024x576.png"
+        },
+        {
+          "title": "Ponte sullo Stretto di Messina: nuovo reclamo all’UE delle associazioni",
+          "link": "https://www.legambiente.it/comunicati-stampa/ponte-sullo-stretto-di-messina-nuovo-reclamo-allue-delle-associazioni/",
+          "description": "PONTE SULLO STRETTO DI MESSINA: NUOVO RECLAMO ALL’UNIONE EUROPEA DI GREENPEACE, LEGAMBIENTE, LIPU E WWF L’impatto ambientale del Ponte sullo Stretto d",
+          "pubDate": "Mon, 04 Aug 2025 09:55:08 +0000",
+          "source": "legambiente.it",
+          "image": "https://www.legambiente.it/wp-content/uploads/2023/07/ponte-4.jpg"
+        },
+        {
+          "title": "Monitoraggio e prevenzione incendi. Al via nel Lazio il nuovo progetto INWITT e Legambiente",
+          "link": "https://www.legambiente.it/comunicati-stampa/monitoraggio-e-prevenzione-incendi-al-via-nel-lazio-il-nuovo-progetto-inwitt-e-legambiente/",
+          "description": "Le torri di Inwit protagoniste della lotta agli incendi. Al via il nuovo progetto in partnership con Legambiente per la prevenzione e il monitoraggio ",
+          "pubDate": "Mon, 04 Aug 2025 09:50:54 +0000",
+          "source": "legambiente.it",
+          "image": "https://www.legambiente.it/wp-content/uploads/2020/09/incendio-bosco.jpg"
+        },
+        {
+          "title": "Frigorifero, ogni estate sempre il solito errore: sbagli a premere questo tasto e si rovina tutto",
+          "link": "https://www.greenstyle.it/frigorifero-ogni-estate-sempre-il-solito-errore-sbagli-a-premere-questo-tasto-e-si-rovina-tutto-424518.html",
+          "description": "L&#8217;errore che si fa in estate con il frigorifero: non bisogna premere questo specifico tasto altrimenti va tutto\nL'articolo Frigorifero, ogni est",
+          "pubDate": "Mon, 04 Aug 2025 09:00:26 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/tasto-frigo-greenstyle.it-20250726.jpg"
+        },
+        {
+          "title": "Río Negro",
+          "link": "https://www.copernicus.eu/en/rio-negro",
+          "description": "Río Negro\nldhoop\n\nMon, 04/08/2025 - 10:29\n\n\n      \n      Embed:\n    \n          🏞 Stretching across the plains of Patagonia, the Río Negro is an agric",
+          "pubDate": "Mon, 04 Aug 2025 08:29:46 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "Mount Bromo, located in East Java",
+          "link": "https://www.copernicus.eu/en/mount-bromo-located-east-java",
+          "description": "Mount Bromo, located in East Java\nldhoop\n\nMon, 04/08/2025 - 09:22\n\n\n      \n      Embed:\n    \n          🌋 Mount Bromo, located in East Java 🇮🇩 is an",
+          "pubDate": "Mon, 04 Aug 2025 07:22:39 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "Iona situates in the Namib Desert",
+          "link": "https://www.copernicus.eu/en/iona-situates-namib-desert",
+          "description": "Iona situates in the Namib Desert\nldhoop\n\nMon, 04/08/2025 - 09:22\n\n\n      \n      Embed:\n    \n          Angola's Iona NP situates in the Namib Desert, ",
+          "pubDate": "Mon, 04 Aug 2025 07:22:03 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "E’ il borgo più piccolo d’Italia, ma dalla storia incredibile: un gioiello che regala una grande emozione",
+          "link": "https://www.greenstyle.it/e-il-borgo-piu-piccolo-ditalia-ma-dalla-storia-incredibile-un-gioiello-che-regala-una-grande-emozione-424524.html",
+          "description": "Assolutamente da visitare, il borgo più piccolo che c&#8217;è in Italia: tra arte e storia è un viaggio\nL'articolo E&#8217; il borgo più piccolo d&#82",
+          "pubDate": "Mon, 04 Aug 2025 07:00:43 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/borgo-greenstyle.it-20250726.jpg"
+        },
+        {
+          "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
+          "link": "https://www.legambiente.it/comunicati-stampa/sos-adamello-anteprima-di-carovana-dei-ghiacciai-2025/",
+          "description": "Flash mob sull’Adamello che ospita il ghiacciaio più grande delle Alpi italiane. Il gigante bianco nel 2024 ha registrato un arretramento della fronte",
+          "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
+          "source": "legambiente.it",
+          "image": "https://www.legambiente.it/wp-content/uploads/2025/08/DJI_0298-scaled.jpg"
+        },
+        {
+          "title": "Global quantification of the dispersion effect with POLDER satellite data",
+          "link": "https://www.nature.com/articles/s41467-025-62238-3",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-62238-3/MediaObjects/41467_2025_62238_Fig1_HTML.png"
+        },
+        {
+          "title": "Climate action and energy access in Sub-Saharan Africa: insights from Covenant of Mayors signatories",
+          "link": "https://www.nature.com/articles/s42949-025-00250-8",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42949-025-00250-8/MediaObjects/42949_2025_250_Fig1_HTML.png"
+        },
+        {
+          "title": "Digital technologies for climate-related health education, behavior and risk reduction: a systematic scoping review",
+          "link": "https://www.nature.com/articles/s41746-025-01907-5",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-025-01907-5/MediaObjects/41746_2025_1907_Fig1_HTML.png"
+        },
+        {
+          "title": "Nella più grande monocoltura di eucalipto al mondo",
+          "link": "https://www.lifegate.it/eucalipto-monocoltura-brasile",
+          "description": "Un viaggio all’ interno delle gigantesche piantagioni di eucalipto per conoscere il loro impatto su terra, acqua e comunità nel semiarido brasiliano.",
+          "pubDate": "Fri, 01 Aug 2025 15:52:10 +0000",
+          "source": "lifegate.it",
+          "image": "https://cdn.lifegate.it/ZEgXvUJieOzM56rs1CHNR67wubk=/1920x1080/smart/https://www.lifegate.it/app/uploads/2025/07/monocoltura-eucalipto.png"
+        },
+        {
+          "title": "Dai rifiuti ai magneti: così RarEarth porta in Italia il riciclo delle terre rare, anche grazie a Primo Climate",
+          "link": "https://www.lifegate.it/rarearth-startup-neodimio-magneti-terre-rare",
+          "description": "Per la transizione energetica servono materiali che l’Europa non possiede. La startup RarEarth ha trovato il modo di riciclarli, convincendo Primo Cli",
+          "pubDate": "Fri, 01 Aug 2025 13:43:44 +0000",
+          "source": "lifegate.it",
+          "image": "https://cdn.lifegate.it/s7FPyPrJKOX4VbBxcPqpMtdRbP8=/1920x1080/smart/https://www.lifegate.it/app/uploads/2025/07/rarearth-prodotto.jpg"
+        },
+        {
+          "title": "(AI) LCA: è uno strumento efficace contro il greenwashing? La parola all’AI",
+          "link": "https://www.reteclima.it/lca-strumento-anti-greenwashing-efficace-la-parola-allai/",
+          "description": "In questo articolo proponiamo un nuovo dialogo su tematiche tecniche tra il team di Rete Clima e un sistema di Intelligenza Artificiale per esplorare ",
+          "pubDate": "Fri, 01 Aug 2025 10:32:10 +0000",
+          "source": "reteclima.it",
+          "image": "https://www.reteclima.it/wp-content/uploads/pexels-tara-winstead-8849295-scaled.jpg"
+        },
+        {
+          "title": "Corte Internazionale di Giustizia fa storia: gli Stati responsabili per il cambiamento climatico!",
+          "link": "https://www.reteclima.it/parere-storico-della-corte-internazionale-di-giustizia-gli-stati-responsabili-per-il-cambiamento-climatico/",
+          "description": "Il 23 luglio 2025 la Corte Internazionale di Giustizia delle Nazioni Unite ha emesso un parere consultivo storico sul cambiamento climatico, aprendo u",
+          "pubDate": "Thu, 31 Jul 2025 23:20:40 +0000",
+          "source": "reteclima.it",
+          "image": "https://www.reteclima.it/wp-content/uploads/pexels-alex-arcuri-275586511-12921445-1280x646-2.jpg"
+        },
+        {
+          "title": "Da settembre i nuovi incentivi all’acquisto di auto elettriche: cosa sapere (e come prepararsi in anticipo)",
+          "link": "https://www.lifegate.it/da-settembre-i-nuovi-incentivi-allacquisto-di-auto-elettriche-cosa-sapere",
+          "description": "Nuovi incentivi all'acquisto di auto elettriche da settembre: benefici fino a 11mila euro per i privati e 20mila per le microimprese. Dall'Isee alla r",
+          "pubDate": "Thu, 31 Jul 2025 15:08:55 +0000",
+          "source": "lifegate.it",
+          "image": "https://cdn.lifegate.it/dT9uqa9xAeeWZ35Z1f24CVLpLfY=/8192x5464/smart/https://www.lifegate.it/app/uploads/2021/09/gettyimages-1322515825.jpg"
+        },
+        {
+          "title": "Green Claims: direttiva ko, la parola all’European Securities and Markets Authority (ESMA)",
+          "link": "https://www.reteclima.it/green-claims-perche-le-dichiarazioni-di-sostenibilita-sono-fondamentali-per-investitori-e-mercato/",
+          "description": "Nel contesto attuale della disclosure aziendale sulle proprie prestazioni ambientali, anche le dichiarazioni di sostenibilità (&#8220;green claims&#82",
+          "pubDate": "Tue, 29 Jul 2025 15:14:20 +0000",
+          "source": "reteclima.it",
+          "image": "https://www.reteclima.it/wp-content/uploads/Rete-Clima-greenwashing-2.png"
+        },
+        {
+          "title": "Pubblicato il bando del decreto Pratiche Ecologiche",
+          "link": "https://www.consorziobiogas.it/pubblicato-il-bando-del-decreto-pratiche-ecologiche/",
+          "description": "Il MASE ha pubblicato l&#8217;avviso pubblico per le procedure competitive pubbliche di selezione dei progetti ammissibili ai contributi previsti dal ",
+          "pubDate": "Wed, 23 Jul 2025 13:39:07 +0000",
+          "source": "consorziobiogas.it",
+          "image": "https://www.consorziobiogas.it/wp-content/uploads/2024/12/CIB_400x400-e1743586132791.png"
+        }
+      ]
     }
   ]
 }
