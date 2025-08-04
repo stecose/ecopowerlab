@@ -1,7 +1,5 @@
 // stats_env_co2_solar.js
-import fs from "fs/promises";
-import fetch from "node-fetch"; // se usi Node >=18 puoi usare global fetch e rimuovere questa riga
-import { URL } from "url";
+const fs = require("fs").promises;
 
 const DEFAULT_LAT = process.env.SOLAR_LAT || 41.9028; // Roma
 const DEFAULT_LON = process.env.SOLAR_LON || 12.4964;
@@ -27,11 +25,10 @@ async function fetchCO2() {
     const weeklyResp = await fetchWithTimeout("https://gml.noaa.gov/ccgg/trends/weekly.html");
     if (!weeklyResp.ok) throw new Error(`Weekly CO2 fetch HTTP ${weeklyResp.status}`);
     const weeklyHtml = await weeklyResp.text();
-    // estrai "Week beginning on ...:   426.57 ppm"
     const weekMatch = /Week beginning on ([\w\s\d,]+):\s*([\d.]+)\s*ppm/i.exec(weeklyHtml);
     if (weekMatch) {
       const weekBegin = new Date(weekMatch[1]);
-      result.week_begin = weekBegin.toISOString().slice(0,10);
+      result.week_begin = weekBegin.toISOString().slice(0, 10);
       result.weekly_ppm = parseFloat(weekMatch[2]);
     }
 
@@ -39,15 +36,13 @@ async function fetchCO2() {
     const monthlyResp = await fetchWithTimeout("https://gml.noaa.gov/ccgg/trends/monthly.html");
     if (!monthlyResp.ok) throw new Error(`Monthly CO2 fetch HTTP ${monthlyResp.status}`);
     const monthlyHtml = await monthlyResp.text();
-    // estrai "June 2025:     429.61 ppm" (assume ultimo mese indicato)
     const monthMatch = /([A-Za-z]+)\s+(\d{4}):\s+([\d.]+)\s*ppm/i.exec(monthlyHtml);
     if (monthMatch) {
       const monthName = monthMatch[1];
       const year = monthMatch[2];
       const ppm = parseFloat(monthMatch[3]);
-      // converti nome mese in numero
       const dt = new Date(`${monthName} 1, ${year}`);
-      const mm = String(dt.getMonth() + 1).padStart(2,"0");
+      const mm = String(dt.getMonth() + 1).padStart(2, "0");
       result.month = `${year}-${mm}`;
       result.monthly_ppm = ppm;
     }
@@ -58,7 +53,6 @@ async function fetchCO2() {
 }
 
 // 2. Temperatura globale - GISTEMP (NASA)
-// prende l'ultimo mese disponibile dal CSV v4
 async function fetchGlobalTempAnomaly() {
   const out = { global_monthly_anomaly_c: null, year: null, month: null, error: null };
   try {
@@ -66,37 +60,30 @@ async function fetchGlobalTempAnomaly() {
     const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`GISTEMP fetch HTTP ${res.status}`);
     const text = await res.text();
-    const lines = text.split("\n").filter(l => l.trim() && !l.startsWith("Year"));
-    // The file has header line starting with "Year,Jan,Feb,...,Dec, J-D, D-N, ...", treat as CSV
     const all = text.split("\n");
-    let headerIdx = all.findIndex(l => l.trim().startsWith("Year,"));
+    const headerIdx = all.findIndex(l => l.trim().startsWith("Year,"));
     if (headerIdx === -1) throw new Error("Header not found in GISTEMP CSV");
     const header = all[headerIdx].split(",").map(h => h.trim());
     const dataLines = all.slice(headerIdx + 1).filter(l => l.trim() && !l.startsWith("  "));
-    // parse into rows
     const rows = dataLines.map(l => {
       const parts = l.split(",").map(p => p.trim());
       const obj = {};
-      header.forEach((h,i) => {
+      header.forEach((h, i) => {
         obj[h] = parts[i];
       });
       return obj;
     });
-    // find latest non-empty month from most recent year
-    const years = [...new Set(rows.map(r => r["Year"]))].sort((a,b)=>parseInt(b)-parseInt(a));
+    const years = [...new Set(rows.map(r => r["Year"]))].sort((a, b) => parseInt(b) - parseInt(a));
     let found = false;
     for (const y of years) {
       const row = rows.find(r => r["Year"] === y);
       if (!row) continue;
-      // months in order Jan..Dec
-      const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-      for (let i = months.length -1; i >=0; i--) {
+      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      for (let i = months.length - 1; i >= 0; i--) {
         const monthKey = months[i];
         const val = row[monthKey];
         if (val && val !== "***") {
-          // GISTEMP v4: values are in hundredths of °C? If same as v3 divide by 100. Documentation varies.
           let anomaly = parseFloat(val);
-          // Heuristic: if absolute >10 assume it's hundredths (e.g., 180 means 1.80°C)
           if (Math.abs(anomaly) > 10) anomaly = anomaly / 100;
           out.global_monthly_anomaly_c = anomaly;
           out.year = parseInt(y);
@@ -114,14 +101,14 @@ async function fetchGlobalTempAnomaly() {
   return out;
 }
 
-// 3. Irraggiamento solare da NASA POWER (ultimi 7 giorni) per coordinate
 function formatDateYYYYMMDD(d) {
   const yyyy = d.getUTCFullYear();
-  const mm = String(d.getUTCMonth() + 1).padStart(2,"0");
-  const dd = String(d.getUTCDate()).padStart(2,"0");
+  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(d.getUTCDate()).padStart(2, "0");
   return `${yyyy}${mm}${dd}`;
 }
 
+// 3. Irraggiamento solare da NASA POWER
 async function fetchSolarResource(lat = DEFAULT_LAT, lon = DEFAULT_LON) {
   const out = {
     location: { lat: parseFloat(lat), lon: parseFloat(lon) },
@@ -135,15 +122,14 @@ async function fetchSolarResource(lat = DEFAULT_LAT, lon = DEFAULT_LON) {
   };
   try {
     const today = new Date();
-    const end = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate())); // oggi UTC
+    const end = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
     const startDate = new Date(end);
-    startDate.setDate(end.getDate() - 6); // ultimi 7 giorni
+    startDate.setDate(end.getDate() - 6);
     const startStr = formatDateYYYYMMDD(startDate);
     const endStr = formatDateYYYYMMDD(end);
     out.period.start = startStr;
     out.period.end = endStr;
 
-    // Parametro: ALLSKY_SFC_SW_DWN = All Sky Surface Shortwave Downward Irradiance (MJ/m^2/day)
     const parameters = "ALLSKY_SFC_SW_DWN";
     const apiUrl = `https://power.larc.nasa.gov/api/temporal/daily/point?parameters=${parameters}&community=RE&longitude=${lon}&latitude=${lat}&start=${startStr}&end=${endStr}&format=JSON&user=ecopowerlab`;
     const res = await fetchWithTimeout(apiUrl);
@@ -152,19 +138,15 @@ async function fetchSolarResource(lat = DEFAULT_LAT, lon = DEFAULT_LON) {
     if (!json || !json.properties || !json.properties.parameter || !json.properties.parameter.ALLSKY_SFC_SW_DWN) {
       throw new Error("Struttura risposta NASA POWER inattesa");
     }
-    const daily = json.properties.parameter.ALLSKY_SFC_SW_DWN; // oggetto {YYYYMMDD: value}
+    const daily = json.properties.parameter.ALLSKY_SFC_SW_DWN;
     const values = Object.values(daily).map(v => parseFloat(v)).filter(v => !isNaN(v));
     if (!values.length) throw new Error("Nessun valore valido da NASA POWER");
-    // media (MJ/m2/day)
-    const avgMj = values.reduce((a,b)=>a+b,0)/values.length;
+    const avgMj = values.reduce((a, b) => a + b, 0) / values.length;
     out.average_irradiance_mj_m2_day = parseFloat(avgMj.toFixed(3));
-    // converti in kWh: 1 MJ = 0.2777777778 kWh
     const avgKwh = avgMj * 0.2777777778;
     out.average_irradiance_kwh_m2_day = parseFloat(avgKwh.toFixed(3));
-    // energia disponibile con efficienza
     const availableEnergy = avgKwh * PANEL_EFFICIENCY;
     out.available_energy_kwh_m2_day = parseFloat(availableEnergy.toFixed(4));
-    // potenza media (kW) = kWh/day / 24
     out.available_power_kw = parseFloat((availableEnergy / 24).toFixed(4));
   } catch (e) {
     out.error = e.message;
@@ -172,7 +154,6 @@ async function fetchSolarResource(lat = DEFAULT_LAT, lon = DEFAULT_LON) {
   return out;
 }
 
-// main
 async function main() {
   const stats = {
     updated_at: new Date().toISOString(),
