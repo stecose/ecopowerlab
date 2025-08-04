@@ -209,6 +209,14 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "Buchi neri primordiali: creatori o distruttori delle prime stelle?",
+          "link": "https://www.hdblog.it/curiosita/articoli/n627313/materia-oscura-alba-cosmica-big-bang/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 12:40:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/686410?w=1920"
+        },
+        {
           "title": "Fastweb+Vodafone tra le prime aziende in Europa a firmare il Codice UE per l'AI",
           "link": "https://www.hdblog.it/business/articoli/n627331/fastweb-vodafone-prime-aziende-europa-codice-ue-ai/",
           "description": "",
@@ -223,14 +231,6 @@
           "pubDate": "Mon, 04 Aug 2025 12:30:11 +0200",
           "source": "hdblog.it",
           "image": "https://www.hdmotori.it/app/uploads/2025/08/ford-hd.jpg"
-        },
-        {
-          "title": "Shein multata in Italia per greenwashing: 1 milione di euro dallAntitrust",
-          "link": "https://www.hdblog.it/green/articoli/n627340/shein-multata-sanzione-1-milione-euro-antitrust/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 12:25:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277783?w=1920"
         },
         {
           "title": "Dal 9 ottobre bonifici più sicuri: scatta il controllo automatico in tempo reale dei dati prima dell’invio",
@@ -414,22 +414,6 @@
       "category": "Mobilita",
       "items": [
         {
-          "title": "Mercato Elettrico -15,17%: luglio conferma le difficoltà, ma fa meglio di giugno",
-          "link": "https://www.moto.it/news/mercato-elettrico-15-17-luglio-conferma-le-difficolta-ma-fa-meglio-di-giugno.html",
-          "description": "",
-          "pubDate": "2025-08-04T12:18:29.0070000",
-          "source": "moto.it",
-          "image": "https://img.stcrm.it/images/45831657/CINEMA/1200x/scooter-elettrico-senza-patente.jpeg"
-        },
-        {
-          "title": "Enduro nei boschi: tra passione e rispetto, non servono sanzioni a tappeto. Un solo denunciato su 322 controlli",
-          "link": "https://www.moto.it/news/enduro-nei-boschi-tra-passione-e-rispetto-non-servono-sanzioni-a-tappeto-un-solo-denunciato-su-322-controlli.html",
-          "description": "",
-          "pubDate": "2025-08-04T12:04:14.0730000",
-          "source": "moto.it",
-          "image": "https://img.stcrm.it/images/45831728/CINEMA/1200x/beta-enduro-rr-dinamiche-2730.jpeg"
-        },
-        {
           "title": "Alfa Romeo Tonale, in arrivo il restyling: primo prototipo avvistato su strada [Foto Spia]",
           "link": "https://www.automoto.it/news/alfa-romeo-tonale-in-arrivo-il-restyling-primo-prototipo-avvistato-su-strada-foto-spia.html",
           "description": "",
@@ -446,28 +430,20 @@
           "image": "https://img.stcrm.it/images/45831582/1200x/tesla-logo.jpeg"
         },
         {
-          "title": "Ci lascia il piccolo Luca, figlio dell'ex pilota Sylvain Guintoli: aveva solo 6 anni",
-          "link": "https://www.moto.it/news/ci-lascia-il-piccolo-luca-figlio-dell-ex-pilota-sylvain-guintoli-aveva-solo-6-anni.html",
-          "description": "",
-          "pubDate": "2025-08-04T11:33:32.0700000",
-          "source": "moto.it",
-          "image": "https://img.stcrm.it/images/45831544/CINEMA/1200x/luca-guintoli.jpeg"
-        },
-        {
           "title": "Hyundai i30: in arrivo un terzo restyling per allungare la vita alla compatta termica [Foto Spia]",
           "link": "https://www.automoto.it/news/hyundai-i30-in-arrivo-un-terzo-restyling-per-allungare-la-vita-alla-compatta-termica-foto-spia.html",
           "description": "",
           "pubDate": "2025-08-04T11:06:00.8870000",
           "source": "automoto.it",
-          "image": ""
+          "image": "https://img.stcrm.it/images/45831292/1200x/hyundai-i30-cw-facelift-003.jpeg"
         },
         {
-          "title": "Kia EV4 ha dimostrato la sua resistenza in un test da 10.000 km al Nürburgring",
-          "link": "https://www.motorionline.com/kia-ev4-ha-dimostrato-la-sua-resistenza-in-un-test-da-10-000-km-al-nurburgring/",
+          "title": "Lancia HF, la storia dietro al mitico Elefantino: gli aneddoti",
+          "link": "https://www.autoblog.it/post/lancia-hf-storia",
           "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:35:39 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Kia-EV4.jpg"
+          "pubDate": "Mon, 04 Aug 2025 10:39:53 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/WhatsApp-Image-2025-08-04-at-12.38.41-1-scaled.jpeg"
         },
         {
           "title": "Nissan cede fabbrica in India a Renault: affare da 404 milioni",
@@ -475,7 +451,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 10:35:24 +0000",
           "source": "autoblog.it",
-          "image": ""
+          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393120-scaled.jpg"
         },
         {
           "title": "Fiat Panda, la regina delle vendite è in offerta ad agosto: il prezzo",
@@ -486,59 +462,11 @@
           "image": ""
         },
         {
-          "title": "Hyundai i30, l’ultimo restyling prima dell’addio: cosa cambia",
-          "link": "https://www.autoblog.it/post/hyundai-i30-restyling",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:09:26 +0000",
-          "source": "autoblog.it",
-          "image": ""
-        },
-        {
-          "title": "SEAT: primo semestre 2025 impegnativo per la casa spagnola",
-          "link": "https://www.motorionline.com/seat-primo-semestre-2025-impegnativo-per-la-casa-spagnola/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:06:31 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/SEAT.jpg"
-        },
-        {
-          "title": "A1 MILANO-NAPOLI: TEMPORANEAMENTE CHIUSO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN ENTRAMBE LE DIREZIONI",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-temporaneamente-chiuso-il-tratto-compreso-tra-valdarno-e-arezzo-in-entrambe-le-direzioni/735412/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 10:02:02 +0000",
-          "source": "trasporti-italia.com",
-          "image": ""
-        },
-        {
           "title": "L’analisi del lunedì | Ferrari: con i dubbi di Hamilton va subito opzionato Verstappen",
           "link": "https://www.formulapassion.it/f1/f1-commento/lanalisi-del-lunedi-ferrari-con-i-dubbi-di-hamilton-va-subito-opzionato-verstappen",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 10:00:00 +0000",
           "source": "formulapassion.it",
-          "image": ""
-        },
-        {
-          "title": "Lamborghini Temerario Porto Cervo: esemplare unico ispirato alla Sardegna [FOTO]",
-          "link": "https://www.motorionline.com/lamborghini-temerario-porto-cervo-esemplare-unico-ispirato-alla-sardegna-foto/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 09:58:09 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Lamborghini-Temerario-Porto-Cervo.jpg"
-        },
-        {
-          "title": "A23 UDINE-TARVISIO: CHIUSURE NOTTURNE DEL TRATTO PONTEBBA-CONFINE DI STATO VERSO L’AUSTRIA",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a23-udine-tarvisio-chiusure-notturne-del-tratto-pontebba-confine-di-stato-verso-laustria/735379/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 09:56:03 +0000",
-          "source": "trasporti-italia.com",
-          "image": ""
-        },
-        {
-          "title": "A8 MILANO-VARESE: CHIUSE PER UNA NOTTE LE USCITE DI ORIGGIO OVEST E DI LAINATE",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a8-milano-varese-chiuse-per-una-notte-le-uscite-di-origgio-ovest-e-di-lainate/735378/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 09:52:05 +0000",
-          "source": "trasporti-italia.com",
           "image": ""
         },
         {
@@ -558,14 +486,6 @@
           "image": ""
         },
         {
-          "title": "Norris ha ribaltato le strategie McLaren: “Non pensavamo si potesse fare una sosta”",
-          "link": "https://www.formulapassion.it/f1/f1-news/strategie-diverse-mclaren-stella-applaude-norris-non-pensavamo-fosse-possibile-fare-una-sosta",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 09:25:38 +0000",
-          "source": "formulapassion.it",
-          "image": ""
-        },
-        {
           "title": "Così i supercondensatori possono essere usati sulle auto elettriche",
           "link": "https://insideevs.it/news/767876/supercondensatori-grafene-prestazioni-auto-elettrica/",
           "description": "",
@@ -582,14 +502,6 @@
           "image": "https://cdn.motor1.com/images/mgl/E63jnM/s3/2025-lucid-air-grand-touring.jpg"
         },
         {
-          "title": "Peugeot e-Remote Control e l’enigma del codice item 37693",
-          "link": "https://www.vaielettrico.it/peugeot-e-remote-control-e-lenigma-del-codice-item-37693/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 06:55:22 +0000",
-          "source": "vaielettrico.it",
-          "image": ""
-        },
-        {
           "title": "Ricaricare e pagare contactless costa di più? Il caso Germania",
           "link": "https://insideevs.it/news/767438/ricarica-pagamento-contactless-costi-germania/",
           "description": "",
@@ -598,19 +510,107 @@
           "image": "https://cdn.motor1.com/images/mgl/W8qPBN/s3/adac---ad-hoc-laden-viel-zu-teuer.jpg"
         },
         {
-          "title": "Flessione del mercato auto a luglio, elettriche solo al 4,9%",
-          "link": "https://www.electricmotornews.com/eventi/mercato-auto-luglio-elettriche-49/",
+          "title": "Auto più vendute in Italia: -5,1% le immatricolazioni a luglio 2025",
+          "link": "//www.alvolante.it/news/auto-piu-vendute-italia-5-1-immatricolazioni-luglio-2025-406333",
           "description": "",
-          "pubDate": "Sun, 03 Aug 2025 22:10:55 +0000",
-          "source": "electricmotornews.com",
+          "pubDate": "10:40 am",
+          "source": "alvolante.it",
           "image": ""
         },
         {
-          "title": "Nautica flash: porto elettrico sul Po, Aqua con Taiga, Millikan solare",
-          "link": "https://www.vaielettrico.it/nautica-flash-porto-sul-po-aqua-con-taiga-millikan-solare/",
+          "title": "La Porsche conferma la Macan termica entro il 2028",
+          "link": "//www.alvolante.it/news/porsche-conferma-macan-termica-entro-il-2028-406337",
           "description": "",
-          "pubDate": "Sun, 03 Aug 2025 17:32:35 +0000",
-          "source": "vaielettrico.it",
+          "pubDate": "9:55 am",
+          "source": "alvolante.it",
+          "image": ""
+        },
+        {
+          "title": "Formula 1: risultato Gp d’Ungheria 2025",
+          "link": "//www.alvolante.it/formula1/news/formula-1-risultato-gp-d-ungheria-2025-406335",
+          "description": "",
+          "pubDate": "3:20 pm",
+          "source": "alvolante.it",
+          "image": ""
+        },
+        {
+          "title": "Mercato Elettrico -15,17%: luglio conferma le difficoltà, ma fa meglio di giugno",
+          "link": "https://www.moto.it/news/mercato-elettrico-15-17-luglio-conferma-le-difficolta-ma-fa-meglio-di-giugno.html",
+          "description": "",
+          "pubDate": "2025-08-04T12:18:29.0070000",
+          "source": "moto.it",
+          "image": ""
+        },
+        {
+          "title": "Enduro nei boschi: tra passione e rispetto, non servono sanzioni a tappeto. Un solo denunciato su 322 controlli",
+          "link": "https://www.moto.it/news/enduro-nei-boschi-tra-passione-e-rispetto-non-servono-sanzioni-a-tappeto-un-solo-denunciato-su-322-controlli.html",
+          "description": "",
+          "pubDate": "2025-08-04T12:04:14.0730000",
+          "source": "moto.it",
+          "image": ""
+        },
+        {
+          "title": "Ci lascia il piccolo Luca, figlio dell'ex pilota Sylvain Guintoli: aveva solo 6 anni",
+          "link": "https://www.moto.it/news/ci-lascia-il-piccolo-luca-figlio-dell-ex-pilota-sylvain-guintoli-aveva-solo-6-anni.html",
+          "description": "",
+          "pubDate": "2025-08-04T11:33:32.0700000",
+          "source": "moto.it",
+          "image": ""
+        },
+        {
+          "title": "Pininfarina festeggia 95 anni al Pebble Beach Concours 2025 con il debutto del Pininfarina Trophy",
+          "link": "https://www.motorionline.com/pininfarina-festeggia-95-anni-al-pebble-beach-concours-2025-con-il-debutto-del-pininfarina-trophy/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:40:03 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Pebble-Beach-Pininfarina-Trophy.jpg"
+        },
+        {
+          "title": "Kia EV4 ha dimostrato la sua resistenza in un test da 10.000 km al Nürburgring",
+          "link": "https://www.motorionline.com/kia-ev4-ha-dimostrato-la-sua-resistenza-in-un-test-da-10-000-km-al-nurburgring/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:35:39 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Kia-EV4.jpg"
+        },
+        {
+          "title": "SEAT: primo semestre 2025 impegnativo per la casa spagnola",
+          "link": "https://www.motorionline.com/seat-primo-semestre-2025-impegnativo-per-la-casa-spagnola/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:06:31 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/SEAT.jpg"
+        },
+        {
+          "title": "A1 MILANO-NAPOLI: TEMPORANEAMENTE CHIUSO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN ENTRAMBE LE DIREZIONI",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-temporaneamente-chiuso-il-tratto-compreso-tra-valdarno-e-arezzo-in-entrambe-le-direzioni/735412/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:02:02 +0000",
+          "source": "trasporti-italia.com",
+          "image": ""
+        },
+        {
+          "title": "A23 UDINE-TARVISIO: CHIUSURE NOTTURNE DEL TRATTO PONTEBBA-CONFINE DI STATO VERSO L’AUSTRIA",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a23-udine-tarvisio-chiusure-notturne-del-tratto-pontebba-confine-di-stato-verso-laustria/735379/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 09:56:03 +0000",
+          "source": "trasporti-italia.com",
+          "image": ""
+        },
+        {
+          "title": "A8 MILANO-VARESE: CHIUSE PER UNA NOTTE LE USCITE DI ORIGGIO OVEST E DI LAINATE",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a8-milano-varese-chiuse-per-una-notte-le-uscite-di-origgio-ovest-e-di-lainate/735378/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 09:52:05 +0000",
+          "source": "trasporti-italia.com",
+          "image": ""
+        },
+        {
+          "title": "Norris ha ribaltato le strategie McLaren: “Non pensavamo si potesse fare una sosta”",
+          "link": "https://www.formulapassion.it/f1/f1-news/strategie-diverse-mclaren-stella-applaude-norris-non-pensavamo-fosse-possibile-fare-una-sosta",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 09:25:38 +0000",
+          "source": "formulapassion.it",
           "image": ""
         }
       ]
@@ -618,6 +618,38 @@
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "Cadono in una cisterna per la raccolta di residui biologici: morti due operai nel Veneziano",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/incidente-lavoro-operai-morti-cisterna-biologica-notizie/8084089/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:43:27 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2024/04/10/5609_a0io_47084ph32_29358.jpg"
+        },
+        {
+          "title": "I videogiocatori invadono la consultazione UE per chiedere regole che garantiscano che il divertimento non finisca mai",
+          "link": "https://euractiv.it/section/futuro-delleuropa/news/i-videogiocatori-invadono-la-consultazione-ue-per-chiedere-regole-che-garantiscano-che-il-divertimento-non-finisca-mai/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:40:10 +0000",
+          "source": "euractiv.it",
+          "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/joystick-1216816_1280-1024x682.jpg"
+        },
+        {
+          "title": "“Uomo colpito da un fulmine in spiaggia, il cuore riparte dopo trenta minuti”: ricoverato in ospedale",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/uomo-colpito-da-un-fulmine-in-spiaggia-il-cuore-riparte-dopo-trenta-minuti-ricoverato-in-ospedale/8084048/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:37:25 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2022/08/26/Imagoeconomica_15736-1.jpg"
+        },
+        {
+          "title": "È morto Marco Bonamico, il “Marine” leggenda del basket italiano. Fu tra i primi a sfruttare il tiro da tre punti",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/marco-bonamico-morto-basket-campione-news/8083921/",
+          "description": "",
+          "pubDate": "Mon, 04 Aug 2025 10:32:39 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/marco-bonamico.jpg"
+        },
         {
           "title": "L’accordo di Trump sui missili Patriot per l’Ucraina alimenta le preoccupazioni europee sulle lacune nella difesa aerea",
           "link": "https://euractiv.it/section/mondo/news/laccordo-di-trump-sui-missili-patriot-per-lucraina-alimenta-le-preoccupazioni-europee-sulle-lacune-nella-difesa-aerea/",
@@ -656,7 +688,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 09:00:26 +0000",
           "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/tasto-frigo-greenstyle.it-20250726.jpg"
+          "image": ""
         },
         {
           "title": "Río Negro",
@@ -683,20 +715,12 @@
           "image": ""
         },
         {
-          "title": "Le Capitali – Tutti i dubbi degli Stati europei su Israele e Palestina",
-          "link": "https://euractiv.it/section/capitali/news/le-capitali-tutti-i-dubbi-degli-stati-europei-su-israele-e-palestina/",
-          "description": "",
-          "pubDate": "Mon, 04 Aug 2025 07:04:18 +0000",
-          "source": "euractiv.it",
-          "image": "https://euractiv.it/wp-content/uploads/sites/11/2025/08/Le-Capitali-1024x576.png"
-        },
-        {
           "title": "E’ il borgo più piccolo d’Italia, ma dalla storia incredibile: un gioiello che regala una grande emozione",
           "link": "https://www.greenstyle.it/e-il-borgo-piu-piccolo-ditalia-ma-dalla-storia-incredibile-un-gioiello-che-regala-una-grande-emozione-424524.html",
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 07:00:43 +0000",
           "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/borgo-greenstyle.it-20250726.jpg"
+          "image": ""
         },
         {
           "title": "Cancellata la riforma Fornero, ecco cos’è la flessibilità sulle pensioni",
@@ -704,7 +728,7 @@
           "description": "",
           "pubDate": "Mon, 04 Aug 2025 04:57:39 +0000",
           "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/coppi-anziani-31072025-greenstyle.it_.jpg"
+          "image": ""
         },
         {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
@@ -792,30 +816,6 @@
           "description": "",
           "pubDate": "Wed, 23 Jul 2025 13:39:07 +0000",
           "source": "consorziobiogas.it",
-          "image": ""
-        },
-        {
-          "title": "Il digestato protagonista della transizione energetica: l’esperienza del CIB raccontata in Europa",
-          "link": "https://www.consorziobiogas.it/il-digestato-protagonista-della-transizione-energetica-lesperienza-del-cib-raccontata-in-europa/",
-          "description": "",
-          "pubDate": "Fri, 18 Jul 2025 11:23:01 +0000",
-          "source": "consorziobiogas.it",
-          "image": ""
-        },
-        {
-          "title": "Compressore Dual Outlet per Biometano",
-          "link": "https://www.consorziobiogas.it/compressore-dual-outlet-per-biometano/",
-          "description": "",
-          "pubDate": "Fri, 18 Jul 2025 11:13:32 +0000",
-          "source": "consorziobiogas.it",
-          "image": ""
-        },
-        {
-          "title": "Tira un gran brutto vento",
-          "link": "https://www.climalteranti.it/2025/07/16/tira-un-gran-brutto-vento/",
-          "description": "",
-          "pubDate": "Wed, 16 Jul 2025 08:21:43 +0000",
-          "source": "climalteranti.it",
           "image": ""
         }
       ]
