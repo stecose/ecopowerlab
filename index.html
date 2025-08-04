@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <title>Eco Power Lab – News</title>
+  <meta charset="UTF-8" />
+  <title>News Energia & Innovazione – Eco Power Lab</title>
+  <meta name="description" content="Aggiornamenti tecnici su energia rinnovabile, smart home, mobilità elettrica e clima. Infinite scroll, fonti verificate." />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Aggregatore di notizie su energia, smart home, mobilità elettrica e clima. Fonti multiple, infinite scroll."/>
   <style>
     :root {
       --brand:#007ACC;
       --radius:8px;
-      --bg:#f5f8fC;
-      --card:#fff;
-      --text:#1f2f44;
+      --shadow:0 8px 28px rgba(0,0,0,0.08);
+      --bg:#f9fbfd;
+      --card-bg:#fff;
+      --text:#222;
       --muted:#666;
-      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+      --small:#999;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     }
-    *{box-sizing:border-box;}
-    body{margin:0;padding:0;background:var(--bg);color:var(--text);}
-    .container{max-width:1000px;margin:0 auto;padding:12px;}
-    h1{margin:16px 0;font-size:1.9em;color:var(--brand);}
-    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
-    .filter{padding:6px 14px;border:1px solid #d9e2ec;border-radius:6px;cursor:pointer;font-size:0.85em;background:#fff;display:inline-flex;align-items:center;gap:4px;transition:all .15s;}
-    .filter.active{background:var(--brand);color:#fff;border-color:var(--brand);}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:4px;}
-    .card{background:var(--card);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 32px rgba(0,0,0,0.06);transition:transform .18s;}
-    .card:hover{transform:translateY(-2px);}
-    .thumb{width:100%;height:140px;object-fit:cover;background:#e8e8e8;}
-    .content{padding:12px;display:flex;flex-direction:column;gap:6px;flex:1;}
-    .title{margin:0;font-size:1em;font-weight:600;color:#0f3061;text-decoration:none;line-height:1.2;}
-    .meta{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
-    .snippet{font-size:0.9em;flex:1;color:#333;}
-    .source-badge{background:#f1f5fa;border-radius:999px;padding:4px 10px;font-size:10px;display:inline-block;margin-top:6px;}
-    .loader{display:flex;align-items:center;gap:10px;font-weight:600;margin:30px 0;color:var(--brand);}
-    .dots span{display:inline-block;width:10px;height:10px;background:var(--brand);border-radius:50%;margin-right:4px;animation:jump .6s infinite alternate;}
-    .dots span:nth-child(2){animation-delay:.12s;}
-    .dots span:nth-child(3){animation-delay:.24s;}
-    @keyframes jump{from{transform:translateY(0);}to{transform:translateY(-6px);}}
-    .page-info{margin:18px 0;font-size:0.9em;font-weight:600;text-align:center;}
-    .no-more{margin:16px 0;text-align:center;color:var(--muted);}
-    .error{background:#ffe8e0;border:1px solid #ffb3a0;border-radius:6px;padding:12px;margin:16px 0;color:#a33;}
-    .category-title{margin:24px 0 8px;font-size:1.4em;color:var(--brand);border-bottom:2px solid var(--brand);display:inline-block;padding-bottom:4px;}
+    body {margin:0;padding:0;background:var(--bg);color:var(--text);line-height:1.45;}
+    .wrapper {max-width:1080px;margin:0 auto;padding:0 12px 80px;}
+    h1 {font-size:2.2em;margin:30px 0 10px;}
+    .subtitle {margin:0 0 18px;font-size:1em;}
+    .filters {display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;}
+    .filter-btn {padding:8px 16px;border:1px solid #d9e2ec;border-radius:6px;background:#fff;cursor:pointer;font-size:0.9em;display:flex;align-items:center;gap:6px;transition:all .15s;user-select:none;}
+    .filter-btn.active {background:var(--brand);color:#fff;border-color:var(--brand);}
+    .category-label {font-size:1.3em;margin:30px 0 6px;display:inline-block;position:relative;padding-bottom:4px;color:var(--brand);}
+    .category-label:after {content:"";position:absolute;left:0;bottom:0;height:3px;width:60px;background:var(--brand);border-radius:2px;}
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .card {background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s;position:relative;}
+    .card:hover {transform:translateY(-2px);}
+    .thumb {width:100%;height:150px;object-fit:cover;background:#eee;display:block;}
+    .card-content {padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:6px;}
+    .card-title {font-size:1em;font-weight:600;margin:0;line-height:1.2;color:#0f3061;text-decoration:none;}
+    .meta {font-size:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;}
+    .source {font-size:11px;color:var(--small);}
+    .snippet {margin-top:4px;font-size:0.9em;color:#333;flex:1;}
+    .source-badge {background:#f1f5fa;padding:4px 10px;border-radius:999px;font-size:10px;display:inline-block;margin-right:6px;}
+    .loader {display:flex;gap:8px;align-items:center;justify-content:center;margin:40px 0;font-weight:600;color:var(--brand);font-size:1em;}
+    .loader-dot {width:10px;height:10px;background:var(--brand);border-radius:50%;animation:jump .6s infinite alternate;}
+    .loader-dot:nth-child(2){animation-delay:.12s;}
+    .loader-dot:nth-child(3){animation-delay:.24s;}
+    @keyframes jump {from{transform:translateY(0);opacity:.6;}to{transform:translateY(-6px);opacity:1;}}
+    .page-indicator {text-align:center;margin:24px 0 4px;font-size:0.9em;font-weight:600;}
+    .no-results {font-size:1em;margin:20px 0;text-align:center;color:var(--muted);}
+    .error {background:#ffece6;border:1px solid #ffb3a7;padding:14px;border-radius:6px;margin:20px 0;color:#a33;}
+    .sticky-filter {position:sticky;top:0;background:#fff;padding:10px 0 4px;z-index:10;margin:0 -12px 12px;box-shadow:0 4px 16px rgba(0,0,0,0.04);}
+    .no-image-box {
+      width:100%; height:150px;
+      display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(135deg,#005f99,#007acc);
+      color:#fff; font-size:0.9em; font-weight:700;
+      padding:10px; text-align:center; box-sizing:border-box;
+    }
+    .no-image-box .title {margin:0;line-height:1.2;}
   </style>
 </head>
 <body>
-  <div class="container" id="app">
-    <h1>Eco Power Lab – News</h1>
-    <div class="filters" aria-label="Filtri categorie">
-      <div class="filter active" data-cat="all">Tutte</div>
-      <div class="filter active" data-cat="Energia">⚡ Energia</div>
-      <div class="filter active" data-cat="SmartHome">🏠 Smart Home</div>
-      <div class="filter active" data-cat="Mobilita">🚗 Mobilità</div>
-      <div class="filter active" data-cat="Clima">🌍 Clima</div>
+  <div class="wrapper">
+    <h1>News Energia & Innovazione</h1>
+    <p class="subtitle">Aggiornamenti affidabili su energia rinnovabile, smart home, mobilità elettrica e clima.</p>
+    <div class="sticky-filter">
+      <div class="filters" aria-label="Filtri categorie">
+        <div class="filter-btn active" data-cat="all">Tutte</div>
+        <div class="filter-btn active" data-cat="Energia">⚡ Energia e Rinnovabili</div>
+        <div class="filter-btn active" data-cat="SmartHome">🏠 Smart Home</div>
+        <div class="filter-btn active" data-cat="Mobilita">🚗 Mobilità Elettrica</div>
+        <div class="filter-btn active" data-cat="Clima">🌍 Clima & Ambiente</div>
+      </div>
     </div>
-    <div id="loader" class="loader" aria-live="polite">
-      <div class="dots"><span></span><span></span><span></span></div>
-      <div style="margin-left:6px;">Caricamento notizie...</div>
-    </div>
-    <div id="feed"></div>
-    <div id="page-info" class="page-info"></div>
-    <div id="end" class="no-more" style="display:none;">Hai visto tutte le notizie disponibili.</div>
+    <div id="loader" class="loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div><span style="margin-left:8px;">Caricamento notizie...</span></div>
+    <div id="eco-news" style="display:none;"></div>
+    <div id="page-info" class="page-indicator" aria-live="polite"></div>
+    <div id="end-of-feed" class="no-results" style="display:none;">Hai visto tutte le notizie recenti.</div>
   </div>
 
   <script>
-    const JSON_URL = "./news.json"; // presuppone che index.html e news.json siano nello stesso GitHub Pages root
+    const DATA_URL = "https://stecose.github.io/ecopowerlab/news.json";
     const perPage = 5;
-    let state = [];
-    let currentPage = 1;
-    let totalPages = 1;
-    let filtered = new Set(["Energia","SmartHome","Mobilita","Clima"]);
-    const loadedPages = new Set();
-    const container = document.getElementById("feed");
+    const categoryNames = { Energia:"Energia e Rinnovabili", SmartHome:"Smart Home", Mobilita:"Mobilità Elettrica", Clima:"Clima & Ambiente" };
+    let state = [], currentPage=1, totalPages=1;
+    let filteredCats = new Set(["Energia","SmartHome","Mobilita","Clima"]);
+    const loaded = new Set();
 
-    function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
-    function formatDate(d){ try{ const dt=new Date(d); if(isNaN(dt)) return ""; return dt.toLocaleDateString(undefined,{ day:"2-digit", month:"short", year:"numeric" }); }catch{return "";} }
+    function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+    function formatDate(d){const dt=new Date(d);return isNaN(dt)? "": dt.toLocaleDateString(undefined,{day:"2-digit",month:"short",year:"numeric"});}
 
-    function renderSections(){
-      container.innerHTML = "";
-      filtered.forEach(catName => {
-        const cat = state.find(c => c.category === catName);
-        if (!cat || cat.items.length === 0) return;
-        const section = document.createElement("section");
-        section.dataset.cat = catName;
-        section.innerHTML = `<div class="category-title">${catName === "SmartHome" ? "Smart Home e Innovazione" : catName === "Mobilita" ? "Mobilità Elettrica" : (catName === "Clima" ? "Clima e Ambiente" : "Energia e Rinnovabili")}</div><div class="grid" aria-label="${catName}"></div>`;
-        container.appendChild(section);
+    function buildSections(){
+      const c = document.getElementById("eco-news"); c.innerHTML="";
+      filteredCats.forEach(cat=>{
+        const sec = document.createElement("section");
+        sec.dataset.cat = cat;
+        sec.innerHTML = `<div class="category-label">${categoryNames[cat]}</div><div class="grid"></div>`;
+        c.appendChild(sec);
       });
     }
 
+    function isPlaceholderImage(url){
+      return !url || /via\.placeholder\.com/.test(url);
+    }
+
     function appendPage(page){
-      if (loadedPages.has(page)) return;
-      loadedPages.add(page);
-      currentPage = page;
-      filtered.forEach(catName => {
-        const cat = state.find(c => c.category === catName);
-        if (!cat) return;
-        const section = container.querySelector(`section[data-cat="${catName}"]`);
-        if (!section) return;
-        const grid = section.querySelector(".grid");
-        const start = (page -1)*perPage;
-        const items = cat.items.slice(start, start+perPage);
-        items.forEach(item => {
-          const shortTitle = item.title.split(" ").slice(0,2).join(" ");
-          const img = item.image || `https://via.placeholder.com/300x140/007ACC/ffffff?text=${encodeURIComponent(shortTitle)}`;
-          const card = document.createElement("div");
-          card.className = "card";
-          card.innerHTML = `
-            <a href="${item.link}" target="_blank" rel="noopener">
-              <img class="thumb" src="${img}" alt="${item.title}">
-            </a>
-            <div class="content">
-              <a class="title" href="${item.link}" target="_blank" rel="noopener">${item.title}</a>
-              <div class="meta">
-                <div>${formatDate(item.pubDate)}</div>
-                <div class="source">${item.source}</div>
-              </div>
-              <div class="snippet">${item.description}...</div>
-              <div><span class="source-badge">${item.source}</span></div>
-            </div>
+      if(loaded.has(page)) return;
+      loaded.add(page);
+      const container = document.getElementById("eco-news");
+      filteredCats.forEach(cat=>{
+        const catData = state.find(c=>c.category===cat);
+        if(!catData) return;
+        const grid = container.querySelector(`section[data-cat="${cat}"] .grid`);
+        const slice = catData.items.slice((page-1)*perPage, page*perPage);
+        slice.forEach(item=>{
+          const card = document.createElement("div"); card.className="card";
+          // media
+          const media = document.createElement("div");
+          if(item.image && !isPlaceholderImage(item.image)){
+            const a = document.createElement("a"); a.href=item.link; a.target="_blank"; a.rel="noopener";
+            const img = document.createElement("img"); img.className="thumb"; img.src=item.image; img.alt=item.title; img.loading="lazy"; img.decoding="async";
+            a.appendChild(img); media.appendChild(a);
+          } else {
+            const box = document.createElement("div"); box.className="no-image-box";
+            const t = document.createElement("div"); t.className="title";
+            t.innerText = item.title.length>80 ? item.title.slice(0,77)+"..." : item.title;
+            box.appendChild(t); media.appendChild(box);
+          }
+          // content
+          const content = document.createElement("div"); content.className="card-content";
+          content.innerHTML = `
+            <a class="card-title" href="${item.link}" target="_blank" rel="noopener">${item.title}</a>
+            <div class="meta"><div>${formatDate(item.pubDate)}</div><div class="source">${item.source}</div></div>
+            <div class="snippet">${item.description}...</div>
+            <div style="margin-top:6px;"><span class="source-badge">${item.source}</span></div>
           `;
+          card.appendChild(media); card.appendChild(content);
           grid.appendChild(card);
         });
       });
@@ -124,84 +138,63 @@
     }
 
     function updatePageInfo(){
-      const maxItems = Math.max(...state.map(c=>c.items.length));
-      totalPages = Math.max(1, Math.ceil(maxItems / perPage));
+      const maxLen = Math.max(...state.map(c=>c.items.length));
+      totalPages = Math.max(1, Math.ceil(maxLen/perPage));
       document.getElementById("page-info").innerText = `Pagina ${currentPage} di ${totalPages}`;
-      if (currentPage >= totalPages){
-        document.getElementById("end").style.display = "block";
+      if(currentPage>=totalPages) document.getElementById("end-of-feed").style.display="block";
+    }
+
+    // filtri
+    document.addEventListener("click", e=>{
+      const btn = e.target.closest(".filter-btn"); if(!btn) return;
+      const cat = btn.dataset.cat;
+      if(cat==="all"){
+        const activate = !btn.classList.contains("active");
+        document.querySelectorAll(".filter-btn").forEach(f=>{
+          f.classList.toggle("active", f.dataset.cat==="all" ? activate : activate);
+        });
+        filteredCats = activate ? new Set(["Energia","SmartHome","Mobilita","Clima"]) : new Set();
+      } else {
+        btn.classList.toggle("active");
+        btn.classList.contains("active") ? filteredCats.add(cat) : filteredCats.delete(cat);
+        const allBtn = document.querySelector('.filter-btn[data-cat="all"]');
+        const nonAll = Array.from(document.querySelectorAll('.filter-btn')).filter(f=>f.dataset.cat!=="all");
+        allBtn.classList.toggle("active", nonAll.every(f=>f.classList.contains("active")));
       }
-    }
-
-    function applyFilters(){
-      currentPage = 1;
-      loadedPages.clear();
-      renderSections();
-      appendPage(1);
-    }
-
-    document.querySelectorAll(".filter").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const cat = btn.dataset.cat;
-        if (cat === "all") {
-          const active = btn.classList.contains("active");
-          if (!active) {
-            document.querySelectorAll(".filter").forEach(f=>f.classList.add("active"));
-            filtered = new Set(["Energia","SmartHome","Mobilita","Clima"]);
-          } else {
-            document.querySelectorAll(".filter").forEach(f=>f.classList.remove("active"));
-            filtered = new Set();
-          }
-          btn.classList.toggle("active");
-        } else {
-          btn.classList.toggle("active");
-          if (btn.classList.contains("active")) filtered.add(cat);
-          else filtered.delete(cat);
-          // sync "all"
-          const allBtn = document.querySelector('.filter[data-cat="all"]');
-          const nonAll = Array.from(document.querySelectorAll('.filter')).filter(f=>f.dataset.cat!=="all");
-          if (nonAll.every(f=>f.classList.contains("active"))) {
-            allBtn.classList.add("active");
-          } else {
-            allBtn.classList.remove("active");
-          }
-        }
-        applyFilters();
-      });
+      currentPage=1; loaded.clear(); document.getElementById("end-of-feed").style.display="none";
+      buildSections(); appendPage(1);
     });
 
     // infinite scroll
     let ticking=false;
-    window.addEventListener("scroll",()=>{
+    window.addEventListener("scroll", ()=>{
       if(ticking) return;
       ticking=true;
       requestAnimationFrame(()=>{
-        if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 300){
-          if(currentPage < totalPages){
-            appendPage(currentPage+1);
+        if(window.innerHeight+window.scrollY >= document.body.offsetHeight-300){
+          if(currentPage<totalPages){
+            currentPage++; appendPage(currentPage);
           }
         }
         ticking=false;
       });
     });
 
-    // load JSON
-    fetch(JSON_URL + "?t="+Date.now(), {cache:"no-store"})
-      .then(r=>{
-        if(!r.ok) throw new Error("Impossibile scaricare news.json");
-        return r.json();
-      })
+    // fetch e init
+    fetch(DATA_URL+"?t="+Date.now(), {cache:"no-store"})
+      .then(r=>{ if(!r.ok) throw new Error("Impossibile scaricare feed"); return r.json(); })
       .then(d=>{
-        state = d.categories.map(c=>({ category:c.category, items:shuffle(c.items) }));
+        state = d.categories.map(c=>({category:c.category, items:shuffle(c.items)}));
         document.getElementById("loader").style.display="none";
-        renderSections();
-        appendPage(1);
+        document.getElementById("eco-news").style.display="block";
+        buildSections(); appendPage(1);
       })
-      .catch(e=>{
+      .catch(err=>{
         document.getElementById("loader").style.display="none";
-        container.innerHTML = `<div class="error">Errore caricamento feed: ${e.message}</div>`;
-        console.error(e);
+        const msg = document.createElement("div"); msg.className="error"; msg.innerText="Errore caricamento: "+err.message;
+        document.querySelector(".wrapper").insertBefore(msg, document.getElementById("eco-news"));
+        console.error(err);
       });
   </script>
 </body>
 </html>
-  
