@@ -4,6 +4,22 @@
       "category": "Energia",
       "items": [
         {
+          "title": "I criteri di priorità per i contributi compensativi a pesca e acquacoltura definiti dal Decreto MASAF",
+          "link": "https://www.rinnovabili.it/agrifood/industria-agroalimentare/i-criteri-di-priorita-per-i-contributi-compensativi-a-pesca-e-acquacoltura-definiti-dal-decreto-masaf/",
+          "description": "I criteri di priorità per i contributi compensativi a pesca e acquacoltura sono stati definiti da un Decreto MASAF. Tali contributi sono destinati all",
+          "pubDate": "Mon, 04 Aug 2025 15:39:20 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/boat-8002727_1280.jpg"
+        },
+        {
+          "title": "Gruppo SOL rafforza la presenza nel settore del bio LNG",
+          "link": "https://www.rinnovabili.it/mercato/le-aziende-informano/gruppo-sol-rafforza-la-presenza-nel-settore-del-bio-lng/",
+          "description": "Acquisita una partecipazione del 20% di BIOMETHAN GREEN 1 – SOCIETÀ AGRICOLA S.R.L., società controllata da Andion Italy e impegnata nella realizzazio",
+          "pubDate": "Mon, 04 Aug 2025 15:37:37 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/Depositphotos_108037932_L-1.jpg"
+        },
+        {
           "title": "Piemonte: nuovo Piano Aria per evitare il blocco dei diesel Euro5",
           "link": "https://www.rinnovabili.it/clima-e-ambiente/inquinamento/blocco-diesel-euro5-piano-aria-piemonte/",
           "description": "La Regione prepara le modifiche al Piano per la qualità dell’aria. Obiettivo: ridurre gli ossidi di azoto di almeno 500-700 ton e le polveri sottili d",
@@ -20,28 +36,12 @@
           "image": "https://www.energycue.it/wp-content/uploads/2025/07/Illustrazione-di-un-modello-730-Canva-FOTO-energycue.it_.jpg"
         },
         {
-          "title": "Una proteina aiuta le piante a difendersi dalla luce solare troppo intensa",
-          "link": "https://www.rinnovabili.it/agrifood/agricoltura/una-proteina-aiuta-le-piante-a-difendersi-dalla-luce-solare-troppo-intensa/",
-          "description": "Scoperta una proteina che protegge le piante dalla luce solare in eccesso. La luce solare è indispensabile alle piante per la fotosintesi ma se è trop",
-          "pubDate": "Mon, 04 Aug 2025 14:54:54 +0000",
-          "source": "rinnovabili.it",
-          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/leaf-4543260_1280.jpg"
-        },
-        {
           "title": "Dazi, l’Ue Fa marcia indietro e sospende le contromisure. Ma in Italia è scontro sull’accordo",
           "link": "https://energiaoltre.it/dazi-lue-fa-marcia-indietro-e-sospende-le-contromisure-ma-in-italia-e-scontro-sullaccordo/",
           "description": "L&#8217;adozione delle misure da parte della Commissione è prevista per domani, 5 agosto, con procedura d&#8217;urgenza L&#8217;Unione Europea preme i",
           "pubDate": "Mon, 04 Aug 2025 13:38:47 +0000",
           "source": "energiaoltre.it",
           "image": "https://energiaoltre.it/wp-content/uploads/2025/07/dazi.jpg"
-        },
-        {
-          "title": "Bosch punta a crescere molto più rapidamente del mercato nel settore del riscaldamento, della ventilazione e del condizionamento dell’aria",
-          "link": "https://www.rinnovabili.it/mercato/le-aziende-informano/bosch-punta-a-crescere-molto-piu-rapidamente-del-mercato-nel-settore-del-riscaldamento-della-ventilazione-e-del-condizionamento-dellaria/",
-          "description": "Divisione Home Comfort quasi raddoppiata, con più di 8 miliardi di euro di fatturato e oltre 25.000 collaboratori.\nL'articolo Bosch punta a crescere m",
-          "pubDate": "Mon, 04 Aug 2025 13:18:38 +0000",
-          "source": "rinnovabili.it",
-          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/bosch-s9s9191-0072-1.jpg"
         },
         {
           "title": "Incendi boschivi: un’emergenza che richiede un cambio di rotta",
@@ -209,36 +209,44 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "Amazon chiude Wondery: 110 licenziamenti e una nuova strategia per i podcast",
+          "link": "https://www.hdblog.it/amazon/articoli/n627385/amazon-chiude-wondery-licenziamenti-podcast/",
+          "description": "Il futuro è in Audible.",
+          "pubDate": "Mon, 04 Aug 2025 18:10:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Amazon%20chiude"
+        },
+        {
+          "title": "Bugatti pubblica il teaser di una misteriosa hypercar chiamata Solitaire",
+          "link": "https://www.hdmotori.it/teaser-bugatti-solitaire/",
+          "description": "&Egrave; attesa alla Monterey Car Week dall&rsquo;8 al 17 agosto.",
+          "pubDate": "Mon, 04 Aug 2025 18:00:53 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/08/Bugatti-one-off.jpg"
+        },
+        {
+          "title": "Marshall Emberton III nuovo e più potente, sempre iconico solo 123 euro",
+          "link": "https://www.macitynet.it/sconto-marshall-emberton-iii/",
+          "description": "Lo speaker portatile Marshall Emberton III va in sconto al minimo storico. Aspetto iconico, resistenza all'acqua, potenza e un'autonomia potenziata. S",
+          "pubDate": "Mon, 04 Aug 2025 15:59:08 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2023/12/marshall-emberton-III.jpg"
+        },
+        {
           "title": "Controlla l'iPad con la mente: il video che mostra il futuro",
           "link": "https://www.hdblog.it/tablet/articoli/n627379/ipad-controllo-pensiero-synchron-apple/",
           "description": "Per la prima volta, una persona con SLA controlla un iPad usando solo il pensiero grazie a Synchron e Apple.",
           "pubDate": "Mon, 04 Aug 2025 17:50:00 +0200",
           "source": "hdblog.it",
-          "image": "https://css.hd-cdn.it/new_files/templates/theme_darklight/img/hdblog_logo.svg"
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Controlla%20l'iPad"
         },
         {
-          "title": "Mercato delle pompe di calore in crescita: +11,1% di CAGR al 2032",
-          "link": "https://www.hdblog.it/green/articoli/n627380/mercato-pompe-calore-crescita-cagr-2032/",
-          "description": "Dati incoraggianti.",
-          "pubDate": "Mon, 04 Aug 2025 17:40:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277883?w=1920"
-        },
-        {
-          "title": "Withings Nova Brilliant: elegante e completo | Test & Recensione",
-          "link": "https://www.tomshw.it/smartphone/withings-nova-brilliant-elegante-e-completo-test-recensione",
-          "description": "Sono passati un paio d&rsquo;anni da quando abbiamo recensito lo ScanWatch Nova, un eccellente smartwatch ibrido in grado di abbinare in maniera press",
-          "pubDate": "2025-08-04T17:36:08+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65549/IMG_6309.jpg"
-        },
-        {
-          "title": "BYD supera Alfa Romeo in Italia a luglio 2025. Nella Top 20 dei marchi più venduti",
-          "link": "https://www.hdmotori.it/byd-italia-crescono-vendite-luglio-2025-superata-alfa-romeo/",
-          "description": "BYD continua a crescere e a superare diversi marchi storici nazionali del nostro mercato",
-          "pubDate": "Mon, 04 Aug 2025 17:30:03 +0200",
-          "source": "hdblog.it",
-          "image": "https://www.hdmotori.it/app/uploads/2025/08/byd-hd.jpg"
+          "title": "iPhone 17 Air, la batteria sarà spessa la metà di quella di 17 Pro",
+          "link": "https://www.wired.it/article/iphone-17-air-batteria/",
+          "description": "Aumentano i dettagli sull'attesissimo smartphone ultrasottile che conterà su componenti dedicati",
+          "pubDate": "Mon, 04 Aug 2025 15:46:43 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/66eaeea6feb93ecfe70e6fe6/master/pass/7.png"
         },
         {
           "title": "Il Garante sanziona Shein per messaggi ingannevoli e omissivi",
@@ -313,14 +321,6 @@
           "image": "https://www.smartworld.it/images/2024/02/27/samsung-galaxy-final_1200x675.jpg"
         },
         {
-          "title": "Spotify Premium diventa più caro, si passa a 12 euro al mese",
-          "link": "https://www.wired.it/article/spotify-premium-prezzo-abbonamento/",
-          "description": "Aumenta di un euro il prezzo mensile dell'abbonamento del popolare servizio musicale in streaming",
-          "pubDate": "Mon, 04 Aug 2025 14:41:10 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/6634a41e3bd7119883ff62b5/master/pass/941322190"
-        },
-        {
           "title": "Elgato Game Capture 4K S è la scheda esterna più completa e accessibile del 2025",
           "link": "https://www.smartworld.it/recensioni/elgato-game-capture-4k-s",
           "description": "Elgato 4K S registra in 4K60 HDR, supporta 1080p240 e funziona su PC, console e iPad. Compatta, veloce, davvero plug & play. Ecco la recensione.L'arti",
@@ -335,6 +335,14 @@
           "pubDate": "Mon, 04 Aug 2025 14:14:27 +0000",
           "source": "macitynet.it",
           "image": "https://www.macitynet.it/wp-content/uploads/2025/08/spotify-logo-ico-ufficiale.jpg"
+        },
+        {
+          "title": "I migliori conti correnti B2B (agosto 2025)",
+          "link": "https://www.tomshw.it/altro/i-migliori-conti-correnti-b2b",
+          "description": "Nel contesto attuale, caratterizzato da una crescente digitalizzazione e da una concorrenza sempre pi&ugrave; serrata, individuare il conto corrente a",
+          "pubDate": "2025-08-04T16:06:26+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2024/10/39091/imageqHviyv.jpg"
         },
         {
           "title": "Hai sempre desiderato una cantinetta per il vino? Allora non puoi perdere i migliori modelli Candy in sconto ora su Amazon",
@@ -353,22 +361,6 @@
           "image": "https://cdn.dmove.it/images/47493/elettriche_cover.jpg"
         },
         {
-          "title": "Bagaglio smarrito, con Airtag e queste compagnie aree è più facile trovarlo",
-          "link": "https://www.macitynet.it/bagaglio-smarrito-con-airtag-compagnie-aree/",
-          "description": "Sempre più compagnie aeree accettano il tracciamento dei bagagli con AirTag e dispositivi compatibili. Una svolta utile per chi viaggia: basta un picc",
-          "pubDate": "Mon, 04 Aug 2025 13:44:21 +0000",
-          "source": "macitynet.it",
-          "image": "https://www.macitynet.it/wp-content/uploads/2022/05/AirTag-valigia-.jpg"
-        },
-        {
-          "title": "Migliori chiavette Internet e router wifi portatili (agosto 2025)",
-          "link": "https://www.tomshw.it/hardware/chiavette-internet-migliori",
-          "description": "Nel panorama digitale odierno, la possibilit&agrave; di navigare su Internet in modo rapido e affidabile ovunque ci si trovi &egrave; diventata una ne",
-          "pubDate": "2025-08-04T15:39:46+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2023/10/2282/D-Link-DWM-222.jpg"
-        },
-        {
           "title": "A luglio investiti 132,17 milioni in startup, 123 in meno rispetto al 12 mesi fa",
           "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/investimenti_startup_luglio_2025-424771271/?rss",
           "description": "A luglio 2024 gli investimenti erano stati pari a 255 milioni. Spiccano i 70 milioni di Exein. Il totale investito nei primi sette mesi è 586,95 milio",
@@ -377,12 +369,12 @@
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/144628509-a1f9b05f-44b2-470e-8068-0899db0802d0.jpg"
         },
         {
-          "title": "Questo peluche AI a 63€ è il tuo nuovo amico smart!",
-          "link": "https://www.tomshw.it/offerte/questo-peluche-ai-a-63eur-e-il-tuo-nuovo-amico-smart",
-          "description": "In un mondo dove la tecnologia incontra sempre pi&ugrave; spesso l&rsquo;affetto e la tenerezza, nasce un prodotto che ha gi&agrave; conquistato grand",
-          "pubDate": "2025-08-04T14:37:50+02:00",
+          "title": "Il best seller che ogni viaggiatore vorrebbe scoprire prima",
+          "link": "https://www.tomshw.it/altro/organizer-da-viaggio-salvaspazio-amazon-basics-a-soli-17eur-sJ9",
+          "description": "Quando si prepara una valigia, anche i viaggiatori pi&ugrave; esperti sanno quanto sia facile perdere il controllo dello spazio. Ogni centimetro conta",
+          "pubDate": "2025-08-04T14:41:39+02:00",
           "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65535/pelucheai.png"
+          "image": "https://www.tomshw.it/storage/media/2025/08/65533/Amazon-Basics-Organizer-copertina.jpg"
         },
         {
           "title": "Anthropic vieta l'uso di Claude a OpenAI: avrebbe “spiato” il suo LLM",
@@ -407,12 +399,28 @@
           "pubDate": "Mon, 04 Aug 2025 10:00:00 +0000",
           "source": "internet4things.it",
           "image": "https://img.zerounoweb.it/wp-content/uploads/2025/07/31112653/shutterstock_2455036289.jpg"
+        },
+        {
+          "title": "Open Platform Organization: un nuovo modo di pensare l’impresa",
+          "link": "https://www.zerounoweb.it/cio-innovation/organizzazione/open-platform-organization-un-nuovo-modo-di-pensare-limpresa/",
+          "description": "Da un modello piramidale di funzioni separate a team autonomi e interconnessi. L’Open Platform Organization rivede il concetto di leadership: ogni per",
+          "pubDate": "Mon, 04 Aug 2025 09:34:58 +0000",
+          "source": "internet4things.it",
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/04113056/Round-table-Var-Group.jpg"
         }
       ]
     },
     {
       "category": "Mobilita",
       "items": [
+        {
+          "title": "Upgrade con Brembo: andare più forte...frenando [VIDEO]",
+          "link": "https://www.moto.it/news/upgrade-con-brembo-andare-piu-forte-frenando.html",
+          "description": "Per una volta non guardiamo ai cavalli, bensì a come gestirli al meglio, e questo passa da un upgrade dell'impianto frenante. Chi meglio di Brembo può",
+          "pubDate": "2025-08-04T18:00:00.0000000",
+          "source": "moto.it",
+          "image": "https://img.stcrm.it/images/45833026/CINEMA/1200x/brembo-upgrade.jpeg"
+        },
         {
           "title": "Dalle Dolomiti una voce diversa: non esageriamo!",
           "link": "https://www.moto.it/news/dalle-dolomiti-una-voce-diversa-non-esageriamo.html",
@@ -438,14 +446,6 @@
           "image": "https://img.stcrm.it/images/45831890/1200x/elettrico-1.jpeg"
         },
         {
-          "title": "Jorge Prado può davvero tornare in Europa nel 2026!?",
-          "link": "https://www.moto.it/motocross/jorge-prado-puo-davvero-tornare-in-europa-nel-2026.html",
-          "description": "Dopo l'esperienza americana il quattro volte Campione del Mondo potrebbe trovarsi di fronte all'opportunità per tornare in Europa",
-          "pubDate": "2025-08-04T16:30:01.9430000",
-          "source": "moto.it",
-          "image": "https://img.stcrm.it/images/45833271/CINEMA/1200x/img-5045.jpeg"
-        },
-        {
           "title": "Incidente sull’A1 tra Arezzo e Valdarno: camion travolge un’ambulanza ferma in coda, tre morti e 15 feriti",
           "link": "https://www.automoto.it/news/incidente-sull-a1-tra-arezzo-e-valdarno-camion-travolge-un-ambulanza-ferma-in-coda-tre-morti-e-15-feriti.html",
           "description": "Le vittime sono due volontari del 118 e una paziente di 70 anni",
@@ -460,6 +460,14 @@
           "pubDate": "2025-08-04T16:13:42.2870000",
           "source": "automoto.it",
           "image": "https://img.stcrm.it/images/45833316/1200x/tesla-model-s-70d-4-1.jpeg"
+        },
+        {
+          "title": "Tesla, a Elon Musk mega pacchetto “premio” di azioni da 29 miliardi di dollari",
+          "link": "https://www.motorionline.com/tesla-a-elon-musk-mega-pacchetto-premio-di-azioni-da-29-miliardi-di-dollari/",
+          "description": "Tesla ha concesso l&#8217;assegnazione di 96 milioni di azioni vincolate al suo CEO, Elon Musk, che costituiscono un pacchetto dal",
+          "pubDate": "Mon, 04 Aug 2025 15:52:43 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Elon-Musk.jpg"
         },
         {
           "title": "Strage di ciclisti: 130 vittime da inizio anno",
@@ -510,6 +518,14 @@
           "image": "https://storage.googleapis.com/fp-media/1/2025/08/alonso-bortoleto-ungheria-1.jpg"
         },
         {
+          "title": "Xpeng prima nello Studio sulla Soddisfazione Clienti EV 2025",
+          "link": "https://www.electricmotornews.com/eventi/xpeng-soddisfazione-clienti/",
+          "description": "Xpeng è prima nello Studio sulla Soddisfazione Clienti EV 2025 condotto da USCALE GmbH e fissa un nuovo standard per la mobilità elettrica in Europa. ",
+          "pubDate": "Mon, 04 Aug 2025 15:00:23 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/xpeng_electric_motor_news_01_XPENG_G9.jpg"
+        },
+        {
           "title": "Hyundai pioniera dell’idrogeno: dalla prima auto fuel cell alla nuova NEXO",
           "link": "https://www.motorionline.com/hyundai-pioniera-dellidrogeno-dalla-prima-auto-fuel-cell-alla-nuova-nexo/",
           "description": "Hyundai è tra le Case automobilistiche che prima delle altre hanno creduto nello sviluppo della tecnologia a idrogeno, settore nel",
@@ -540,22 +556,6 @@
           "pubDate": "Mon, 04 Aug 2025 14:30:00 +0000",
           "source": "insideevs.it",
           "image": "https://cdn.motor1.com/images/mgl/7Z3MV6/s3/nyc-robotaxi.jpg"
-        },
-        {
-          "title": "Auto km 0 a Milano: apre iltuokmzero.com, nuovo showroom firmato Mocauto",
-          "link": "https://www.motorionline.com/auto-km-0-a-milano-apre-iltuokmzero-com-nuovo-showroom-firmato-mocauto/",
-          "description": "Mocauto, importante dealer automobilistico, lancia iltuokmzero.com, il primo showroom chiavi in mano di Milano dedicato alla vetture km 0 di",
-          "pubDate": "Mon, 04 Aug 2025 14:05:00 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/iltuokm0.jpg"
-        },
-        {
-          "title": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-riaperto-il-tratto-compreso-tra-valdarno-e-arezzo-in-direzione-roma/735914/",
-          "description": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA RESTA TEMPORANEMANETE CHIUSO IL TRATTO IN DIREZIONE BOLOGNA &#16",
-          "pubDate": "Mon, 04 Aug 2025 13:52:02 +0000",
-          "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
         },
         {
           "title": "Autotrasporto, anche per autisti dipendenti 100 euro ora per attesa carico scarico",
@@ -598,20 +598,20 @@
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
         },
         {
+          "title": "Hyundai Motor Group avvia sperimenta la mobilità a idrogeno a NEOM",
+          "link": "https://www.electricmotornews.com/energie-alternative/hyundai-idrogeno-neom/",
+          "description": "Hyundai Motor Group, in collaborazione con Enowa, la sussidiaria di NEOM per l'energia e l'acqua, ha annunciato il completamento con successo di una s",
+          "pubDate": "Sun, 03 Aug 2025 22:12:30 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/hyundai_universe_fcev_electric_motor_news_01.jpg"
+        },
+        {
           "title": "Il marchio cinese Superpanther costruirà camion elettrici a Steyr (Austria)",
           "link": "https://www.electricmotornews.com/veicoli-ecologici/superpanther-camion-steyr/",
           "description": "Il marchio cinese SuperPanther ha recentemente firmato un accordo con il produttore austriaco di veicoli commerciali Steyr Automotive per la produzion",
           "pubDate": "Sun, 03 Aug 2025 22:11:53 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/superpanther_steyr_camion_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "Flessione del mercato auto a luglio, elettriche solo al 4,9%",
-          "link": "https://www.electricmotornews.com/eventi/mercato-auto-luglio-elettriche-49/",
-          "description": "Nuova contrazione a luglio del mercato auto in Italia mentre le auto elettriche pure (BEV) rappresentano il 4,9% del mercato mensile. [...]\nL'articolo",
-          "pubDate": "Sun, 03 Aug 2025 22:10:55 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/unrae_mercato_auto_luglio_2025_electric_motor_news_01.jpg"
         }
       ]
     },
@@ -619,28 +619,28 @@
       "category": "Clima",
       "items": [
         {
-          "title": "Il trolley “si muove”: dentro c’è una bambina di 2 anni. La scoperta nel portabagagli di un bus",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/bambina-trolley-autobus-nuova-zelanda-notizie/8084505/",
-          "description": "Nel vano bagagli dell&#8217;autobus c&#8217;era un trolley che &#8220;si muoveva&#8221;. Dentro, in effetti, c&#8217;era una bimba di due anni. È succ",
-          "pubDate": "Mon, 04 Aug 2025 15:46:29 +0000",
+          "title": "“Mi sono procurata il cancro al seno per colpa di queste 3 cose”. L’influencer Stephanie Weeks scatena l’ira (giustificata) dei medici: “Parole insensate e pericolose”",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/mi-sono-procurata-il-cancro-al-seno-per-colpa-di-queste-3-cose-linfluencer-stephanie-weeks-scatena-lira-giustificata-dei-medici-parole-insensate-e-pericolose/8084554/",
+          "description": "Una maggiore esposizione agli smartphone e lo stress possono contribuire all&#8217;insorgere di un cancro al seno? È quanto insinua Stephanie Weeks, i",
+          "pubDate": "Mon, 04 Aug 2025 16:13:22 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2023/04/17/valigia1200.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/cancro-seno.jpg"
         },
         {
-          "title": "L’ambasciatore russo a Roma: “Non ci possiamo fidare dell’Italia. Russofobia e ucrofilia sono i nuovi virus”",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/ambasciatore-russo-roma-non-possiamo-fidare-litalia-russofobia-ucrofilia-virus/8084522/",
-          "description": "&#8220;Al momento non ci possiamo fidare dei nostri interlocutori italiani&#8220;. Sono le parole dell&#8217;ambasciatore russo in Italia, Alexei Para",
-          "pubDate": "Mon, 04 Aug 2025 15:27:59 +0000",
+          "title": "“Continuo a beccare il mio fidanzato con altre donne, ma lui dice che sono paranoica e che sono incontri di lavoro”: la storia sul Daily Star",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/continuo-a-beccare-il-mio-fidanzato-con-altre-donne-ma-lui-dice-che-sono-paranoica-e-che-sono-incontri-di-lavoro-la-storia-sul-daily-star/8084377/",
+          "description": "Tanti sospetti sui tradimenti ma le continue giustificazioni: una donna non riesce più a fidarsi del proprio compagno. Scuse legate al lavoro spesso a",
+          "pubDate": "Mon, 04 Aug 2025 16:04:53 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/21458508_small-1200x630.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/07/01/Donna-esasperata-con-la-suocera-1200x630.png"
         },
         {
-          "title": "Israele: il governo Netanuahu licenzia il procuratore generale Baharav-Miara, avversaria del premier sulla riforma della giustizia",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/netanyahu-licenzia-procuratore-generale-israele-notizie/8084498/",
-          "description": "Mentre centinaia di dimostranti protestano fuori dall&#8217;ufficio del primo ministro a Gerusalemme, il governo Netanyahu ha votato all&#8217;unanimi",
-          "pubDate": "Mon, 04 Aug 2025 15:22:59 +0000",
+          "title": "“Ho perso 100 chili in un anno dopo aver visto le foto del mio matrimonio. Ero in imbarazzo per il mio corpo. Ho detto no a Ozempic”: la storia di Dale Forrest",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/ho-perso-100-chili-in-un-anno-dopo-aver-visto-le-foto-del-mio-matrimonio-ero-in-imbarazzo-per-il-mio-corpo-ho-detto-no-a-ozempic-la-storia-di-dale-forrest/8084500/",
+          "description": "Un giovane padre che ha iniziato a mangiare in maniera incontrollata a causa di problemi di salute mentale ha rivelato di aver perso metà del proprio ",
+          "pubDate": "Mon, 04 Aug 2025 16:01:55 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Gali-Baharav-Miara.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/bilancia.jpg"
         },
         {
           "title": "Se hai la Partita Iva, da oggi niente sarà più come prima: la decisione del Parlamento",
@@ -731,36 +731,36 @@
           "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
         },
         {
-          "title": "Network science disentangles internal climate variability in global spatial dependence structures",
-          "link": "https://www.nature.com/articles/s44260-025-00048-w",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44260-025-00048-w/MediaObjects/44260_2025_48_Fig1_HTML.png"
-        },
-        {
-          "title": "Environmental politics is doomed to fail — unless we tell better stories",
-          "link": "https://www.nature.com/articles/d41586-025-02459-0",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.nature.com/lw1200/magazine-assets/d41586-025-02459-0/d41586-025-02459-0_51301766.jpg"
-        },
-        {
-          "title": "To save lives in heatwaves, focus on how human bodies work",
-          "link": "https://www.nature.com/articles/d41586-025-02461-6",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.nature.com/lw1200/magazine-assets/d41586-025-02461-6/d41586-025-02461-6_51294064.jpg"
-        },
-        {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
           "link": "https://www.legambiente.it/comunicati-stampa/sos-adamello-anteprima-di-carovana-dei-ghiacciai-2025/",
           "description": "Flash mob sull’Adamello che ospita il ghiacciaio più grande delle Alpi italiane. Il gigante bianco nel 2024 ha registrato un arretramento della fronte",
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
           "image": "https://www.legambiente.it/wp-content/uploads/2025/08/DJI_0298-scaled.jpg"
+        },
+        {
+          "title": "Global quantification of the dispersion effect with POLDER satellite data",
+          "link": "https://www.nature.com/articles/s41467-025-62238-3",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-62238-3/MediaObjects/41467_2025_62238_Fig1_HTML.png"
+        },
+        {
+          "title": "Climate action and energy access in Sub-Saharan Africa: insights from Covenant of Mayors signatories",
+          "link": "https://www.nature.com/articles/s42949-025-00250-8",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42949-025-00250-8/MediaObjects/42949_2025_250_Fig1_HTML.png"
+        },
+        {
+          "title": "Digital technologies for climate-related health education, behavior and risk reduction: a systematic scoping review",
+          "link": "https://www.nature.com/articles/s41746-025-01907-5",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-025-01907-5/MediaObjects/41746_2025_1907_Fig1_HTML.png"
         },
         {
           "title": "Nella più grande monocoltura di eucalipto al mondo",
