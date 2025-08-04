@@ -195,17 +195,5 @@
         console.error(err);
       });
   </script>
-<script>
-  function sendHeight() {
-    const height = document.documentElement.scrollHeight;
-    window.parent.postMessage({ type: 'ecoNewsHeight', height }, '*');
-  }
-
-  window.addEventListener('load', sendHeight);
-  // aggiorna quando cambia contenuto
-  new ResizeObserver(sendHeight).observe(document.body);
-  // anche su scroll/ridimensionamento
-  window.addEventListener('resize', sendHeight);
-</script>
 </body>
 </html>
