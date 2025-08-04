@@ -92,6 +92,14 @@
           "image": "https://www.energycue.it/wp-content/uploads/2025/08/Illustrazione-di-una-montagna-in-erosione-Canva-FOTO-energycue.it_.jpg"
         },
         {
+          "title": "Una nuova professione: il sommelier delle tisane",
+          "link": "https://www.greenplanner.it/2025/08/04/nuova-professione-sommelier-tisane/",
+          "description": "In realtà non esiste ancora ufficialmente ma potrebbe essere una bella idea. Ne parliamo con Domenico Cassinelli, Sous chef a Livigno al Lac Salin Spa",
+          "pubDate": "Mon, 04 Aug 2025 10:25:42 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/08/sommelier-tisane.jpg"
+        },
+        {
           "title": "Yanbu Green Hydrogen Hub, prende forma il secondo mega progetto dell’Arabia Saudita per idrogeno e ammoniaca verde",
           "link": "https://hydrogen-news.it/yanbu-green-hydrogen-hub-prende-forma-il-secondo-mega-progetto-dellarabia-saudita-per-idrogeno-e-ammoniaca-verde/",
           "description": "ACWA Power ha siglato un accordo con la tedesca EnBW per lo sviluppo del Yanbu Green Hydrogen Hub, il secondo polo su larga scala per la produzione di",
@@ -116,6 +124,14 @@
           "image": "https://energiaoltre.it/wp-content/uploads/2025/07/Italia-rinnovabili.png"
         },
         {
+          "title": "Crediti di carbonio sintetici, metodologia Esg-ready per la compensazione aziendale",
+          "link": "https://www.greenplanner.it/2025/08/04/crediti-carbonio-sintetici-metodologia-esg-ready/",
+          "description": "In un contesto normativo e reputazionale in rapido mutamento, i crediti di carbonio sintetici emergono come leva strategica per le imprese che intendo",
+          "pubDate": "Mon, 04 Aug 2025 08:25:49 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/07/Depositphotos_credito-carbonio-sintetico.jpg"
+        },
+        {
           "title": "Guerra energetica su tre fronti: Kiev colpisce raffinerie russe ma compra gas di Mosca, accordo Ue-Usa su energia è bluff?",
           "link": "https://energiaoltre.it/guerra-energetica-su-tre-fronti-kiev-colpisce-raffinerie-russe-ma-compra-gas-di-mosca-accordo-ue-usa-su-energia-e-bluff/",
           "description": "Il Corriere della Sera, Il Fatto Quotidiano, La Stampa e Affari &#38; Finanza di Repubblica, dipingono un quadro di paradossi strategici ed economici ",
@@ -130,6 +146,14 @@
           "pubDate": "Mon, 04 Aug 2025 07:27:25 +0000",
           "source": "powerengineeringint.com",
           "image": "https://www.powerengineeringint.com/wp-content/uploads/2025/08/Floating-data-demo-2.jpg"
+        },
+        {
+          "title": "Intelligenza artificiale generativa: uno specchio, non un terapeuta",
+          "link": "https://www.greenplanner.it/2025/08/01/intelligenza-artificiale-generativa-non-terapeuta/",
+          "description": "Secondo l&#8217;Ordine degli Psicologi della Toscana sta crescendo l&#8217;utilizzo dell&#8217;intelligenza artificiale come strumento di analisi psic",
+          "pubDate": "Fri, 01 Aug 2025 10:25:23 +0000",
+          "source": "greenplanner.it",
+          "image": "https://www.greenplanner.it/wp-content/uploads/2025/07/chatbot-psicologo.jpg"
         },
         {
           "title": "Battery project at former nuclear facility to stabilise German grid",
@@ -178,22 +202,6 @@
           "pubDate": "Wed, 09 Jul 2025 17:14:19 +0000",
           "source": "energiamagazine.it",
           "image": "https://www.energiamagazine.it/wp-content/uploads/2024/05/energiamagazine.png"
-        },
-        {
-          "title": "Autonomia energetica: la risposta delle imprese all’instabilità",
-          "link": "https://www.energiamagazine.it/autonomia-energetica-la-risposta-delle-imprese-allinstabilita/",
-          "description": "Di fronte alla crescente incertezza dei mercati energetici e alle tensioni geopolitiche internazionali, le imprese&#8230;",
-          "pubDate": "Wed, 09 Jul 2025 16:16:51 +0000",
-          "source": "energiamagazine.it",
-          "image": "https://www.energiamagazine.it/wp-content/uploads/2024/05/energiamagazine.png"
-        },
-        {
-          "title": "L’ENERGIA DEL FUTURO PARTE DA BELGIOIOSO: CITTADINI PROTAGONISTI CON SUPER-HEERO",
-          "link": "https://www.energiamagazine.it/lenergia-del-futuro-parte-da-belgioioso-cittadini-protagonisti-con-super-heero/",
-          "description": "Il 3 luglio la cittadinanza è invitata a scoprire il primo progetto territoriale italiano per&#8230;",
-          "pubDate": "Wed, 02 Jul 2025 07:35:00 +0000",
-          "source": "energiamagazine.it",
-          "image": "https://www.energiamagazine.it/wp-content/uploads/2024/05/energiamagazine.png"
         }
       ]
     },
@@ -201,12 +209,44 @@
       "category": "SmartHome",
       "items": [
         {
-          "title": "Mr. Morfina: la commedia d'azione con Jack Quaid su Paramount+",
-          "link": "https://www.hdblog.it/spettacolo/articoli/n627361/mr-morfina-film-paramount-plus-trailer/",
-          "description": "Un bancario con una rara malattia che gli impedisce di sentire dolore si trasforma in un eroe d'azione.",
-          "pubDate": "Mon, 04 Aug 2025 17:20:00 +0200",
+          "title": "Controlla l'iPad con la mente: il video che mostra il futuro",
+          "link": "https://www.hdblog.it/tablet/articoli/n627379/ipad-controllo-pensiero-synchron-apple/",
+          "description": "Per la prima volta, una persona con SLA controlla un iPad usando solo il pensiero grazie a Synchron e Apple.",
+          "pubDate": "Mon, 04 Aug 2025 17:50:00 +0200",
           "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Mr.%20Morfina%3A"
+          "image": "https://css.hd-cdn.it/new_files/templates/theme_darklight/img/hdblog_logo.svg"
+        },
+        {
+          "title": "Mercato delle pompe di calore in crescita: +11,1% di CAGR al 2032",
+          "link": "https://www.hdblog.it/green/articoli/n627380/mercato-pompe-calore-crescita-cagr-2032/",
+          "description": "Dati incoraggianti.",
+          "pubDate": "Mon, 04 Aug 2025 17:40:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1277883?w=1920"
+        },
+        {
+          "title": "Withings Nova Brilliant: elegante e completo | Test & Recensione",
+          "link": "https://www.tomshw.it/smartphone/withings-nova-brilliant-elegante-e-completo-test-recensione",
+          "description": "Sono passati un paio d&rsquo;anni da quando abbiamo recensito lo ScanWatch Nova, un eccellente smartwatch ibrido in grado di abbinare in maniera press",
+          "pubDate": "2025-08-04T17:36:08+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/08/65549/IMG_6309.jpg"
+        },
+        {
+          "title": "BYD supera Alfa Romeo in Italia a luglio 2025. Nella Top 20 dei marchi più venduti",
+          "link": "https://www.hdmotori.it/byd-italia-crescono-vendite-luglio-2025-superata-alfa-romeo/",
+          "description": "BYD continua a crescere e a superare diversi marchi storici nazionali del nostro mercato",
+          "pubDate": "Mon, 04 Aug 2025 17:30:03 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/08/byd-hd.jpg"
+        },
+        {
+          "title": "Il Garante sanziona Shein per messaggi ingannevoli e omissivi",
+          "link": "https://www.macitynet.it/garante-sanzione-shein/",
+          "description": "Il noto marchio, che opera nel “fast” e “superfast fashion”, secondo l'AGCM ha utilizzato \"una strategia di comunicazione ingannevole sulle caratteris",
+          "pubDate": "Mon, 04 Aug 2025 15:29:21 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/05/shein-app-iphone-ipad-ico.jpg"
         },
         {
           "title": "Spotify rincara, in Italia e in mezzo mondo: non si salva nessun abbonamento",
@@ -225,30 +265,6 @@
           "image": "https://media-assets.wired.it/photos/6890be1d050110b6ae93fce5/master/pass/1853378815"
         },
         {
-          "title": "Migliori adattatori Apple CarPlay wireless (agosto 2025)",
-          "link": "https://www.tomshw.it/automotive/migliori-adattatori-apple-carplay-wireless",
-          "description": "L'uso dello smartphone mentre si &egrave; alla guida, per ascoltare musica o configurare app di navigazione per muoversi in modo agevole nel traffico,",
-          "pubDate": "2025-08-04T17:15:08+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2024/06/24682/carplay-wallpaper-ios-16.jpg"
-        },
-        {
-          "title": "Usi ancora la scrivania per il PC? Forse non ti serve più",
-          "link": "https://www.tomshw.it/videogioco/usi-ancora-la-scrivania-per-il-pc-forse-non-ti-serve-piu",
-          "description": "Siete ancora legati all&rsquo;idea che per giocare o lavorare al PC sia indispensabile una scrivania tradizionale? &Egrave; tempo di cambiare prospett",
-          "pubDate": "2025-08-04T17:10:48+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/07/63267/Nerdytec-Couchmaster-Cycon-3-copertina.jpg"
-        },
-        {
-          "title": "Google Pixel 10 si mostra in tante nuove immagini: vi piace?",
-          "link": "https://www.hdblog.it/smartphone/articoli/n627389/google-pixel-10-tante-nuove-immagini/",
-          "description": "Mancano pochi giorni alla presentazione.",
-          "pubDate": "Mon, 04 Aug 2025 17:10:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Google%20Pixel"
-        },
-        {
           "title": "“Panama Playlist”: da JD Vance a Sam Altman cosa ascoltano i potenti su Spotify",
           "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/panama_playlist_ecco_cosa_ascoltano_i_potenti_su_spotify-424771529/?rss",
           "description": "Dal vicepresidente Usa ai ceo della Silicon Valley: un sito anonimo ha raccolto le abitudini musicali di politici e magnati tech sfruttando le falle d",
@@ -263,14 +279,6 @@
           "pubDate": "Mon, 04 Aug 2025 15:03:33 +0000",
           "source": "wired.it",
           "image": "https://media-assets.wired.it/photos/6890c7e7b09eba2e2aea22d5/master/pass/Migliori%20libri%20agosto%202025.jpg"
-        },
-        {
-          "title": "Hyundai ha concluso con successo i test in Arabia Saudita per il suo autobus a idrogeno",
-          "link": "https://www.hdmotori.it/hyundai-test-autobus-universe-fuel-cell-idrogeno/",
-          "description": "Con questi test conferma le prestazioni dell&rsquo;autobus UNIVERSE Fuel Cell e l&rsquo;uso dell&rsquo;idrogeno anche ad alta quota.",
-          "pubDate": "Mon, 04 Aug 2025 17:00:53 +0200",
-          "source": "hdblog.it",
-          "image": "https://www.hdmotori.it/app/uploads/2025/08/Hyundai-UNIVERSE-Fuel-Cell.jpg"
         },
         {
           "title": "Samsung TV 65″ Neo QLED 8K: oggi su Amazon risparmi 300 euro sull’eccellenza",
@@ -353,6 +361,14 @@
           "image": "https://www.macitynet.it/wp-content/uploads/2022/05/AirTag-valigia-.jpg"
         },
         {
+          "title": "Migliori chiavette Internet e router wifi portatili (agosto 2025)",
+          "link": "https://www.tomshw.it/hardware/chiavette-internet-migliori",
+          "description": "Nel panorama digitale odierno, la possibilit&agrave; di navigare su Internet in modo rapido e affidabile ovunque ci si trovi &egrave; diventata una ne",
+          "pubDate": "2025-08-04T15:39:46+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2023/10/2282/D-Link-DWM-222.jpg"
+        },
+        {
           "title": "A luglio investiti 132,17 milioni in startup, 123 in meno rispetto al 12 mesi fa",
           "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/investimenti_startup_luglio_2025-424771271/?rss",
           "description": "A luglio 2024 gli investimenti erano stati pari a 255 milioni. Spiccano i 70 milioni di Exein. Il totale investito nei primi sette mesi è 586,95 milio",
@@ -361,20 +377,12 @@
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/144628509-a1f9b05f-44b2-470e-8068-0899db0802d0.jpg"
         },
         {
-          "title": "Offerte Amazon 4 agosto su Apple, Samsung, Honor, Ninja, Greenworks, Bosch, Sony",
-          "link": "https://www.macitynet.it/offerte-amazon-4-agosto-2025/",
-          "description": "In sconto smartphone, sistemi audio con soundbar, accessori per stampanti 3D, videocitofoni Smart e altri dispositivi per la casa, supporti da terra p",
-          "pubDate": "Mon, 04 Aug 2025 12:44:01 +0000",
-          "source": "macitynet.it",
-          "image": "https://www.macitynet.it/wp-content/uploads/2018/04/amazonlista1.jpg"
-        },
-        {
-          "title": "Prestazioni ai massimi livelli con questo SSD da 2 TB SUPER SCONTATO!",
-          "link": "https://www.tomshw.it/hardware/prestazioni-ai-massimi-livelli-con-questo-ssd-da-2-tb-super-scontato-9zV",
-          "description": "Se desiderate portare al massimo livello le prestazioni del vostro PC da gaming o workstation, questa offerta Amazon non dovrebbe sfuggirvi. Il Corsai",
-          "pubDate": "2025-08-04T14:41:04+02:00",
+          "title": "Questo peluche AI a 63€ è il tuo nuovo amico smart!",
+          "link": "https://www.tomshw.it/offerte/questo-peluche-ai-a-63eur-e-il-tuo-nuovo-amico-smart",
+          "description": "In un mondo dove la tecnologia incontra sempre pi&ugrave; spesso l&rsquo;affetto e la tenerezza, nasce un prodotto che ha gi&agrave; conquistato grand",
+          "pubDate": "2025-08-04T14:37:50+02:00",
           "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65536/CORSAIR-MP700-ELITE-2TB-offerta-04082025-copertina.png"
+          "image": "https://www.tomshw.it/storage/media/2025/08/65535/pelucheai.png"
         },
         {
           "title": "Anthropic vieta l'uso di Claude a OpenAI: avrebbe “spiato” il suo LLM",
@@ -454,6 +462,30 @@
           "image": "https://img.stcrm.it/images/45833316/1200x/tesla-model-s-70d-4-1.jpeg"
         },
         {
+          "title": "Strage di ciclisti: 130 vittime da inizio anno",
+          "link": "https://www.formulapassion.it/auto/e-mobility/strage-ciclisti-vittime-inizio-anno-numeri",
+          "description": "Un nuovo pacchetto di misure per prevenire gli incidenti in bicicletta a settembre verrà presentato in Parlamento",
+          "pubDate": "Mon, 04 Aug 2025 15:45:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2023/04/bicicletta-sicurezza.jpg"
+        },
+        {
+          "title": "Oben Rorr EZ: la moto elettrica indiana che costa come uno smartphone",
+          "link": "https://www.vaielettrico.it/oben-rorr-ez-la-moto-elettrica-indiana-che-costa-come-uno-smartphone/",
+          "description": "Ok, parliamo del mercato indiano, ma Oben Electric ha presentando la Rorr EZ, una moto elettrica venduta su Amazon&#8230;\nL'articolo Oben Rorr EZ: la ",
+          "pubDate": "Mon, 04 Aug 2025 15:40:55 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/90-8-e1754321696797.jpeg"
+        },
+        {
+          "title": "Cosa c’è dietro il crollo del prezzo del litio",
+          "link": "https://insideevs.it/news/767928/prezzo-litio-crollo-stima-2025/",
+          "description": "Le cause sono molte, dalla sovrapproduzione al rallentamento della domanda EV, passando per le incertezze geopolitiche",
+          "pubDate": "Mon, 04 Aug 2025 15:30:00 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/PzKJ8/s3/litio-per-le-batterie-dove-si-trova-e-come-si-estrae.jpg"
+        },
+        {
           "title": "Strategia della pensione e le altre storie del GP Ungheria: I Doppiati podcast, la puntata 21 live alle 21.30",
           "link": "https://www.formulapassion.it/podcast/i-doppiati-f1-podcast-21-25-analisi-gp-ungheria-ferrari-leclerc-hamilton-strategia-pensione",
           "description": "Sventolate le bandiere blu, I Doppiati tornano su YouTube, Spotify e Apple Podcast per analizzare il GP d'Ungheria a Budapest",
@@ -518,14 +550,6 @@
           "image": "https://www.motorionline.com/wp-content/uploads/2025/08/iltuokm0.jpg"
         },
         {
-          "title": "Estasi Bortoleto: “Correre con davanti Alonso e dietro Verstappen è stato incredibile”",
-          "link": "https://www.formulapassion.it/f1/f1-news/estasi-bortoleto-sauber-gp-ungheria-alonso-verstappen-sauber-sesto-posto-incredibile",
-          "description": "Il debuttante va in vacanza con un gran sorriso",
-          "pubDate": "Mon, 04 Aug 2025 14:00:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Bortoleto-Sauber-F1.jpg"
-        },
-        {
           "title": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA",
           "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-riaperto-il-tratto-compreso-tra-valdarno-e-arezzo-in-direzione-roma/735914/",
           "description": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA VALDARNO E AREZZO IN DIREZIONE ROMA RESTA TEMPORANEMANETE CHIUSO IL TRATTO IN DIREZIONE BOLOGNA &#16",
@@ -548,22 +572,6 @@
           "pubDate": "Mon, 04 Aug 2025 13:30:00 +0000",
           "source": "insideevs.it",
           "image": "https://cdn.motor1.com/images/mgl/6Z4M3N/s3/quanto-e-sostenibile-la-bmw-ix3.jpg"
-        },
-        {
-          "title": "Rinnovabili, nuovi impianti in calo del 35%: le scelte negative del governo",
-          "link": "https://www.vaielettrico.it/rinnovabili-frenata-decreti-governo-anie/",
-          "description": "Rallenta il mercato delle energie rinnovabili in Italia: nei primi cinque mesi dell&#8217;anno la nuova potenza installata è&#8230;\nL'articolo Rinnova",
-          "pubDate": "Mon, 04 Aug 2025 13:16:11 +0000",
-          "source": "vaielettrico.it",
-          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/155237026-12d85293-e9c2-4e1f-b94f-bef51fd0f777.jpg"
-        },
-        {
-          "title": "Gli incentivi auto elettriche 2025 non saranno per tutti, ecco perché",
-          "link": "https://insideevs.it/news/767889/incentivi-auto-elettriche-2025-fua/",
-          "description": "Per poter acquistare un'auto usufruendo dell'ecobonus bisognerà essere residenti in aree urbane funzionali, ecco cosa significa",
-          "pubDate": "Mon, 04 Aug 2025 12:25:17 +0000",
-          "source": "insideevs.it",
-          "image": "https://cdn.motor1.com/images/mgl/BXyMJR/s3/incentivi-auto-2025-fua.jpg"
         },
         {
           "title": "Mate Rimac porta la sua Bugatti Chiron da 4 milioni al supermercato",
@@ -590,26 +598,34 @@
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
         },
         {
+          "title": "Il marchio cinese Superpanther costruirà camion elettrici a Steyr (Austria)",
+          "link": "https://www.electricmotornews.com/veicoli-ecologici/superpanther-camion-steyr/",
+          "description": "Il marchio cinese SuperPanther ha recentemente firmato un accordo con il produttore austriaco di veicoli commerciali Steyr Automotive per la produzion",
+          "pubDate": "Sun, 03 Aug 2025 22:11:53 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/superpanther_steyr_camion_electric_motor_news_01.jpg"
+        },
+        {
           "title": "Flessione del mercato auto a luglio, elettriche solo al 4,9%",
           "link": "https://www.electricmotornews.com/eventi/mercato-auto-luglio-elettriche-49/",
           "description": "Nuova contrazione a luglio del mercato auto in Italia mentre le auto elettriche pure (BEV) rappresentano il 4,9% del mercato mensile. [...]\nL'articolo",
           "pubDate": "Sun, 03 Aug 2025 22:10:55 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/unrae_mercato_auto_luglio_2025_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "Il viaggio notturno sul Brennero dell’eTruck MAN",
-          "link": "https://www.electricmotornews.com/veicoli-ecologici/viaggio-brennero-etruck-man/",
-          "description": "MAN Truck &#038; Bus e l'azienda di trasporti Dettendorfer testano l'utilizzo di camion 100% elettrici lungo la tratta del Brennero tra Raubling e Bol",
-          "pubDate": "Sat, 02 Aug 2025 22:14:40 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/man_brenner_electric_motor_news_01.jpg"
         }
       ]
     },
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "Il trolley “si muove”: dentro c’è una bambina di 2 anni. La scoperta nel portabagagli di un bus",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/bambina-trolley-autobus-nuova-zelanda-notizie/8084505/",
+          "description": "Nel vano bagagli dell&#8217;autobus c&#8217;era un trolley che &#8220;si muoveva&#8221;. Dentro, in effetti, c&#8217;era una bimba di due anni. È succ",
+          "pubDate": "Mon, 04 Aug 2025 15:46:29 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2023/04/17/valigia1200.jpg"
+        },
         {
           "title": "L’ambasciatore russo a Roma: “Non ci possiamo fidare dell’Italia. Russofobia e ucrofilia sono i nuovi virus”",
           "link": "https://www.ilfattoquotidiano.it/2025/08/04/ambasciatore-russo-roma-non-possiamo-fidare-litalia-russofobia-ucrofilia-virus/8084522/",
@@ -625,14 +641,6 @@
           "pubDate": "Mon, 04 Aug 2025 15:22:59 +0000",
           "source": "ilfattoquotidiano.it",
           "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Gali-Baharav-Miara.jpg"
-        },
-        {
-          "title": "“L’orrore del 7 ottobre finì in diretta sui social”: la class action di superstiti e famiglie contro Meta",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/class-action-meta-hamas-7ottobre-notizie/8084307/",
-          "description": "Una class action da oltre 4 miliardi di shekel (più di un miliardo di euro) è stata intentata da vittime sopravvissute all&#8217;eccidio del 7 ottobre",
-          "pubDate": "Mon, 04 Aug 2025 15:19:13 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/23503358_medium-1200x630.jpg"
         },
         {
           "title": "Se hai la Partita Iva, da oggi niente sarà più come prima: la decisione del Parlamento",
