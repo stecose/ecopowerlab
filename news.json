@@ -209,20 +209,28 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "Galaxy S25 FE, filtrano data di lancio e colori: qual è il vostro preferito?",
+          "link": "https://www.hdblog.it/smartphone/articoli/n627409/samsung-galaxy-s25-fe-data-lancio-colori-settembre/",
+          "description": "Il debutto è vicino: ecco gli ultimi aggiornamenti.",
+          "pubDate": "Mon, 04 Aug 2025 19:35:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1277949?w=1920"
+        },
+        {
+          "title": "Google annuncia la data di lancio dei Pixel 10, cercando di sfottere Apple ma segnando un autogol",
+          "link": "https://www.smartworld.it/news/google-pixel-10-data-uscita.html",
+          "description": "Google ha annunciato con tono vagamente polemico la data di uscita della serie Pixel 10: ma polemico con chi? Non è che è un boomerang?L'articolo Goog",
+          "pubDate": "Mon, 04 Aug 2025 19:25:00 +0200",
+          "source": "smartworld.it",
+          "image": "https://www.smartworld.it/images/2025/08/04/google-pixel-10_1200x675.png"
+        },
+        {
           "title": "Arriva l'Android dei robot: OpenMind raccoglie 20 milioni di dollari",
           "link": "https://www.hdblog.it/tecnologia/articoli/n627376/openmind-sistema-operativo-robot/",
           "description": "OpenMind crea un sistema operativo per robot e si prepara al lancio con 18,5 milioni di euro.",
           "pubDate": "Mon, 04 Aug 2025 19:15:00 +0200",
           "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Arriva%20l'Android"
-        },
-        {
-          "title": "John Romero: Wolfenstein 3D è stato il primo gioco del team fatto \"con calma\"",
-          "link": "https://www.tomshw.it/videogioco/john-romero-wolfenstein-3d-fu-il-primo-gioco-curato-2025-08-04",
-          "description": "Negli anni '90, mentre l'industria videoludica muoveva i primi passi verso la complessità moderna, un piccolo team di quattro persone in Louisiana sta",
-          "pubDate": "2025-08-04T19:10:26+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65554/wolfenstein.webp"
+          "image": "https://hd2.tudocdn.net/1259057?w=1920"
         },
         {
           "title": "Apple, iPhone del futuro più luminosi e brillanti grazie al Tandem OLED | Rumor",
@@ -230,15 +238,7 @@
           "description": "La tecnologia di iPad Pro potrebbe arrivare anche sui Melafonini. Samsung e LG hanno già iniziato a ragionarci.",
           "pubDate": "Mon, 04 Aug 2025 18:55:00 +0200",
           "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Apple%2C%20iPhone"
-        },
-        {
-          "title": "I chatbot ora diventano social: la novità di Character.AI",
-          "link": "https://www.hdblog.it/tecnologia/articoli/n627386/character-ai-feed-social/",
-          "description": "Character.AI introduce un social feed sull'app. Condividi chat, immagini e video creati con l'AI.",
-          "pubDate": "Mon, 04 Aug 2025 18:45:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=I%20chatbot"
+          "image": "https://hd2.tudocdn.net/1264123?w=1920"
         },
         {
           "title": "Summer Black Friday, spendi meno e goditi l’estate con i Ricondizionati TrenDevice",
@@ -337,12 +337,12 @@
           "image": "https://www.smartworld.it/images/2024/02/27/samsung-galaxy-final_1200x675.jpg"
         },
         {
-          "title": "Elgato Game Capture 4K S è la scheda esterna più completa e accessibile del 2025",
-          "link": "https://www.smartworld.it/recensioni/elgato-game-capture-4k-s",
-          "description": "Elgato 4K S registra in 4K60 HDR, supporta 1080p240 e funziona su PC, console e iPad. Compatta, veloce, davvero plug & play. Ecco la recensione.L'arti",
-          "pubDate": "Mon, 04 Aug 2025 16:17:00 +0200",
-          "source": "smartworld.it",
-          "image": "https://www.smartworld.it/images/2025/08/04/recensione-elgato-game-capture-4k-s-cover-2_1200x675.jpg"
+          "title": "5 traduttori vocali da mettere in valigia per le vacanze all’estero!",
+          "link": "https://www.tomshw.it/altro/traduttori-vocali-da-mettere-in-valigia-per-le-vacanze-allestero",
+          "description": "Quando si viaggia all&rsquo;estero, la lingua pu&ograve; essere una barriera&hellip; oppure un&rsquo;occasione per mettersi nei guai con il men&ugrave",
+          "pubDate": "2025-08-04T16:29:13+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/07/64507/traduttori.png"
         },
         {
           "title": "Migliori asciugatrici (agosto 2025)",
@@ -422,6 +422,30 @@
           "image": "https://img.stcrm.it/images/45834792/CINEMA/1200x/brembo-upgrade.jpeg"
         },
         {
+          "title": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA AREZZO E VALDARNO IN DIREZIONE BOLOGNA",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a1-milano-napoli-riaperto-il-tratto-compreso-tra-arezzo-e-valdarno-in-direzione-bologna/736350/",
+          "description": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA AREZZO E VALDARNO IN DIREZIONE BOLOGNA Roma, 4 agosto 2025 &#8211; Alle 19:00 circa, sulla A1 Milano",
+          "pubDate": "Mon, 04 Aug 2025 17:42:03 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "Le verità nascoste (di Budapest)",
+          "link": "https://www.formulapassion.it/f1/f1-analisi-tecnica/le-verita-nascoste-di-budapest-ferrari-dati-leclerc-hamilton-norris-piastri-mclaren-verstappen",
+          "description": "Non solo il problema: la vittoria di Leclerc era già a rischio perché solo contro due. McLaren domina mentre gli avversari si sbaragliano da soli",
+          "pubDate": "Mon, 04 Aug 2025 17:40:04 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Ferrari-Leclerc.jpg"
+        },
+        {
+          "title": "Autostrade per l’Italia presenta il simulatore di guida a realtà aumentata per la sicurezza dei viaggiatori",
+          "link": "https://www.trasporti-italia.com/mobilita/autostrade-italia-simulatore-guida-sicurezza/736265/",
+          "description": "Il progetto Driver Behaviour combina dati raccolti sul campo tramite droni e tecnologie di simulazione guida",
+          "pubDate": "Mon, 04 Aug 2025 17:22:58 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/Simulatore-di-guida.jpg"
+        },
+        {
           "title": "Dalle Dolomiti una voce diversa: non esageriamo!",
           "link": "https://www.moto.it/news/dalle-dolomiti-una-voce-diversa-non-esageriamo.html",
           "description": "Osvaldo Finazzer, albergatore e presidente dal Comitato per la salvaguardia dei passi dolomitici: “Macchè overtourism, le giornate tranquille sono più",
@@ -460,14 +484,6 @@
           "pubDate": "Mon, 04 Aug 2025 16:38:30 +0000",
           "source": "vaielettrico.it",
           "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/XPENG_G9-scaled.jpg"
-        },
-        {
-          "title": "DL Fiscale, novità per autotrasporto e logistica pubblicate in Gazzetta",
-          "link": "https://www.trasporti-italia.com/camion/dl-fiscale-novita-per-autotrasporto-logistica-gazzetta/736206/",
-          "description": "Ecco le nuove regole fiscali su IVA, trasferte, carburanti e rapporti con la PA per le imprese del settore",
-          "pubDate": "Mon, 04 Aug 2025 16:23:03 +0000",
-          "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/DL-Fiscale-Gazzetta-Ufficiale-novita-autotrasporto-e-logistica-.jpg"
         },
         {
           "title": "Incidente sull’A1 tra Arezzo e Valdarno: camion travolge un’ambulanza ferma in coda, tre morti e 15 feriti",
@@ -534,36 +550,12 @@
           "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/Schermata-2025-08-04-alle-17.03.40.png"
         },
         {
-          "title": "Ungheria 2025, l’altro podio",
-          "link": "https://www.formulapassion.it/f1/f1-commento/pagelle-ungheria-hungaroring-ferrari-hamilton-leclerc-red-bull-alpine-alonso-bortoleto-norris",
-          "description": "Le pagelle dei promossi e dei bocciati del GP di Ungheria",
-          "pubDate": "Mon, 04 Aug 2025 15:04:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/08/alonso-bortoleto-ungheria-1.jpg"
-        },
-        {
           "title": "Xpeng prima nello Studio sulla Soddisfazione Clienti EV 2025",
           "link": "https://www.electricmotornews.com/eventi/xpeng-soddisfazione-clienti/",
           "description": "Xpeng è prima nello Studio sulla Soddisfazione Clienti EV 2025 condotto da USCALE GmbH e fissa un nuovo standard per la mobilità elettrica in Europa. ",
           "pubDate": "Mon, 04 Aug 2025 15:00:23 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/xpeng_electric_motor_news_01_XPENG_G9.jpg"
-        },
-        {
-          "title": "Hyundai pioniera dell’idrogeno: dalla prima auto fuel cell alla nuova NEXO",
-          "link": "https://www.motorionline.com/hyundai-pioniera-dellidrogeno-dalla-prima-auto-fuel-cell-alla-nuova-nexo/",
-          "description": "Hyundai è tra le Case automobilistiche che prima delle altre hanno creduto nello sviluppo della tecnologia a idrogeno, settore nel",
-          "pubDate": "Mon, 04 Aug 2025 14:47:56 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Hyundai-ix35.jpg"
-        },
-        {
-          "title": "MIT, trasporto merci in Italia: +3,5% nel primo trimestre 2025",
-          "link": "https://www.trasporti-italia.com/camion/mit-trasporto-merci-italia-primo-trimestre-2025/736003/",
-          "description": "I dati completi dell’Osservatorio sulle tendenze della mobilità del Ministero delle Infrastrutture e dei Trasporti (MIT)",
-          "pubDate": "Mon, 04 Aug 2025 14:42:32 +0000",
-          "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2025/08/Trasporto-merci-in-Italia.jpg"
         },
         {
           "title": "Tesla lancia il Robotaxi a New York: è sfida con Waymo",
@@ -612,6 +604,14 @@
           "pubDate": "Sun, 03 Aug 2025 22:12:30 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/hyundai_universe_fcev_electric_motor_news_01.jpg"
+        },
+        {
+          "title": "Il marchio cinese Superpanther costruirà camion elettrici a Steyr (Austria)",
+          "link": "https://www.electricmotornews.com/veicoli-ecologici/superpanther-camion-steyr/",
+          "description": "Il marchio cinese SuperPanther ha recentemente firmato un accordo con il produttore austriaco di veicoli commerciali Steyr Automotive per la produzion",
+          "pubDate": "Sun, 03 Aug 2025 22:11:53 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/superpanther_steyr_camion_electric_motor_news_01.jpg"
         }
       ]
     },
@@ -619,20 +619,28 @@
       "category": "Clima",
       "items": [
         {
-          "title": "Rinviato il ddl professioni sanitarie che conteneva lo scudo penale per i medici, Anaao: “Speriamo non nasconda un passo indietro”",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/scudo-penale-medici-rinvio-ddl-notizie/8084688/",
-          "description": "&#8220;Il rinvio dell’approvazione del ddl che contiene lo scudo penale&#8221; per i medici &#8220;ci auguriamo sia solo una questione tecnica. Sarebb",
-          "pubDate": "Mon, 04 Aug 2025 17:10:00 +0000",
+          "title": "Carbone, da ministro Calenda annunciò la chiusura delle centrali al 2025. Ora chiede di rinviarla fino al 2038",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/calenda-phase-out-carbone-rinvio-2038-notizie/8084235/",
+          "description": "La chiusura delle centrali nucleari? Da coordinare con l’avvio di nuovi impianti elettronucleari “indicando il 2038 come nuova data per il phase-out”.",
+          "pubDate": "Mon, 04 Aug 2025 17:39:40 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Imagoeconomica_2317780-1.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/06/23/med-1200x630-15-1200x630.jpg"
         },
         {
-          "title": "Nei primi sei mesi dell’anno già 357 morti sul lavoro. Aumentano le vittime in itinere",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/infortuni-lavoro-morti-itinere-notizie/8084491/",
-          "description": "La strage sul lavoro continua. Nei primi sei mesi del 2025, fa sapere l&#8216;Inail, le denunce di infortunio mortale arrivate all&#8217;istituto sono",
-          "pubDate": "Mon, 04 Aug 2025 17:08:21 +0000",
+          "title": "Pubblicano su TikTok un video con un deposito colpito dagli ucraini: arrestati tre giovani russi",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/tiktoker-russi-arrestati-deposito-rosneft-adler-news/8084521/",
+          "description": "Tre giovani russi, due ragazze e un ragazzo tra i 19 e i 21 anni, sono state arrestati per aver condiviso su Tik Tok un video in cui appare sullo sfon",
+          "pubDate": "Mon, 04 Aug 2025 17:27:54 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2024/02/13/med-1200x630-22.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Schermata-2025-08-04-alle-19.22.13.png"
+        },
+        {
+          "title": "“Occupazione totale di Gaza, decisione presa”: l’annuncio di Netanyahu. “Al capo dell’Idf non va bene? Si dimetta”",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/04/netanyahu-annuncia-occupiamo-striscia-gaza-decisione-presa/8084709/",
+          "description": "&#8220;Occuperemo totalmente la Striscia di Gaza. La decisione è stata presa&#8221;. È questo l&#8217;annuncio riferito da un alto funzionario dell’uf",
+          "pubDate": "Mon, 04 Aug 2025 17:26:48 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/23517688_small-1200x630.jpg"
         },
         {
           "title": "Multa per parcheggio in divieto di sosta, in questi casi non devi pagare 1 euro ma nessuno lo sa: non farti fregare",
@@ -641,14 +649,6 @@
           "pubDate": "Mon, 04 Aug 2025 17:00:18 +0000",
           "source": "greenstyle.it",
           "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/divieto-di-sosta-31072025-greenstyle.it_.jpg"
-        },
-        {
-          "title": "Regno Unito, atterraggio da incubo a causa della tempesta Floris",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/tempesta-floris-regno-unito-atterraggio-difficile-video/8084668/",
-          "description": "Un aereo fatica ad atterrare all&#8217;aeroporto di Leeds Bradford mentre la tempesta Floris si abbatte sul Regno Unito, colpendo principalmente la Sc",
-          "pubDate": "Mon, 04 Aug 2025 16:52:31 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Schermata-2025-08-04-alle-18.28.21.png"
         },
         {
           "title": "Se hai la Partita Iva, da oggi niente sarà più come prima: la decisione del Parlamento",
@@ -731,6 +731,14 @@
           "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
         },
         {
+          "title": "Widespread reduction of ozone extremes in storylines of future climate",
+          "link": "https://www.nature.com/articles/s44407-025-00019-4",
+          "description": "",
+          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44407-025-00019-4/MediaObjects/44407_2025_19_Fig1_HTML.png"
+        },
+        {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
           "link": "https://www.nature.com/articles/s44260-025-00048-w",
           "description": "",
@@ -745,14 +753,6 @@
           "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
           "image": "https://media.nature.com/lw1200/magazine-assets/d41586-025-02459-0/d41586-025-02459-0_51301766.jpg"
-        },
-        {
-          "title": "To save lives in heatwaves, focus on how human bodies work",
-          "link": "https://www.nature.com/articles/d41586-025-02461-6",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.nature.com/lw1200/magazine-assets/d41586-025-02461-6/d41586-025-02461-6_51294064.jpg"
         },
         {
           "title": "SOS Adamello. Anteprima di Carovana dei Ghiacciai 2025",
