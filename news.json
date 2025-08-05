@@ -209,6 +209,54 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "Terre rare, c'è una fabbrica in Italia che le recupera da hard disk e motori elettrici",
+          "link": "https://www.wired.it/article/riciclo-terre-rare-fabbrica-ceccano-itelyum-erion-europa-italia/",
+          "description": "È a Ceccano, vicino a Frosinone, Ma in tutta l'Unione europea non c'è alcuno stabilimento di grandi dimensioni. E nel continente si ricicla ancora tro",
+          "pubDate": "Tue, 05 Aug 2025 04:50:00 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/67e654a0d4876ec0a2529114/master/pass/02%20impianto%20NewRE_Itelyum_Ceccano.JPG"
+        },
+        {
+          "title": "Anker Nano, mini caricabatterie con cavo USB-C retrattile scontato a 31,99 euro",
+          "link": "https://www.macitynet.it/anker-nano-mini-caricabatterie-con-cavo-usb-c-retrattile-scontato-a-3199-euro/",
+          "description": "Amazon sconta Anker Nano da 35W, caricatore compatto con cavo retrattile integrato e due porte USB-C, adatto a più dispositivi inclusi anche i MacBook",
+          "pubDate": "Tue, 05 Aug 2025 04:44:34 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/anker-nano-cavo-retrattie.jpg"
+        },
+        {
+          "title": "Il neurochirurgo Christian Brogna: “L'esposizione all'arte plasma il nostro cervello. Siamo tutti spettatori creativi”",
+          "link": "https://www.wired.it/article/christian-brogna-neurochirurgo-arte-plasma-il-nostro-cervello-intervista/",
+          "description": "Osservare un’opera d’arte non è un atto passivo, ma un’esperienza multisensoriale e cognitiva che coinvolge emozione, giudizio, memoria e immaginazion",
+          "pubDate": "Tue, 05 Aug 2025 04:40:00 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6850247689cad3a681378330/master/pass/LUS_5250.jpg"
+        },
+        {
+          "title": "Autostrade per l&#039;Italia, droni e AI per migliorare la sicurezza dei viaggiatori",
+          "link": "https://www.hdmotori.it/autostrade-per-italia-droni-ai-simulatore-sicurezza/",
+          "description": "L&#039;obiettivo &egrave; quello di studiare il comportamento degli automobilisti in autostrada in prossimit&agrave; dei cantieri, grazie ad un simula",
+          "pubDate": "Tue, 05 Aug 2025 06:30:50 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/08/autostrade-hd.jpg"
+        },
+        {
+          "title": "10 giochi da tavolo portatili da tenere nello zaino delle vacanze",
+          "link": "https://www.wired.it/gallery/10-giochi-da-tavolo-portatili-zaino-vacanze/",
+          "description": "Giochi di carte per tutta la famiglia, party game paranoici e gare tra spie: le novità adatte in ogni situazione",
+          "pubDate": "Tue, 05 Aug 2025 04:30:00 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6882bd74443ba6ad6ca98a76/master/pass/Tinderblox%20inevidenza.jpg"
+        },
+        {
+          "title": "Apple AirPods Pro 2 in sconto del 29%, costano 199,99€",
+          "link": "https://www.macitynet.it/apple-airpods-pro-2-offerta-199-euro-sconto-29/",
+          "description": "Gli AirPods Pro 2 di Apple sono disponibili al secondo prezzo più basso di sempre: solo 199,99 euro con il 29% di sconto. Cancellazione attiva del rum",
+          "pubDate": "Tue, 05 Aug 2025 04:14:23 +0000",
+          "source": "macitynet.it",
+          "image": "https://www.macitynet.it/wp-content/uploads/2024/11/airpods-pro-2-black.jpg"
+        },
+        {
           "title": "Xiaomi Pad 7 in offerta su Amazon: a 262 è il tablet da prendere oggi",
           "link": "https://www.hdblog.it/tablet/offerte/n627417/xiaomi-pad-7-offerta-amazon-262-euro-tablet/",
           "description": "Lo Xiaomi Pad 7 è in offerta su Amazon ed è ora disponibile al prezzo scontato di 262 euro diventando un best buy tra i tablet.",
@@ -233,22 +281,6 @@
           "image": "https://hd2.tudocdn.net/1260221?w=1920"
         },
         {
-          "title": "Legion Go S: 5 giochi da giocare sotto l'ombrellone (e come configurarli)",
-          "link": "https://www.hdblog.it/hardware/recensioni/n626967/legion-go-s-5-giochi-imperdibili-prezzo-offerta/",
-          "description": "Siete incuriositi dal mondo delle handheld ma ancora indecisi sull'acquisto. Oggi vi mostriamo come vanno 5 titoli intramontabili su Legion Go S!",
-          "pubDate": "Mon, 04 Aug 2025 20:05:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://hd2.tudocdn.net/1277081?w=1920"
-        },
-        {
-          "title": "Offerte Amazon 4 agosto su Apple, Samsung, Honor, Ninja, Greenworks, Bosch, Sony – aggiornato",
-          "link": "https://www.macitynet.it/offerte-amazon-4-agosto-2025/",
-          "description": "In sconto smartphone, sistemi audio con soundbar, accessori per stampanti 3D, videocitofoni Smart e altri dispositivi per la casa, supporti da terra p",
-          "pubDate": "Mon, 04 Aug 2025 17:45:01 +0000",
-          "source": "macitynet.it",
-          "image": "https://www.macitynet.it/wp-content/uploads/2018/04/amazonlista1.jpg"
-        },
-        {
           "title": "Google annuncia la data di lancio dei Pixel 10, cercando di sfottere Apple ma segnando un autogol",
           "link": "https://www.smartworld.it/news/google-pixel-10-data-uscita.html",
           "description": "Google ha annunciato con tono vagamente polemico la data di uscita della serie Pixel 10: ma polemico con chi? Non è che è un boomerang?L'articolo Goog",
@@ -265,22 +297,6 @@
           "image": "https://www.tomshw.it/storage/media/2025/07/64903/Amiga-(3).png"
         },
         {
-          "title": "Summer Black Friday, spendi meno e goditi l’estate con i Ricondizionati TrenDevice",
-          "link": "https://www.macitynet.it/summer-black-friday-spendi-meno-e-goditi-lestate-con-i-ricondizionati-trendevice/",
-          "description": "TrenDevice anticipa tutti con Summer Black Friday: grandi sconti sui ricondizionati iPhone, iPad, Mac, Apple Watch, AirPods, Samsung e PlayStation: iP",
-          "pubDate": "Mon, 04 Aug 2025 16:29:58 +0000",
-          "source": "macitynet.it",
-          "image": "https://www.macitynet.it/wp-content/uploads/2025/08/Summer-Black-Friday-trendevice-2025-ico.jpg"
-        },
-        {
-          "title": "iPhone 17 Air, la batteria sarà spessa la metà di quella di 17 Pro",
-          "link": "https://www.wired.it/article/iphone-17-air-batteria/",
-          "description": "Aumentano i dettagli sull'attesissimo smartphone ultrasottile che conterà su componenti dedicati",
-          "pubDate": "Mon, 04 Aug 2025 15:46:43 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/66eaeea6feb93ecfe70e6fe6/master/pass/7.png"
-        },
-        {
           "title": "Spotify rincara, in Italia e in mezzo mondo: non si salva nessun abbonamento",
           "link": "https://www.smartworld.it/news/spotify-rincaro-premium-individual.html",
           "description": "È in arrivo un'ondata di rincari per tutti gli abbonamenti di Spotify: ecco i nuovi prezzi annuali, in vigore e breve per nuovi e vecchi abbonati.L'ar",
@@ -289,28 +305,12 @@
           "image": "https://www.smartworld.it/images/2025/08/04/rincaro-spotify_1200x675.jpeg"
         },
         {
-          "title": "Perché Tesla è stata condannata a risarcire 243 milioni di dollari",
-          "link": "https://www.wired.it/article/tesla-condannata-a-risarcire-243-milioni-di-dollari-per-morte-causata-autopilot/",
-          "description": "La casa automobilistica di Elon Musk dovrà pagare per un incidente mortale del 2019 in Florida, dove una giovane donna è stata uccisa da una Model S c",
-          "pubDate": "Mon, 04 Aug 2025 15:16:14 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/6890be1d050110b6ae93fce5/master/pass/1853378815"
-        },
-        {
           "title": "“Panama Playlist”: da JD Vance a Sam Altman cosa ascoltano i potenti su Spotify",
           "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/panama_playlist_ecco_cosa_ascoltano_i_potenti_su_spotify-424771529/?rss",
           "description": "Dal vicepresidente Usa ai ceo della Silicon Valley: un sito anonimo ha raccolto le abitudini musicali di politici e magnati tech sfruttando le falle d",
           "pubDate": "Mon, 04 Aug 2025 17:09:59 +0200",
           "source": "repubblica.it",
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/170957357-50166711-4b8c-4072-a2d4-6cf620f846e0.jpg"
-        },
-        {
-          "title": "I migliori libri di agosto 2025 secondo Wired",
-          "link": "https://www.wired.it/gallery/migliori-libri-agosto-2025/",
-          "description": "Tra rivoluzioni in bicicletta, adattamenti e rifacimenti: ecco tutte le letture da non perdere ad agosto",
-          "pubDate": "Mon, 04 Aug 2025 15:03:33 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/6890c7e7b09eba2e2aea22d5/master/pass/Migliori%20libri%20agosto%202025.jpg"
         },
         {
           "title": "Samsung TV 65″ Neo QLED 8K: oggi su Amazon risparmi 300 euro sull’eccellenza",
@@ -619,6 +619,14 @@
       "category": "Clima",
       "items": [
         {
+          "title": "Occhio a dove metti i piedi, le vipere hanno invaso queste città italiane",
+          "link": "https://www.greenstyle.it/occhio-a-dove-metti-i-piedi-le-vipere-hanno-invaso-queste-citta-italiane-424820.html",
+          "description": "Bisogna fare molta attenzione a dove si cammina: in queste città italiane si possono incontrare vipere anche per\nL'articolo Occhio a dove metti i pied",
+          "pubDate": "Tue, 05 Aug 2025 04:00:05 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/08/vipere-citta-greenstyle.it-20250804.jpg"
+        },
+        {
           "title": "Jashari tiene duro e si avvicina al Milan, Lookman non si allena e spera: quando il mercato lo fanno i calciatori",
           "link": "https://www.ilfattoquotidiano.it/2025/08/05/calciomercato-jashari-milan-lookman-inter-notizie/8084890/",
           "description": "Mi prendo e mi porto via. Banale reinterpretazione di Vasco, sì. Ma non banale situazione di mercato. Ademola Lookman e l’Atalanta, Ardon Jashari e il",
@@ -649,6 +657,14 @@
           "pubDate": "Tue, 05 Aug 2025 03:03:07 +0000",
           "source": "copernicus.eu",
           "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "Climate impacts of the El Niño–Southern Oscillation in Africa",
+          "link": "https://www.nature.com/articles/s43017-025-00705-7",
+          "description": "",
+          "pubDate": "Tue, 5 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43017-025-00705-7/MediaObjects/43017_2025_705_Fig1_HTML.png"
         },
         {
           "title": "Un bonus da 10mila euro per smaltire 50 cause “a cottimo”: ora Nordio offre soldi ai magistrati per non fallire il Pnrr",
@@ -699,14 +715,6 @@
           "image": "https://euractiv.it/wp-content/uploads/sites/11/2024/08/26682732344_78d600810d_o-1024x682.jpg"
         },
         {
-          "title": "INPS, arrivano 1000 euro ad agosto: chi riceverà il contributo",
-          "link": "https://www.greenstyle.it/inps-arrivano-1000-euro-ad-agosto-chi-ricevera-il-contributo-424543.html",
-          "description": "Con l’entrata in vigore della Legge di Bilancio 2025, è stato introdotto un nuovo incentivo destinato a sostenere\nL'articolo INPS, arrivano 1000 euro ",
-          "pubDate": "Mon, 04 Aug 2025 11:30:54 +0000",
-          "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/Donna-euro-www.greenstyle.it-2025-07-04.jpg"
-        },
-        {
           "title": "Le multinazionali del cibo stanno perdendo il dominio del mercato, e ritornano i marchi più locali",
           "link": "https://euractiv.it/section/concorrenza/news/le-multinazionali-del-cibo-stanno-perdendo-il-dominio-del-mercato-e-ritornano-i-marchi-piu-locali/",
           "description": "Da Unilever a Nestlé e Kellogg, alcune delle più grandi multinazionali del settore alimentare stanno dismettendo marchi e intere linee di produzione, ",
@@ -731,6 +739,14 @@
           "image": "https://www.legambiente.it/wp-content/uploads/2020/09/incendio-bosco.jpg"
         },
         {
+          "title": "Widespread reduction of ozone extremes in storylines of future climate",
+          "link": "https://www.nature.com/articles/s44407-025-00019-4",
+          "description": "",
+          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44407-025-00019-4/MediaObjects/44407_2025_19_Fig1_HTML.png"
+        },
+        {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
           "link": "https://www.nature.com/articles/s44260-025-00048-w",
           "description": "",
@@ -745,22 +761,6 @@
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
           "image": "https://www.legambiente.it/wp-content/uploads/2025/08/DJI_0298-scaled.jpg"
-        },
-        {
-          "title": "Global quantification of the dispersion effect with POLDER satellite data",
-          "link": "https://www.nature.com/articles/s41467-025-62238-3",
-          "description": "",
-          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-62238-3/MediaObjects/41467_2025_62238_Fig1_HTML.png"
-        },
-        {
-          "title": "Climate action and energy access in Sub-Saharan Africa: insights from Covenant of Mayors signatories",
-          "link": "https://www.nature.com/articles/s42949-025-00250-8",
-          "description": "",
-          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42949-025-00250-8/MediaObjects/42949_2025_250_Fig1_HTML.png"
         },
         {
           "title": "Nella più grande monocoltura di eucalipto al mondo",
