@@ -1,4 +1,15 @@
 // aggregator.js
+
+// POLYFILL per undici (usato da global.fetch su Node 18+)
+if (typeof File === 'undefined') {
+  globalThis.File = class File {
+    constructor(parts, filename, options) {
+      this.parts = parts; this.name = filename;
+      this.lastModified = options?.lastModified || Date.now();
+    }
+  };
+}
+
 import { parseStringPromise } from "xml2js";
 import { load }              from "cheerio";
 import fs                    from "fs/promises";
@@ -10,16 +21,16 @@ const concurrentFetches   = 4;    // parallelismo per scraping
 
 const feedsByCat = {
   Energia: [
-    /* 20 URL RSS/Atom per Energia */
+    /* … 20 RSS/Atom per Energia … */
   ],
   SmartHome: [
-    /* 20 URL per Smart Home */
+    /* … 20 per Smart Home … */
   ],
   Mobilita: [
-    /* 20 URL per Mobilità */
+    /* … 20 per Mobilità … */
   ],
   Clima: [
-    /* 20 URL per Clima */
+    /* … 20 per Clima … */
   ]
 };
 /* =========================== */
@@ -32,12 +43,10 @@ function extractTextField(f) {
   if (f["#text"]) return f["#text"];
   return String(f);
 }
-
 function absolute(src, base) {
-  try { return new URL(src, base).href; }
-  catch { return src; }
+  try { return new URL(src, base).href }
+  catch { return src }
 }
-
 function extractImageFromHtml(html, pageUrl) {
   const $ = load(html);
   let img = $('meta[property="og:image"]').attr("content")
@@ -50,20 +59,19 @@ function extractImageFromHtml(html, pageUrl) {
       const arr  = Array.isArray(data) ? data : [data];
       for (const o of arr) {
         if (o.image) {
-          if (typeof o.image === "string") { img = o.image; break; }
-          if (Array.isArray(o.image) && o.image[0]) { img = o.image[0]; break; }
-          if (o.image.url) { img = o.image.url; break; }
+          if (typeof o.image === "string") { img = o.image; break }
+          if (Array.isArray(o.image) && o.image[0]) { img = o.image[0]; break }
+          if (o.image.url) { img = o.image.url; break }
         }
       }
     } catch {}
-    if (img) return false; // break
+    if (img) return false;
   });
   if (img) return absolute(img, pageUrl);
 
   img = $('img').first().attr("src");
   return img ? absolute(img, pageUrl) : "";
 }
-
 function dedupeKeepLatest(list) {
   const m = new Map();
   for (const i of list) {
@@ -75,7 +83,6 @@ function dedupeKeepLatest(list) {
   }
   return [...m.values()].sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate));
 }
-
 async function enrichMissingImages(items) {
   const missing = items.filter(i=>!i.image && i.link);
   for (let i=0; i<missing.length; i+=concurrentFetches) {
@@ -90,7 +97,6 @@ async function enrichMissingImages(items) {
     }));
   }
 }
-
 async function enrichContent(items) {
   for (let i=0; i<items.length; i+=concurrentFetches) {
     const batch = items.slice(i, i+concurrentFetches);
