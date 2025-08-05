@@ -1,4 +1,5 @@
-import fetch, { File } from "node-fetch";
+import fetch from "node-fetch";
+import { File } from "undici";
 import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 import * as cheerio from "cheerio";
