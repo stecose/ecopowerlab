@@ -1,9 +1,7 @@
 name: Aggiorna Stats CO2-Temp-Solare
 
-# abilitiamo i permessi
 permissions:
-  contents: write
-  pages: write
+  contents: write   # abilita write sul repo
 
 on:
   schedule:
@@ -16,7 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # esplicitamente usiamo il token attivo
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
