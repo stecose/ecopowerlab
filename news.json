@@ -414,6 +414,22 @@
       "category": "Mobilita",
       "items": [
         {
+          "title": "La giostra della Formula 1",
+          "link": "https://www.formulapassion.it/editoriale/la-giostra-della-formula-1",
+          "description": "La decisione di Verstappen, quella di restare in Red Bull, più che chiudere una porta, ha spalancato un domino di possibilità. E la macchina dello sca",
+          "pubDate": "Tue, 05 Aug 2025 03:51:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2025/04/GettyImages-2210088698-1200x800-1.jpg"
+        },
+        {
+          "title": "Il fascino dei veicoli elettrici sul mercato azionario. Il potere dei sogni",
+          "link": "https://www.electricmotornews.com/eventi/fascino-elettrici-potere-sogni/",
+          "description": "Quali attributi contribuiscono alla grandezza di Tesla o Xiaomi, spingendo gli individui a investire nelle loro azioni? [...]\nL'articolo Il fascino de",
+          "pubDate": "Mon, 04 Aug 2025 22:13:13 +0000",
+          "source": "electricmotornews.com",
+          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/etica_auto_elettrica_marco_loglio_electric_motor_news_01.jpg"
+        },
+        {
           "title": "Gli autobus senza conducente sono già legali in Germania, cosa li ferma nel resto d’Europa?",
           "link": "https://www.electricmotornews.com/veicoli-ecologici/autobus-senza-conducente-germania/",
           "description": "L'ecosistema europeo dei veicoli autonomi sta accelerando, aprendo la strada alla chiarezza normativa e alla preparazione delle infrastrutture. [...]\n",
@@ -428,14 +444,6 @@
           "pubDate": "Mon, 04 Aug 2025 22:11:32 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/bmw_steyr_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "NXT Gen Cup al Nürburgring e la lotta per il titolo si fa sempre più serrata",
-          "link": "https://www.electricmotornews.com/motorsports/nxt-gen-cup-lotta-titolo/",
-          "description": "La NXT Gen Cup torna in azione questo fine settimana, con il campionato che raggiunge il suo terzo round stagionale con il DTM sul leggendario Nürburg",
-          "pubDate": "Mon, 04 Aug 2025 22:10:01 +0000",
-          "source": "electricmotornews.com",
-          "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/nxt_gen_cup_electric_motor_news_01.jpg"
         },
         {
           "title": "Strategia della pensione e le altre storie del GP Ungheria: I Doppiati podcast, riascolta la puntata 21",
@@ -468,14 +476,6 @@
           "pubDate": "Mon, 04 Aug 2025 17:42:03 +0000",
           "source": "trasporti-italia.com",
           "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
-        },
-        {
-          "title": "Le verità nascoste (di Budapest)",
-          "link": "https://www.formulapassion.it/f1/f1-analisi-tecnica/le-verita-nascoste-di-budapest-ferrari-dati-leclerc-hamilton-norris-piastri-mclaren-verstappen",
-          "description": "Non solo il problema: la vittoria di Leclerc era già a rischio perché solo contro due. McLaren domina mentre gli avversari si sbaragliano da soli",
-          "pubDate": "Mon, 04 Aug 2025 17:40:04 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/08/Ferrari-Leclerc.jpg"
         },
         {
           "title": "Autostrade per l’Italia presenta il simulatore di guida a realtà aumentata per la sicurezza dei viaggiatori",
@@ -542,6 +542,14 @@
           "image": "https://img.stcrm.it/images/45833316/1200x/tesla-model-s-70d-4-1.jpeg"
         },
         {
+          "title": "Tesla, a Elon Musk mega pacchetto “premio” di azioni da 29 miliardi di dollari",
+          "link": "https://www.motorionline.com/tesla-a-elon-musk-mega-pacchetto-premio-di-azioni-da-29-miliardi-di-dollari/",
+          "description": "Tesla ha concesso l&#8217;assegnazione di 96 milioni di azioni vincolate al suo CEO, Elon Musk, che costituiscono un pacchetto dal",
+          "pubDate": "Mon, 04 Aug 2025 15:52:43 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Elon-Musk.jpg"
+        },
+        {
           "title": "Oben Rorr EZ: la moto elettrica indiana che costa come uno smartphone",
           "link": "https://www.vaielettrico.it/oben-rorr-ez-la-moto-elettrica-indiana-che-costa-come-uno-smartphone/",
           "description": "Ok, parliamo del mercato indiano, ma Oben Electric ha presentando la Rorr EZ, una moto elettrica venduta su Amazon&#8230;\nL'articolo Oben Rorr EZ: la ",
@@ -604,20 +612,44 @@
           "pubDate": "Mon, 04 Aug 2025 10:50:58 +0000",
           "source": "autoblog.it",
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
-        },
-        {
-          "title": "Dacia Bigster e MG HS si sfidano per la corona delle suv &quot;low cost&quot;",
-          "link": "//www.alvolante.it/news/sfida-dacia-bigster-mg-hs-2025-406341",
-          "description": "La Bigster punta su spazio record, prezzo imbattibile e, se servono, ottime capacità in fuoristrada; la HS rilancia con un look più curato, un ambient",
-          "pubDate": "3:00 pm",
-          "source": "alvolante.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Dacia%20Bigster"
         }
       ]
     },
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "Jashari tiene duro e si avvicina al Milan, Lookman non si allena e spera: quando il mercato lo fanno i calciatori",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/calciomercato-jashari-milan-lookman-inter-notizie/8084890/",
+          "description": "Mi prendo e mi porto via. Banale reinterpretazione di Vasco, sì. Ma non banale situazione di mercato. Ademola Lookman e l’Atalanta, Ardon Jashari e il",
+          "pubDate": "Tue, 05 Aug 2025 03:53:21 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/jashari-lookman-vlahovic-1200x630.jpg"
+        },
+        {
+          "title": "CAMS European air quality forecasts",
+          "link": "https://www.copernicus.eu/en/access-data/copernicus-services-catalogue/cams-european-air-quality-forecasts",
+          "description": "CAMS European air quality forecasts\nAnonymous (not verified)\n\nTue, 05/08/2025 - 05:03\n\n\n            \n    \n        This dataset provides daily air qual",
+          "pubDate": "Tue, 05 Aug 2025 03:03:07 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "CAMS global reanalysis (EAC4) monthly averaged fields",
+          "link": "https://www.copernicus.eu/en/access-data/copernicus-services-catalogue/cams-global-reanalysis-eac4-monthly-averaged-fields",
+          "description": "CAMS global reanalysis (EAC4) monthly averaged fields\nAnonymous (not verified)\n\nTue, 05/08/2025 - 05:03\n\n\n            \n    \n        EAC4 (ECMWF Atmosp",
+          "pubDate": "Tue, 05 Aug 2025 03:03:07 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
+        {
+          "title": "CAMS solar radiation time-series",
+          "link": "https://www.copernicus.eu/en/access-data/copernicus-services-catalogue/cams-solar-radiation-time-series",
+          "description": "CAMS solar radiation time-series\nAnonymous (not verified)\n\nTue, 05/08/2025 - 05:03\n\n\n            \n    \n        The CAMS solar radiation services provi",
+          "pubDate": "Tue, 05 Aug 2025 03:03:07 +0000",
+          "source": "copernicus.eu",
+          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
+        },
         {
           "title": "Un bonus da 10mila euro per smaltire 50 cause “a cottimo”: ora Nordio offre soldi ai magistrati per non fallire il Pnrr",
           "link": "https://www.ilfattoquotidiano.it/2025/08/04/bonus-magistrati-nordio-pnrr-giustizia-civile-notizie/8084624/",
@@ -633,14 +665,6 @@
           "pubDate": "Mon, 04 Aug 2025 18:32:12 +0000",
           "source": "ilfattoquotidiano.it",
           "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Imagoeconomica_1950264-1-1200x630.jpg"
-        },
-        {
-          "title": "Caso Almasri, il Tribunale dei ministri archivia Meloni: “Ma chiederanno il processo per Nordio, Piantedosi e Mantovano”. La premier: “Assurdo”",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/caso-almasri-meloni-archiviata-ministri-processo-oggi/8084731/",
-          "description": "Il Tribunale dei ministri di Roma ha chiesto l&#8217;archiviazione dell&#8217;indagine per favoreggiamento e peculato aperta nei confronti di Giorgia ",
-          "pubDate": "Mon, 04 Aug 2025 18:17:33 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Imagoeconomica_2517854-1200x630.jpg"
         },
         {
           "title": "Multa per parcheggio in divieto di sosta, in questi casi non devi pagare 1 euro ma nessuno lo sa: non farti fregare",
@@ -705,30 +729,6 @@
           "pubDate": "Mon, 04 Aug 2025 09:50:54 +0000",
           "source": "legambiente.it",
           "image": "https://www.legambiente.it/wp-content/uploads/2020/09/incendio-bosco.jpg"
-        },
-        {
-          "title": "Río Negro",
-          "link": "https://www.copernicus.eu/en/rio-negro",
-          "description": "Río Negro\nldhoop\n\nMon, 04/08/2025 - 10:29\n\n\n      \n      Embed:\n    \n          🏞 Stretching across the plains of Patagonia, the Río Negro is an agric",
-          "pubDate": "Mon, 04 Aug 2025 08:29:46 +0000",
-          "source": "copernicus.eu",
-          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
-        },
-        {
-          "title": "Mount Bromo, located in East Java",
-          "link": "https://www.copernicus.eu/en/mount-bromo-located-east-java",
-          "description": "Mount Bromo, located in East Java\nldhoop\n\nMon, 04/08/2025 - 09:22\n\n\n      \n      Embed:\n    \n          🌋 Mount Bromo, located in East Java 🇮🇩 is an",
-          "pubDate": "Mon, 04 Aug 2025 07:22:39 +0000",
-          "source": "copernicus.eu",
-          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
-        },
-        {
-          "title": "Iona situates in the Namib Desert",
-          "link": "https://www.copernicus.eu/en/iona-situates-namib-desert",
-          "description": "Iona situates in the Namib Desert\nldhoop\n\nMon, 04/08/2025 - 09:22\n\n\n      \n      Embed:\n    \n          Angola's Iona NP situates in the Namib Desert, ",
-          "pubDate": "Mon, 04 Aug 2025 07:22:03 +0000",
-          "source": "copernicus.eu",
-          "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
         },
         {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
