@@ -1,12 +1,14 @@
 // stats_env_co2_solar.js (ESM)
+// https://github.com/tuo-username/tuo-repo
+
 import fs from "fs/promises";
 
 const USER_AGENT = "EcoPowerLabBot/1.0 (+https://tuo-sito.it)";
 const DEFAULT_LAT = process.env.SOLAR_LAT || 41.9028;
 const DEFAULT_LON = process.env.SOLAR_LON || 12.4964;
-const PANEL_EFFICIENCY = 0.20; // 20%
+const PANEL_EFFICIENCY = 0.20;
 
-// helper fetch con timeout (30s)
+// helper fetch con timeout (solo per GISTEMP e NASA POWER)
 async function fetchWithTimeout(url, opts = {}, timeout = 30000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
@@ -14,47 +16,45 @@ async function fetchWithTimeout(url, opts = {}, timeout = 30000) {
     return await fetch(url, {
       ...opts,
       signal: controller.signal,
-      headers: { "User-Agent": USER_AGENT, ...(opts.headers||{}) }
+      headers: { "User-Agent": USER_AGENT, ...(opts.headers || {}) }
     });
   } finally {
     clearTimeout(id);
   }
 }
 
-// 1) CO₂ da NOAA CSV (nuovi URL HTTP)
+// 1) CO₂ da NOAA CSV senza timeout
 async function fetchCO2() {
   const r = { weekly_ppm: null, week_begin: null, monthly_ppm: null, month: null, error: null };
   try {
-    // Settimanale
-    let resp = await fetchWithTimeout("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_weekly_mlo.txt");
+    // weekly
+    let resp = await fetch("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_weekly_mlo.txt");
     if (!resp.ok) throw new Error("CO2 weekly HTTP " + resp.status);
     let txt = await resp.text();
-    let lines = txt.split("\n").filter(l=>l && !l.startsWith("#"));
+    let lines = txt.split("\n").filter(l => l && !l.startsWith("#"));
     let last = lines.pop().trim().split(/\s+/);
-    // col 0=year  col1=day-of-year  col2=ppm
     const year = +last[0], doy = +last[1];
-    const date = new Date(Date.UTC(year,0,1) + (doy-1)*86400000);
+    const date = new Date(Date.UTC(year, 0, 1) + (doy - 1) * 86400000);
     r.week_begin = date.toISOString().slice(0,10);
     r.weekly_ppm = parseFloat(last[2]);
 
-    // Mensile
-    resp = await fetchWithTimeout("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt");
+    // monthly
+    resp = await fetch("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt");
     if (!resp.ok) throw new Error("CO2 monthly HTTP " + resp.status);
     txt = await resp.text();
-    lines = txt.split("\n").filter(l=>l && !l.startsWith("#"));
+    lines = txt.split("\n").filter(l => l && !l.startsWith("#"));
     last = lines.pop().trim().split(/\s+/);
-    // col0=year  col1=month.decimal  col2=ppm
     const dt = new Date(`${last[0]}-${Math.round(+last[1])}-01`);
     const mm = String(dt.getMonth()+1).padStart(2,"0");
     r.month = `${last[0]}-${mm}`;
     r.monthly_ppm = parseFloat(last[2]);
-  } catch(e) {
+  } catch (e) {
     r.error = e.message;
   }
   return r;
 }
 
-// 2) Temperatura globale – GISTEMP
+// 2) Temperatura globale – GISTEMP con timeout
 async function fetchGlobalTempAnomaly() {
   const out = { global_monthly_anomaly_c: null, year: null, month: null, error: null };
   try {
@@ -64,7 +64,7 @@ async function fetchGlobalTempAnomaly() {
     const text = await res.text();
     const lines = text.split("\n");
     const idx = lines.findIndex(l=>l.startsWith("Year,"));
-    if (idx<0) throw new Error("Header GISTEMP non trovato");
+    if (idx < 0) throw new Error("Header GISTEMP non trovato");
     const hdr = lines[idx].split(",").map(h=>h.trim());
     const data = lines.slice(idx+1)
       .filter(l=>l.trim()&&!l.startsWith("  "))
@@ -77,7 +77,7 @@ async function fetchGlobalTempAnomaly() {
         const v = row[mon];
         if (v && v!=="***") {
           let a = parseFloat(v);
-          if (Math.abs(a)>10) a/=100;
+          if (Math.abs(a)>10) a /= 100;
           out.global_monthly_anomaly_c = +a.toFixed(2);
           out.year = +y;
           out.month = mon;
@@ -86,20 +86,20 @@ async function fetchGlobalTempAnomaly() {
       }
     }
     throw new Error("Nessuna anomalia trovata");
-  } catch(e) {
+  } catch (e) {
     out.error = e.message;
   }
   return out;
 }
 
-// helper data format
-function fmtDate(d){
+// helper data
+function fmtDate(d) {
   return d.getUTCFullYear()
     + String(d.getUTCMonth()+1).padStart(2,"0")
     + String(d.getUTCDate()).padStart(2,"0");
 }
 
-// 3) Irraggiamento solare – NASA POWER
+// 3) Irraggiamento solare – NASA POWER con timeout
 async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
   const out = {
     location:{lat:+lat, lon:+lon},
@@ -135,7 +135,7 @@ async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
     const avail = avgKwh * PANEL_EFFICIENCY;
     out.available_energy_kwh_m2_day   = +avail.toFixed(3);
     out.available_power_kw            = +(avail/24).toFixed(3);
-  } catch(e) {
+  } catch (e) {
     out.error = e.message;
   }
   return out;
