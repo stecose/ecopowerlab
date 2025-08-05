@@ -1,7 +1,7 @@
-const fetch = require('node-fetch');
-const { parseStringPromise } = require('xml2js');
-const fs = require('fs/promises');
-const cheerio = require('cheerio');
+import fetch from 'node-fetch';
+import { parseStringPromise } from 'xml2js';
+import fs from 'fs/promises';
+import * as cheerio from 'cheerio';
 
 /* ==================== CONFIGURAZIONE ==================== */
 const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
@@ -155,14 +155,14 @@ function extractImageFromHtml(html, pageUrl) {
 
 function dedupeKeepLatest(list) {
   const seen = new Map();
-  list.forEach(item => {
-    if (!item.link) return;
+  for (const item of list) {
+    if (!item.link) continue;
     const prev = seen.get(item.link);
     if (!prev || new Date(item.pubDate) > new Date(prev.pubDate)) {
       seen.set(item.link, item);
     }
-  });
-  return Array.from(seen.values()).sort((a,b) => new Date(b.pubDate) - new Date(a.pubDate));
+  }
+  return [...seen.values()].sort((a,b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
 async function enrichMissingImages(items) {
@@ -216,54 +216,45 @@ async function enrichArticleBodies(items) {
 async function aggregate() {
   const result = { categories: [] };
   for (const [categoryName, feedUrls] of Object.entries(feedsByCat)) {
-    let collected = [];
+    const collected = [];
     const responses = await Promise.all(
-      feedUrls.map(url =>
-        fetch(url, { redirect: 'follow' })
-          .then(r => r.text().then(xml => ({ url, xml })))
-          .catch(() => null)
-      )
+      feedUrls.map(url => fetch(url, { redirect: 'follow' }).then(r => r.text().then(xml => ({ url, xml }))).catch(() => null))
     );
     for (const resp of responses) {
       if (!resp || !resp.xml) continue;
       let entries = [];
       try {
         const parsed = await parseStringPromise(resp.xml, { explicitArray: false, mergeAttrs: true });
-        if (parsed.rss && parsed.rss.channel) {
-          entries = parsed.rss.channel.item || [];
-        } else if (parsed.feed && parsed.feed.entry) {
-          entries = parsed.feed.entry;
-        }
+        if (parsed.rss) entries = parsed.rss.channel.item || [];
+        else if (parsed.feed) entries = parsed.feed.entry || [];
       } catch {}
       entries = Array.isArray(entries) ? entries : [entries];
-      entries.slice(0, entriesPerFeed).forEach(entry => {
+      for (const entry of entries.slice(0, entriesPerFeed)) {
         const title = extractTextField(entry.title).trim();
         let link = '';
         if (entry.link) {
           if (typeof entry.link === 'string') link = entry.link;
-          else if (entry.link.href) link = entry.link.href;
-          else if (Array.isArray(entry.link)) {
-            const alt = entry.link.find(l => l.rel === 'alternate');
-            link = (alt && alt.href) || entry.link[0].href || '';
-          }
+          else link = entry.link.href || (Array.isArray(entry.link) && entry.link.find(l => l.rel==='alternate')?.href) || '';
         }
-        if (!link && entry.enclosure?.url) link = entry.enclosure.url;
-        if (!link && entry['feedburner:origLink']) link = entry['feedburner:origLink'];
+        link ||= entry.enclosure?.url || entry['feedburner:origLink'] || '';
         const descriptionRaw = entry.description || entry.summary || '';
-        const description = extractTextField(descriptionRaw).replace(/<[^>]*>?/gm, '').trim().substring(0,150);
+        const description = extractTextField(descriptionRaw).replace(/<[^>]*>?/gm,'').trim().slice(0,150);
         const pubDate = entry.pubDate || entry.updated || entry['dc:date'] || '';
-        const source = resp.url ? new URL(resp.url).hostname.replace(/^www\./, '') : '';
+        const source = new URL(resp.url).hostname.replace(/^www\./,'');
         let image = entry.enclosure?.url || entry['media:content']?.url || entry['media:thumbnail']?.url || '';
         collected.push({ title, link, description, pubDate, source, image });
-      });
+      }
     }
-    let finalItems = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
-    await enrichMissingImages(finalItems);
-    await enrichArticleBodies(finalItems);
-    finalItems.forEach(item => {
-      if (!item.image) item.image = makePlaceholder(item.title || item.source);
-      if (!item.body) item.body = item.description;
-    });
+    const finalItems = await (async () => {
+      let items = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
+      await enrichMissingImages(items);
+      await enrichArticleBodies(items);
+      items.forEach(item => {
+        item.image ||= makePlaceholder(item.title || item.source);
+        item.body ||= item.description;
+      });
+      return items;
+    })();
     result.categories.push({ category: categoryName, items: finalItems });
   }
   await fs.writeFile('news.json', JSON.stringify(result, null, 2), 'utf-8');
