@@ -1,15 +1,17 @@
-import fetch from "node-fetch";
-import * as undici from "undici";
+// Polyfill WebIDL File per undici: definisce una classe minimale
+class File extends Blob {
+  constructor(chunks, options = {}) {
+    super(chunks, options);
+    this.lastModified = options.lastModified || Date.now();
+    this.name = options.name || "";
+  }
+}
+if (!globalThis.File) globalThis.File = File;
 
-// WebIDL File polyfill per undici
-const { File } = undici;
-globalThis.File = File;
+import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 import * as cheerio from "cheerio";
-
-// Polyfill per undici WebIDL
-globalThis.File = File;
 
 /* ==================== CONFIGURAZIONE ==================== */
 const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
