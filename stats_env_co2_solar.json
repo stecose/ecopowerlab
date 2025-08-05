@@ -1,11 +1,11 @@
 {
-  "updated_at": "2025-08-05T06:59:10.276Z",
+  "updated_at": "2025-08-05T07:34:48.434Z",
   "co2": {
-    "weekly_ppm": null,
-    "week_begin": null,
-    "monthly_ppm": null,
-    "month": null,
-    "error": "This operation was aborted"
+    "weekly_ppm": 27,
+    "week_begin": "2025-01-07",
+    "monthly_ppm": 2025.4583,
+    "month": "2025-06",
+    "error": null
   },
   "temperature": {
     "global_monthly_anomaly_c": 1.03,
@@ -30,9 +30,9 @@
     "error": null
   },
   "errors": {
-    "co2": "This operation was aborted",
+    "co2": null,
     "temperature": null,
     "solar": null
   },
-  "_touched_at": "2025-08-05T06:59:10.276Z"
+  "_touched_at": "2025-08-05T07:34:48.434Z"
 }
