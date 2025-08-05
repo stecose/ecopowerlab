@@ -1,37 +1,22 @@
 // aggregator.js
 
-// POLYFILL per undici (usato da global.fetch su Node 18+)
-if (typeof File === 'undefined') {
-  globalThis.File = class File {
-    constructor(parts, filename, options) {
-      this.parts = parts; this.name = filename;
-      this.lastModified = options?.lastModified || Date.now();
-    }
-  };
-}
+// 1) Override del fetch nativo con node-fetch
+import fetch from "node-fetch";
+globalThis.fetch = fetch;
 
 import { parseStringPromise } from "xml2js";
 import { load }              from "cheerio";
 import fs                    from "fs/promises";
 
 /* ===== CONFIGURAZIONE ===== */
-const entriesPerFeed      = 3;    // articoli da ciascun feed
-const maxItemsPerCategory = 25;   // articoli totali per categoria
-const concurrentFetches   = 4;    // parallelismo per scraping
-
+const entriesPerFeed      = 3;
+const maxItemsPerCategory = 25;
+const concurrentFetches   = 4;
 const feedsByCat = {
-  Energia: [
-    /* … 20 RSS/Atom per Energia … */
-  ],
-  SmartHome: [
-    /* … 20 per Smart Home … */
-  ],
-  Mobilita: [
-    /* … 20 per Mobilità … */
-  ],
-  Clima: [
-    /* … 20 per Clima … */
-  ]
+  Energia:   [ /* … 20 RSS/Atom … */ ],
+  SmartHome: [ /* … */ ],
+  Mobilita:  [ /* … */ ],
+  Clima:     [ /* … */ ]
 };
 /* =========================== */
 
@@ -134,7 +119,7 @@ async function aggregate() {
   for (const [cat, feeds] of Object.entries(feedsByCat)) {
     let all = [];
 
-    // 1) fetch e parse RSS/Atom
+    // 1) fetch+parse RSS/Atom
     const raws = await Promise.all(feeds.map(url =>
       fetch(url)
         .then(r=>r.text().then(xml=>({url,xml})))
@@ -170,11 +155,11 @@ async function aggregate() {
                           || "";
 
         if (e.link) {
-          if (typeof e.link === "string") link = e.link;
-          else if (e.link.href)  link = e.link.href;
+          if (typeof e.link==="string") link = e.link;
+          else if (e.link.href) link = e.link.href;
           else if (Array.isArray(e.link)) {
             const alt = e.link.find(l=>l.rel==="alternate");
-            link = alt?.href || e.link[0]?.href || "";
+            link = alt?.href||e.link[0]?.href||"";
           }
         }
         if (!link && e["feedburner:origLink"]) link = e["feedburner:origLink"];
@@ -183,14 +168,14 @@ async function aggregate() {
       });
     }
 
-    // 2) dedupe, ordina, limita
+    // 2) dedupe, ordina, slice
     let items = dedupeKeepLatest(all).slice(0, maxItemsPerCategory);
 
-    // 3) completa immagini e contenuto
+    // 3) arricchisci
     await enrichMissingImages(items);
     await enrichContent(items);
 
-    // 4) placeholder per immagini mancanti
+    // 4) placeholder immagine
     items.forEach(i => {
       if (!i.image) {
         const txt = encodeURIComponent(i.title.split(" ").slice(0,2).join(" "));
@@ -205,7 +190,7 @@ async function aggregate() {
   console.log("✅ news.json aggiornato!");
 }
 
-aggregate().catch(err => {
+aggregate().catch(err=>{
   console.error("❌ errore aggregazione:", err);
   process.exit(1);
 });
