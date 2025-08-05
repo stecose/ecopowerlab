@@ -1,5 +1,5 @@
-// stats_env_co2_solar.js
-const fs = require("fs").promises;
+// stats_env_co2_solar.js (ESM)
+import fs from "fs/promises";
 
 const DEFAULT_LAT = process.env.SOLAR_LAT || 41.9028; // Roma
 const DEFAULT_LON = process.env.SOLAR_LON || 12.4964;
@@ -62,7 +62,7 @@ async function fetchGlobalTempAnomaly() {
     const text = await res.text();
     const all = text.split("\n");
     const headerIdx = all.findIndex(l => l.trim().startsWith("Year,"));
-    if (headerIdx === -1) throw new Error("Header not found in GISTEMP CSV");
+    if (headerIdx === -1) throw new Error("Header non trovato nel CSV GISTEMP");
     const header = all[headerIdx].split(",").map(h => h.trim());
     const dataLines = all.slice(headerIdx + 1).filter(l => l.trim() && !l.startsWith("  "));
     const rows = dataLines.map(l => {
@@ -135,8 +135,8 @@ async function fetchSolarResource(lat = DEFAULT_LAT, lon = DEFAULT_LON) {
     const res = await fetchWithTimeout(apiUrl);
     if (!res.ok) throw new Error(`NASA POWER fetch HTTP ${res.status}`);
     const json = await res.json();
-    if (!json || !json.properties || !json.properties.parameter || !json.properties.parameter.ALLSKY_SFC_SW_DWN) {
-      throw new Error("Struttura risposta NASA POWER inattesa");
+    if (!json?.properties?.parameter?.ALLSKY_SFC_SW_DWN) {
+      throw new Error("Risposta NASA POWER in formato inatteso");
     }
     const daily = json.properties.parameter.ALLSKY_SFC_SW_DWN;
     const values = Object.values(daily).map(v => parseFloat(v)).filter(v => !isNaN(v));
