@@ -4,6 +4,22 @@
       "category": "Energia",
       "items": [
         {
+          "title": "AGCM multa  Shein per greenwashing e promesse ingannevoli",
+          "link": "https://www.rinnovabili.it/clima-e-ambiente/cultura/agcm-multa-shein-greenwashing/",
+          "description": "L'Autorità Garante della Concorrenza e del Mercato ha sanzionato Infinite Styles Services, società che in Europa gestisce i siti di compravendita dei ",
+          "pubDate": "Tue, 05 Aug 2025 08:54:05 +0000",
+          "source": "rinnovabili.it",
+          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/greenwashing-shein.jpg"
+        },
+        {
+          "title": "Newcleo, la grande speranza nucleare all’ultima Spiaggia: “Continuità a rischio”",
+          "link": "https://energiaoltre.it/newcleo-la-grande-speranza-nucleare-allultima-spiaggia-continuita-a-rischio/",
+          "description": "Per frenare l&#8217;emorragia di cassa, il cda ha adottato un &#8220;piano conservativo&#8221; che prevede la riduzione delle assunzioni e di alcuni i",
+          "pubDate": "Tue, 05 Aug 2025 08:40:13 +0000",
+          "source": "energiaoltre.it",
+          "image": "https://energiaoltre.it/wp-content/uploads/2025/06/Newcleo-Stefano-Buono-scaled.jpg"
+        },
+        {
           "title": "Deebot X9 Pro Omni: innovazione tecnologica che “aspira” al futuro",
           "link": "https://www.greenplanner.it/2025/08/05/deebot-x9-pro-omni-innovazione-ecovacs/",
           "description": "Il Deebot X9 Pro Omni di Ecovacs punta a rivoluzionare la pulizia domestica con soluzioni avanzate per aspirazione e lavaggio. Nella nostra prova abbi",
@@ -68,28 +84,12 @@
           "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/pellet-da-erbacce-1.jpg"
         },
         {
-          "title": "Il caldo e i condizionatori mettono alla prova il sistema elettrico europeo",
-          "link": "https://energiaoltre.it/il-caldo-e-i-condizionatori-mettono-alla-prova-il-sistema-elettrico-europeo/",
-          "description": "Giugno 2025 è stato il mese più caldo mai registrato nell&#8217;Europa occidentale, che ha alimentato un aumento dell&#8217;uso dell&#8217;aria condiz",
-          "pubDate": "Tue, 05 Aug 2025 06:31:31 +0000",
-          "source": "energiaoltre.it",
-          "image": "https://energiaoltre.it/wp-content/uploads/2025/08/aria-condizionata-condizionatori-elettricita-Europa.jpg"
-        },
-        {
           "title": "Il potenziale dei nostri scarti come fertilizzante naturale per l’agricoltura",
           "link": "https://www.rinnovabili.it/economia-circolare/riciclo/fertilizzante-naturale/",
           "description": "Un esperimento europeo mostra che l’utilizzo di urina come fertilizzante naturale non altera le comunità batteriche del suolo\nL'articolo Il potenziale",
           "pubDate": "Tue, 05 Aug 2025 06:07:40 +0000",
           "source": "rinnovabili.it",
           "image": "https://www.rinnovabili.it/wp-content/uploads/2024/09/fertilizzante-naturale-2.jpg"
-        },
-        {
-          "title": "L’ultima cannuccia? A Ginevra si aprono i negoziati per il trattato globale sulla plastica",
-          "link": "https://www.rinnovabili.it/clima-e-ambiente/inquinamento/trattato-globale-rifiuti-plastica/",
-          "description": "L'UE vorrebbe una regolamentazione più organica sulla plastica, tale da coinvolgere anche le fasi a monte del processo produttivo.\nL'articolo L&#8217;",
-          "pubDate": "Tue, 05 Aug 2025 06:01:05 +0000",
-          "source": "rinnovabili.it",
-          "image": "https://www.rinnovabili.it/wp-content/uploads/2025/08/Gemini_Generated_Image_ezadm7ezadm7ezad_11zon-scaled.jpg"
         },
         {
           "title": "Codice della Strada, compila subito il modulo TT2119 | Se non lo fai preparati a pagare: multa folle da 3600€",
@@ -209,28 +209,84 @@
       "category": "SmartHome",
       "items": [
         {
+          "title": "Guida contromano, troppi incidenti. Assosegnaletica lancia l&#039;allarme: bisogna intervenire subito",
+          "link": "https://www.hdmotori.it/guida-contromano-troppi-incidenti-interventi-assosegnaletica/",
+          "description": "Troppi incidenti dovuti alla guida contromano, secondo l&#039;associazione bisogna intervenire rapidamente per migliorare la sicurezza stradale",
+          "pubDate": "Tue, 05 Aug 2025 11:00:47 +0200",
+          "source": "hdblog.it",
+          "image": "https://www.hdmotori.it/app/uploads/2025/07/713023.jpg"
+        },
+        {
+          "title": "“Panama Playlist”: da JD Vance a Sam Altman cosa ascoltano i potenti su Spotify",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/panama_playlist_ecco_cosa_ascoltano_i_potenti_su_spotify-424771529/?rss",
+          "description": "Dal vicepresidente Usa ai ceo della Silicon Valley: un sito anonimo ha raccolto le abitudini musicali di politici e magnati tech sfruttando le falle d",
+          "pubDate": "Tue, 05 Aug 2025 10:54:06 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/170957357-50166711-4b8c-4072-a2d4-6cf620f846e0.jpg"
+        },
+        {
+          "title": "Le migliori scarpe da trekking da donna per macinare chilometri su ogni terreno",
+          "link": "https://www.wired.it/gallery/migliori-scarpe-trekking-donna/",
+          "description": "10 modelli che non temono la pioggia, con una buona aderenza e traspirabilità, per affrontare le passeggiate estive in montagna e non solo",
+          "pubDate": "Tue, 05 Aug 2025 08:50:06 +0000",
+          "source": "wired.it",
+          "image": "https://media-assets.wired.it/photos/6890b23ac4c249a527571be7/master/pass/scarpe%20da%20trekking%20donna.jpg"
+        },
+        {
+          "title": "Samsung Bixby con AI generativa sui TV 2025: gestiranno anche la casa smart",
+          "link": "https://www.hdblog.it/altadefinizione/articoli/n627454/samsung-bixby-ai-generativa-tv-2025/",
+          "description": "Samsung potenzia Bixby sui TV 2025 con l'AI generativa per conversazioni e ricerche più naturali.",
+          "pubDate": "Tue, 05 Aug 2025 10:50:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1278021?w=1920"
+        },
+        {
+          "title": "Guida pratica allo sviluppo del RAW su smartphone: come ottenere foto migliori con il proprio telefono",
+          "link": "https://www.dday.it/redazione/53882/guida-pratica-allo-sviluppo-del-raw-su-smartphone-come-ottenere-foto-migliori-con-il-proprio-telefono",
+          "description": "",
+          "pubDate": "2025-08-05T10:50:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53882/social_e75119_xia.jpg"
+        },
+        {
+          "title": "Addio perimetri e RTK: Mammotion Yuka Mini Vision si configura con un click",
+          "link": "https://www.hdblog.it/home/articoli/n627448/mammotion-yuka-mini-vision-robot-tagliaerba/",
+          "description": "Tutto grazie all'intelligenza artificiale.",
+          "pubDate": "Tue, 05 Aug 2025 10:45:00 +0200",
+          "source": "hdblog.it",
+          "image": "https://hd2.tudocdn.net/1278028?w=1920"
+        },
+        {
+          "title": "iPhone 15 in offerta su Amazon. A 649 euro è ancora meglio di tanti smartphone più recenti",
+          "link": "https://www.dday.it/redazione/53952/iphone-15-in-offerta-su-amazon-a-649-euro-e-ancora-meglio-di-tanti-smartphone-piu-recenti-",
+          "description": "",
+          "pubDate": "2025-08-05T10:45:00+02:00",
+          "source": "dday.it",
+          "image": "https://cdn.dday.it/system/uploads/news/main_image/53952/social_0dcfd1_i15_cover.jpg"
+        },
+        {
+          "title": "Apple svela iPhone e iPad controllati dal cervello",
+          "link": "https://www.tomshw.it/smartphone/apple-svela-iphone-e-ipad-controllati-dal-cervello-2025-08-05",
+          "description": "La tecnologia che permette di controllare dispositivi elettronici attraverso il pensiero sta compiendo un salto evolutivo significativo, passando dai ",
+          "pubDate": "2025-08-05T10:44:41+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/08/65582/imageqd7dkcbomd121CWeVKG.jpg"
+        },
+        {
+          "title": "WhatsApp non funziona correttamente sul web: cosa sta succedendo",
+          "link": "https://www.repubblica.it/tecnologia/2025/08/05/news/whatsapp_web_down_non_funziona-424772719/?rss",
+          "description": "Decine di segnalazioni e la conferma di Downdetector: l’app di Meta ha dei problemi sul web. Nessuna conferma ufficiale",
+          "pubDate": "Tue, 05 Aug 2025 10:40:32 +0200",
+          "source": "repubblica.it",
+          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/05/101714227-5aa908ed-08cf-48a4-91d5-d113e8f6454b.jpg"
+        },
+        {
           "title": "Elon Musk vuole riportare in vita l'archivio di Vine",
           "link": "https://www.wired.it/article/vine-video-app-archivio-storico-ritorno-online/",
           "description": "Tutti i video brevi della defunta piattaforma potrebbero tornare online a breve",
           "pubDate": "Tue, 05 Aug 2025 08:35:14 +0000",
           "source": "wired.it",
           "image": "https://media-assets.wired.it/photos/615f3abaf2dcd90dcda9ca88/master/pass/cda77a91-fb2e-46d6-8f20-921e1194107a.jpg"
-        },
-        {
-          "title": "Galaxy S26 Ultra: stesso sensore da 200 MP, ma ci saranno novità",
-          "link": "https://www.hdblog.it/smartphone/articoli/n627453/galaxy-s26-ultra-fotocamera-sensore-luce/",
-          "description": "Tutto si gioca sulla nuova apertura dell'ottica",
-          "pubDate": "Tue, 05 Aug 2025 10:35:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Galaxy%20S26"
-        },
-        {
-          "title": "Le Cabrio stanno sparendo: ecco la classifica dei modelli che provano a resistere",
-          "link": "https://www.hdmotori.it/auto-cambio-modelli-piu-venduti-2024/",
-          "description": "Mercato sempre pi&ugrave; di nicchia ma che prova a resistere, ecco la TOP 10 delle Cabrio pi&ugrave; vendute lo scorso anno nel mondo",
-          "pubDate": "Tue, 05 Aug 2025 10:30:53 +0200",
-          "source": "hdblog.it",
-          "image": "https://www.hdmotori.it/app/uploads/2025/08/mazda-hd2.jpg"
         },
         {
           "title": "I migliori supporti per iPad e tablet per lunghi viaggi in auto",
@@ -249,46 +305,6 @@
           "image": "https://cdn.dmove.it/images/47498/events-main-hero-dark.jpeg"
         },
         {
-          "title": "Troppo tempo con ChatGPT? Ora ti suggerisce quando è il momento di staccare",
-          "link": "https://www.dday.it/redazione/53953/troppo-tempo-con-chatgpt-ora-ti-suggerisce-quando-e-il-momento-di-staccare",
-          "description": "",
-          "pubDate": "2025-08-05T10:28:00+02:00",
-          "source": "dday.it",
-          "image": "https://cdn.dday.it/system/uploads/news/main_image/53953/social_ccd771_cver_Depositphotos_315510238_XL_copia.jpg"
-        },
-        {
-          "title": "WhatsApp non funziona correttamente sul web: cosa sta succedendo",
-          "link": "https://www.repubblica.it/tecnologia/2025/08/05/news/whatsapp_web_down_non_funziona-424772719/?rss",
-          "description": "Decine di segnalazioni e la conferma di Downdetector: l’app di Meta ha dei problemi sul web. Nessuna conferma ufficiale",
-          "pubDate": "Tue, 05 Aug 2025 10:19:48 +0200",
-          "source": "repubblica.it",
-          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/05/101714227-5aa908ed-08cf-48a4-91d5-d113e8f6454b.jpg"
-        },
-        {
-          "title": "Niente più segreti, render mostrano i Pixel 10 e Pixel 10 Pro da ogni angolo",
-          "link": "https://www.tomshw.it/smartphone/pixel-10-e-pro-leak-mostra-tutti-gli-angoli-2025-08-05",
-          "description": "L'industria degli smartphone sembra aver raggiunto una fase di maturit&agrave; estetica dove i cambiamenti radicali nel design lasciano spazio a raffi",
-          "pubDate": "2025-08-05T10:18:07+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/07/64147/pixel-10-pro.png"
-        },
-        {
-          "title": "Apple TV+, Denzel Washington e Spike Lee di nuovo insieme: ecco il trailer",
-          "link": "https://www.hdblog.it/apple/articoli/n627444/apple-tv-film-highest-2-lowest-kurosawa-trailer/",
-          "description": "Denzel Washington e Spike Lee si riuniscono per \"Highest 2 Lowest\", remake di un capolavoro di Kurosawa.",
-          "pubDate": "Tue, 05 Aug 2025 10:10:00 +0200",
-          "source": "hdblog.it",
-          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Apple%20TV%2B%2C"
-        },
-        {
-          "title": "Lyft e Baidu pronti a lanciare il loro servizio di taxi a guida autonoma in Europa",
-          "link": "https://www.dmove.it/news/lyft-e-baidu-pronti-a-lanciare-il-loro-servizio-di-taxi-a-guida-autonoma-in-europa",
-          "description": "",
-          "pubDate": "2025-08-05T10:07:00+02:00",
-          "source": "dday.it",
-          "image": "https://cdn.dmove.it/images/47501/Screenshot_2025-08-05_at_09.14.39.png"
-        },
-        {
           "title": "Il prezzo del tuo volo lo decide l’AI e non è una buona notizia",
           "link": "https://www.macitynet.it/intelligenza-artificiale-prezzo-dei-voli/",
           "description": "Un algoritmo segreto decide quanto siete disposti a pagare un volo, cambiando i prezzi in tempo reale senza che ve ne accorgiate. Virgin Atlantic lo u",
@@ -297,28 +313,20 @@
           "image": "https://www.macitynet.it/wp-content/uploads/2025/08/biglietti-aerei-con-intelligenza-artificiale.jpg"
         },
         {
+          "title": "HP OMEN 32q: qualità da pro gamer a un PREZZO SHOCK!",
+          "link": "https://www.tomshw.it/hardware/hp-omen-32q-qualita-da-pro-gamer-a-un-prezzo-shock-AxX",
+          "description": "Se siete alla ricerca di un monitor da gaming che offra un'esperienza visiva fluida, immersiva e professionale, non potete lasciarvi sfuggire questa s",
+          "pubDate": "2025-08-05T09:38:33+02:00",
+          "source": "tomshw.it",
+          "image": "https://www.tomshw.it/storage/media/2025/08/65604/HP-OMEN-32q-offerta-05082025-copertina.png"
+        },
+        {
           "title": "Guidare le imprese nell’era dell’AI: il Master per i leader del cambiamento",
           "link": "https://www.zerounoweb.it/analytics/cognitive-computing/guidare-le-imprese-nellera-dellai-il-master-per-i-leader-del-cambiamento/",
           "description": "In un’epoca in cui l’AI è al centro dei cambiamenti aziendali, la POLIMI Graduate School of Management lancia un Master Executive pensato per i leader",
           "pubDate": "Tue, 05 Aug 2025 07:30:00 +0000",
           "source": "internet4things.it",
           "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/04210821/shutterstock_2238369719.jpg"
-        },
-        {
-          "title": "DJI Osmo Action 5 quasi regalata: come fa AliExpress a farlo davvero?",
-          "link": "https://www.tomshw.it/altro/dji-osmo-action-5-pro-che-prezzo-su-aliexpress-risparmi-il-61-DCm",
-          "description": "Se siete appassionati di action cam o semplicemente alla ricerca di un dispositivo performante per catturare i vostri momenti pi&ugrave; avventurosi, ",
-          "pubDate": "2025-08-05T09:24:50+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65601/DJI-Osmo-Action-5-copertina.jpg"
-        },
-        {
-          "title": "I paesi si riuniscono per trovare un accordo sulla \"crisi della plastica\"",
-          "link": "https://www.tomshw.it/scienze/i-paesi-possono-risolvere-la-crisi-plastica-2025-08-05",
-          "description": "La crisi delle materie plastiche ha raggiunto proporzioni che nemmeno i pi&ugrave; pessimisti osservatori ambientali avrebbero potuto prevedere. Mentr",
-          "pubDate": "2025-08-05T09:15:35+02:00",
-          "source": "tomshw.it",
-          "image": "https://www.tomshw.it/storage/media/2025/08/65599/pexels-n-voitkevich-4813991.jpg"
         },
         {
           "title": "Kit avvitatore a batteria completo e versatile: oggi in sconto TOP su Amazon",
@@ -345,14 +353,6 @@
           "image": "https://media-assets.wired.it/photos/6889f44ac36804ce71f51863/master/pass/quiz.png"
         },
         {
-          "title": "Terre rare, c'è una fabbrica in Italia che le recupera da hard disk e motori elettrici",
-          "link": "https://www.wired.it/article/riciclo-terre-rare-fabbrica-ceccano-itelyum-erion-europa-italia/",
-          "description": "È a Ceccano, vicino a Frosinone, Ma in tutta l'Unione europea non c'è alcuno stabilimento di grandi dimensioni. E nel continente si ricicla ancora tro",
-          "pubDate": "Tue, 05 Aug 2025 04:50:00 +0000",
-          "source": "wired.it",
-          "image": "https://media-assets.wired.it/photos/67e654a0d4876ec0a2529114/master/pass/02%20impianto%20NewRE_Itelyum_Ceccano.JPG"
-        },
-        {
           "title": "Google annuncia la data di lancio dei Pixel 10, cercando di sfottere Apple ma segnando un autogol",
           "link": "https://www.smartworld.it/news/google-pixel-10-data-uscita.html",
           "description": "Google ha annunciato con tono vagamente polemico la data di uscita della serie Pixel 10: ma polemico con chi? Non è che è un boomerang?L'articolo Goog",
@@ -367,14 +367,6 @@
           "pubDate": "Mon, 04 Aug 2025 17:19:00 +0200",
           "source": "smartworld.it",
           "image": "https://www.smartworld.it/images/2025/08/04/rincaro-spotify_1200x675.jpeg"
-        },
-        {
-          "title": "“Panama Playlist”: da JD Vance a Sam Altman cosa ascoltano i potenti su Spotify",
-          "link": "https://www.repubblica.it/tecnologia/2025/08/04/news/panama_playlist_ecco_cosa_ascoltano_i_potenti_su_spotify-424771529/?rss",
-          "description": "Dal vicepresidente Usa ai ceo della Silicon Valley: un sito anonimo ha raccolto le abitudini musicali di politici e magnati tech sfruttando le falle d",
-          "pubDate": "Mon, 04 Aug 2025 17:09:59 +0200",
-          "source": "repubblica.it",
-          "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/170957357-50166711-4b8c-4072-a2d4-6cf620f846e0.jpg"
         },
         {
           "title": "Samsung TV 65″ Neo QLED 8K: oggi su Amazon risparmi 300 euro sull’eccellenza",
@@ -407,12 +399,28 @@
           "pubDate": "Mon, 04 Aug 2025 14:50:16 +0200",
           "source": "repubblica.it",
           "image": "https://www.repstatic.it/content/contenthub/img/2025/08/04/144628509-a1f9b05f-44b2-470e-8068-0899db0802d0.jpg"
+        },
+        {
+          "title": "Open Platform Organization: un nuovo modo di pensare l’impresa",
+          "link": "https://www.zerounoweb.it/cio-innovation/organizzazione/open-platform-organization-un-nuovo-modo-di-pensare-limpresa/",
+          "description": "Da un modello piramidale di funzioni separate a team autonomi e interconnessi. L’Open Platform Organization rivede il concetto di leadership: ogni per",
+          "pubDate": "Mon, 04 Aug 2025 09:34:58 +0000",
+          "source": "internet4things.it",
+          "image": "https://img.zerounoweb.it/wp-content/uploads/2025/08/04113056/Round-table-Var-Group.jpg"
         }
       ]
     },
     {
       "category": "Mobilita",
       "items": [
+        {
+          "title": "Ritorno ai V8 in Formula 1, ecco perché non è possibile che accada prima del 2030",
+          "link": "https://www.automoto.it/formula1/ritorno-ai-v8-in-formula-1-ecco-perche-non-e-possibile-che-accada-prima-del-2030.html",
+          "description": "Il presidente della FIA, Mohammed ben Sulayem, recentemente ha caldeggiato il ritorno dei V8 in Formula 1. Ma ci sono diversi motivi per cui non può a",
+          "pubDate": "2025-08-05T10:56:45.5030000",
+          "source": "automoto.it",
+          "image": "https://img.stcrm.it/images/45849788/1200x/si202508030371.jpeg"
+        },
         {
           "title": "Motomondiale: a Misano torna la tribuna Aprilia",
           "link": "https://www.moto.it/news/motomondiale-a-misano-torna-la-tribuna-aprilia.html",
@@ -446,12 +454,28 @@
           "image": "https://img.stcrm.it/images/45848915/1200x/porsche-logo.jpeg"
         },
         {
-          "title": "Incidenti stradali: a Helsinki zero morti in un anno. L’Italia dovrebbe seguire l’esempio?",
-          "link": "https://www.automoto.it/news/incidenti-stradali-a-helsinki-zero-morti-in-un-anno-l-italia-dovrebbe-seguire-l-esempio.html",
-          "description": "Helsinki ha raggiunto un traguardo sorprendente: zero morti sulle strade in un anno. Un modello che potrebbe ispirare anche l’Italia?",
-          "pubDate": "2025-08-05T09:04:10.2870000",
-          "source": "automoto.it",
-          "image": "https://img.stcrm.it/images/45848863/1200x/helsinki.jpeg"
+          "title": "TANGENZIALE DI NAPOLI: CHIUSO PER UNA NOTTE IL TRATTO AGNANO-CUMA VERSO POZZUOLI",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/tangenziale-di-napoli-chiuso-per-una-notte-il-tratto-agnano-cuma-verso-pozzuoli/737461/",
+          "description": "TANGENZIALE DI NAPOLI: CHIUSO PER UNA NOTTE IL TRATTO AGNANO-CUMA VERSO POZZUOLI Napoli, 5 agosto 2025 &#8211; Sulla Tangenziale di Napoli, per consen",
+          "pubDate": "Tue, 05 Aug 2025 09:02:03 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "Leo, l’assistente virtuale di BYD, messo alla prova",
+          "link": "https://www.vaielettrico.it/leo-lassistente-virtuale-di-byd-messo-alla-prova/",
+          "description": "Abbiamo provato le funzionalità di Leo, l&#8217;assistente digitale evoluto della casa automobilistica BYD progettato con l&#8217;intelligenza artific",
+          "pubDate": "Tue, 05 Aug 2025 09:00:19 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/Screenshot-2025-08-04-alle-15.56.54-scaled-e1754319200382.png"
+        },
+        {
+          "title": "Da relitto ad auto da sparo, dopo 17 anni di abbandono: la rinascita",
+          "link": "https://www.autoblog.it/post/cadillac-seville-restauro-auto-sparo",
+          "description": "Una Cadillac Seville 1977, dopo 17 anni ferma, torna in pista grazie a un LS swap: 300 cavalli in più e prestazioni da drag strip\nIl post Da relitto a",
+          "pubDate": "Tue, 05 Aug 2025 08:58:30 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393160-scaled.jpg"
         },
         {
           "title": "Vacanze on the road con 2RuotExpress",
@@ -462,12 +486,52 @@
           "image": "https://img.stcrm.it/images/45833347/CINEMA/1200x/poste-italiane-2ruotexpress-1.jpeg"
         },
         {
-          "title": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE USCITA CAPODIMONTE",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/tangenziale-di-napoli-chiusure-notturne-uscita-capodimonte/737423/",
-          "description": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE USCITA CAPODIMONTE Napoli, 5 agosto 2025 &#8211; Sulla Tangenziale di Napoli, sarà chiusa l&#8217;uscita di C",
-          "pubDate": "Tue, 05 Aug 2025 08:32:03 +0000",
+          "title": "Mercedes GLC elettrica: svelata la griglia che inaugura un nuovo design della Stella [TEASER]",
+          "link": "https://www.motorionline.com/mercedes-glc-elettrica-svelata-la-griglia-che-inaugura-un-nuovo-design-della-stella-teaser/",
+          "description": "La Mercedes GLC elettrica svela il look della sua innovativa griglia frontale attraverso un teaser ufficiale che ci mostra l&#8217;inedito",
+          "pubDate": "Tue, 05 Aug 2025 08:56:12 +0000",
+          "source": "motorionline.com",
+          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Meredes-GLC-elettrica-Teaser.jpg"
+        },
+        {
+          "title": "Indignati per gli incentivi solo per le città",
+          "link": "https://www.vaielettrico.it/indignati-per-gli-incentivi-solo-per-le-citta/",
+          "description": "Indignati per incentivi in arrivo, destinati solo a chi vive in città, secondo alcune anticipazioni. In redazione continuano&#8230;\nL'articolo Indigna",
+          "pubDate": "Tue, 05 Aug 2025 08:55:20 +0000",
+          "source": "vaielettrico.it",
+          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/Schermata-2025-08-05-alle-10.51.20.png"
+        },
+        {
+          "title": "Per combattere il calo di vendite, Porsche torna alle origini: Macan a benzina",
+          "link": "https://www.autoblog.it/post/porsche-macan-benzina-ritorno-2028",
+          "description": "Porsche rilancia la Macan a benzina entro il 2028, puntando su una strategia di motori equilibrata per rispondere al calo delle vendite e alle esigenz",
+          "pubDate": "Tue, 05 Aug 2025 08:52:38 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/porsche-macan-4s-2024-10.jpg"
+        },
+        {
+          "title": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE DEL TRATTO CAPODIMONTE-CORSO MALTA VERSO CAPODICHINO",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/tangenziale-di-napoli-chiusure-notturne-del-tratto-capodimonte-corso-malta-verso-capodichino/737446/",
+          "description": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE DEL TRATTO CAPODIMONTE-CORSO MALTA VERSO CAPODICHINO Napoli, 5 agosto 2025 &#8211; Sulla Tangenziale di Napol",
+          "pubDate": "Tue, 05 Aug 2025 08:52:03 +0000",
           "source": "trasporti-italia.com",
           "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE SVINCOLO DI CAPODICHINO",
+          "link": "https://www.trasporti-italia.com/mobilita/viabilita/tangenziale-di-napoli-chiusure-notturne-svincolo-di-capodichino/737436/",
+          "description": "TANGENZIALE DI NAPOLI: CHIUSURE NOTTURNE SVINCOLO DI CAPODICHINO Napoli, 5 agosto 2025 &#8211; Sulla Tangenziale di Napoli, sarà chiuso lo svincolo di",
+          "pubDate": "Tue, 05 Aug 2025 08:46:02 +0000",
+          "source": "trasporti-italia.com",
+          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
+        },
+        {
+          "title": "La tua auto non avrà più segreti: endoscopio in offerta a meno di 20 euro",
+          "link": "https://www.autoblog.it/post/la-tua-auto-non-avra-piu-segreti-endoscopio-in-offerta-a-meno-di-20-euro",
+          "description": "Endoscopio HD con doppia lente, impermeabile IP68 e 8 LED regolabili, compatibile con Android e iOS, ora in offerta su Amazon a 18,99 euro\nIl post La ",
+          "pubDate": "Tue, 05 Aug 2025 08:37:32 +0000",
+          "source": "autoblog.it",
+          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393186.jpg"
         },
         {
           "title": "Ducati interrompe le vacanze: Marquez, Bagnaia e i team clienti tutti in pista al Balaton",
@@ -478,14 +542,6 @@
           "image": "https://storage.googleapis.com/fp-media/1/2025/08/balaton-park.jpg"
         },
         {
-          "title": "Volvo, il grande debito nordcoreano: storia dei 1.000 esemplari mai pagati",
-          "link": "https://www.autoblog.it/post/volvo-il-grande-debito-nordcoreano-storia-dei-1-000-esemplari-mai-pagati",
-          "description": "Scopri la storia dei 1.000 Volvo 144 inviati in Corea del Nord nel 1974 e mai pagati. Un intreccio di diplomazia, industria e mistero che dura da 50 a",
-          "pubDate": "Tue, 05 Aug 2025 08:19:49 +0000",
-          "source": "autoblog.it",
-          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393164-scaled.jpg"
-        },
-        {
           "title": "Suzuki: partnership con Capcom per Street Fighter 6",
           "link": "https://www.motorionline.com/suzuki-partnership-con-capcom-per-street-fighter-6/",
           "description": "Suzuki Motor Corporation ha stretto una collaborazione con Capcom per sponsorizzare i principali tornei eSports dedicati a “Street Fighter 6”.",
@@ -494,44 +550,12 @@
           "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Suzuki.jpg"
         },
         {
-          "title": "BMW Neue Klasse, prende vita il nuovo motore elettrico in una sede storica",
-          "link": "https://www.autoblog.it/post/bmw-neue-klasse-powertrain-elettrico-stabilimento-steyr",
-          "description": "Bmw avvia la produzione del powertrain elettrico per Neue Klasse a Steyr. Investimenti, occupazione e flessibilità produttiva per la mobilità sostenib",
-          "pubDate": "Tue, 05 Aug 2025 08:16:04 +0000",
-          "source": "autoblog.it",
-          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393158.jpg"
-        },
-        {
           "title": "WarmUp Podcast #67: L’Odissea Ferrari di un Hamilton frustrato e demotivato e le altre news del 5 agosto",
           "link": "https://www.formulapassion.it/podcast/warmup-podcast-news-f1-motogp-4-29-agosto-ferrari-leclerc-hamilton-crisi-verstappen",
           "description": "Ogni mattina prima delle 9.00 tutte le news di F1 e MotoGP, con una chiave di lettura per capirci qualcosa: è WarmUp, il podcast giornaliero di FP. Gl",
           "pubDate": "Tue, 05 Aug 2025 08:15:00 +0000",
           "source": "formulapassion.it",
           "image": "https://storage.googleapis.com/fp-media/1/2025/04/WarmUp_Articolo.png"
-        },
-        {
-          "title": "Autostrade per l’Italia: debutta il simulatore di guida che usa IA e droni per migliorare la sicurezza",
-          "link": "https://www.motorionline.com/autostrade-per-litalia-debutta-il-simulatore-di-guida-che-usa-ia-e-droni-per-migliorare-la-sicurezza/",
-          "description": "Il progetto DBA &#8211; Driver Behaviour Analysis, di Autostrade per l’Italia, ha come obiettivo quello di studiare il comportamento degli",
-          "pubDate": "Tue, 05 Aug 2025 08:09:02 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Autostrade-per-lItalia.jpg"
-        },
-        {
-          "title": "Addio cavi in auto: l’adattatore Unimeet CarPlay è in offerta a 18,19 euro su Amazon",
-          "link": "https://www.autoblog.it/post/addio-cavi-in-auto-ladattatore-unimeet-carplay-e-in-offerta-a-1819-euro-su-amazon",
-          "description": "Scopri il nuovo Unimeet adattatore wireless 2 in 1 per CarPlay e Android Auto: facile installazione, compatibilità ampia e ora in offerta su Amazon.\nI",
-          "pubDate": "Tue, 05 Aug 2025 08:05:05 +0000",
-          "source": "autoblog.it",
-          "image": "https://www.autoblog.it/app/uploads/2025/08/wp_drafter_393182.jpg"
-        },
-        {
-          "title": "Hyundai i30 2026: terzo restyling in vista [FOTO SPIA]",
-          "link": "https://www.motorionline.com/hyundai-i30-2026-terzo-restyling-in-vista-foto-spia/",
-          "description": "La Hyundai i30 è stata avvistata avvolta da un corposo camuffamento durante i test all&#8217;interno del Centro di Ricerca e",
-          "pubDate": "Tue, 05 Aug 2025 08:03:02 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Hyundai-i30-wagon-2026-foto-spia-05-08-2025-3-e1754380748289.jpg"
         },
         {
           "title": "Come stanno le batterie di un'auto elettrica dopo 110.000 km?",
@@ -550,28 +574,12 @@
           "image": "https://storage.googleapis.com/fp-media/1/2025/08/GettyImages-2227650531-1.jpg"
         },
         {
-          "title": "A14 BOLOGNA-TARANTO: CHIUSA STANOTTE L’USCITA DELLA STAZIONE DI MOLFETTA",
-          "link": "https://www.trasporti-italia.com/mobilita/viabilita/a14-bologna-taranto-chiusa-stanotte-luscita-della-stazione-di-molfetta/737277/",
-          "description": "A14 BOLOGNA-TARANTO: CHIUSA STANOTTE L&#8217;USCITA DELLA STAZIONE DI MOLFETTA Roma, 5 agosto 2025 &#8211; Sulla A14 Bologna-Taranto, per consentire l",
-          "pubDate": "Tue, 05 Aug 2025 07:12:03 +0000",
-          "source": "trasporti-italia.com",
-          "image": "https://www.trasporti-italia.com/wp-content/uploads/2023/04/camion-localizzazione-1.png"
-        },
-        {
           "title": "Bridgestone in pista con l’Emilia 5.9 di Onda Solare",
           "link": "https://www.vaielettrico.it/bridgestone-in-pista-con-lemilia-5-9-di-onda-solare/",
           "description": "Alla Word Solar Challenge che si terrà in Australia dal 24 al 31 agosto, Bridgestone sarà a fianco&#8230;\nL'articolo Bridgestone in pista con l&#8217;",
           "pubDate": "Tue, 05 Aug 2025 06:47:00 +0000",
           "source": "vaielettrico.it",
           "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/image002.jpg"
-        },
-        {
-          "title": "Thiora: il battello elettrico-solare (italiano) per ecoturismo sul Lago del Turano",
-          "link": "https://www.vaielettrico.it/thiora-il-battello-elettrico-solare-e-italiano-sul-lago-del-turano/",
-          "description": "Un nuovo modo di vivere il Lago del Turano prende il largo da Castel di Tora, in provincia&#8230;\nL'articolo Thiora: il battello elettrico-solare (ita",
-          "pubDate": "Tue, 05 Aug 2025 06:30:07 +0000",
-          "source": "vaielettrico.it",
-          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/thiora.jpg"
         },
         {
           "title": "Le auto elettriche che soddisfano di più i clienti, la classifica",
@@ -604,14 +612,6 @@
           "pubDate": "Mon, 04 Aug 2025 22:11:32 +0000",
           "source": "electricmotornews.com",
           "image": "https://www.electricmotornews.com/wp-content/uploads/2025/08/bmw_steyr_electric_motor_news_01.jpg"
-        },
-        {
-          "title": "I clienti più soddisfatti della propria EV? XPENG scalza Tesla",
-          "link": "https://www.vaielettrico.it/i-clienti-piu-soddisfatti-della-propria-ev-xpeng-scalza-tesla/",
-          "description": "Il costruttore cinese XPENG scalza Tesla in vetta alla classifica dei brand elettrici più apprezzati dai rispettivi clienti.&#8230;\nL'articolo I clien",
-          "pubDate": "Mon, 04 Aug 2025 16:38:30 +0000",
-          "source": "vaielettrico.it",
-          "image": "https://www.vaielettrico.it/wp-content/uploads/2025/08/XPENG_G9-scaled.jpg"
         }
       ]
     },
@@ -619,28 +619,36 @@
       "category": "Clima",
       "items": [
         {
-          "title": "Nucleare, il governo ha stanziato 7,5 mln per la comunicazione in 2 anni. “Un freno alle rinnovabili”",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/05/nucleare-governo-75-milioni-comunicazione-rinnovabili/8084016/",
-          "description": "di Coordinamento FREE Il Coordinamento FREE esprime forte perplessità sul contenuto del disegno di legge delega sul nucleare, in particolare per quant",
-          "pubDate": "Tue, 05 Aug 2025 08:41:19 +0000",
+          "title": "“Ho ancora la voce bassa e raucedine. Mi sono annoiata di stare a casa senza fare niente”: Benedetta Rossi aggiorna i fan dopo l’operazione alla tiroide",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/ho-ancora-la-voce-bassa-e-raucedine-mi-sono-annoiata-di-stare-a-casa-senza-fare-niente-benedetta-rossi-aggiorna-i-fan-dopo-loperazione-alla-tiroide/8085111/",
+          "description": "&#8220;Eccomi son tornata, anche la voce sta tornando, ogni giorno un po&#8217; di più&#8221;. Ha ancora il cerotto sulla gola, ma Benedetta Rossi è i",
+          "pubDate": "Tue, 05 Aug 2025 09:03:13 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2024/10/28/nucleare_1200-1.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/05/benedetta-rossi_.jpg"
         },
         {
-          "title": "“Sotto l’ombrellone soltanto panini e snack per questione di igiene”: il lido risponde alla denuncia di una famiglia e del parlamentare Borrelli",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/05/sotto-lombrellone-soltanto-panini-e-snack-per-questione-di-igiene-il-lido-risponde-alla-denuncia-di-una-famiglia-e-del-parlamentare-borrelli/8085037/",
-          "description": "Botta e risposta. Dopo la denuncia di una madre di famiglia che ha dovuto gettare il cibo non potendolo consumare sulla spiaggia del lido che aveva re",
-          "pubDate": "Tue, 05 Aug 2025 08:38:09 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/spiaggia_cibo-vietato.jpg"
+          "title": "INPS, 5 mila lettere in arrivo alle famiglie: vacanze di fuoco per gli italiani",
+          "link": "https://www.greenstyle.it/inps-5-mila-lettere-in-arrivo-alle-famiglie-vacanze-di-fuoco-per-gli-italiani-424825.html",
+          "description": "Inps, in arrivo una moltitudine di lettere per le famiglie italiane: cosa aspetta i contribuenti nel periodo delle\nL'articolo INPS, 5 mila lettere in ",
+          "pubDate": "Tue, 05 Aug 2025 09:00:32 +0000",
+          "source": "greenstyle.it",
+          "image": "https://www.greenstyle.it/wp-content/uploads/2025/08/lettera-inps-greenstyle.it-20250804.jpg"
         },
         {
-          "title": "“Lo stato di salute di Marco Carta è sotto controllo”: il cantante lascia l’ospedale dopo il ricovero. Le prossime date del tour estivo sono confermate",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/05/lo-stato-di-salute-di-marco-carta-e-sotto-controllo-il-cantante-lascia-lospedale-dopo-il-ricovero-le-prossime-date-del-tour-estivo-sono-confermate/8085085/",
-          "description": "Marco Carta si appresta a lasciare l&#8217;ospedale. Il cantante, tramite il proprio staff, ha aggiornato i fan in merito al problema di salute che lo",
-          "pubDate": "Tue, 05 Aug 2025 08:34:15 +0000",
+          "title": "Bagno (con sorpresa) per due turiste in Grecia: inseguite da un cinghiale mentre nuotano – Video",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/bagno-con-sorpresa-per-due-turiste-in-grecia-inseguite-da-un-cinghiale-mentre-nuotano-video/8085042/",
+          "description": "Una nuotata si è trasformata in un incubo per due influencer: le ragazze sono state &#8220;inseguite&#8221; da un cinghiale mentre stavano facendo il ",
+          "pubDate": "Tue, 05 Aug 2025 08:50:01 +0000",
           "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/05/marco-carta.jpg"
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/05/grecia-inseguite-.jpg"
+        },
+        {
+          "title": "Operato l’uomo con una freccia nel cranio, è in condizioni critiche",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/freccia-balestra-cranio-operazione-ancona-news/8085055/",
+          "description": "Un&#8217;asta di carbonio che attraversa la testa in modo preciso, quasi chirurgico, capace di evitare i distretti cerebrali più delicati. Sarebbe bas",
+          "pubDate": "Tue, 05 Aug 2025 08:47:00 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2019/12/16/intervento.jpg"
         },
         {
           "title": "Supporting a healthier Earth",
@@ -713,14 +721,6 @@
           "pubDate": "Tue, 5 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
           "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43017-025-00705-7/MediaObjects/43017_2025_705_Fig1_HTML.png"
-        },
-        {
-          "title": "Multa per parcheggio in divieto di sosta, in questi casi non devi pagare 1 euro ma nessuno lo sa: non farti fregare",
-          "link": "https://www.greenstyle.it/multa-per-parcheggio-in-divieto-di-sosta-in-questi-casi-non-devi-pagare-1-euro-ma-nessuno-lo-sa-non-farti-fregare-424687.html",
-          "description": "Multa per parcheggio in divieto di sosta, in alcuni casi puoi non pagare ma nessuno te lo dice:\nL'articolo Multa per parcheggio in divieto di sosta, i",
-          "pubDate": "Mon, 04 Aug 2025 17:00:18 +0000",
-          "source": "greenstyle.it",
-          "image": "https://www.greenstyle.it/wp-content/uploads/2025/07/divieto-di-sosta-31072025-greenstyle.it_.jpg"
         },
         {
           "title": "Ponte sullo Stretto di Messina: nuovo reclamo all’UE delle associazioni",
