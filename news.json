@@ -414,6 +414,22 @@
       "category": "Mobilita",
       "items": [
         {
+          "title": "JLR, nominato il nuovo CEO a partire da novembre",
+          "link": "https://www.formulapassion.it/auto/auto-news/jlr-nominato-nuovo-ceo-da-novembre",
+          "description": "Il gruppo britannico ha confermato che PB Balaji, il direttore finanziario della casa madre Tata Motors, diventerà il nuovo CEO",
+          "pubDate": "Tue, 05 Aug 2025 05:45:00 +0000",
+          "source": "formulapassion.it",
+          "image": "https://storage.googleapis.com/fp-media/1/2023/06/jlr-nuovo-logo.jpg"
+        },
+        {
+          "title": "Le auto elettriche che soddisfano di più i clienti, la classifica",
+          "link": "https://insideevs.it/news/767894/auto-elettrica-soddisfazione-crescente-studio/",
+          "description": "Lo studio tedesco Uscale premia i miglioramenti su autonomia e ricarica. Tesla in calo, resta il nodo software",
+          "pubDate": "Tue, 05 Aug 2025 05:00:00 +0000",
+          "source": "insideevs.it",
+          "image": "https://cdn.motor1.com/images/mgl/NGKkby/s3/le-auto-elettriche-che-soddisfano-di-piu-i-clienti-la-classifica.jpg"
+        },
+        {
           "title": "La giostra della Formula 1",
           "link": "https://www.formulapassion.it/editoriale/la-giostra-della-formula-1",
           "description": "La decisione di Verstappen, quella di restare in Red Bull, più che chiudere una porta, ha spalancato un domino di possibilità. E la macchina dello sca",
@@ -460,14 +476,6 @@
           "pubDate": "2025-08-04T18:00:00.0000000",
           "source": "moto.it",
           "image": "https://img.stcrm.it/images/45834792/CINEMA/1200x/brembo-upgrade.jpeg"
-        },
-        {
-          "title": "KIA EV4, test di durata e resistenza per la batteria",
-          "link": "https://www.formulapassion.it/auto/auto-elettriche/kia-ev4-test-durata-resistenza-batteria-autonomia",
-          "description": "Il cuore della longevità della nuova elettrica coreana è il sofisticato sistema di gestione termica delle batterie: durata e resistenza sotto esame",
-          "pubDate": "Mon, 04 Aug 2025 17:45:00 +0000",
-          "source": "formulapassion.it",
-          "image": "https://storage.googleapis.com/fp-media/1/2025/02/KIA-EV4-off.jpg"
         },
         {
           "title": "A1 MILANO-NAPOLI: RIAPERTO IL TRATTO COMPRESO TRA AREZZO E VALDARNO IN DIREZIONE BOLOGNA",
@@ -542,14 +550,6 @@
           "image": "https://img.stcrm.it/images/45833316/1200x/tesla-model-s-70d-4-1.jpeg"
         },
         {
-          "title": "Tesla, a Elon Musk mega pacchetto “premio” di azioni da 29 miliardi di dollari",
-          "link": "https://www.motorionline.com/tesla-a-elon-musk-mega-pacchetto-premio-di-azioni-da-29-miliardi-di-dollari/",
-          "description": "Tesla ha concesso l&#8217;assegnazione di 96 milioni di azioni vincolate al suo CEO, Elon Musk, che costituiscono un pacchetto dal",
-          "pubDate": "Mon, 04 Aug 2025 15:52:43 +0000",
-          "source": "motorionline.com",
-          "image": "https://www.motorionline.com/wp-content/uploads/2025/08/Elon-Musk.jpg"
-        },
-        {
           "title": "Oben Rorr EZ: la moto elettrica indiana che costa come uno smartphone",
           "link": "https://www.vaielettrico.it/oben-rorr-ez-la-moto-elettrica-indiana-che-costa-come-uno-smartphone/",
           "description": "Ok, parliamo del mercato indiano, ma Oben Electric ha presentando la Rorr EZ, una moto elettrica venduta su Amazon&#8230;\nL'articolo Oben Rorr EZ: la ",
@@ -582,14 +582,6 @@
           "image": "https://cdn.motor1.com/images/mgl/7Z3MV6/s3/nyc-robotaxi.jpg"
         },
         {
-          "title": "BMW iX3: sostenibilità vera o marketing?",
-          "link": "https://insideevs.it/news/767904/bmw-ix3-materiali-riciclati/",
-          "description": "Con materiali riciclati, produzione a zero combustibili fossili e batteria più efficiente, la nuova iX3 segna una svolta",
-          "pubDate": "Mon, 04 Aug 2025 13:30:00 +0000",
-          "source": "insideevs.it",
-          "image": "https://cdn.motor1.com/images/mgl/6Z4M3N/s3/quanto-e-sostenibile-la-bmw-ix3.jpg"
-        },
-        {
           "title": "Mate Rimac porta la sua Bugatti Chiron da 4 milioni al supermercato",
           "link": "https://www.autoblog.it/post/mate-rimac-bugatti-chiron-super-sport-4-milioni-supermercato",
           "description": "Il CEO di Bugatti Rimac, Mate Rimac, usa la sua Bugatti Chiron Super Sport da 4 milioni di dollari per una semplice spesa al supermercato\nIl post Mate",
@@ -612,12 +604,36 @@
           "pubDate": "Mon, 04 Aug 2025 10:50:58 +0000",
           "source": "autoblog.it",
           "image": "https://www.autoblog.it/app/uploads/2025/08/Screenshot-2025-08-04-124354.png"
+        },
+        {
+          "title": "Dacia Bigster e MG HS si sfidano per la corona delle suv &quot;low cost&quot;",
+          "link": "//www.alvolante.it/news/sfida-dacia-bigster-mg-hs-2025-406341",
+          "description": "La Bigster punta su spazio record, prezzo imbattibile e, se servono, ottime capacità in fuoristrada; la HS rilancia con un look più curato, un ambient",
+          "pubDate": "3:00 pm",
+          "source": "alvolante.it",
+          "image": "https://via.placeholder.com/320x180/007ACC/ffffff?text=Dacia%20Bigster"
         }
       ]
     },
     {
       "category": "Clima",
       "items": [
+        {
+          "title": "L’ultimo oltraggio subito da Nino Agostino e Ida Castelluccio è ingiusto e disumano",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/nino-agostino-ida-castelluccio-oltraggio-cassazione/8084547/",
+          "description": "L’ultimo oltraggio subito da Nino Agostino, agente di Polizia, e da sua moglie Ida Castelluccio, assassinati il 5 agosto 1989 a Villagrazia di Carini,",
+          "pubDate": "Tue, 05 Aug 2025 05:55:02 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2020/07/02/agostino-nino.jpg"
+        },
+        {
+          "title": "Sui dazi l’Ue ha chinato la testa, ma aveva almeno due alternative: perché non ne ha approfittato?",
+          "link": "https://www.ilfattoquotidiano.it/2025/08/05/dazi-trump-ue-alternative/8084272/",
+          "description": "Il presidente Trump il 2 aprile 2025 aveva proclamato il giorno della liberazione dal debito commerciale per gli Usa, promettendo 90 nuovi e vantaggio",
+          "pubDate": "Tue, 05 Aug 2025 05:45:14 +0000",
+          "source": "ilfattoquotidiano.it",
+          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/01/Trump-Von-der-Leyen.jpg"
+        },
         {
           "title": "Occhio a dove metti i piedi, le vipere hanno invaso queste città italiane",
           "link": "https://www.greenstyle.it/occhio-a-dove-metti-i-piedi-le-vipere-hanno-invaso-queste-citta-italiane-424820.html",
@@ -665,22 +681,6 @@
           "pubDate": "Tue, 5 Aug 2025 00:00:00 +0000",
           "source": "nature.com",
           "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43017-025-00705-7/MediaObjects/43017_2025_705_Fig1_HTML.png"
-        },
-        {
-          "title": "Un bonus da 10mila euro per smaltire 50 cause “a cottimo”: ora Nordio offre soldi ai magistrati per non fallire il Pnrr",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/bonus-magistrati-nordio-pnrr-giustizia-civile-notizie/8084624/",
-          "description": "Fino a cinquecento magistrati volontari &#8220;prestati&#8221; a distanza ai Tribunali più in difficoltà, per smaltire pacchetti da almeno cinquanta s",
-          "pubDate": "Mon, 04 Aug 2025 18:53:07 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/23546118_small-1200x630.jpg"
-        },
-        {
-          "title": "Morta Alessandra Balocco, aveva 61 anni: era alla guida dell’azienda dolciaria dal 2022",
-          "link": "https://www.ilfattoquotidiano.it/2025/08/04/morta-alessandra-balocco-61-anni-news/8084755/",
-          "description": "Lutto nel mondo dell’imprenditoria. È morta all&#8217;età di 61 anni Alessandra Balocco, presidente e amministratore delegato dell’omonimo gruppo alim",
-          "pubDate": "Mon, 04 Aug 2025 18:32:12 +0000",
-          "source": "ilfattoquotidiano.it",
-          "image": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/08/04/Imagoeconomica_1950264-1-1200x630.jpg"
         },
         {
           "title": "Multa per parcheggio in divieto di sosta, in questi casi non devi pagare 1 euro ma nessuno lo sa: non farti fregare",
