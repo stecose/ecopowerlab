@@ -1,17 +1,7 @@
-// Polyfill WebIDL File per undici: definisce una classe minimale
-class File extends Blob {
-  constructor(chunks, options = {}) {
-    super(chunks, options);
-    this.lastModified = options.lastModified || Date.now();
-    this.name = options.name || "";
-  }
-}
-if (!globalThis.File) globalThis.File = File;
-
-import fetch from "node-fetch";
-import { parseStringPromise } from "xml2js";
-import fs from "fs/promises";
-import * as cheerio from "cheerio";
+const fetch = require('node-fetch');
+const { parseStringPromise } = require('xml2js');
+const fs = require('fs/promises');
+const cheerio = require('cheerio');
 
 /* ==================== CONFIGURAZIONE ==================== */
 const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
@@ -113,11 +103,11 @@ const feedsByCat = {
 
 /* ==================== HELPERS ==================== */
 function extractTextField(field) {
-  if (!field) return "";
-  if (typeof field === "string") return field;
-  if (typeof field === "object") {
+  if (!field) return '';
+  if (typeof field === 'string') return field;
+  if (typeof field === 'object') {
     if (field._) return field._;
-    if (field["#text"]) return field["#text"];
+    if (field['#text']) return field['#text'];
   }
   return String(field);
 }
@@ -143,13 +133,13 @@ function extractImageFromHtml(html, pageUrl) {
       const arr = Array.isArray(data) ? data : [data];
       for (const obj of arr) {
         if (obj.image) {
-          if (typeof obj.image === "string") return absolute(obj.image, pageUrl);
+          if (typeof obj.image === 'string') return absolute(obj.image, pageUrl);
           if (Array.isArray(obj.image) && obj.image[0]) return absolute(obj.image[0], pageUrl);
           if (obj.image.url) return absolute(obj.image.url, pageUrl);
         }
         if (obj.mainEntityOfPage && obj.mainEntityOfPage.image) {
           const img = obj.mainEntityOfPage.image;
-          if (typeof img === "string") return absolute(img, pageUrl);
+          if (typeof img === 'string') return absolute(img, pageUrl);
           if (Array.isArray(img) && img[0]) return absolute(img[0], pageUrl);
           if (img.url) return absolute(img.url, pageUrl);
         }
@@ -160,7 +150,7 @@ function extractImageFromHtml(html, pageUrl) {
   if ((match = imgRe.exec(html)) && match[1]) {
     return absolute(match[1], pageUrl);
   }
-  return "";
+  return '';
 }
 
 function dedupeKeepLatest(list) {
@@ -181,7 +171,7 @@ async function enrichMissingImages(items) {
     const batch = missing.slice(i, i + concurrentFallbackFetches);
     await Promise.all(batch.map(async item => {
       try {
-        const res = await fetch(item.link, { redirect: "follow" });
+        const res = await fetch(item.link, { redirect: 'follow' });
         const html = await res.text();
         const img = extractImageFromHtml(html, item.link);
         if (img) item.image = img;
@@ -191,21 +181,21 @@ async function enrichMissingImages(items) {
 }
 
 function makePlaceholder(title) {
-  const words = (title || "EcoPower").split(" ").slice(0,2).join(" ");
-  const text = encodeURIComponent(words || "EcoPower");
+  const words = (title || 'EcoPower').split(' ').slice(0,2).join(' ');
+  const text = encodeURIComponent(words || 'EcoPower');
   return `https://via.placeholder.com/320x180/007ACC/ffffff?text=${text}`;
 }
 
 function extractArticleBodyFromHtml(html) {
   const $ = cheerio.load(html);
-  let text = $("article").first().text().trim();
-  if (!text) text = $(".entry-content, .post-content").first().text().trim();
-  if (!text) text = $("p").map((i, el) => $(el).text()).get().join("\n\n").trim();
-  text = text.replace(/\r\n|\r/g, "\n");
+  let text = $('article').first().text().trim();
+  if (!text) text = $('.entry-content, .post-content').first().text().trim();
+  if (!text) text = $('p').map((i, el) => $(el).text()).get().join('\n\n').trim();
+  text = text.replace(/\r\n|\r/g, '\n');
   const paras = text.split(/\n\s*\n/)
-    .map(p => p.replace(/\s+/g, " ").trim())
+    .map(p => p.replace(/\s+/g, ' ').trim())
     .filter(p => p.length > 0);
-  return paras.join("\n\n");
+  return paras.join('\n\n');
 }
 
 async function enrichArticleBodies(items) {
@@ -214,7 +204,7 @@ async function enrichArticleBodies(items) {
     const batch = toFetch.slice(i, i + concurrentFallbackFetches);
     await Promise.all(batch.map(async item => {
       try {
-        const res = await fetch(item.link, { redirect: "follow" });
+        const res = await fetch(item.link, { redirect: 'follow' });
         const html = await res.text();
         const body = extractArticleBodyFromHtml(html);
         if (body) item.body = body;
@@ -229,7 +219,7 @@ async function aggregate() {
     let collected = [];
     const responses = await Promise.all(
       feedUrls.map(url =>
-        fetch(url, { redirect: "follow" })
+        fetch(url, { redirect: 'follow' })
           .then(r => r.text().then(xml => ({ url, xml })))
           .catch(() => null)
       )
@@ -247,24 +237,24 @@ async function aggregate() {
       } catch {}
       entries = Array.isArray(entries) ? entries : [entries];
       entries.slice(0, entriesPerFeed).forEach(entry => {
-        const title = extractTextField(entry.title);
-        let link = "";
+        const title = extractTextField(entry.title).trim();
+        let link = '';
         if (entry.link) {
-          if (typeof entry.link === "string") link = entry.link;
+          if (typeof entry.link === 'string') link = entry.link;
           else if (entry.link.href) link = entry.link.href;
           else if (Array.isArray(entry.link)) {
-            const alt = entry.link.find(l => l.rel === "alternate");
-            link = (alt && alt.href) || entry.link[0].href || "";
+            const alt = entry.link.find(l => l.rel === 'alternate');
+            link = (alt && alt.href) || entry.link[0].href || '';
           }
         }
         if (!link && entry.enclosure?.url) link = entry.enclosure.url;
-        if (!link && entry["feedburner:origLink"]) link = entry["feedburner:origLink"];
-        const descriptionRaw = entry.description || entry.summary || "";
-        const description = extractTextField(descriptionRaw).replace(/<[^>]*>?/gm, "").trim().substring(0,150);
-        const pubDate = entry.pubDate || entry.updated || entry["dc:date"] || "";
-        const source = resp.url ? new URL(resp.url).hostname.replace(/^www\./, "") : "";
-        let image = entry.enclosure?.url || entry["media:content"]?.url || entry["media:thumbnail"]?.url || "";
-        collected.push({ title: title.trim(), link, description, pubDate, source, image });
+        if (!link && entry['feedburner:origLink']) link = entry['feedburner:origLink'];
+        const descriptionRaw = entry.description || entry.summary || '';
+        const description = extractTextField(descriptionRaw).replace(/<[^>]*>?/gm, '').trim().substring(0,150);
+        const pubDate = entry.pubDate || entry.updated || entry['dc:date'] || '';
+        const source = resp.url ? new URL(resp.url).hostname.replace(/^www\./, '') : '';
+        let image = entry.enclosure?.url || entry['media:content']?.url || entry['media:thumbnail']?.url || '';
+        collected.push({ title, link, description, pubDate, source, image });
       });
     }
     let finalItems = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
@@ -276,11 +266,11 @@ async function aggregate() {
     });
     result.categories.push({ category: categoryName, items: finalItems });
   }
-  await fs.writeFile("news.json", JSON.stringify(result, null, 2), "utf-8");
-  console.log("news.json generato con successo (ogni articolo ha immagine e body)");
+  await fs.writeFile('news.json', JSON.stringify(result, null, 2), 'utf-8');
+  console.log('news.json generato con successo (ogni articolo ha immagine e body)');
 }
 
 aggregate().catch(err => {
-  console.error("Errore durante l'aggregazione:", err);
+  console.error('Errore durante l aggregazione:', err);
   process.exit(1);
 });
