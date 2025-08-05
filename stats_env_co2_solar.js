@@ -21,44 +21,40 @@ async function fetchWithTimeout(url, opts = {}, timeout = 30000) {
   }
 }
 
-// 1) CO₂ da NOAA CSV settimanale e mensile, con retry per il settimanale
+// 1) CO₂ da NOAA CSV (nuovi URL HTTP)
 async function fetchCO2() {
   const r = { weekly_ppm: null, week_begin: null, monthly_ppm: null, month: null, error: null };
   try {
-    // Settimanale (retry una volta se abortito)
-    let resp;
-    try {
-      resp = await fetchWithTimeout("https://aftp.cmdl.noaa.gov/products/trends/co2/co2_weekly_mlo.txt");
-    } catch (_e) {
-      resp = await fetchWithTimeout("https://aftp.cmdl.noaa.gov/products/trends/co2/co2_weekly_mlo.txt");
-    }
-    if (!resp.ok) throw new Error("CO2 weekly CSV HTTP " + resp.status);
+    // Settimanale
+    let resp = await fetchWithTimeout("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_weekly_mlo.txt");
+    if (!resp.ok) throw new Error("CO2 weekly HTTP " + resp.status);
     let txt = await resp.text();
-    let lines = txt.split("\n").filter(l => l && !l.startsWith("#"));
+    let lines = txt.split("\n").filter(l=>l && !l.startsWith("#"));
     let last = lines.pop().trim().split(/\s+/);
+    // col 0=year  col1=day-of-year  col2=ppm
     const year = +last[0], doy = +last[1];
-    const date = new Date(Date.UTC(year, 0, 1) + (doy - 1) * 86400000);
+    const date = new Date(Date.UTC(year,0,1) + (doy-1)*86400000);
     r.week_begin = date.toISOString().slice(0,10);
     r.weekly_ppm = parseFloat(last[2]);
 
     // Mensile
-    resp = await fetchWithTimeout("https://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt");
-    if (!resp.ok) throw new Error("CO2 monthly CSV HTTP " + resp.status);
+    resp = await fetchWithTimeout("https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.txt");
+    if (!resp.ok) throw new Error("CO2 monthly HTTP " + resp.status);
     txt = await resp.text();
-    lines = txt.split("\n").filter(l => l && !l.startsWith("#"));
+    lines = txt.split("\n").filter(l=>l && !l.startsWith("#"));
     last = lines.pop().trim().split(/\s+/);
-    // last[0]=anno, last[1]=mese decimale, last[2]=ppm
+    // col0=year  col1=month.decimal  col2=ppm
     const dt = new Date(`${last[0]}-${Math.round(+last[1])}-01`);
     const mm = String(dt.getMonth()+1).padStart(2,"0");
     r.month = `${last[0]}-${mm}`;
     r.monthly_ppm = parseFloat(last[2]);
-  } catch (e) {
+  } catch(e) {
     r.error = e.message;
   }
   return r;
 }
 
-// 2) Temperatura globale da NASA GISTEMP, con User-Agent
+// 2) Temperatura globale – GISTEMP
 async function fetchGlobalTempAnomaly() {
   const out = { global_monthly_anomaly_c: null, year: null, month: null, error: null };
   try {
@@ -67,24 +63,21 @@ async function fetchGlobalTempAnomaly() {
     if (!res.ok) throw new Error("GISTEMP HTTP " + res.status);
     const text = await res.text();
     const lines = text.split("\n");
-    const idx = lines.findIndex(l => l.startsWith("Year,"));
-    if (idx < 0) throw new Error("Header GISTEMP non trovato");
-    const hdr = lines[idx].split(",").map(h => h.trim());
+    const idx = lines.findIndex(l=>l.startsWith("Year,"));
+    if (idx<0) throw new Error("Header GISTEMP non trovato");
+    const hdr = lines[idx].split(",").map(h=>h.trim());
     const data = lines.slice(idx+1)
-      .filter(l => l.trim() && !l.startsWith("  "))
-      .map(l => {
-        const parts = l.split(",").map(s=>s.trim());
-        return Object.fromEntries(hdr.map((h,i)=>[h, parts[i]]));
-      });
+      .filter(l=>l.trim()&&!l.startsWith("  "))
+      .map(l=>Object.fromEntries(hdr.map((h,i)=>[h, l.split(",")[i].trim()])));
     const years = [...new Set(data.map(r=>r.Year))].sort((a,b)=>b-a);
     for (const y of years) {
       const row = data.find(r=>r.Year===y);
-      for (let i=11; i>=0; i--) {
+      for (let i=11;i>=0;i--) {
         const mon = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][i];
         const v = row[mon];
-        if (v && v !== "***") {
+        if (v && v!=="***") {
           let a = parseFloat(v);
-          if (Math.abs(a) > 10) a = a/100;
+          if (Math.abs(a)>10) a/=100;
           out.global_monthly_anomaly_c = +a.toFixed(2);
           out.year = +y;
           out.month = mon;
@@ -93,20 +86,20 @@ async function fetchGlobalTempAnomaly() {
       }
     }
     throw new Error("Nessuna anomalia trovata");
-  } catch (e) {
+  } catch(e) {
     out.error = e.message;
   }
   return out;
 }
 
-// format YYYYMMDD
-function fmtDate(d) {
-  return d.getUTCFullYear().toString()
+// helper data format
+function fmtDate(d){
+  return d.getUTCFullYear()
     + String(d.getUTCMonth()+1).padStart(2,"0")
     + String(d.getUTCDate()).padStart(2,"0");
 }
 
-// 3) Irraggiamento solare da NASA POWER, filtro valori >=0
+// 3) Irraggiamento solare – NASA POWER
 async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
   const out = {
     location:{lat:+lat, lon:+lon},
@@ -120,9 +113,8 @@ async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
   };
   try {
     const now = new Date();
-    const end = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-    const start = new Date(end);
-    start.setDate(end.getDate()-6);
+    const end = new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()));
+    const start = new Date(end); start.setDate(end.getDate()-6);
     out.period.start = fmtDate(start);
     out.period.end   = fmtDate(end);
     const api = `https://power.larc.nasa.gov/api/temporal/daily/point`
@@ -137,20 +129,20 @@ async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
     const vals = Object.values(daily).map(v=>parseFloat(v)).filter(v=>v>=0);
     if (!vals.length) throw new Error("No valid solar values");
     const avgMj = vals.reduce((a,b)=>a+b,0)/vals.length;
-    out.average_irradiance_mj_m2_day = +avgMj.toFixed(2);
+    out.average_irradiance_mj_m2_day  = +avgMj.toFixed(2);
     const avgKwh = avgMj * 0.27778;
     out.average_irradiance_kwh_m2_day = +avgKwh.toFixed(2);
     const avail = avgKwh * PANEL_EFFICIENCY;
-    out.available_energy_kwh_m2_day = +avail.toFixed(3);
-    out.available_power_kw = +(avail/24).toFixed(3);
-  } catch (e) {
+    out.available_energy_kwh_m2_day   = +avail.toFixed(3);
+    out.available_power_kw            = +(avail/24).toFixed(3);
+  } catch(e) {
     out.error = e.message;
   }
   return out;
 }
 
-// Main
-(async ()=>{
+// main
+(async()=>{
   const [co2, temp, solar] = await Promise.all([
     fetchCO2(),
     fetchGlobalTempAnomaly(),
@@ -159,7 +151,9 @@ async function fetchSolarResource(lat=DEFAULT_LAT, lon=DEFAULT_LON) {
 
   const stats = {
     updated_at: new Date().toISOString(),
-    co2, temperature: temp, solar,
+    co2,
+    temperature: temp,
+    solar,
     errors: { co2:co2.error, temperature:temp.error, solar:solar.error },
     _touched_at: new Date().toISOString()
   };
