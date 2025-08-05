@@ -1,7 +1,10 @@
-import fetch from "node-fetch";
+import fetch, { File } from "node-fetch";
 import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 import * as cheerio from "cheerio";
+
+// Polyfill per undici WebIDL
+globalThis.File = File;
 
 /* ==================== CONFIGURAZIONE ==================== */
 const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
