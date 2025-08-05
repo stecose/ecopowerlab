@@ -1,5 +1,9 @@
 import fetch from "node-fetch";
-import { File } from "undici";
+import * as undici from "undici";
+
+// WebIDL File polyfill per undici
+const { File } = undici;
+globalThis.File = File;
 import { parseStringPromise } from "xml2js";
 import fs from "fs/promises";
 import * as cheerio from "cheerio";
