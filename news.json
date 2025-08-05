@@ -619,14 +619,6 @@
       "category": "Clima",
       "items": [
         {
-          "title": "Climate impacts of the El Niño–Southern Oscillation in Africa",
-          "link": "https://www.nature.com/articles/s43017-025-00705-7",
-          "description": "",
-          "pubDate": "Tue, 5 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43017-025-00705-7/MediaObjects/43017_2025_705_Fig1_HTML.png"
-        },
-        {
           "title": "Un bonus da 10mila euro per smaltire 50 cause “a cottimo”: ora Nordio offre soldi ai magistrati per non fallire il Pnrr",
           "link": "https://www.ilfattoquotidiano.it/2025/08/04/bonus-magistrati-nordio-pnrr-giustizia-civile-notizie/8084624/",
           "description": "Fino a cinquecento magistrati volontari &#8220;prestati&#8221; a distanza ai Tribunali più in difficoltà, per smaltire pacchetti da almeno cinquanta s",
@@ -739,14 +731,6 @@
           "image": "https://www.copernicus.eu/themes/custom/copernicus/img/menu.svg"
         },
         {
-          "title": "Widespread reduction of ozone extremes in storylines of future climate",
-          "link": "https://www.nature.com/articles/s44407-025-00019-4",
-          "description": "",
-          "pubDate": "Mon, 4 Aug 2025 00:00:00 +0000",
-          "source": "nature.com",
-          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44407-025-00019-4/MediaObjects/44407_2025_19_Fig1_HTML.png"
-        },
-        {
           "title": "Network science disentangles internal climate variability in global spatial dependence structures",
           "link": "https://www.nature.com/articles/s44260-025-00048-w",
           "description": "",
@@ -761,6 +745,22 @@
           "pubDate": "Sun, 03 Aug 2025 07:31:52 +0000",
           "source": "legambiente.it",
           "image": "https://www.legambiente.it/wp-content/uploads/2025/08/DJI_0298-scaled.jpg"
+        },
+        {
+          "title": "Global quantification of the dispersion effect with POLDER satellite data",
+          "link": "https://www.nature.com/articles/s41467-025-62238-3",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-62238-3/MediaObjects/41467_2025_62238_Fig1_HTML.png"
+        },
+        {
+          "title": "Climate action and energy access in Sub-Saharan Africa: insights from Covenant of Mayors signatories",
+          "link": "https://www.nature.com/articles/s42949-025-00250-8",
+          "description": "",
+          "pubDate": "Sat, 2 Aug 2025 00:00:00 +0000",
+          "source": "nature.com",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42949-025-00250-8/MediaObjects/42949_2025_250_Fig1_HTML.png"
         },
         {
           "title": "Nella più grande monocoltura di eucalipto al mondo",
