@@ -1,7 +1,7 @@
-import fetch from 'node-fetch';
-import { parseStringPromise } from 'xml2js';
-import fs from 'fs/promises';
-import * as cheerio from 'cheerio';
+const fetch = require('node-fetch');
+const { parseStringPromise } = require('xml2js');
+const fs = require('fs/promises');
+const cheerio = require('cheerio');
 
 /* ==================== CONFIGURAZIONE ==================== */
 const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
