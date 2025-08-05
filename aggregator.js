@@ -1,22 +1,27 @@
 // aggregator.js
-
-// 1) Override del fetch nativo con node-fetch
-import fetch from "node-fetch";
-globalThis.fetch = fetch;
-
+import axios              from "axios";
 import { parseStringPromise } from "xml2js";
 import { load }              from "cheerio";
 import fs                    from "fs/promises";
 
 /* ===== CONFIGURAZIONE ===== */
-const entriesPerFeed      = 3;
-const maxItemsPerCategory = 25;
-const concurrentFetches   = 4;
+const entriesPerFeed      = 3;    // articoli da ciascun feed
+const maxItemsPerCategory = 25;   // articoli totali per categoria
+const concurrentFetches   = 4;    // parallelismo per scraping
+
 const feedsByCat = {
-  Energia:   [ /* … 20 RSS/Atom … */ ],
-  SmartHome: [ /* … */ ],
-  Mobilita:  [ /* … */ ],
-  Clima:     [ /* … */ ]
+  Energia: [
+    /* … 20 URL RSS/Atom per Energia … */
+  ],
+  SmartHome: [
+    /* … 20 per Smart Home … */
+  ],
+  Mobilita: [
+    /* … 20 per Mobilità … */
+  ],
+  Clima: [
+    /* … 20 per Clima … */
+  ]
 };
 /* =========================== */
 
@@ -28,10 +33,13 @@ function extractTextField(f) {
   if (f["#text"]) return f["#text"];
   return String(f);
 }
+
 function absolute(src, base) {
-  try { return new URL(src, base).href }
-  catch { return src }
+  try { return new URL(src, base).href; }
+  catch { return src; }
 }
+
+// Estrai immagine dall’HTML
 function extractImageFromHtml(html, pageUrl) {
   const $ = load(html);
   let img = $('meta[property="og:image"]').attr("content")
@@ -44,19 +52,21 @@ function extractImageFromHtml(html, pageUrl) {
       const arr  = Array.isArray(data) ? data : [data];
       for (const o of arr) {
         if (o.image) {
-          if (typeof o.image === "string") { img = o.image; break }
-          if (Array.isArray(o.image) && o.image[0]) { img = o.image[0]; break }
-          if (o.image.url) { img = o.image.url; break }
+          if (typeof o.image === "string") { img = o.image; break; }
+          if (Array.isArray(o.image) && o.image[0]) { img = o.image[0]; break; }
+          if (o.image.url) { img = o.image.url; break; }
         }
       }
     } catch {}
-    if (img) return false;
+    if (img) return false; // esci dal .each
   });
   if (img) return absolute(img, pageUrl);
 
   img = $('img').first().attr("src");
   return img ? absolute(img, pageUrl) : "";
 }
+
+// Rimuove duplicati tenendo il più recente
 function dedupeKeepLatest(list) {
   const m = new Map();
   for (const i of list) {
@@ -68,42 +78,41 @@ function dedupeKeepLatest(list) {
   }
   return [...m.values()].sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate));
 }
+
+// Per ogni articolo senza immagine, va a scaricare la pagina e prova a
+// estrarre un’immagine valida
 async function enrichMissingImages(items) {
   const missing = items.filter(i=>!i.image && i.link);
   for (let i=0; i<missing.length; i+=concurrentFetches) {
     const batch = missing.slice(i, i+concurrentFetches);
     await Promise.all(batch.map(async it => {
       try {
-        const res  = await fetch(it.link);
-        const html = await res.text();
-        const img  = extractImageFromHtml(html, it.link);
+        const res  = await axios.get(it.link, { timeout: 15000 });
+        const img  = extractImageFromHtml(res.data, it.link);
         if (img) it.image = img;
-      } catch{}
+      } catch {}
     }));
   }
 }
+
+// Per ogni articolo, va a scaricare la pagina e prova a estrarre il
+// contenuto principale (<article>, itemprop, first <p>, ecc.)
 async function enrichContent(items) {
   for (let i=0; i<items.length; i+=concurrentFetches) {
     const batch = items.slice(i, i+concurrentFetches);
     await Promise.all(batch.map(async it => {
       if (!it.link) { it.content = ""; return; }
       try {
-        const res  = await fetch(it.link);
-        const html = await res.text();
-        const $    = load(html);
-
+        const res  = await axios.get(it.link, { timeout: 15000 });
+        const $    = load(res.data);
         let article = $("article").first();
         if (!article.length) article = $("[itemprop='articleBody']").first();
         if (!article.length) article = $("#content, .post-content, main").first();
-
-        let contentHtml = article.length ? article.html() : "";
-        if (!contentHtml) {
-          contentHtml = $("p").slice(0,5)
-                             .map((_,el)=>$.html(el))
-                             .get()
-                             .join("");
+        let html = article.length ? article.html() : "";
+        if (!html) {
+          html = $("p").slice(0,5).map((_,el)=>$.html(el)).get().join("");
         }
-        it.content = contentHtml || "";
+        it.content = html || "";
       } catch {
         it.content = "";
       }
@@ -119,11 +128,11 @@ async function aggregate() {
   for (const [cat, feeds] of Object.entries(feedsByCat)) {
     let all = [];
 
-    // 1) fetch+parse RSS/Atom
+    // 1) Fetch + parse RSS/Atom
     const raws = await Promise.all(feeds.map(url =>
-      fetch(url)
-        .then(r=>r.text().then(xml=>({url,xml})))
-        .catch(()=>null)
+      axios.get(url, { timeout:15000 })
+        .then(r => ({ url, xml: r.data }))
+        .catch(() => null)
     ));
 
     for (const r of raws) {
@@ -131,20 +140,32 @@ async function aggregate() {
       let js;
       try {
         js = await parseStringPromise(r.xml, { explicitArray:false, mergeAttrs:true });
-      } catch { continue; }
+      } catch {
+        continue;
+      }
 
       let entries = [];
       if (js.rss?.channel?.item) {
         const it = js.rss.channel.item;
-        entries = Array.isArray(it)?it:[it];
+        entries = Array.isArray(it) ? it : [it];
       } else if (js.feed?.entry) {
         const it = js.feed.entry;
-        entries = Array.isArray(it)?it:[it];
+        entries = Array.isArray(it) ? it : [it];
       }
 
       entries.slice(0, entriesPerFeed).forEach(e => {
         const title       = extractTextField(e.title).trim();
         let link          = "";
+        if (e.link) {
+          if (typeof e.link==="string") link = e.link;
+          else if (e.link.href)         link = e.link.href;
+          else if (Array.isArray(e.link)) {
+            const alt = e.link.find(l=>l.rel==="alternate");
+            link = alt?.href || e.link[0]?.href || "";
+          }
+        }
+        if (!link && e["feedburner:origLink"]) link = e["feedburner:origLink"];
+
         const descRaw     = e.description||e.summary||"";
         const description = extractTextField(descRaw).replace(/<[^>]*>?/gm,"").trim();
         const pubDate     = e.pubDate||e.updated||e["dc:date"]||"";
@@ -154,43 +175,34 @@ async function aggregate() {
                           || e["media:thumbnail"]?.url
                           || "";
 
-        if (e.link) {
-          if (typeof e.link==="string") link = e.link;
-          else if (e.link.href) link = e.link.href;
-          else if (Array.isArray(e.link)) {
-            const alt = e.link.find(l=>l.rel==="alternate");
-            link = alt?.href||e.link[0]?.href||"";
-          }
-        }
-        if (!link && e["feedburner:origLink"]) link = e["feedburner:origLink"];
-
         all.push({ title, link, description, pubDate, source, image, content:"" });
       });
     }
 
-    // 2) dedupe, ordina, slice
+    // 2) dedupe, ordina, limita
     let items = dedupeKeepLatest(all).slice(0, maxItemsPerCategory);
 
-    // 3) arricchisci
+    // 3) Enrich immagini + contenuto
     await enrichMissingImages(items);
     await enrichContent(items);
 
-    // 4) placeholder immagine
+    // 4) Placeholder per immagini mancanti
     items.forEach(i => {
       if (!i.image) {
         const txt = encodeURIComponent(i.title.split(" ").slice(0,2).join(" "));
-        i.image = `https://via.placeholder.com/320x180/007ACC/ffffff?text=${txt}`;
+        i.image = `https://via.placeholder.com/320x180/007ACC/fff?text=${txt}`;
       }
     });
 
     out.categories.push({ category: cat, items });
   }
 
+  // 5) Scrivi JSON
   await fs.writeFile("news.json", JSON.stringify(out,null,2), "utf-8");
   console.log("✅ news.json aggiornato!");
 }
 
-aggregate().catch(err=>{
+aggregate().catch(err => {
   console.error("❌ errore aggregazione:", err);
   process.exit(1);
 });
