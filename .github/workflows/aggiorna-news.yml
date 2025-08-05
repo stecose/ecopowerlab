@@ -23,7 +23,7 @@ jobs:
           node-version: '18'
 
       - name: Installa dipendenze
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Genera news.json
         run: node aggregator.js
