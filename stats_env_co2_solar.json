@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-08-05T07:46:29.435Z",
+  "updated_at": "2025-08-05T08:28:03.575Z",
   "co2": {
     "weekly_ppm": 27,
     "week_begin": "2025-01-07",
@@ -34,5 +34,5 @@
     "temperature": null,
     "solar": null
   },
-  "_touched_at": "2025-08-05T07:46:29.435Z"
+  "_touched_at": "2025-08-05T08:28:03.575Z"
 }
