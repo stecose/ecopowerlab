@@ -1,15 +1,17 @@
 {
-  "updated_at": "2025-08-05T06:44:22.670Z",
+  "updated_at": "2025-08-05T06:59:10.276Z",
   "co2": {
     "weekly_ppm": null,
     "week_begin": null,
     "monthly_ppm": null,
-    "month": null
+    "month": null,
+    "error": "This operation was aborted"
   },
   "temperature": {
-    "global_monthly_anomaly_c": null,
-    "year": null,
-    "month": null
+    "global_monthly_anomaly_c": 1.03,
+    "year": 2025,
+    "month": "Jun",
+    "error": null
   },
   "solar": {
     "location": {
@@ -20,16 +22,17 @@
       "start": "20250730",
       "end": "20250805"
     },
-    "average_irradiance_mj_m2_day": -711.514,
-    "average_irradiance_kwh_m2_day": -197.643,
+    "average_irradiance_mj_m2_day": 7.2,
+    "average_irradiance_kwh_m2_day": 2,
     "panel_efficiency_assumed": 0.2,
-    "available_energy_kwh_m2_day": -39.5285,
-    "available_power_kw": -1.647
+    "available_energy_kwh_m2_day": 0.4,
+    "available_power_kw": 0.017,
+    "error": null
   },
   "errors": {
-    "co2": null,
-    "temperature": "GISTEMP HTTP 403",
+    "co2": "This operation was aborted",
+    "temperature": null,
     "solar": null
   },
-  "_touched_at": "2025-08-05T06:44:22.670Z"
+  "_touched_at": "2025-08-05T06:59:10.276Z"
 }
