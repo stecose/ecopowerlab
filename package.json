@@ -1,6 +1,10 @@
-// package.json
 {
+  "name": "ecopowerlab-aggregator",
+  "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "generate": "node aggregator.js"
+  },
   "dependencies": {
     "node-fetch": "^3.3.1",
     "xml2js": "^0.4.23",
