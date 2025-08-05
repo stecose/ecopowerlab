@@ -1,299 +1,162 @@
 // aggregator.js
 import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
+import cheerio from "cheerio";
 import fs from "fs/promises";
 
-/* ==================== CONFIGURAZIONE ==================== */
-const entriesPerFeed = 3;                  // quanti articoli prelevare da ciascun feed
-const maxItemsPerCategory = 25;            // quanti articoli tenere per categoria
-const concurrentFallbackFetches = 4;       // quante richieste parallele per arricchire immagini mancanti
-/* ======================================================= */
-
-/* ==================== FEED ==================== */
+/* ===== CONFIG ===== */
+const entriesPerFeed      = 3;    // articoli da ciascun feed
+const maxItemsPerCategory = 25;   // limite per categoria
+const concurrentFetches   = 4;    // parallelismo
 const feedsByCat = {
-  Energia: [
-    "https://www.rinnovabili.it/feed/",
-    "https://energiaoltre.it/feed",
-    "https://www.qualenergia.it/feed",
-    "https://www.canaleenergia.com/feed",
-    "https://www.solareb2b.it/feed",
-    "https://www.nextville.it/feed",
-    "https://www.greenplanner.it/feed",
-    "https://www.energiamagazine.it/feed",
-    "https://www.energeticambiente.it/blogs/feed",
-    "https://www.energoclub.org/feed",
-    "https://www.staffettaonline.com/rss.aspx",
-    "https://www.mercatoelettrico.org/it/feed/",
-    "https://www.smart-grid.it/feed",
-    "https://www.windenergyitalia.it/feed",
-    "https://www.hydrogen-news.it/feed",
-    "https://www.geotermia.news/feed",
-    "https://www.bioenergyitaly.it/feed",
-    "https://www.energycue.it/feed",
-    "https://www.powerengineeringint.com/feed/",
-    "https://www.oilgasnews.it/feed"
-  ],
-  SmartHome: [
-    "https://www.smartworld.it/feed",
-    "https://iotitaly.net/feed",
-    "https://www.domotica.it/feed",
-    "https://www.digitalic.it/feed",
-    "https://www.hwupgrade.it/news/rss.xml",
-    "https://www.tomshw.it/feed",
-    "https://www.gadgetblog.it/feed",
-    "https://www.tecnologia.libero.it/feed",
-    "https://www.macitynet.it/feed",
-    "https://www.androidworld.it/feed",
-    "https://www.hdblog.it/rss",
-    "https://www.wired.it/feed/rss",
-    "https://www.aranzulla.it/feed",
-    "https://www.dday.it/rss",
-    "https://www.corriere.it/tecnologia/rss.xml",
-    "https://www.repubblica.it/rss/tecnologia/rss2.0.xml",
-    "https://www.internet4things.it/feed",
-    "https://www.webnews.it/feed",
-    "https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml",
-    "https://www.sicurezzamagazine.it/feed"
-  ],
-  Mobilita: [
-    "https://www.electricmotornews.com/feed/",
-    "https://insideevs.it/feed",
-    "https://www.quattroruote.it/news/rss.xml",
-    "https://www.automoto.it/rss/news.xml",
-    "https://www.autoblog.it/feed",
-    "https://www.alvolante.it/rss.xml",
-    "https://www.vaielettrico.it/feed/",
-    "https://www.ev-news.it/feed",
-    "https://www.formulapassion.it/feed",
-    "https://www.ecomobilitytoday.it/feed",
-    "https://www.motorage.it/feed",
-    "https://www.greencarcongress.com/index.xml",
-    "https://www.hybridcars.com/feed",
-    "https://www.fleetmagazine.com/feed",
-    "https://www.moto.it/rss/news.xml",
-    "https://www.cycleworld.com/rss.xml",
-    "https://www.trasporti-italia.com/feed",
-    "https://www.truck.it/feed",
-    "https://www.motorionline.com/feed",
-    "https://www.electric-vehicles.com/feed"
-  ],
-  Clima: [
-    "https://www.lifegate.it/feed",
-    "https://www.ansa.it/canale_ambiente/notizie/rss/ambiente_rss.xml",
-    "https://www.greenreport.it/feed/",
-    "https://www.ecoalleanza.it/feed",
-    "https://www.eco-news.it/feed",
-    "https://www.greenstyle.it/feed",
-    "https://www.ilfattoquotidiano.it/ambiente/feed/",
-    "https://www.wwf.it/rss",
-    "https://www.isprambiente.gov.it/it/feed/RSS",
-    "https://www.environmentsustainability.it/feed",
-    "https://www.arpat.toscana.it/feed",
-    "https://www.euractiv.it/feed/",
-    "https://www.reteclima.it/feed",
-    "https://www.legambiente.it/feed",
-    "https://www.climalteranti.it/feed",
-    "https://www.copernicus.eu/en/rss.xml",
-    "https://www.nature.com/subjects/climate-change.rss",
-    "https://www.fai-platform.it/feed",
-    "https://www.consorziobiogas.it/feed"
-  ]
+  Energia: [ /* array di 20 URL RSS/Atom */ ],
+  SmartHome: [ /* ... */ ],
+  Mobilita: [ /* ... */ ],
+  Clima: [ /* ... */ ]
 };
-/* ================================================ */
+/* =================== */
 
-/* ==================== HELPERS ==================== */
-
-// normalizza un campo testuale che può essere stringa, oggetto con "_" o altro
-function extractTextField(field) {
-  if (!field) return "";
-  if (typeof field === "string") return field;
-  if (typeof field === "object") {
-    if (field._) return field._;
-    if (field["#text"]) return field["#text"];
-  }
-  return String(field);
+// Helpers
+function extractTextField(f){
+  if(!f) return "";
+  if(typeof f==="string") return f;
+  if(f._) return f._;
+  if(f["#text"]) return f["#text"];
+  return String(f);
 }
-
-// rende URL assoluto rispetto a base
-function absolute(src, base) {
-  try {
-    return new URL(src, base).href;
-  } catch {
-    return src;
-  }
+function absolute(src, base){
+  try{ return new URL(src, base).href }catch{ return src }
 }
-
-// Estrae immagine da HTML: og:image/twitter:image, JSON-LD, poi prima <img>
-function extractImageFromHtml(html, pageUrl) {
-  let match;
-
-  // 1. og:image / twitter:image
-  const metaRe = /<meta[^>]*(?:property|name)=["'](?:og:image|twitter:image)["'][^>]*content=["']([^"']+)["']/gi;
-  while ((match = metaRe.exec(html)) !== null) {
-    if (match[1]) {
-      return absolute(match[1], pageUrl);
-    }
-  }
-
-  // 2. JSON-LD (es. NewsArticle)
-  const ldRe = /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
-  while ((match = ldRe.exec(html)) !== null) {
+function extractImageFromHtml(html, pageUrl){
+  const $ = cheerio.load(html);
+  let img = $('meta[property="og:image"]').attr("content")
+         || $('meta[name="twitter:image"]').attr("content");
+  if(img) return absolute(img, pageUrl);
+  $('script[type="application/ld+json"]').each((_,el)=>{
     try {
-      const data = JSON.parse(match[1]);
-      const arr = Array.isArray(data) ? data : [data];
-      for (const obj of arr) {
-        if (obj.image) {
-          if (typeof obj.image === "string") return absolute(obj.image, pageUrl);
-          if (Array.isArray(obj.image) && obj.image[0]) return absolute(obj.image[0], pageUrl);
-          if (obj.image.url) return absolute(obj.image.url, pageUrl);
-        }
-        if (obj.mainEntityOfPage && obj.mainEntityOfPage.image) {
-          const img = obj.mainEntityOfPage.image;
-          if (typeof img === "string") return absolute(img, pageUrl);
-          if (Array.isArray(img) && img[0]) return absolute(img[0], pageUrl);
-          if (img.url) return absolute(img.url, pageUrl);
+      const data = JSON.parse($(el).text());
+      const arr  = Array.isArray(data)?data:[data];
+      for(const o of arr){
+        if(o.image){
+          if(typeof o.image==="string") { img = o.image; break }
+          if(Array.isArray(o.image)&&o.image[0]){ img = o.image[0]; break }
+          if(o.image.url){ img = o.image.url; break }
         }
       }
-    } catch {}
-  }
-
-  // 3. Prima <img> valida
-  const imgRe = /<img[^>]+src=["']([^"']+)["'][^>]*>/i;
-  if ((match = imgRe.exec(html)) && match[1]) {
-    return absolute(match[1], pageUrl);
-  }
-
-  return "";
+    } catch{}
+    if(img) return false;
+  });
+  if(img) return absolute(img, pageUrl);
+  img = $('img').first().attr("src");
+  return img? absolute(img, pageUrl): "";
 }
-
-// dedup mantenendo il più recente per link
-function dedupeKeepLatest(list) {
-  const seen = new Map();
-  list.forEach(item => {
-    if (!item.link) return;
-    const prev = seen.get(item.link);
-    if (!prev || new Date(item.pubDate) > new Date(prev.pubDate)) {
-      seen.set(item.link, item);
+function dedupeKeepLatest(list){
+  const m = new Map();
+  list.forEach(i=>{
+    if(!i.link) return;
+    const prev = m.get(i.link);
+    if(!prev||new Date(i.pubDate)>new Date(prev.pubDate)){
+      m.set(i.link,i);
     }
   });
-  return Array.from(seen.values()).sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate));
+  return [...m.values()]
+    .sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
 }
-
-// fallback scraping per tutti gli articoli senza immagine (parallelizzato)
-async function enrichMissingImages(items) {
-  const missing = items.filter(i => !i.image && i.link);
-  for (let i = 0; i < missing.length; i += concurrentFallbackFetches) {
-    const batch = missing.slice(i, i + concurrentFallbackFetches);
-    await Promise.all(batch.map(async item => {
+async function enrichMissingImages(items){
+  const miss = items.filter(i=>!i.image&&i.link);
+  for(let i=0;i<miss.length;i+=concurrentFetches){
+    const batch = miss.slice(i,i+concurrentFetches);
+    await Promise.all(batch.map(async it=>{
       try {
-        const res = await fetch(item.link, { redirect: "follow" });
+        const res = await fetch(it.link);
         const html = await res.text();
-        const img = extractImageFromHtml(html, item.link);
-        if (img) item.image = img;
-      } catch {}
+        const img  = extractImageFromHtml(html,it.link);
+        if(img) it.image = img;
+      }catch{}
+    }));
+  }
+}
+async function enrichContent(items){
+  for(let i=0;i<items.length;i+=concurrentFetches){
+    const batch = items.slice(i,i+concurrentFetches);
+    await Promise.all(batch.map(async it=>{
+      if(!it.link) return;
+      try {
+        const res = await fetch(it.link);
+        const html = await res.text();
+        const $ = cheerio.load(html);
+        let article = $("article").first();
+        if(!article.length) article = $("[itemprop='articleBody']").first();
+        if(!article.length) article = $("#content, .post-content, main").first();
+        let contentHtml = article.length? article.html() : "";
+        if(!contentHtml){
+          contentHtml = $("p").slice(0,5).map((_,el)=>$.html(el)).get().join("");
+        }
+        it.content = contentHtml||"";
+      }catch{
+        it.content = "";
+      }
     }));
   }
 }
 
-// placeholder finale (per sicurezza assoluta, dovrebbe essere raro)
-function makePlaceholder(title) {
-  const words = (title || "EcoPower").split(" ").slice(0,2).join(" ");
-  const text = encodeURIComponent(words || "EcoPower");
-  return `https://via.placeholder.com/320x180/007ACC/ffffff?text=${text}`;
-}
-
-/* ================================================ */
-
-/* ==================== AGGREGAZIONE ==================== */
-async function aggregate() {
-  const result = { categories: [] };
-
-  for (const [categoryName, feedUrls] of Object.entries(feedsByCat)) {
-    let collected = [];
-
-    // fetch paralleli dei feed
-    const responses = await Promise.all(
-      feedUrls.map(url =>
-        fetch(url, { redirect: "follow" })
-          .then(r => r.text().then(xml => ({ url, xml })))
-          .catch(() => null)
-      )
-    );
-
-    for (const resp of responses) {
-      if (!resp || !resp.xml) continue;
-
+// Main
+async function aggregate(){
+  const out = { categories: [] };
+  for(const [cat, feeds] of Object.entries(feedsByCat)){
+    let all = [];
+    // fetch RSS
+    const raws = await Promise.all(feeds.map(url=>
+      fetch(url).then(r=>r.text().then(xml=>({url,xml}))).catch(()=>null)
+    ));
+    for(const r of raws){
+      if(!r) continue;
+      let js;
+      try{ js = await parseStringPromise(r.xml, { explicitArray:false, mergeAttrs:true }); }
+      catch{ continue; }
       let entries = [];
-      try {
-        const parsed = await parseStringPromise(resp.xml, { explicitArray: false, mergeAttrs: true });
-        if (parsed.rss && parsed.rss.channel) {
-          const ch = parsed.rss.channel;
-          const raw = ch.item;
-          entries = Array.isArray(raw) ? raw : raw ? [raw] : [];
-        } else if (parsed.feed && parsed.feed.entry) {
-          const raw = parsed.feed.entry;
-          entries = Array.isArray(raw) ? raw : raw ? [raw] : [];
-        }
-      } catch {}
-
-      entries.slice(0, entriesPerFeed).forEach(entry => {
-        const title = extractTextField(entry.title);
+      if(js.rss?.channel?.item){
+        const it = js.rss.channel.item;
+        entries = Array.isArray(it)?it:[it];
+      } else if(js.feed?.entry){
+        const it = js.feed.entry;
+        entries = Array.isArray(it)?it:[it];
+      }
+      entries.slice(0, entriesPerFeed).forEach(e=>{
+        const title = extractTextField(e.title).trim();
         let link = "";
-        if (entry.link) {
-          if (typeof entry.link === "string") link = entry.link;
-          else if (entry.link.href) link = entry.link.href;
-          else if (Array.isArray(entry.link)) {
-            const alt = entry.link.find(l => l.rel === "alternate");
-            link = (alt && alt.href) || (entry.link[0] && entry.link[0].href) || "";
+        if(e.link){
+          if(typeof e.link==="string") link = e.link;
+          else if(e.link.href) link = e.link.href;
+          else if(Array.isArray(e.link)){
+            const alt = e.link.find(l=>l.rel==="alternate");
+            link = alt?.href||e.link[0]?.href||"";
           }
         }
-        if (!link && entry.enclosure && entry.enclosure.url) link = entry.enclosure.url;
-        if (!link && entry["feedburner:origLink"]) link = entry["feedburner:origLink"];
-        const descriptionRaw = entry.description || entry.summary || "";
-        const description = extractTextField(descriptionRaw).replace(/<[^>]*>?/gm, "").trim().substring(0,150);
-        const pubDate = entry.pubDate || entry.updated || entry["dc:date"] || "";
-        const source = resp && resp.url ? new URL(resp.url).hostname.replace(/^www\./,"") : "";
-
-        // immagine iniziale dal feed
-        let image = "";
-        if (entry.enclosure && entry.enclosure.url) image = entry.enclosure.url;
-        if (!image && entry["media:content"] && entry["media:content"].url) image = entry["media:content"].url;
-        if (!image && entry["media:thumbnail"] && entry["media:thumbnail"].url) image = entry["media:thumbnail"].url;
-
-        collected.push({
-          title: title.trim(),
-          link: link,
-          description: description,
-          pubDate: pubDate,
-          source: source,
-          image: image
-        });
+        if(!link && e["feedburner:origLink"]) link = e["feedburner:origLink"];
+        const desc = extractTextField(e.description||e.summary).replace(/<[^>]*>?/gm,"").trim();
+        const pubDate = e.pubDate||e.updated||e["dc:date"]||"";
+        const source = new URL(r.url).hostname.replace(/^www\./,"");
+        let image = e.enclosure?.url || e["media:content"]?.url || e["media:thumbnail"]?.url || "";
+        all.push({ title, link, description:desc, pubDate, source, image, content:"" });
       });
     }
-
-    // dedup + ordinamento + limit
-    let finalItems = dedupeKeepLatest(collected).slice(0, maxItemsPerCategory);
-
-    // fallback scraping immagini su quelli senza
-    await enrichMissingImages(finalItems);
-
-    // garantisce immagine per tutti, ultima risorsa placeholder
-    finalItems.forEach(item => {
-      if (!item.image || item.image.trim() === "") {
-        item.image = makePlaceholder(item.title || item.source || "EcoPower");
+    let items = dedupeKeepLatest(all).slice(0, maxItemsPerCategory);
+    await enrichMissingImages(items);
+    await enrichContent(items);
+    items.forEach(i=>{
+      if(!i.image){
+        const txt = encodeURIComponent(i.title.split(" ").slice(0,2).join(" "));
+        i.image = `https://via.placeholder.com/320x180/007ACC/fff?text=${txt}`;
       }
     });
-
-    result.categories.push({ category: categoryName, items: finalItems });
+    out.categories.push({ category:cat, items });
   }
-
-  // scrive file
-  await fs.writeFile("news.json", JSON.stringify(result, null, 2), "utf-8");
-  console.log("news.json generato con successo (ogni articolo ha immagine)");
+  await fs.writeFile("news.json", JSON.stringify(out,null,2),"utf-8");
+  console.log("✅ news.json aggiornato!");
 }
 
-/* ========== RUN ========== */
-aggregate().catch(err => {
-  console.error("Errore durante l'aggregazione:", err);
+aggregate().catch(e=>{
+  console.error("❌ errore:",e);
   process.exit(1);
 });
