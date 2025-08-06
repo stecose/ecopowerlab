@@ -3,10 +3,9 @@
 ```javascript
 #!/usr/bin/env node
 
-import fetch from 'node-fetch';
-import { parseStringPromise } from 'xml2js';
-import fs from 'fs/promises';
-import { load } from 'cheerio';
+const { parseStringPromise } = require('xml2js');
+const fs = require('fs/promises');
+const cheerio = require('cheerio');
 
 /* CONFIGURAZIONE */
 const entriesPerFeed = 3;
@@ -110,7 +109,7 @@ const extractText = f => typeof f === 'object' ? (f._ || f['#text'] || '') : (f 
 const absolute = (u, b) => { try { return new URL(u, b).href; } catch { return u; } };
 
 async function fetchAndParse(url) {
-  const xml = await (await fetch(url)).text();
+  const xml = await fetch(url).then(res => res.text());
   return parseStringPromise(xml, { explicitArray: false, mergeAttrs: true });
 }
 
@@ -129,71 +128,73 @@ function dedupe(items) {
 
 async function enrichImage(item) {
   try {
-    const html = await (await fetch(item.link)).text();
-    const $ = load(html);
+    const html = await fetch(item.link).then(res => res.text());
+    const $ = cheerio.load(html);
     const meta = $('meta[property="og:image"]').attr('content')
       || $('meta[name="twitter:image"]').attr('content');
     if (meta) return absolute(meta, item.link);
     const img = $('article img').first().attr('src')
       || $('img').first().attr('src');
     return img ? absolute(img, item.link) : '';
-  } catch { return ''; }
+  } catch {
+    return '';
+  }
 }
 
 async function enrichBody(item) {
   try {
-    const html = await (await fetch(item.link)).text();
-    const $ = load(html);
+    const html = await fetch(item.link).then(res => res.text());
+    const $ = cheerio.load(html);
     let text = $('article').text().trim();
     if (!text) {
       text = $('p').map((i, el) => $(el).text()).get().join('\n\n');
     }
     const paras = text.split(/\n\n+/).map(p => p.trim()).filter(p => p);
     return paras.join('\n\n');
-  } catch { return item.description; }
+  } catch {
+    return item.description;
+  }
 }
 
 async function aggregate() {
   const result = { categories: [] };
   for (const [category, urls] of Object.entries(feedsByCat)) {
     const all = [];
-    await Promise.all(
-      urls.map(async url => {
-        try {
-          const xmlObj = await fetchAndParse(url);
-          const entries = xmlObj.rss?.channel?.item || xmlObj.feed?.entry || [];
-          const list = Array.isArray(entries) ? entries : [entries];
-          list.slice(0, entriesPerFeed).forEach(e => {
-            const title = extractText(e.title).trim();
-            let link = e.link?.href || e.link || e.enclosure?.url || '';
-            if (Array.isArray(e.link)) {
-              const alt = e.link.find(l => l.rel === 'alternate');
-              link = alt?.href || e.link[0]?.href || link;
-            }
-            const description = extractText(e.description || e.summary)
-              .replace(/<[^>]*>?/gm, '')
-              .slice(0, 150)
-              .trim();
-            const pubDate = e.pubDate || e.updated || e['dc:date'] || '';
-            const source = new URL(url).hostname.replace(/^www\./, '');
-            const image = e.enclosure?.url || '';
-            all.push({ title, link, description, pubDate, source, image });
-          });
-        } catch {};
-      })
-    );
+    await Promise.all(urls.map(async url => {
+      try {
+        const xmlObj = await fetchAndParse(url);
+        const entries = xmlObj.rss?.channel?.item || xmlObj.feed?.entry || [];
+        const list = Array.isArray(entries) ? entries : [entries];
+        list.slice(0, entriesPerFeed).forEach(e => {
+          const title = extractText(e.title).trim();
+          let link = e.link?.href || e.link || e.enclosure?.url || '';
+          if (Array.isArray(e.link)) {
+            const alt = e.link.find(l => l.rel === 'alternate');
+            link = alt?.href || e.link[0]?.href || link;
+          }
+          const description = extractText(e.description || e.summary)
+            .replace(/<[^>]*>?/gm, '')
+            .slice(0, 150)
+            .trim();
+          const pubDate = e.pubDate || e.updated || e['dc:date'] || '';
+          const source = new URL(url).hostname.replace(/^www\./, '');
+          const image = e.enclosure?.url || '';
+          all.push({ title, link, description, pubDate, source, image });
+        });
+      } catch (err) {
+        console.error('Feed error', url, err);
+      }
+    }));
     let items = dedupe(all).slice(0, maxItemsPerCategory);
     for (let i = 0; i < items.length; i += concurrentFetches) {
       const batch = items.slice(i, i + concurrentFetches);
-      await Promise.all(
-        batch.map(async it => {
-          if (!it.image) {
-            it.image = await enrichImage(it)
-              || `https://via.placeholder.com/320x180?text=${encodeURIComponent(it.title)}`;
-          }
-          it.body = await enrichBody(it);
-        })
-      );
+      await Promise.all(batch.map(async it => {
+        if (!it.image) {
+          it.image = await enrichImage(it)
+            || `https://via.placeholder.com/320x180?text=${encodeURIComponent(it.title)}`;
+        }
+        it.body = await enrichBody(it);
+      }));
     }
     result.categories.push({ category, items });
   }
@@ -201,5 +202,16 @@ async function aggregate() {
   console.log('news.json aggiornato con body');
 }
 
-aggreg
+aggregate().catch(err => {
+  console.error('Errore aggregazione:', err);
+  process.exit(1);
+});
+```
+
+\--- package.json ---
+
+```json
+{
+  "scripts": {
+    "generate": "node aggregator.js"
 ```
