@@ -1,0 +1,37 @@
+# .github/workflows/clean-news-json.yml
+name: Clean news.json
+
+on:
+  push:
+    paths:
+      - news.json
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ripulisci body rimuovendo tag, entità e spazi eccessivi
+        run: |
+          jq '
+            .categories[].items[].body |=
+              # 1) via tutti i tag HTML <...>
+              gsub("<[^>]+>";"") |
+              # 2) decodifica o rimuove entità HTML comuni
+              gsub("&nbsp;";" ") |
+              gsub("&[a-zA-Z0-9]+;";"") |
+              # 3) collassa newline/spazi multipli in un solo spazio
+              gsub("\\s+";" ") |
+              # 4) trim spazi iniziali/finali
+              sub("^\\s+"; "") | sub("\\s+$"; "")
+          ' news.json > news.cleaned.json
+          mv news.cleaned.json news.json
+
+      - name: Commit & push cleaned JSON
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '🔄 Clean HTML & entities from news.json body'
+          file_pattern: news.json
