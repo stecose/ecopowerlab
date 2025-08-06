@@ -29,11 +29,20 @@ jobs:
             # funzione di pulizia: solo su stringhe
             def clean:
               if type == "string" then
-                gsub("<[^>]+>";"") |        
-                gsub("<!--[^>]*-->";"") |
-                gsub("&nbsp;";" ") |
-                gsub("&[a-zA-Z0-9#]+;";"") |
-                gsub("\\s+";" ") |
+                # 0) Rimuovi blocchi <style>…</style> e <script>…</script>
+                gsub("<style[\\s\\S]*?</style>"; "") |
+                gsub("<script[\\s\\S]*?</script>"; "") |
+                # 1) Rimuovi tutti i tag HTML/CSS residui
+                gsub("<[^>]+>"; "") |
+                # 2) Rimuovi commenti HTML
+                gsub("<!--[^>]*-->"; "") |
+                # 3) Decodifica spazi non-breakable
+                gsub("&nbsp;"; " ") |
+                # 4) Rimuovi altre entità HTML
+                gsub("&[a-zA-Z0-9#]+;"; "") |
+                # 5) Collassa whitespace multipli in uno spazio
+                gsub("\\s+"; " ") |
+                # 6) Trim spazi iniziali/finali
                 sub("^\\s+"; "") |
                 sub("\\s+$"; "")
               else
