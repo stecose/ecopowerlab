@@ -2,14 +2,11 @@
 name: Clean news.json
 
 on:
-  # Trigger su modifica di news.json
   push:
     paths:
       - news.json
-  # Esecuzione periodica (giornaliera a mezzanotte UTC)
   schedule:
     - cron: '0 0 * * *'
-  # Possibilità di esecuzione manuale da GitHub UI
   workflow_dispatch:
 
 jobs:
@@ -19,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # usa GITHUB_TOKEN per i push
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -26,30 +25,18 @@ jobs:
       - name: Clean HTML/CSS remnants from body fields
         run: |
           jq '
-            # funzione di pulizia: solo su stringhe
             def clean:
               if type == "string" then
-                # 0) Rimuovi blocchi <style>…</style> e <script>…</script>
                 gsub("<style[\\s\\S]*?</style>"; "") |
                 gsub("<script[\\s\\S]*?</script>"; "") |
-                # 1) Rimuovi tutti i tag HTML/CSS residui
                 gsub("<[^>]+>"; "") |
-                # 2) Rimuovi commenti HTML
                 gsub("<!--[^>]*-->"; "") |
-                # 3) Decodifica spazi non-breakable
                 gsub("&nbsp;"; " ") |
-                # 4) Rimuovi altre entità HTML
                 gsub("&[a-zA-Z0-9#]+;"; "") |
-                # 5) Collassa whitespace multipli in uno spazio
                 gsub("\\s+"; " ") |
-                # 6) Trim spazi iniziali/finali
                 sub("^\\s+"; "") |
                 sub("\\s+$"; "")
-              else
-                .
-              end;
-
-            # Applica clean a .body in categories o categorie
+              else . end;
             (
               (.categories? // .categorie?)
               |= map(
@@ -64,5 +51,6 @@ jobs:
       - name: Commit & push cleaned news.json
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: '🔄 Cleanup HTML/CSS residues from news.json'
           file_pattern: news.json
