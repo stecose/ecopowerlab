@@ -2,6 +2,7 @@
 name: Clean news.json
 
 # Permessi espliciti per consentire il push del workflow
+dependabot:
 permissions:
   contents: write
 
@@ -31,13 +32,23 @@ jobs:
           jq '
             def clean:
               if type == "string" then
+                # Rimuovi blocchi <style>…</style> e <script>…</script>
                 gsub("<style[\\s\\S]*?</style>"; "") |
                 gsub("<script[\\s\\S]*?</script>"; "") |
+                # Rimuovi tutti i tag HTML
                 gsub("<[^>]+>"; "") |
+                # Rimuovi commenti HTML
                 gsub("<!--[^>]*-->"; "") |
+                # Rimuovi blocchi CSS residui (es. .class{...})
+                gsub("\\.?[A-Za-z0-9_\\-]+\\s*\\{[^}]*\\}"; "") |
+                # Rimuovi proprietà CSS con valori (es. color:#fff;)
+                gsub("[A-Za-z\\-]+:[^;]+;"; "") |
+                # Decodifica &nbsp; e rimuovi altre entità
                 gsub("&nbsp;"; " ") |
                 gsub("&[a-zA-Z0-9#]+;"; "") |
+                # Collassa whitespace multipli
                 gsub("\\s+"; " ") |
+                # Trim spazi esterni
                 sub("^\\s+"; "") |
                 sub("\\s+$"; "")
               else . end;
