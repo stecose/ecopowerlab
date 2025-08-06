@@ -2,19 +2,38 @@ name: Aggiorna News
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          node-version: '18'
-      - run: npm install --legacy-peer-deps
-      - run: npm run generate
-      - uses: stefanzweifel/git-auto-commit-action@v4
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          commit_message: '🔄 Aggiornamento automatico news'
-          file_pattern: 'news.json'
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Run aggregator
+        run: |
+          node aggregator.js
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json package-lock.json
+          git diff --quiet --cached || (git commit -m "Aggiorna news e lockfile $(date -u +"%Y-%m-%dT%H:%M:%SZ")" && git push)
