@@ -1,140 +1,204 @@
-// aggregator.js
-const fetch = require('node-fetch');            // v2.x
-const { parseStringPromise } = require('xml2js');
-const fs = require('fs/promises');
-const cheerio = require('cheerio');
+#!/usr/bin/env node
 
-/* CONFIGURATION */
+import fetch from 'node-fetch';
+import { parseStringPromise } from 'xml2js';
+import fs from 'fs/promises';
+import cheerio from 'cheerio';
+
+/* CONFIGURAZIONE */
 const entriesPerFeed = 3;
 const maxItemsPerCategory = 25;
-const concurrentFallbackFetches = 4;
+const concurrentFetches = 4;
 
-/* FEEDS */
+/* ==================== FEED ==================== */
 const feedsByCat = {
   Energia: [
-    'https://www.rinnovabili.it/feed/',
-    'https://energiaoltre.it/feed',
-    // … altri feed …
+    "https://www.rinnovabili.it/feed/",
+    "https://energiaoltre.it/feed",
+    "https://www.qualenergia.it/feed",
+    "https://www.canaleenergia.com/feed",
+    "https://www.solareb2b.it/feed",
+    "https://www.nextville.it/feed",
+    "https://www.greenplanner.it/feed",
+    "https://www.energiamagazine.it/feed",
+    "https://www.energeticambiente.it/blogs/feed",
+    "https://www.energoclub.org/feed",
+    "https://www.staffettaonline.com/rss.aspx",
+    "https://www.mercatoelettrico.org/it/feed/",
+    "https://www.smart-grid.it/feed",
+    "https://www.windenergyitalia.it/feed",
+    "https://www.hydrogen-news.it/feed",
+    "https://www.geotermia.news/feed",
+    "https://www.bioenergyitaly.it/feed",
+    "https://www.energycue.it/feed",
+    "https://www.powerengineeringint.com/feed/",
+    "https://www.oilgasnews.it/feed"
   ],
-  // … altre categorie …
+  SmartHome: [
+    "https://www.smartworld.it/feed",
+    "https://iotitaly.net/feed",
+    "https://www.domotica.it/feed",
+    "https://www.digitalic.it/feed",
+    "https://www.hwupgrade.it/news/rss.xml",
+    "https://www.tomshw.it/feed",
+    "https://www.gadgetblog.it/feed",
+    "https://www.tecnologia.libero.it/feed",
+    "https://www.macitynet.it/feed",
+    "https://www.androidworld.it/feed",
+    "https://www.hdblog.it/rss",
+    "https://www.wired.it/feed/rss",
+    "https://www.aranzulla.it/feed",
+    "https://www.dday.it/rss",
+    "https://www.corriere.it/tecnologia/rss.xml",
+    "https://www.repubblica.it/rss/tecnologia/rss2.0.xml",
+    "https://www.internet4things.it/feed",
+    "https://www.webnews.it/feed",
+    "https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml",
+    "https://www.sicurezzamagazine.it/feed"
+  ],
+  Mobilita: [
+    "https://www.electricmotornews.com/feed/",
+    "https://insideevs.it/feed",
+    "https://www.quattroruote.it/news/rss.xml",
+    "https://www.automoto.it/rss/news.xml",
+    "https://www.autoblog.it/feed",
+    "https://www.alvolante.it/rss.xml",
+    "https://www.vaielettrico.it/feed/",
+    "https://www.ev-news.it/feed",
+    "https://www.formulapassion.it/feed",
+    "https://www.ecomobilitytoday.it/feed",
+    "https://www.motorage.it/feed",
+    "https://www.greencarcongress.com/index.xml",
+    "https://www.hybridcars.com/feed",
+    "https://www.fleetmagazine.com/feed",
+    "https://www.moto.it/rss/news.xml",
+    "https://www.cycleworld.com/rss.xml",
+    "https://www.trasporti-italia.com/feed",
+    "https://www.truck.it/feed",
+    "https://www.motorionline.com/feed",
+    "https://www.electric-vehicles.com/feed"
+  ],
+  Clima: [
+    "https://www.lifegate.it/feed",
+    "https://www.ansa.it/canale_ambiente/notizie/rss/ambiente_rss.xml",
+    "https://www.greenreport.it/feed/",
+    "https://www.ecoalleanza.it/feed",
+    "https://www.eco-news.it/feed",
+    "https://www.greenstyle.it/feed",
+    "https://www.ilfattoquotidiano.it/ambiente/feed/",
+    "https://www.wwf.it/rss",
+    "https://www.isprambiente.gov.it/it/feed/RSS",
+    "https://www.environmentsustainability.it/feed",
+    "https://www.arpat.toscana.it/feed",
+    "https://www.euractiv.it/feed/",
+    "https://www.reteclima.it/feed",
+    "https://www.legambiente.it/feed",
+    "https://www.climalteranti.it/feed",
+    "https://www.copernicus.eu/en/rss.xml",
+    "https://www.nature.com/subjects/climate-change.rss",
+    "https://www.fai-platform.it/feed",
+    "https://www.consorziobiogas.it/feed"
+  ]
 };
+/* ================================================ */
 
 /* HELPERS */
-function extractTextField(field) {
-  if (!field) return '';
-  if (typeof field === 'string') return field;
-  if (typeof field === 'object') {
-    if (field._) return field._;
-    if (field['#text']) return field['#text'];
-  }
-  return String(field);
+const extractText = f => typeof f === 'object' ? (f._ || f['#text'] || '') : (f || '');
+const absolute = (u, b) => { try { return new URL(u, b).href; } catch { return u; } };
+
+async function fetchAndParse(url) {
+  const xml = await (await fetch(url)).text();
+  return parseStringPromise(xml, { explicitArray: false, mergeAttrs: true });
 }
-function absolute(src, base) {
-  try { return new URL(src, base).href; } catch { return src; }
-}
-function extractImageFromHtml(html, pageUrl) {
-  let m;
-  const metaRe = /<meta[^>]*(?:property|name)=[\"'](?:og:image|twitter:image)[\"'][^>]*content=[\"']([^\"']+)[\"']/gi;
-  while ((m = metaRe.exec(html))) if (m[1]) return absolute(m[1], pageUrl);
-  const imgRe = /<img[^>]+src=[\"']([^\"']+)[\"'][^>]*>/i;
-  if ((m = imgRe.exec(html))) return absolute(m[1], pageUrl);
-  return '';
-}
-function dedupeKeepLatest(list) {
+
+function dedupe(items) {
   const seen = new Map();
-  list.forEach(item => {
-    if (!item.link) return;
+  for (const item of items) {
+    if (!item.link) continue;
     const prev = seen.get(item.link);
     if (!prev || new Date(item.pubDate) > new Date(prev.pubDate)) {
       seen.set(item.link, item);
     }
-  });
+  }
   return Array.from(seen.values())
-    .sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
-}
-async function enrichMissingImages(items) {
-  const missing = items.filter(i=>!i.image && i.link);
-  for (let i=0;i<missing.length;i+=concurrentFallbackFetches) {
-    const batch = missing.slice(i,i+concurrentFallbackFetches);
-    await Promise.all(batch.map(async it=>{
-      try {
-        const res = await fetch(it.link);
-        const html = await res.text();
-        const img = extractImageFromHtml(html, it.link);
-        if (img) it.image = img;
-      }catch{}
-    }));
-  }
-}
-function makePlaceholder(title) {
-  const words = title? title.split(' ').slice(0,2).join(' '):'EcoPower';
-  return `https://via.placeholder.com/320x180/007ACC/ffffff?text=${encodeURIComponent(words)}`;
-}
-function extractArticleBodyFromHtml(html) {
-  const $ = cheerio.load(html);
-  let txt = $('article').first().text().trim();
-  if (!txt) txt = $('p').map((i,el)=>$(el).text()).get().join('\n\n').trim();
-  const paras = txt.replace(/\r\n|\r/g,'\n')
-    .split(/\n\s*\n/).map(p=>p.trim()).filter(p=>p);
-  return paras.join('\n\n');
-}
-async function enrichArticleBodies(items) {
-  const toFetch = items.filter(i=>i.link);
-  for (let i=0;i<toFetch.length;i+=concurrentFallbackFetches) {
-    const batch = toFetch.slice(i,i+concurrentFallbackFetches);
-    await Promise.all(batch.map(async it=>{
-      try {
-        const res = await fetch(it.link);
-        const html = await res.text();
-        const body = extractArticleBodyFromHtml(html);
-        if (body) it.body = body;
-      }catch{}
-    }));
-  }
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
-/* AGGREGATION */
-async function aggregate() {
-  const out = { categories: [] };
-  for (const [cat, urls] of Object.entries(feedsByCat)) {
-    const coll = [];
-    const resps = await Promise.all(
-      urls.map(u=> fetch(u)
-        .then(r=>r.text().then(xml=>({url:u,xml})))
-        .catch(()=>null))
-    );
-    for (const r of resps) {
-      if (!r?.xml) continue;
-      let entries = [];
-      try {
-        const p = await parseStringPromise(r.xml, {explicitArray:false,mergeAttrs:true});
-        if (p.rss) entries = p.rss.channel.item || [];
-        else if (p.feed) entries = p.feed.entry || [];
-      }catch{}
-      [].concat(entries).slice(0,entriesPerFeed).forEach(e=>{
-        const title = extractTextField(e.title).trim();
-        const link = e.link?.href||e.link||e.enclosure?.url||'';
-        const desc = extractTextField(e.description||e.summary||'').replace(/<[^>]*>?/gm,'').trim().slice(0,150);
-        const pubDate = e.pubDate||e.updated||e['dc:date']||'';
-        const source = new URL(r.url).hostname.replace(/^www\./,'');
-        const image = e.enclosure?.url||'';
-        coll.push({title,link,description:desc,pubDate,source,image});
-      });
+async function enrichImage(item) {
+  try {
+    const html = await (await fetch(item.link)).text();
+    const $ = cheerio.load(html);
+    const meta = $('meta[property="og:image"]').attr('content')
+      || $('meta[name="twitter:image"]').attr('content');
+    if (meta) return absolute(meta, item.link);
+    const img = $('article img').first().attr('src')
+      || $('img').first().attr('src');
+    return img ? absolute(img, item.link) : '';
+  } catch { return ''; }
+}
+
+async function enrichBody(item) {
+  try {
+    const html = await (await fetch(item.link)).text();
+    const $ = cheerio.load(html);
+    let text = $('article').text().trim();
+    if (!text) {
+      text = $('p').map((i, el) => $(el).text()).get().join('\n\n');
     }
-    let items = dedupeKeepLatest(coll).slice(0, maxItemsPerCategory);
-    await enrichMissingImages(items);
-    await enrichArticleBodies(items);
-    items.forEach(it=>{
-      if (!it.image) it.image = makePlaceholder(it.title||it.source);
-      if (!it.body) it.body = it.description;
-    });
-    out.categories.push({category:cat,items});
-  }
-  await fs.writeFile('news.json', JSON.stringify(out,null,2),'utf-8');
-  console.log('news.json generato con successo');
+    const paras = text.split(/\n\n+/).map(p => p.trim()).filter(p => p);
+    return paras.join('\n\n');
+  } catch { return item.description; }
 }
 
-aggregate().catch(e=>{
-  console.error('Errore aggregazione:',e);
+async function aggregate() {
+  const result = { categories: [] };
+  for (const [category, urls] of Object.entries(feedsByCat)) {
+    const all = [];
+    await Promise.all(
+      urls.map(async url => {
+        try {
+          const xmlObj = await fetchAndParse(url);
+          const entries = xmlObj.rss?.channel?.item || xmlObj.feed?.entry || [];
+          const list = Array.isArray(entries) ? entries : [entries];
+          list.slice(0, entriesPerFeed).forEach(e => {
+            const title = extractText(e.title).trim();
+            let link = e.link?.href || e.link || e.enclosure?.url || '';
+            if (Array.isArray(e.link)) {
+              const alt = e.link.find(l => l.rel === 'alternate');
+              link = alt?.href || e.link[0]?.href || link;
+            }
+            const description = extractText(e.description || e.summary)
+              .replace(/<[^>]*>?/gm, '')
+              .slice(0, 150)
+              .trim();
+            const pubDate = e.pubDate || e.updated || e['dc:date'] || '';
+            const source = new URL(url).hostname.replace(/^www\./, '');
+            const image = e.enclosure?.url || '';
+            all.push({ title, link, description, pubDate, source, image });
+          });
+        } catch {};
+      })
+    );
+    let items = dedupe(all).slice(0, maxItemsPerCategory);
+    for (let i = 0; i < items.length; i += concurrentFetches) {
+      const batch = items.slice(i, i + concurrentFetches);
+      await Promise.all(
+        batch.map(async it => {
+          if (!it.image) {
+            it.image = await enrichImage(it)
+              || `https://via.placeholder.com/320x180?text=${encodeURIComponent(it.title)}`;
+          }
+          it.body = await enrichBody(it);
+        })
+      );
+    }
+    result.categories.push({ category, items });
+  }
+  await fs.writeFile('news.json', JSON.stringify(result, null, 2), 'utf-8');
+  console.log('news.json aggiornato con body');
+}
+
+aggregate().catch(err => {
+  console.error('Errore:', err);
   process.exit(1);
 });
