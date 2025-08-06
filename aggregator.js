@@ -1,9 +1,12 @@
+\--- aggregator.js ---
+
+```javascript
 #!/usr/bin/env node
 
 import fetch from 'node-fetch';
 import { parseStringPromise } from 'xml2js';
 import fs from 'fs/promises';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 
 /* CONFIGURAZIONE */
 const entriesPerFeed = 3;
@@ -127,7 +130,7 @@ function dedupe(items) {
 async function enrichImage(item) {
   try {
     const html = await (await fetch(item.link)).text();
-    const $ = cheerio.load(html);
+    const $ = load(html);
     const meta = $('meta[property="og:image"]').attr('content')
       || $('meta[name="twitter:image"]').attr('content');
     if (meta) return absolute(meta, item.link);
@@ -140,7 +143,7 @@ async function enrichImage(item) {
 async function enrichBody(item) {
   try {
     const html = await (await fetch(item.link)).text();
-    const $ = cheerio.load(html);
+    const $ = load(html);
     let text = $('article').text().trim();
     if (!text) {
       text = $('p').map((i, el) => $(el).text()).get().join('\n\n');
@@ -198,7 +201,5 @@ async function aggregate() {
   console.log('news.json aggiornato con body');
 }
 
-aggregate().catch(err => {
-  console.error('Errore:', err);
-  process.exit(1);
-});
+aggreg
+```
