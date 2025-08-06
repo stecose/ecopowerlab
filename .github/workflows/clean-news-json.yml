@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true  # usa GITHUB_TOKEN per i push
+          persist-credentials: true  # usa il GITHUB_TOKEN per le operazioni Git
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
@@ -51,6 +51,5 @@ jobs:
       - name: Commit & push cleaned news.json
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: '🔄 Cleanup HTML/CSS residues from news.json'
           file_pattern: news.json
