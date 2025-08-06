@@ -1,6 +1,10 @@
 # .github/workflows/clean-news-json.yml
 name: Clean news.json
 
+# Permessi espliciti per consentire il push del workflow
+permissions:
+  contents: write
+
 on:
   push:
     paths:
