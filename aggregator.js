@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const fetch = global.fetch || require('node-fetch');
-const { parseStringPromise } = require('xml2js');
-const fs = require('fs/promises');
-const cheerio = require('cheerio');
+import fetch from 'node-fetch';
+import { parseStringPromise } from 'xml2js';
+import { writeFile } from 'fs/promises';
+import { load } from 'cheerio';
 
 // CONFIGURAZIONE
 const entriesPerFeed = 3;
@@ -38,13 +38,13 @@ async function fetchAndParse(url) {
 
 function dedupe(items) {
   const seen = new Map();
-  items.forEach(item => {
-    if (!item.link) return;
+  for (const item of items) {
+    if (!item.link) continue;
     const prev = seen.get(item.link);
     if (!prev || new Date(item.pubDate) > new Date(prev.pubDate)) {
       seen.set(item.link, item);
     }
-  });
+  }
   return Array.from(seen.values())
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
@@ -52,7 +52,7 @@ function dedupe(items) {
 async function enrichImage(item) {
   try {
     const html = await fetch(item.link).then(r => r.text());
-    const $ = cheerio.load(html);
+    const $ = load(html);
     const meta = $('meta[property="og:image"]').attr('content')
       || $('meta[name="twitter:image"]').attr('content');
     if (meta) return absoluteUrl(meta, item.link);
@@ -66,7 +66,7 @@ async function enrichImage(item) {
 async function enrichBody(item) {
   try {
     const html = await fetch(item.link).then(r => r.text());
-    const $ = cheerio.load(html);
+    const $ = load(html);
     let text = $('article').text().trim();
     if (!text) {
       text = $('p').map((i, el) => $(el).text()).get().join('\n\n');
@@ -88,7 +88,7 @@ async function aggregate() {
         const list = Array.isArray(entries) ? entries : [entries];
         list.slice(0, entriesPerFeed).forEach(e => {
           const title = extractText(e.title).trim();
-          let link = e.link?.href || e.link || '';
+          const link = e.link?.href || e.link || '';
           const description = extractText(e.description || e.summary)
             .replace(/<[^>]*>/g, '')
             .slice(0, 150)
@@ -112,8 +112,8 @@ async function aggregate() {
     }
     out.categories.push({ category, items });
   }
-  await fs.writeFile('news.json', JSON.stringify(out, null, 2));
-  console.log('news.json aggiornato');
+  await writeFile('news.json', JSON.stringify(out, null, 2), 'utf-8');
+  console.log('news.json aggiornato con body');
 }
 
 aggregate().catch(err => {
