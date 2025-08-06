@@ -1,6 +1,5 @@
 {
-  "name": "ecopowerlab-aggregator",
-  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "generate": "node aggregator.js"
   },
