@@ -35,21 +35,28 @@ jobs:
         run: |
           jq 'def clean:
                 if type=="string" then
-                  gsub("<style[\\s\\S]*?</style>";"") |
-                  gsub("<script[\\s\\S]*?</script>";"") |
-                  gsub("<[^>]+>";"") |
-                  gsub("<!--[^>]*-->";"") |
-                  gsub("\\.?[A-Za-z0-9_\\-]+[[:space:]]*\\{[^}]*\\}";"") |
-                  gsub("[A-Za-z\\-]+:[^;]+;";"") |
-                  gsub("&nbsp;";" ") |
-                  gsub("&[^;]+;";"") |
-                  gsub("[[:space:]]+";" ") |
-                  sub("^[[:space:]]+";"") |
-                  sub("[[:space:]]+$";"")
-                else
-                  .
-                end;
-            (.categories?//.categorie?)?.items? |= map(.body |= clean)' news.json > news.tmp.json
+                  gsub("<style[\\s\\S]*?</style>"; "") |
+                  gsub("<script[\\s\\S]*?</script>"; "") |
+                  gsub("<[^>]+>"; "") |
+                  gsub("<!--[^>]*-->"; "") |
+                  gsub("\\.?[A-Za-z0-9_\\-]+[[:space:]]*\\{[^}]*\\}"; "") |
+                  gsub("[A-Za-z\\-]+:[^;]+;"; "") |
+                  gsub("&nbsp;"; " ") |
+                  gsub("&[^;]+;"; "") |
+                  gsub("[[:space:]]+"; " ") |
+                  sub("^[[:space:]]+"; "") |
+                  sub("[[:space:]]+$"; "")
+                else . end;
+            # Pulisci in 'categories' o 'categorie'
+            if has("categories") then
+              .categories |= map(
+                .items |= map(.body |= clean)
+              )
+            elif has("categorie") then
+              .categorie |= map(
+                .items |= map(.body |= clean)
+              )
+            else . end' news.json > news.tmp.json
           mv news.tmp.json news.json
 
       - name: Commit & push cleaned JSON
