@@ -1,19 +1,20 @@
-name: Clean news.json (hard scrub)
+name: Clean news.json (safe)
 
 permissions:
   contents: write
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch: {}             # avvio manuale
   push:
     paths:
-      - news.json
+      - news.json                   # quando cambia il file
   schedule:
-    - cron: '0 1 * * *' # ogni notte 01:00 UTC
+    - cron: '0 1 * * *'            # ogni notte 01:00 UTC
 
 jobs:
   clean:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,111 +27,99 @@ jobs:
           node-version: 18
 
       - name: Install deps
-        run: npm install he
+        run: npm install html-to-text he
 
-      - name: Scrub HTML/CSS from body fields
+      - name: Clean body fields
         run: |
           node - <<'NODE'
           const fs = require('fs');
+          const { htmlToText } = require('html-to-text');
           const he = require('he');
 
           const PATH = 'news.json';
           const raw = fs.readFileSync(PATH, 'utf8');
           const data = JSON.parse(raw);
 
+          // Proprietà CSS note (per eliminare solo righe che sono davvero CSS)
           const cssProps = [
-            'color','margin','padding','font','background','display','position',
-            'left','right','top','bottom','border','width','height','max-width',
-            'min-width','line-height','text-align','justify-content','align-items',
-            'flex','grid','z-index','overflow','opacity','box-shadow','transition',
-            'transform','animation','visibility','letter-spacing','word-spacing',
-            'white-space','object-fit','pointer-events','filter','stroke','fill'
+            'color','margin','padding','font','background','display','position','left','right','top','bottom',
+            'border','width','height','max-width','min-width','line-height','text-align','justify-content',
+            'align-items','flex','grid','z-index','overflow','opacity','box-shadow','transition','transform',
+            'animation','visibility','letter-spacing','word-spacing','white-space','object-fit','pointer-events',
+            'filter','stroke','fill'
           ];
+          const cssPropLine = new RegExp(
+            String.raw`^\\s*(?:${cssProps.join('|')})\\s*:\\s*[^;{}]+;?\\s*$`,
+            'i'
+          );
 
-          const propRe = new RegExp(String.raw`(?:^|\\s)(?:${cssProps.join('|')})\\s*:\\s*[^;{}]+;?`, 'gi');
-
-          const stripCurlyBlocks = (s) => {
-            // rimuove blocchi "selettore { ... }" e @media/@keyframes
-            let prev;
-            const block = /(?:^|[\s;@.#])[^{};]{0,300}\{[^{}]*\}/g;
-            do { prev = s; s = s.replace(block, ' '); } while (s !== prev);
-            return s.replace(/[{}]/g, ' ');
+          const removeCssBlocks = (txt) => {
+            if (!txt) return txt;
+            // Rimuovi @media/@keyframes e blocchi "selettore { ... }"
+            txt = txt.replace(/@(?:media|supports|keyframes)[^{]*\{[\s\S]*?\}/gi, ' ');
+            txt = txt.replace(/(^|\n)\s*[^{}\n]{1,200}\s*\{[^{}]*\}\s*/g, ' ');
+            return txt;
           };
 
-          const clean = (v) => {
-            if (typeof v !== 'string') return v;
+          const cleanText = (htmlOrText) => {
+            if (typeof htmlOrText !== 'string') return htmlOrText;
 
-            // 1) elimina <style>/<script>/<noscript>/<template>/iframe e commenti
-            v = v.replace(/<style[\s\S]*?<\/style>/gi, '')
-                 .replace(/<script[\s\S]*?<\/script>/gi, '')
-                 .replace(/<noscript[\s\S]*?<\/noscript>/gi, '')
-                 .replace(/<template[\s\S]*?<\/template>/gi, '')
-                 .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
-                 .replace(/<!--[\s\S]*?-->/g, '')
-                 .replace(/\/\*[\s\S]*?\*\//g, '');
+            // 1) HTML -> testo (salta style/script/iframe/noscript/template/img/href)
+            let t = htmlToText(htmlOrText, {
+              wordwrap: false,
+              preserveNewlines: true,
+              selectors: [
+                { selector: 'a', options: { ignoreHref: true } },
+                { selector: 'img', format: 'skip' },
+                { selector: 'style', format: 'skip' },
+                { selector: 'script', format: 'skip' },
+                { selector: 'noscript', format: 'skip' },
+                { selector: 'template', format: 'skip' },
+                { selector: 'iframe', format: 'skip' }
+              ]
+            });
 
-            // 2) togli tutti i tag html residui
-            v = v.replace(/<[^>]+>/g, ' ');
+            // 2) Entità -> caratteri reali
+            t = he.decode(t).replace(/\u00A0/g, ' ');
 
-            // 3) elimina blocchi CSS { ... } e @media/@keyframes
-            v = stripCurlyBlocks(v);
+            // 3) Elimina blocchi CSS rimasti in chiaro
+            t = removeCssBlocks(t);
 
-            // 4) rimuovi selettori .classe, #id e token tipo .td-social-*
-            v = v.replace(/(^|\s)[.#][a-z0-9_-]{2,}(?=[\s,{.;]|$)/gi, ' ');
+            // 4) Elimina SOLO le righe che sembrano proprietà CSS isolate
+            t = t.split(/\r?\n/).filter(line => !cssPropLine.test(line)).join('\n');
 
-            // 5) rimuovi proprietà CSS isolate "prop: val;"
-            v = v.replace(propRe, ' ');
-
-            // 6) rimuovi var(--foo) e data: URIs
-            v = v.replace(/var\(--[a-z0-9_-]+\)/gi, ' ')
-                 .replace(/data:[^,]+,[^\s)]+/gi, ' ');
-
-            // 7) decodifica entità (&nbsp; ecc.) e normalizza spazi
-            v = he.decode(v).replace(/\u00A0/g, ' ');
-
-            // 8) filtra righe palesemente CSS (2+ punti e virgola o tante parentesi)
-            v = v.split(/\r?\n/).filter(line => {
-              const l = line.trim();
-              if (!l) return false;
-              const semis = (l.match(/;/g) || []).length;
-              if (semis >= 2) return false;
-              if (/[{}]/.test(l)) return false;
-              // scarta righe con 2+ proprietà note
-              let propsCount = 0;
-              cssProps.forEach(p => { if (new RegExp(`\\b${p}\\b`, 'i').test(l)) propsCount++; });
-              if (propsCount >= 2) return false;
-              return true;
-            }).join(' ');
-
-            // 9) collassa spazi e ripulisci punteggiatura ripetuta
-            v = v.replace(/\s+/g, ' ')
-                 .replace(/\s([,.!?:;])/g, '$1')
+            // 5) Collassa spazi, normalizza righe vuote (mantiene paragrafi)
+            t = t.replace(/[ \t]+\n/g, '\n')
+                 .replace(/\n{3,}/g, '\n\n')   // max due a capo consecutivi
+                 .replace(/[ \t]{2,}/g, ' ')
+                 .replace(/\s+([,.!?:;])/g, '$1')
                  .replace(/([,.!?:;]){2,}/g, '$1')
                  .trim();
 
-            return v;
+            return t;
           };
 
-          const scrubItems = (arr) => Array.isArray(arr)
+          const scrubSectionArray = (arr) => Array.isArray(arr)
             ? arr.map(sec => {
                 if (sec && Array.isArray(sec.items)) {
-                  sec.items = sec.items.map(it => it && typeof it === 'object'
-                    ? { ...it, body: clean(it.body) }
-                    : it
+                  sec.items = sec.items.map(it =>
+                    it && typeof it === 'object'
+                      ? { ...it, body: cleanText(it.body) }
+                      : it
                   );
                 }
                 return sec;
               })
             : arr;
 
-          if (Array.isArray(data.categories)) data.categories = scrubItems(data.categories);
-          if (Array.isArray(data.categorie))  data.categorie  = scrubItems(data.categorie);
+          if (Array.isArray(data.categories)) data.categories = scrubSectionArray(data.categories);
+          if (Array.isArray(data.categorie))  data.categorie  = scrubSectionArray(data.categorie);
 
           fs.writeFileSync(PATH, JSON.stringify(data, null, 2), 'utf8');
           NODE
 
-      - name: Commit & push
+      - name: Commit & push cleaned JSON
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "🔧 Deep-clean news.json body (remove HTML/CSS leftovers)"
+          commit_message: "🧼 Safe clean news.json (html→text, strip CSS blocks, keep content)"
           file_pattern: news.json
