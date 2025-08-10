@@ -1,4 +1,4 @@
-name: Clean news.json
+name: Clean news.json (hard scrub)
 
 permissions:
   contents: write
@@ -9,12 +9,11 @@ on:
     paths:
       - news.json
   schedule:
-    - cron: '0 0 * * *'  # ogni notte alle 00:00 UTC
+    - cron: '0 1 * * *' # ogni notte 01:00 UTC
 
 jobs:
   clean:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,10 +25,10 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install helper (he)
+      - name: Install deps
         run: npm install he
 
-      - name: Clean JSON body fields
+      - name: Scrub HTML/CSS from body fields
         run: |
           node - <<'NODE'
           const fs = require('fs');
@@ -39,57 +38,99 @@ jobs:
           const raw = fs.readFileSync(PATH, 'utf8');
           const data = JSON.parse(raw);
 
-          const clean = (val) => {
-            if (typeof val !== 'string') return val;
+          const cssProps = [
+            'color','margin','padding','font','background','display','position',
+            'left','right','top','bottom','border','width','height','max-width',
+            'min-width','line-height','text-align','justify-content','align-items',
+            'flex','grid','z-index','overflow','opacity','box-shadow','transition',
+            'transform','animation','visibility','letter-spacing','word-spacing',
+            'white-space','object-fit','pointer-events','filter','stroke','fill'
+          ];
 
-            // 1) Rimuovi blocchi <style> e <script>
-            val = val.replace(/<style[\s\S]*?<\/style>/gi, '')
-                     .replace(/<script[\s\S]*?<\/script>/gi, '');
+          const propRe = new RegExp(String.raw`(?:^|\\s)(?:${cssProps.join('|')})\\s*:\\s*[^;{}]+;?`, 'gi');
 
-            // 2) Commenti HTML
-            val = val.replace(/<!--[\s\S]*?-->/g, '');
-
-            // 3) Tag HTML residui
-            val = val.replace(/<[^>]+>/g, '');
-
-            // 4) Blocchi CSS tipo "selettore { ... }"
-            //    (conservativo: evita di mangiare testo con graffe casuali)
-            val = val.replace(/(?:^|[\s;])[^{};]{1,200}\{[^{}]*\}(?=\s|;|$)/g, ' ');
-
-            // 5) Proprietà CSS isolate tipo "color:#fff;"
-            val = val.replace(/(?:^|\s)[a-z-]{2,}\s*:\s*[^;{}]+;?/gi, ' ');
-
-            // 6) Decodifica entità HTML (&nbsp; &amp; ecc.)
-            val = he.decode(val).replace(/\u00A0/g, ' '); // nbsp -> spazio
-
-            // 7) Collassa spazi e trim
-            val = val.replace(/\s+/g, ' ').trim();
-
-            return val;
+          const stripCurlyBlocks = (s) => {
+            // rimuove blocchi "selettore { ... }" e @media/@keyframes
+            let prev;
+            const block = /(?:^|[\s;@.#])[^{};]{0,300}\{[^{}]*\}/g;
+            do { prev = s; s = s.replace(block, ' '); } while (s !== prev);
+            return s.replace(/[{}]/g, ' ');
           };
 
-          const cleanItemsArray = (arr) =>
-            Array.isArray(arr)
-              ? arr.map(section => {
-                  if (section && typeof section === 'object' && Array.isArray(section.items)) {
-                    section.items = section.items.map(it =>
-                      it && typeof it === 'object'
-                        ? { ...it, body: clean(it.body) }
-                        : it
-                    );
-                  }
-                  return section;
-                })
-              : arr;
+          const clean = (v) => {
+            if (typeof v !== 'string') return v;
 
-          if (Array.isArray(data.categories)) data.categories = cleanItemsArray(data.categories);
-          if (Array.isArray(data.categorie))  data.categorie  = cleanItemsArray(data.categorie);
+            // 1) elimina <style>/<script>/<noscript>/<template>/iframe e commenti
+            v = v.replace(/<style[\s\S]*?<\/style>/gi, '')
+                 .replace(/<script[\s\S]*?<\/script>/gi, '')
+                 .replace(/<noscript[\s\S]*?<\/noscript>/gi, '')
+                 .replace(/<template[\s\S]*?<\/template>/gi, '')
+                 .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
+                 .replace(/<!--[\s\S]*?-->/g, '')
+                 .replace(/\/\*[\s\S]*?\*\//g, '');
+
+            // 2) togli tutti i tag html residui
+            v = v.replace(/<[^>]+>/g, ' ');
+
+            // 3) elimina blocchi CSS { ... } e @media/@keyframes
+            v = stripCurlyBlocks(v);
+
+            // 4) rimuovi selettori .classe, #id e token tipo .td-social-*
+            v = v.replace(/(^|\s)[.#][a-z0-9_-]{2,}(?=[\s,{.;]|$)/gi, ' ');
+
+            // 5) rimuovi proprietà CSS isolate "prop: val;"
+            v = v.replace(propRe, ' ');
+
+            // 6) rimuovi var(--foo) e data: URIs
+            v = v.replace(/var\(--[a-z0-9_-]+\)/gi, ' ')
+                 .replace(/data:[^,]+,[^\s)]+/gi, ' ');
+
+            // 7) decodifica entità (&nbsp; ecc.) e normalizza spazi
+            v = he.decode(v).replace(/\u00A0/g, ' ');
+
+            // 8) filtra righe palesemente CSS (2+ punti e virgola o tante parentesi)
+            v = v.split(/\r?\n/).filter(line => {
+              const l = line.trim();
+              if (!l) return false;
+              const semis = (l.match(/;/g) || []).length;
+              if (semis >= 2) return false;
+              if (/[{}]/.test(l)) return false;
+              // scarta righe con 2+ proprietà note
+              let propsCount = 0;
+              cssProps.forEach(p => { if (new RegExp(`\\b${p}\\b`, 'i').test(l)) propsCount++; });
+              if (propsCount >= 2) return false;
+              return true;
+            }).join(' ');
+
+            // 9) collassa spazi e ripulisci punteggiatura ripetuta
+            v = v.replace(/\s+/g, ' ')
+                 .replace(/\s([,.!?:;])/g, '$1')
+                 .replace(/([,.!?:;]){2,}/g, '$1')
+                 .trim();
+
+            return v;
+          };
+
+          const scrubItems = (arr) => Array.isArray(arr)
+            ? arr.map(sec => {
+                if (sec && Array.isArray(sec.items)) {
+                  sec.items = sec.items.map(it => it && typeof it === 'object'
+                    ? { ...it, body: clean(it.body) }
+                    : it
+                  );
+                }
+                return sec;
+              })
+            : arr;
+
+          if (Array.isArray(data.categories)) data.categories = scrubItems(data.categories);
+          if (Array.isArray(data.categorie))  data.categorie  = scrubItems(data.categorie);
 
           fs.writeFileSync(PATH, JSON.stringify(data, null, 2), 'utf8');
           NODE
 
-      - name: Commit & push cleaned JSON
+      - name: Commit & push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "🔄 Clean news.json (strip HTML/CSS, decode entities)"
+          commit_message: "🔧 Deep-clean news.json body (remove HTML/CSS leftovers)"
           file_pattern: news.json
