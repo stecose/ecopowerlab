@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-10-01T08:24:10.424Z",
+  "updated_at": "2025-10-02T08:23:03.421Z",
   "co2": {
     "weekly_ppm": 21,
     "week_begin": "2025-01-09",
@@ -19,14 +19,14 @@
       "lon": 12.4964
     },
     "period": {
-      "start": "20250925",
-      "end": "20251001"
+      "start": "20250926",
+      "end": "20251002"
     },
-    "average_irradiance_mj_m2_day": 4.46,
-    "average_irradiance_kwh_m2_day": 1.24,
+    "average_irradiance_mj_m2_day": 4.62,
+    "average_irradiance_kwh_m2_day": 1.28,
     "panel_efficiency_assumed": 0.2,
-    "available_energy_kwh_m2_day": 0.248,
-    "available_power_kw": 0.01,
+    "available_energy_kwh_m2_day": 0.257,
+    "available_power_kw": 0.011,
     "error": null
   },
   "errors": {
@@ -34,5 +34,5 @@
     "temperature": null,
     "solar": null
   },
-  "_touched_at": "2025-10-01T08:24:10.424Z"
+  "_touched_at": "2025-10-02T08:23:03.421Z"
 }
