@@ -1,11 +1,11 @@
 {
-  "updated_at": "2025-11-22T08:23:31.363Z",
+  "updated_at": "2025-11-23T08:23:37.038Z",
   "co2": {
-    "weekly_ppm": 9,
-    "week_begin": "2025-01-11",
-    "monthly_ppm": 2025.7917,
-    "month": "2025-10",
-    "error": null
+    "weekly_ppm": null,
+    "week_begin": null,
+    "monthly_ppm": null,
+    "month": null,
+    "error": "fetch failed"
   },
   "temperature": {
     "global_monthly_anomaly_c": 1.22,
@@ -19,20 +19,20 @@
       "lon": 12.4964
     },
     "period": {
-      "start": "20251116",
-      "end": "20251122"
+      "start": "20251117",
+      "end": "20251123"
     },
-    "average_irradiance_mj_m2_day": 1.69,
-    "average_irradiance_kwh_m2_day": 0.47,
+    "average_irradiance_mj_m2_day": 1.25,
+    "average_irradiance_kwh_m2_day": 0.35,
     "panel_efficiency_assumed": 0.2,
-    "available_energy_kwh_m2_day": 0.094,
-    "available_power_kw": 0.004,
+    "available_energy_kwh_m2_day": 0.069,
+    "available_power_kw": 0.003,
     "error": null
   },
   "errors": {
-    "co2": null,
+    "co2": "fetch failed",
     "temperature": null,
     "solar": null
   },
-  "_touched_at": "2025-11-22T08:23:31.363Z"
+  "_touched_at": "2025-11-23T08:23:37.039Z"
 }
