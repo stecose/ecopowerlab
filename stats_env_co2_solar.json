@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-02T08:42:17.827Z",
+  "updated_at": "2026-02-03T08:36:47.419Z",
   "co2": {
     "weekly_ppm": 25,
     "week_begin": "2026-01-01",
@@ -8,10 +8,10 @@
     "error": null
   },
   "temperature": {
-    "global_monthly_anomaly_c": 1.05,
-    "year": 2025,
-    "month": "Dec",
-    "error": null
+    "global_monthly_anomaly_c": null,
+    "year": null,
+    "month": null,
+    "error": "fetch failed"
   },
   "solar": {
     "location": {
@@ -19,20 +19,20 @@
       "lon": 12.4964
     },
     "period": {
-      "start": "20260127",
-      "end": "20260202"
+      "start": "20260128",
+      "end": "20260203"
     },
-    "average_irradiance_mj_m2_day": null,
-    "average_irradiance_kwh_m2_day": null,
+    "average_irradiance_mj_m2_day": 1.82,
+    "average_irradiance_kwh_m2_day": 0.51,
     "panel_efficiency_assumed": 0.2,
-    "available_energy_kwh_m2_day": null,
-    "available_power_kw": null,
-    "error": "No valid solar values"
+    "available_energy_kwh_m2_day": 0.101,
+    "available_power_kw": 0.004,
+    "error": null
   },
   "errors": {
     "co2": null,
-    "temperature": null,
-    "solar": "No valid solar values"
+    "temperature": "fetch failed",
+    "solar": null
   },
-  "_touched_at": "2026-02-02T08:42:17.827Z"
+  "_touched_at": "2026-02-03T08:36:47.419Z"
 }
