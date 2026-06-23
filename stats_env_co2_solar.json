@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T13:34:47.559Z",
+  "updated_at": "2026-06-23T11:16:15.079Z",
   "co2": {
     "weekly_ppm": 14,
     "week_begin": "2026-01-06",
@@ -19,8 +19,8 @@
       "lon": 12.4964
     },
     "period": {
-      "start": "20260616",
-      "end": "20260622"
+      "start": "20260617",
+      "end": "20260623"
     },
     "average_irradiance_mj_m2_day": null,
     "average_irradiance_kwh_m2_day": null,
@@ -34,5 +34,5 @@
     "temperature": null,
     "solar": "No valid solar values"
   },
-  "_touched_at": "2026-06-22T13:34:47.559Z"
+  "_touched_at": "2026-06-23T11:16:15.079Z"
 }
